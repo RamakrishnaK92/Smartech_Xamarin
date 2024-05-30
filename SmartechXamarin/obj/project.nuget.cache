@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZwZdrdb4FOMsyx3Q7YAnZkI+t2APrRZMZPMSdt/muO6v1zVpTd2Lfhk2OYspGXhaV1ElpW52jUA2L1kT4cWhHg==",
+  "success": true,
+  "projectFilePath": "/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechXamarin/SmartechXamarin.csproj",
+  "expectedPackageFiles": [
+    "/Users/ramakrishnakasuba/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/ramakrishnakasuba/.nuget/packages/xamarin.essentials/1.8.1/xamarin.essentials.1.8.1.nupkg.sha512"
+  ],
+  "logs": []
+}

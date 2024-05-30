@@ -1,0 +1,17 @@
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/bin/iPhone/Debug/SmartechServiceXam.dll
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/bin/iPhone/Debug/SmartechServiceXam.pdb
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/bin/iPhone/Debug/Smartech.dll
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/actool/_PartialAppManifest.items
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/actool/_BundleResourceWithLogicalName.items
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/actool/_ProcessedImageAssetsPath.items
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/coremlc/_PartialAppManifest.items
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/coremlc/_BundleResourceWithLogicalName.items
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/coremlc/_ProcessedCoreMLModelsPath.items
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/_ProcessedBundleResourcesPath.items
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/_ProcessedContentPath.items
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/optimized/
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/obj/iPhone/Debug/SmartechServiceXam.csproj.AssemblyReference.cache
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/obj/iPhone/Debug/SmartechServiceXam.csproj.CoreCompileInputs.cache
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/obj/iPhone/Debug/SmartechServiceXam.csproj.CopyComplete
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/obj/iPhone/Debug/SmartechServiceXam.dll
+/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/obj/iPhone/Debug/SmartechServiceXam.pdb

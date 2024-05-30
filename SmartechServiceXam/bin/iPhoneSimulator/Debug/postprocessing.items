@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="SmartechServiceXam.appex/SmartechServiceXam">
+      <BCSymbolMapName>SmartechServiceXam.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>SmartechServiceXam.appex.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/obj/iPhoneSimulator/Debug/mtouch-symbols.list</SymbolFile>
+      <DSymName>SmartechServiceXam.appex.dSYM</DSymName>
+      <SourceProjectPath>/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>
