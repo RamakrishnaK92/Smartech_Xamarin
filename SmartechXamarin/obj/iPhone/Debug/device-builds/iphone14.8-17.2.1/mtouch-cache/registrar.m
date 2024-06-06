@@ -3541,7 +3541,7 @@ exception_handling:
 	};
 
 	static const MTAssembly __xamarin_registration_assemblies [] = {
-		{ "SmartechXamarin", "3b7a35a5-5bb9-4f32-9cf3-89f67109c1cb" }, 
+		{ "SmartechXamarin", "1f5e8634-2317-4df7-8714-7d1abd54986a" }, 
 		{ "mscorlib", "aae03b95-719e-488f-8a16-3bae4d2b5dcb" }, 
 		{ "Xamarin.iOS", "eb9faeca-3234-460b-affc-df962a8d9526" }, 
 		{ "System", "ee6a1987-eb2f-48bd-b8b5-f0cf4659dd86" }, 

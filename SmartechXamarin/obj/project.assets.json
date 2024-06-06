@@ -274,11 +274,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechXamarin/SmartechXamarin.csproj",
+      "projectUniqueName": "/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechXamarin/SmartechXamarin.csproj",
       "projectName": "SmartechXamarin",
-      "projectPath": "/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechXamarin/SmartechXamarin.csproj",
+      "projectPath": "/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechXamarin/SmartechXamarin.csproj",
       "packagesPath": "/Users/ramakrishnakasuba/.nuget/packages/",
-      "outputPath": "/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechXamarin/obj/",
+      "outputPath": "/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechXamarin/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -293,8 +293,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/SmartechServiceXam.csproj": {
-              "projectPath": "/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/SmartechServiceXam.csproj"
+            "/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechServiceXam/SmartechServiceXam.csproj": {
+              "projectPath": "/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechServiceXam/SmartechServiceXam.csproj"
             }
           }
         }

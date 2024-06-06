@@ -93,8 +93,11 @@ namespace SmartechXamarin
         public void FailedToRegisterForRemoteNotifications(UIApplication application, NSError error)
         {
             Console.WriteLine($"NCLogger Token Error:: {error.LocalizedDescription}");
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
         }
+
+        
+
         [Export("application:didReceiveRemoteNotification:fetchCompletionHandler:")]
         public void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo, Action<UIBackgroundFetchResult> completionHandler)
         {

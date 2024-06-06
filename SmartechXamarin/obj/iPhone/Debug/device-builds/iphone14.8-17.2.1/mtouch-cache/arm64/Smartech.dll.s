@@ -15680,7 +15680,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 234,131,156,172,161,160,97,248,127,184,107,34,121,155,16,133
+	.byte 130,8,83,71,131,117,155,33,219,221,88,86,247,19,76,225
 	.globl _mono_aot_module_Smartech_info
 	.align 3
 _mono_aot_module_Smartech_info:

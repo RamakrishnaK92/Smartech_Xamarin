@@ -9,8 +9,8 @@ namespace SmartechServiceXam
 	[Register ("NotificationService")]
 	public class NotificationService : UNNotificationServiceExtension
 	{
-		Action<UNNotificationContent> ContentHandler { get; set; }
-		UNMutableNotificationContent BestAttemptContent { get; set; }
+		//Action<UNNotificationContent> ContentHandler { get; set; }
+		//UNMutableNotificationContent BestAttemptContent { get; set; }
 
 		protected NotificationService (IntPtr handle) : base (handle)
 		{
@@ -19,12 +19,12 @@ namespace SmartechServiceXam
 
 		public override void DidReceiveNotificationRequest (UNNotificationRequest request, Action<UNNotificationContent> contentHandler)
 		{
-			ContentHandler = contentHandler;
-			BestAttemptContent = (UNMutableNotificationContent)request.Content.MutableCopy ();
+			//ContentHandler = contentHandler;
+			//BestAttemptContent = (UNMutableNotificationContent)request.Content.MutableCopy ();
 
 			// Modify the notification content here...
 
-			ContentHandler(BestAttemptContent);
+			//ContentHandler(BestAttemptContent);
 			Console.WriteLine($"NCLogger inside NSE-delivery: {request.Content.UserInfo}");
             Console.WriteLine($"NCLogger inside NSE-REQUEST: {request}");
             Console.WriteLine($"NCLogger inside NSE-CONTENT: {contentHandler}");

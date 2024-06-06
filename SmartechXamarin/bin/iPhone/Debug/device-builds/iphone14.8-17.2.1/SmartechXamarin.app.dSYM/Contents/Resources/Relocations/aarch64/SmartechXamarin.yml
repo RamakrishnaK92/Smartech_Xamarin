@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechXamarin/bin/iPhone/Debug/device-builds/iphone14.8-17.2.1/SmartechXamarin.app/SmartechXamarin'
+binary-path:     '/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechXamarin/bin/iPhone/Debug/device-builds/iphone14.8-17.2.1/SmartechXamarin.app/SmartechXamarin'
 relocations:
   - { offsetInCU: 0x28, offset: 0x28, size: 0x8, addend: 0x0, symName: _xamarin_initialize_extension_main, symObjAddr: 0x0, symBinAddr: 0x100004000, symSize: 0x10 }
   - { offsetInCU: 0x3F6, offset: 0x3F6, size: 0x8, addend: 0x0, symName: _xamarin_initialize_extension_main, symObjAddr: 0x0, symBinAddr: 0x100004000, symSize: 0x10 }

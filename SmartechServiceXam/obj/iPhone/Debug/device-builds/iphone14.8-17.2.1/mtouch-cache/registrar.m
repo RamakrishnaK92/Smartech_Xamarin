@@ -41,7 +41,7 @@ static void native_to_managed_trampoline_1 (id self, SEL _cmd, MonoMethod **mana
 	}
 	arg_ptrs [0] = mobj0;
 	if (p1) {
-		del1 = xamarin_get_delegate_for_block_parameter (managed_method, 0x31204 /* System.Action`1<UserNotifications.UNNotificationContent> ObjCRuntime.Trampolines/NIDActionArity1V259::Create(System.IntPtr) */ , 1, p1, &exception_gchandle);
+		del1 = xamarin_get_delegate_for_block_parameter (managed_method, 0x30404 /* System.Action`1<UserNotifications.UNNotificationContent> ObjCRuntime.Trampolines/NIDActionArity1V259::Create(System.IntPtr) */ , 1, p1, &exception_gchandle);
 		arg_ptrs [1] = del1;
 		if (exception_gchandle != INVALID_GCHANDLE) goto exception_handling;
 	} else {
@@ -405,13 +405,13 @@ exception_handling:
 	-(void) didReceiveNotificationRequest:(UNNotificationRequest *)p0 withContentHandler:(void (^)(void *))p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_1 (self, _cmd, &managed_method, p0, p1, 0x600);
+		native_to_managed_trampoline_1 (self, _cmd, &managed_method, p0, p1, 0x200);
 	}
 
 	-(void) serviceExtensionTimeWillExpire
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x700);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x300);
 	}
 	-(BOOL) conformsToProtocol: (void *) protocol
 	{
@@ -479,7 +479,7 @@ exception_handling:
 	-(void) xamarinApplySelector
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x5704);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x5204);
 	}
 	-(BOOL) conformsToProtocol: (void *) protocol
 	{
@@ -493,7 +493,7 @@ exception_handling:
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_3 (self, _cmd, &managed_method, &call_super, 0x5604);
+		id rv = native_to_managed_trampoline_3 (self, _cmd, &managed_method, &call_super, 0x5104);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -513,7 +513,7 @@ exception_handling:
 	-(void) xamarinApplySelector
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x5904);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x5404);
 	}
 @end
 
@@ -529,14 +529,14 @@ exception_handling:
 	-(void) xamarinApplySelector
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x5B04);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x5604);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_3 (self, _cmd, &managed_method, &call_super, 0x5A04);
+		id rv = native_to_managed_trampoline_3 (self, _cmd, &managed_method, &call_super, 0x5504);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [Foundation_NSDispatcher class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -556,7 +556,7 @@ exception_handling:
 	-(void) xamarinApplySelector
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x5D04);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x5804);
 	}
 @end
 
@@ -617,7 +617,7 @@ exception_handling:
 	+(void) drain:(NSObject *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_4 (self, _cmd, &managed_method, p0, 0xF804);
+		native_to_managed_trampoline_4 (self, _cmd, &managed_method, p0, 0xEF04);
 	}
 	-(BOOL) conformsToProtocol: (void *) protocol
 	{
@@ -631,7 +631,7 @@ exception_handling:
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_3 (self, _cmd, &managed_method, &call_super, 0xF504);
+		id rv = native_to_managed_trampoline_3 (self, _cmd, &managed_method, &call_super, 0xEC04);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -693,44 +693,43 @@ exception_handling:
 
 
 	static MTClassMap __xamarin_class_map [] = {
-		{ NULL, 0x2004 /* #0 'NSObject' => 'Foundation.NSObject, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x904 /* #1 'UNNotificationServiceExtension' => 'UserNotifications.UNNotificationServiceExtension, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x1F04 /* #0 'NSObject' => 'Foundation.NSObject, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x804 /* #1 'UNNotificationServiceExtension' => 'UserNotifications.UNNotificationServiceExtension, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
 		{ NULL, 0x200 /* #2 'NotificationService' => 'SmartechServiceXam.NotificationService, SmartechServiceXam' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x604 /* #3 'UNNotificationContent' => 'UserNotifications.UNNotificationContent, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x404 /* #4 'UNMutableNotificationContent' => 'UserNotifications.UNMutableNotificationContent, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x504 /* #5 'UNNotification' => 'UserNotifications.UNNotification, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x704 /* #6 'UNNotificationRequest' => 'UserNotifications.UNNotificationRequest, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x804 /* #7 'UNNotificationResponse' => 'UserNotifications.UNNotificationResponse, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x1004 /* #8 'Foundation_NSDispatcher' => 'Foundation.NSDispatcher, Xamarin.iOS' */, (MTTypeFlags) (2) /* UserType */ },
-		{ NULL, 0x1104 /* #9 '__MonoMac_NSSynchronizationContextDispatcher' => 'Foundation.NSSynchronizationContextDispatcher, Xamarin.iOS' */, (MTTypeFlags) (2) /* UserType */ },
-		{ NULL, 0x1204 /* #10 'Foundation_NSAsyncDispatcher' => 'Foundation.NSAsyncDispatcher, Xamarin.iOS' */, (MTTypeFlags) (2) /* UserType */ },
-		{ NULL, 0x1304 /* #11 '__MonoMac_NSAsyncSynchronizationContextDispatcher' => 'Foundation.NSAsyncSynchronizationContextDispatcher, Xamarin.iOS' */, (MTTypeFlags) (2) /* UserType */ },
-		{ NULL, 0x1404 /* #12 'NSArray' => 'Foundation.NSArray, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x1504 /* #13 'NSAutoreleasePool' => 'Foundation.NSAutoreleasePool, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x1F04 /* #14 'NSNull' => 'Foundation.NSNull, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x2604 /* #15 'NSRunLoop' => 'Foundation.NSRunLoop, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x2704 /* #16 'NSString' => 'Foundation.NSString, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x2D04 /* #17 'NSException' => 'Foundation.NSException, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x2E04 /* #18 'NSMutableArray' => 'Foundation.NSMutableArray, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x3C04 /* #19 'UIResponder' => 'UIKit.UIResponder, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x3904 /* #20 'UIApplication' => 'UIKit.UIApplication, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x3B04 /* #21 'UIView' => 'UIKit.UIView, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x1604 /* #22 'NSData' => 'Foundation.NSData, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x1804 /* #23 'NSDictionary' => 'Foundation.NSDictionary, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x1D04 /* #24 'NSMutableDictionary' => 'Foundation.NSMutableDictionary, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x2404 /* #25 '__NSObject_Disposer' => 'Foundation.NSObject+NSObject_Disposer, Xamarin.iOS' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x808 /* #26 'NetCoreAppTracking' => 'NetCorePush.NetCoreAppTracking, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
-		{ NULL, 0x908 /* #27 'NetCoreInstallation' => 'NetCorePush.NetCoreInstallation, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
-		{ NULL, 0xA08 /* #28 'NetCoreNotificationService' => 'NetCorePush.NetCoreNotificationService, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
-		{ NULL, 0xB08 /* #29 'NetCorePushTaskManager' => 'NetCorePush.NetCorePushTaskManager, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
-		{ NULL, 0xE08 /* #30 'ApiDefinition__NetCorePush_NetCorePushTaskManagerDelegate' => 'NetCorePush.NetCorePushTaskManagerDelegate, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
-		{ NULL, 0xF08 /* #31 'NetCoreSharedManager' => 'NetCorePush.NetCoreSharedManager, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
-		{ NULL, 0x1008 /* #32 'SMTDeeplink' => 'NetCorePush.SMTDeeplink, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
+		{ NULL, 0x404 /* #3 'UNNotification' => 'UserNotifications.UNNotification, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x504 /* #4 'UNNotificationContent' => 'UserNotifications.UNNotificationContent, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x604 /* #5 'UNNotificationRequest' => 'UserNotifications.UNNotificationRequest, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x704 /* #6 'UNNotificationResponse' => 'UserNotifications.UNNotificationResponse, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xF04 /* #7 'Foundation_NSDispatcher' => 'Foundation.NSDispatcher, Xamarin.iOS' */, (MTTypeFlags) (2) /* UserType */ },
+		{ NULL, 0x1004 /* #8 '__MonoMac_NSSynchronizationContextDispatcher' => 'Foundation.NSSynchronizationContextDispatcher, Xamarin.iOS' */, (MTTypeFlags) (2) /* UserType */ },
+		{ NULL, 0x1104 /* #9 'Foundation_NSAsyncDispatcher' => 'Foundation.NSAsyncDispatcher, Xamarin.iOS' */, (MTTypeFlags) (2) /* UserType */ },
+		{ NULL, 0x1204 /* #10 '__MonoMac_NSAsyncSynchronizationContextDispatcher' => 'Foundation.NSAsyncSynchronizationContextDispatcher, Xamarin.iOS' */, (MTTypeFlags) (2) /* UserType */ },
+		{ NULL, 0x1304 /* #11 'NSArray' => 'Foundation.NSArray, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x1404 /* #12 'NSAutoreleasePool' => 'Foundation.NSAutoreleasePool, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x1E04 /* #13 'NSNull' => 'Foundation.NSNull, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x2504 /* #14 'NSRunLoop' => 'Foundation.NSRunLoop, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x2604 /* #15 'NSString' => 'Foundation.NSString, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x2C04 /* #16 'NSException' => 'Foundation.NSException, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x2D04 /* #17 'NSMutableArray' => 'Foundation.NSMutableArray, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x3904 /* #18 'UIResponder' => 'UIKit.UIResponder, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x3604 /* #19 'UIApplication' => 'UIKit.UIApplication, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x3804 /* #20 'UIView' => 'UIKit.UIView, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x1504 /* #21 'NSData' => 'Foundation.NSData, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x1704 /* #22 'NSDictionary' => 'Foundation.NSDictionary, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x1C04 /* #23 'NSMutableDictionary' => 'Foundation.NSMutableDictionary, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x2304 /* #24 '__NSObject_Disposer' => 'Foundation.NSObject+NSObject_Disposer, Xamarin.iOS' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x808 /* #25 'NetCoreAppTracking' => 'NetCorePush.NetCoreAppTracking, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
+		{ NULL, 0x908 /* #26 'NetCoreInstallation' => 'NetCorePush.NetCoreInstallation, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
+		{ NULL, 0xA08 /* #27 'NetCoreNotificationService' => 'NetCorePush.NetCoreNotificationService, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
+		{ NULL, 0xB08 /* #28 'NetCorePushTaskManager' => 'NetCorePush.NetCorePushTaskManager, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
+		{ NULL, 0xE08 /* #29 'ApiDefinition__NetCorePush_NetCorePushTaskManagerDelegate' => 'NetCorePush.NetCorePushTaskManagerDelegate, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
+		{ NULL, 0xF08 /* #30 'NetCoreSharedManager' => 'NetCorePush.NetCoreSharedManager, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
+		{ NULL, 0x1008 /* #31 'SMTDeeplink' => 'NetCorePush.SMTDeeplink, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
 		{ NULL, 0 },
 	};
 
 	static const MTAssembly __xamarin_registration_assemblies [] = {
-		{ "SmartechServiceXam", "8a519a72-06d2-4139-b1cb-e55b7229b6e5" }, 
+		{ "SmartechServiceXam", "ad659932-f18d-4853-aa93-f563300f1ce7" }, 
 		{ "mscorlib", "aae03b95-719e-488f-8a16-3bae4d2b5dcb" }, 
 		{ "Xamarin.iOS", "eb9faeca-3234-460b-affc-df962a8d9526" }, 
 		{ "System", "ee6a1987-eb2f-48bd-b8b5-f0cf4659dd86" }, 
@@ -739,8 +738,7 @@ exception_handling:
 
 	static const MTProtocolWrapperMap __xamarin_protocol_wrapper_map [] = {
 		{ 0xC08 /* NetCorePush.INetCorePushTaskManagerDelegate */, 0xD08 /* NetCorePushTaskManagerDelegateWrapper */ },
-		{ 0x2F04 /* Foundation.INSMutableCopying */, 0x3004 /* NSMutableCopyingWrapper */ },
-		{ 0x3104 /* Foundation.INSObjectProtocol */, 0x3204 /* NSObjectProtocolWrapper */ },
+		{ 0x2E04 /* Foundation.INSObjectProtocol */, 0x2F04 /* NSObjectProtocolWrapper */ },
 	};
 
 	static struct MTRegistrationMap __xamarin_registration_map = {
@@ -752,10 +750,10 @@ exception_handling:
 		__xamarin_protocol_wrapper_map,
 		{ NULL, NULL },
 		5,
-		33,
+		32,
 		0,
 		0,
-		3,
+		2,
 		0
 	};
 
@@ -763,36 +761,35 @@ void xamarin_create_classes () {
 	__xamarin_class_map [0].handle = objc_getClass ("NSObject");
 	__xamarin_class_map [1].handle = objc_getClass ("UNNotificationServiceExtension");
 	__xamarin_class_map [2].handle = [NotificationService class];
-	__xamarin_class_map [3].handle = objc_getClass ("UNNotificationContent");
-	__xamarin_class_map [4].handle = objc_getClass ("UNMutableNotificationContent");
-	__xamarin_class_map [5].handle = objc_getClass ("UNNotification");
-	__xamarin_class_map [6].handle = objc_getClass ("UNNotificationRequest");
-	__xamarin_class_map [7].handle = objc_getClass ("UNNotificationResponse");
-	__xamarin_class_map [8].handle = objc_getClass ("Foundation_NSDispatcher");
-	__xamarin_class_map [9].handle = objc_getClass ("__MonoMac_NSSynchronizationContextDispatcher");
-	__xamarin_class_map [10].handle = objc_getClass ("Foundation_NSAsyncDispatcher");
-	__xamarin_class_map [11].handle = objc_getClass ("__MonoMac_NSAsyncSynchronizationContextDispatcher");
-	__xamarin_class_map [12].handle = objc_getClass ("NSArray");
-	__xamarin_class_map [13].handle = objc_getClass ("NSAutoreleasePool");
-	__xamarin_class_map [14].handle = objc_getClass ("NSNull");
-	__xamarin_class_map [15].handle = objc_getClass ("NSRunLoop");
-	__xamarin_class_map [16].handle = objc_getClass ("NSString");
-	__xamarin_class_map [17].handle = objc_getClass ("NSException");
-	__xamarin_class_map [18].handle = objc_getClass ("NSMutableArray");
-	__xamarin_class_map [19].handle = objc_getClass ("UIResponder");
-	__xamarin_class_map [20].handle = objc_getClass ("UIApplication");
-	__xamarin_class_map [21].handle = objc_getClass ("UIView");
-	__xamarin_class_map [22].handle = objc_getClass ("NSData");
-	__xamarin_class_map [23].handle = objc_getClass ("NSDictionary");
-	__xamarin_class_map [24].handle = objc_getClass ("NSMutableDictionary");
-	__xamarin_class_map [25].handle = objc_getClass ("__NSObject_Disposer");
-	__xamarin_class_map [26].handle = [NetCoreAppTracking class];
-	__xamarin_class_map [27].handle = [NetCoreInstallation class];
-	__xamarin_class_map [28].handle = [NetCoreNotificationService class];
-	__xamarin_class_map [29].handle = [NetCorePushTaskManager class];
-	__xamarin_class_map [30].handle = [ApiDefinition__NetCorePush_NetCorePushTaskManagerDelegate class];
-	__xamarin_class_map [31].handle = [NetCoreSharedManager class];
-	__xamarin_class_map [32].handle = [SMTDeeplink class];
+	__xamarin_class_map [3].handle = objc_getClass ("UNNotification");
+	__xamarin_class_map [4].handle = objc_getClass ("UNNotificationContent");
+	__xamarin_class_map [5].handle = objc_getClass ("UNNotificationRequest");
+	__xamarin_class_map [6].handle = objc_getClass ("UNNotificationResponse");
+	__xamarin_class_map [7].handle = objc_getClass ("Foundation_NSDispatcher");
+	__xamarin_class_map [8].handle = objc_getClass ("__MonoMac_NSSynchronizationContextDispatcher");
+	__xamarin_class_map [9].handle = objc_getClass ("Foundation_NSAsyncDispatcher");
+	__xamarin_class_map [10].handle = objc_getClass ("__MonoMac_NSAsyncSynchronizationContextDispatcher");
+	__xamarin_class_map [11].handle = objc_getClass ("NSArray");
+	__xamarin_class_map [12].handle = objc_getClass ("NSAutoreleasePool");
+	__xamarin_class_map [13].handle = objc_getClass ("NSNull");
+	__xamarin_class_map [14].handle = objc_getClass ("NSRunLoop");
+	__xamarin_class_map [15].handle = objc_getClass ("NSString");
+	__xamarin_class_map [16].handle = objc_getClass ("NSException");
+	__xamarin_class_map [17].handle = objc_getClass ("NSMutableArray");
+	__xamarin_class_map [18].handle = objc_getClass ("UIResponder");
+	__xamarin_class_map [19].handle = objc_getClass ("UIApplication");
+	__xamarin_class_map [20].handle = objc_getClass ("UIView");
+	__xamarin_class_map [21].handle = objc_getClass ("NSData");
+	__xamarin_class_map [22].handle = objc_getClass ("NSDictionary");
+	__xamarin_class_map [23].handle = objc_getClass ("NSMutableDictionary");
+	__xamarin_class_map [24].handle = objc_getClass ("__NSObject_Disposer");
+	__xamarin_class_map [25].handle = [NetCoreAppTracking class];
+	__xamarin_class_map [26].handle = [NetCoreInstallation class];
+	__xamarin_class_map [27].handle = [NetCoreNotificationService class];
+	__xamarin_class_map [28].handle = [NetCorePushTaskManager class];
+	__xamarin_class_map [29].handle = [ApiDefinition__NetCorePush_NetCorePushTaskManagerDelegate class];
+	__xamarin_class_map [30].handle = [NetCoreSharedManager class];
+	__xamarin_class_map [31].handle = [SMTDeeplink class];
 	xamarin_add_registration_map (&__xamarin_registration_map, false);
 }
 

@@ -91,7 +91,7 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="Smartech">
-      <HintPath>..\..\..\Downloads\Smartech.dll</HintPath>
+      <HintPath>..\..\..\Downloads\Smartech-Xamarin-iOS-SDK-master\Smartech.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
