@@ -41,7 +41,7 @@ static void native_to_managed_trampoline_1 (id self, SEL _cmd, MonoMethod **mana
 	}
 	arg_ptrs [0] = mobj0;
 	if (p1) {
-		del1 = xamarin_get_delegate_for_block_parameter (managed_method, 0x30404 /* System.Action`1<UserNotifications.UNNotificationContent> ObjCRuntime.Trampolines/NIDActionArity1V259::Create(System.IntPtr) */ , 1, p1, &exception_gchandle);
+		del1 = xamarin_get_delegate_for_block_parameter (managed_method, 0x2FC04 /* System.Action`1<UserNotifications.UNNotificationContent> ObjCRuntime.Trampolines/NIDActionArity1V259::Create(System.IntPtr) */ , 1, p1, &exception_gchandle);
 		arg_ptrs [1] = del1;
 		if (exception_gchandle != INVALID_GCHANDLE) goto exception_handling;
 	} else {
@@ -479,7 +479,7 @@ exception_handling:
 	-(void) xamarinApplySelector
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x5204);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x4F04);
 	}
 	-(BOOL) conformsToProtocol: (void *) protocol
 	{
@@ -493,7 +493,7 @@ exception_handling:
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_3 (self, _cmd, &managed_method, &call_super, 0x5104);
+		id rv = native_to_managed_trampoline_3 (self, _cmd, &managed_method, &call_super, 0x4E04);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -513,7 +513,7 @@ exception_handling:
 	-(void) xamarinApplySelector
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x5404);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x5104);
 	}
 @end
 
@@ -529,14 +529,14 @@ exception_handling:
 	-(void) xamarinApplySelector
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x5604);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x5304);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_3 (self, _cmd, &managed_method, &call_super, 0x5504);
+		id rv = native_to_managed_trampoline_3 (self, _cmd, &managed_method, &call_super, 0x5204);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [Foundation_NSDispatcher class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -556,7 +556,7 @@ exception_handling:
 	-(void) xamarinApplySelector
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x5804);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x5504);
 	}
 @end
 
@@ -617,7 +617,7 @@ exception_handling:
 	+(void) drain:(NSObject *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_4 (self, _cmd, &managed_method, p0, 0xEF04);
+		native_to_managed_trampoline_4 (self, _cmd, &managed_method, p0, 0xE804);
 	}
 	-(BOOL) conformsToProtocol: (void *) protocol
 	{
@@ -631,7 +631,7 @@ exception_handling:
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_3 (self, _cmd, &managed_method, &call_super, 0xEC04);
+		id rv = native_to_managed_trampoline_3 (self, _cmd, &managed_method, &call_super, 0xE504);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -655,32 +655,32 @@ exception_handling:
 	-(void) handleDeeplinkActionWithURLString:(NSString *)p0 andCustomPayload:(NSDictionary *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, p1, 0x5108);
+		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, p1, 0x5908);
 	}
 
 	-(void) handleNotificationCustomPayload:(NSDictionary *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_6 (self, _cmd, &managed_method, p0, 0x5208);
+		native_to_managed_trampoline_6 (self, _cmd, &managed_method, p0, 0x5A08);
 	}
 
 	-(void) handleNotificationOpenAction:(NSDictionary *)p0 DeepLinkType:(NSString *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_7 (self, _cmd, &managed_method, p0, p1, 0x5308);
+		native_to_managed_trampoline_7 (self, _cmd, &managed_method, p0, p1, 0x5B08);
 	}
 
 	-(void) handleSmartechDeeplink:(id)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_6 (self, _cmd, &managed_method, p0, 0x5408);
+		native_to_managed_trampoline_6 (self, _cmd, &managed_method, p0, 0x5C08);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_3 (self, _cmd, &managed_method, &call_super, 0x4E08);
+		id rv = native_to_managed_trampoline_3 (self, _cmd, &managed_method, &call_super, 0x5608);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -718,26 +718,26 @@ exception_handling:
 		{ NULL, 0x1704 /* #22 'NSDictionary' => 'Foundation.NSDictionary, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
 		{ NULL, 0x1C04 /* #23 'NSMutableDictionary' => 'Foundation.NSMutableDictionary, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
 		{ NULL, 0x2304 /* #24 '__NSObject_Disposer' => 'Foundation.NSObject+NSObject_Disposer, Xamarin.iOS' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x808 /* #25 'NetCoreAppTracking' => 'NetCorePush.NetCoreAppTracking, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
-		{ NULL, 0x908 /* #26 'NetCoreInstallation' => 'NetCorePush.NetCoreInstallation, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
-		{ NULL, 0xA08 /* #27 'NetCoreNotificationService' => 'NetCorePush.NetCoreNotificationService, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
-		{ NULL, 0xB08 /* #28 'NetCorePushTaskManager' => 'NetCorePush.NetCorePushTaskManager, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
-		{ NULL, 0xE08 /* #29 'ApiDefinition__NetCorePush_NetCorePushTaskManagerDelegate' => 'NetCorePush.NetCorePushTaskManagerDelegate, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
-		{ NULL, 0xF08 /* #30 'NetCoreSharedManager' => 'NetCorePush.NetCoreSharedManager, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
-		{ NULL, 0x1008 /* #31 'SMTDeeplink' => 'NetCorePush.SMTDeeplink, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
+		{ NULL, 0x708 /* #25 'NetCoreAppTracking' => 'NetCorePush.NetCoreAppTracking, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
+		{ NULL, 0x808 /* #26 'NetCoreInstallation' => 'NetCorePush.NetCoreInstallation, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
+		{ NULL, 0x908 /* #27 'NetCoreNotificationService' => 'NetCorePush.NetCoreNotificationService, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
+		{ NULL, 0xA08 /* #28 'NetCorePushTaskManager' => 'NetCorePush.NetCorePushTaskManager, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
+		{ NULL, 0xD08 /* #29 'ApiDefinition__NetCorePush_NetCorePushTaskManagerDelegate' => 'NetCorePush.NetCorePushTaskManagerDelegate, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
+		{ NULL, 0xE08 /* #30 'NetCoreSharedManager' => 'NetCorePush.NetCoreSharedManager, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
+		{ NULL, 0xF08 /* #31 'SMTDeeplink' => 'NetCorePush.SMTDeeplink, Smartech' */, (MTTypeFlags) (1) /* CustomType */ },
 		{ NULL, 0 },
 	};
 
 	static const MTAssembly __xamarin_registration_assemblies [] = {
-		{ "SmartechServiceXam", "ad659932-f18d-4853-aa93-f563300f1ce7" }, 
+		{ "SmartechServiceXam", "8655a71b-7bf5-4eef-a3d9-ad0ef6328274" }, 
 		{ "mscorlib", "aae03b95-719e-488f-8a16-3bae4d2b5dcb" }, 
 		{ "Xamarin.iOS", "eb9faeca-3234-460b-affc-df962a8d9526" }, 
 		{ "System", "ee6a1987-eb2f-48bd-b8b5-f0cf4659dd86" }, 
-		{ "Smartech", "047765c0-566d-4065-b21d-5058c6927090" }
+		{ "Smartech", "d931962e-42d7-4544-ae7f-4f703e328cf1" }
 	};
 
 	static const MTProtocolWrapperMap __xamarin_protocol_wrapper_map [] = {
-		{ 0xC08 /* NetCorePush.INetCorePushTaskManagerDelegate */, 0xD08 /* NetCorePushTaskManagerDelegateWrapper */ },
+		{ 0xB08 /* NetCorePush.INetCorePushTaskManagerDelegate */, 0xC08 /* NetCorePushTaskManagerDelegateWrapper */ },
 		{ 0x2E04 /* Foundation.INSObjectProtocol */, 0x2F04 /* NSObjectProtocolWrapper */ },
 	};
 

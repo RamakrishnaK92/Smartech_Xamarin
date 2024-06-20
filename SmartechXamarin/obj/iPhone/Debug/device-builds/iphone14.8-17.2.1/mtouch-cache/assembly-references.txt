@@ -1,4 +1,4 @@
-/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechXamarin/bin/iPhone/Debug/SmartechXamarin.exe
+/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechXamarin/bin/iPhone/Debug/SmartechXamarin.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.23/lib/mono/Xamarin.iOS/mscorlib.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.23/lib/mono/Xamarin.iOS/../../64bits/iOS/Xamarin.iOS.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.23/lib/mono/Xamarin.iOS/System.dll
@@ -8,6 +8,6 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.23/lib/mono/Xamarin.iOS/System.Core.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.23/lib/mono/Xamarin.iOS/System.Net.Http.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.23/lib/mono/Xamarin.iOS/Facades/System.Drawing.Common.dll
-/Users/ramakrishnakasuba/Downloads/Smartech.dll
+/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/Framework/Smartech.dll
 /Users/ramakrishnakasuba/.nuget/packages/xamarin.essentials/1.8.1/lib/xamarinios10/Xamarin.Essentials.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.4.0.23/lib/mono/Xamarin.iOS/OpenTK-1.0.dll

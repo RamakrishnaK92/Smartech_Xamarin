@@ -25,14 +25,58 @@ namespace SmartechXamarin
 
         {
 
-            private UINavigationController navController;
-
-            public NetcoreCustomDelegate(UINavigationController navController)
-
+            public override void HandleDeeplinkActionWithURLString(string deepLinkURLString, NSDictionary customPayload)
             {
+                //Create Alert
+                var okAlertController = UIAlertController.Create("Title", deepLinkURLString, UIAlertControllerStyle.Alert);
 
-                this.navController = navController;
+                //Add Action
+                okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
 
+                // Present Alert
+                UIApplication.SharedApplication.KeyWindow.RootViewController.PresentViewController(okAlertController, true, null);
+
+                var pushView = UIAlertController.Create("You have a new message", "The Main Message", UIAlertControllerStyle.Alert);
+                pushView.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, alert => Console.WriteLine("Push message, ok button was clicked")));
+                //Self.Window.MakeKeyAndVisible();
+                //this.Window.RootViewController.PresentViewController(pushView, true, null);
+            }
+
+            public override void HandleSmartechDeeplink(SMTDeeplink smtDeeplink)
+            {
+                Console.WriteLine("Manish handle deeplink here");
+                if (smtDeeplink.DeepLinkType == SMTDeeplinkType.Url)
+                {
+                    // When Deeplink is WebURL
+                }
+                else if (smtDeeplink.DeepLinkType == SMTDeeplinkType.UniversalLink)
+                {
+                    // When Deeplink is Universal-link
+                }
+                else if (smtDeeplink.DeepLinkType == SMTDeeplinkType.Deeplink)
+                {
+                    // When Deeplink is URLSchemes link
+                }
+
+                //To handle custom payload add your relevant code.
+                if (smtDeeplink.CustomPayload != null)
+                {
+
+                }
+
+                //Create Alert
+                var okAlertController = UIAlertController.Create("Title", smtDeeplink.DeepLink, UIAlertControllerStyle.Alert);
+
+                //Add Action
+                okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
+
+                // Present Alert
+                UIApplication.SharedApplication.KeyWindow.RootViewController.PresentViewController(okAlertController, true, null);
+
+                var pushView = UIAlertController.Create("You have a new message", "The Main Message", UIAlertControllerStyle.Alert);
+                pushView.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, alert => Console.WriteLine("Push message, ok button was clicked")));
+                //Self.Window.MakeKeyAndVisible();
+                //this.Window.RootViewController.PresentViewController(pushView, true, null);
             }
 
         }
@@ -43,20 +87,27 @@ namespace SmartechXamarin
             {
                 //var parameters = GetParameters(notification.Request.Content.UserInfo);
                 Console.WriteLine(notification.Request.Content.UserInfo);
-
+                NetCorePushTaskManager.SharedInstance().UserNotificationWillPresentNotification(notification);
                 completionHandler(UNNotificationPresentationOptions.Alert | UNNotificationPresentationOptions.Sound | UNNotificationPresentationOptions.Badge | UNNotificationPresentationOptions.None);
             }
 
+            public override void DidReceiveNotificationResponse(UNUserNotificationCenter center, UNNotificationResponse response, Action completionHandler)
+            {
+                Console.Write("NCLogger Notification received DidReceiveNotificationResponse.");
+                NetCorePushTaskManager.SharedInstance().UserNotificationdidReceiveNotificationResponse(response);
+                completionHandler();
+            }
+
         }
-            [Export ("application:didFinishLaunchingWithOptions:")]
+
+        [Export ("application:didFinishLaunchingWithOptions:")]
         public bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
         {
+            Console.Write("NCLogger finishedLaunching");
 
             var appGroup = "group.com.netcore.SmartechApp";
 
             var netCoreAppId = "cdd5abdf5d9441b21b0f9e6223a4ed7a";
-
-            Console.WriteLine("NCLogger inside didfinish");
 
 
             NetCoreSharedManager.SharedInstance().SetUpAppGroup(appGroup);
@@ -65,22 +116,20 @@ namespace SmartechXamarin
 
             UIApplication.SharedApplication.RegisterForRemoteNotifications();
 
-            NetCorePushTaskManager.SharedInstance().Delegate = new NetcoreCustomDelegate(navController);
+            NetCorePushTaskManager.SharedInstance().Delegate = new NetcoreCustomDelegate();
 
             UNUserNotificationCenter.Current.Delegate = new CustomUNUserNotificationCenterDelegate();
 
-            //var arr = new NSObject[] { new NSString("https://abc...xyz") };
-
-            //NetCoreSharedManager.SharedInstance().SetAssociateDomain(arr);
-
-            // Override point for customization after application launch.
-            // If not required for your application you can safely delete this method
             return true;
         }
 
         [Export("application:didRegisterForRemoteNotificationsWithDeviceToken:")]
         public void RegisteredForRemoteNotifications(UIApplication application, NSData deviceToken)
         {
+           // var tokenBytes = deviceToken.ToArray();
+           // var token = BitConverter.ToString(tokenBytes).Replace("-", "").ToLower();
+
+          //  Console.WriteLine($"NCLogger deviceToken1:: {token}");
 
             Console.WriteLine($"NCLogger deviceToken:: {deviceToken}");
             NetCoreInstallation.SharedInstance().NetCorePushRegisteration("testXam@gmail.com", deviceToken);
@@ -89,6 +138,7 @@ namespace SmartechXamarin
 
             //throw new System.NotImplementedException();
         }
+
         [Export("application:didFailToRegisterForRemoteNotificationsWithError:")]
         public void FailedToRegisterForRemoteNotifications(UIApplication application, NSError error)
         {
@@ -111,7 +161,7 @@ namespace SmartechXamarin
         [Export("application:didReceiveLocalNotification:")]
         public void ReceivedLocalNotification(UIApplication application, UILocalNotification notification)
         {
-            //NetCorePushTaskManager.SharedInstance().DidReceiveLocalNotification(notification);
+            NetCorePushTaskManager.SharedInstance().DidReceiveLocalNotification(notification.UserInfo);
             //throw new System.NotImplementedException();
         }
 

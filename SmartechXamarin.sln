@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartechXamarin", "Smartech
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartechServiceXam", "SmartechServiceXam\SmartechServiceXam.csproj", "{70669490-EFF0-4D6D-8A17-0FACCCCF42C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartechContentXam", "SmartechContentXam\SmartechContentXam.csproj", "{23D19308-67A7-447C-9CC4-4A9E028E3890}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -31,6 +33,14 @@ Global
 		{70669490-EFF0-4D6D-8A17-0FACCCCF42C4}.Debug|iPhone.Build.0 = Debug|iPhone
 		{70669490-EFF0-4D6D-8A17-0FACCCCF42C4}.Release|iPhone.ActiveCfg = Release|iPhone
 		{70669490-EFF0-4D6D-8A17-0FACCCCF42C4}.Release|iPhone.Build.0 = Release|iPhone
+		{23D19308-67A7-447C-9CC4-4A9E028E3890}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{23D19308-67A7-447C-9CC4-4A9E028E3890}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{23D19308-67A7-447C-9CC4-4A9E028E3890}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{23D19308-67A7-447C-9CC4-4A9E028E3890}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{23D19308-67A7-447C-9CC4-4A9E028E3890}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{23D19308-67A7-447C-9CC4-4A9E028E3890}.Debug|iPhone.Build.0 = Debug|iPhone
+		{23D19308-67A7-447C-9CC4-4A9E028E3890}.Release|iPhone.ActiveCfg = Release|iPhone
+		{23D19308-67A7-447C-9CC4-4A9E028E3890}.Release|iPhone.Build.0 = Release|iPhone
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

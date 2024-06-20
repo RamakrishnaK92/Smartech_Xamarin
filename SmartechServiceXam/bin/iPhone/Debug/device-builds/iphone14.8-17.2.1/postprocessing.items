@@ -7,9 +7,9 @@
       <dSYMSourcePathExists>false</dSYMSourcePathExists>
       <NoSymbolStrip>true</NoSymbolStrip>
       <dSYMInfoPlistRelativePath>SmartechServiceXam.appex.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
-      <SymbolFile>/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechServiceXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/mtouch-symbols.list</SymbolFile>
+      <SymbolFile>/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechServiceXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/mtouch-symbols.list</SymbolFile>
       <DSymName>SmartechServiceXam.appex.dSYM</DSymName>
-      <SourceProjectPath>/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechServiceXam</SourceProjectPath>
+      <SourceProjectPath>/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechServiceXam</SourceProjectPath>
     </_PostProcessingItem>
   </ItemGroup>
 </Project>

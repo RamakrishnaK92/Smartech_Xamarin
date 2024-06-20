@@ -23,11 +23,11 @@
 @class ViewController;
 @class UNUserNotificationCenterDelegate;
 @class CustomUNUserNotificationCenterDelegate;
+@class SmartechXamarin_AppDelegate_CustomUNUserNotificationCenterDelegate;
+@class AppDelegate;
 @protocol NetCorePushTaskManagerDelegate;
 @class ApiDefinition__NetCorePush_NetCorePushTaskManagerDelegate;
 @class SmartechXamarin_AppDelegate_NetcoreCustomDelegate;
-@class SmartechXamarin_AppDelegate_CustomUNUserNotificationCenterDelegate;
-@class AppDelegate;
 @class SFSafariViewControllerDelegate;
 @class CNContactPickerDelegate;
 @class Foundation_NSDispatcher;
@@ -83,30 +83,26 @@
 
 @interface ViewController : UIViewController {
 }
+	@property (nonatomic, assign) UIButton * btnAddToCart;
+	@property (nonatomic, assign) UIButton * btnCheckout;
 	-(void) release;
 	-(id) retain;
 	-(GCHandle) xamarinGetGCHandle;
 	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
 	-(enum XamarinGCHandleFlags) xamarinGetFlags;
 	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(UIButton *) btnAddToCart;
+	-(void) setBtnAddToCart:(UIButton *)p0;
+	-(UIButton *) btnCheckout;
+	-(void) setBtnCheckout:(UIButton *)p0;
 	-(void) viewDidLoad;
 	-(void) didReceiveMemoryWarning;
+	-(void) handleAddToCart:(UIButton *)p0;
+	-(void) handleCheckout:(UIButton *)p0;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
 @interface UNUserNotificationCenterDelegate : NSObject<UNUserNotificationCenterDelegate> {
-}
-	-(id) init;
-@end
-
-@protocol NetCorePushTaskManagerDelegate
-	@optional -(void) handleNotificationOpenAction:(NSDictionary *)p0 DeepLinkType:(NSString *)p1;
-	@optional -(void) handleNotificationCustomPayload:(NSDictionary *)p0;
-	@optional -(void) handleSmartechDeeplink:(id)p0;
-	@optional -(void) handleDeeplinkActionWithURLString:(NSString *)p0 andCustomPayload:(NSDictionary *)p1;
-@end
-
-@interface ApiDefinition__NetCorePush_NetCorePushTaskManagerDelegate : NSObject<NetCorePushTaskManagerDelegate> {
 }
 	-(id) init;
 @end
@@ -131,6 +127,18 @@
 	-(UISceneConfiguration *) application:(UIApplication *)p0 configurationForConnectingSceneSession:(UISceneSession *)p1 options:(UISceneConnectionOptions *)p2;
 	-(void) application:(UIApplication *)p0 didDiscardSceneSessions:(NSSet <UISceneSession *>*)p1;
 	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@protocol NetCorePushTaskManagerDelegate
+	@optional -(void) handleNotificationOpenAction:(NSDictionary *)p0 DeepLinkType:(NSString *)p1;
+	@optional -(void) handleNotificationCustomPayload:(NSDictionary *)p0;
+	@optional -(void) handleSmartechDeeplink:(id)p0;
+	@optional -(void) handleDeeplinkActionWithURLString:(NSString *)p0 andCustomPayload:(NSDictionary *)p1;
+@end
+
+@interface ApiDefinition__NetCorePush_NetCorePushTaskManagerDelegate : NSObject<NetCorePushTaskManagerDelegate> {
+}
 	-(id) init;
 @end
 

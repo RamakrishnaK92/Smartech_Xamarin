@@ -31,6 +31,7 @@
     <_BundlerDebug>false</_BundlerDebug>
     <MtouchVerbosity></MtouchVerbosity>
     <CodesignProvision>Dev_Smartech_App_SmartechNSE</CodesignProvision>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>pdbonly</DebugType>
@@ -72,7 +73,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CreatePackage>false</CreatePackage>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>Apple Development: Created via API (X6YR57MD2C)</CodesignKey>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
     <MtouchDebug>true</MtouchDebug>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
@@ -84,6 +85,7 @@
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <_BundlerDebug>false</_BundlerDebug>
     <MtouchVerbosity></MtouchVerbosity>
+    <CodesignProvision>Dev_Smartech_App_SmartechNSE</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -91,7 +93,7 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="Smartech">
-      <HintPath>..\..\..\Downloads\Smartech-Xamarin-iOS-SDK-master\Smartech.dll</HintPath>
+      <HintPath>..\Framework\Smartech.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,2 @@
+@/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechContentXam/obj/iPhoneSimulator/Debug/response-file.rsp
+--gcc_flags=-Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechContentXam/obj/iPhoneSimulator/Debug/Entitlements.xcent

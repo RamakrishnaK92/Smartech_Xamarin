@@ -1,1 +1,1 @@
-@/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechServiceXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/response-file.rsp
+@/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechServiceXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/response-file.rsp

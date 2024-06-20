@@ -2,21 +2,21 @@
 --sgen-conc
 /target-framework:Xamarin.iOS,Version=v1.0
 --http-message-handler=NSUrlSessionHandler
---cache=/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechXamarin/obj/iPhoneSimulator/Debug/mtouch-cache
---root-assembly=/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechXamarin/bin/iPhoneSimulator/Debug/SmartechXamarin.exe
+--cache=/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechXamarin/obj/iPhoneSimulator/Debug/mtouch-cache
+--root-assembly=/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechXamarin/bin/iPhoneSimulator/Debug/SmartechXamarin.exe
 --sdkroot=/Applications/Xcode.app/Contents/Developer
 --targetver=13.0
---sim=/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechXamarin/bin/iPhoneSimulator/Debug/SmartechXamarin.app
---executable=SmartechXamarin
+--sim=/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechXamarin/bin/iPhoneSimulator/Debug/SmartechXamarin.app
+"--executable=Main storyboard file base name (iPad)"
 --nolink
 --sdk=17.4
 --aot-options=-O=-float32
 --abi=x86_64
---symbollist=/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechXamarin/obj/iPhoneSimulator/Debug/mtouch-symbols.list
+--symbollist=/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechXamarin/obj/iPhoneSimulator/Debug/mtouch-symbols.list
 --dsym=no
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll
---reference=/Users/ramakrishnakasuba/Downloads/Smartech.dll
+--reference=/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/Framework/Smartech.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Drawing.Common.dll
@@ -25,5 +25,6 @@
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll
 --reference=/Users/ramakrishnakasuba/.nuget/packages/xamarin.essentials/1.8.1/lib/xamarinios10/Xamarin.Essentials.dll
---reference=/Users/ramakrishnakasuba/Downloads/Smartech.dll
---app-extension=/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/bin/iPhoneSimulator/Debug/SmartechServiceXam.appex
+--reference=/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/Framework/Smartech.dll
+--app-extension=/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechServiceXam/bin/iPhoneSimulator/Debug/SmartechServiceXam.appex
+--app-extension=/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechContentXam/bin/iPhoneSimulator/Debug/SmartechContentXam.appex

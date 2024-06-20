@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{4CFF1D0C-47D2-4395-B994-A24DE41EE483}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SmartechXamarin PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.00008110-00045928212A401E" />
+</Properties>

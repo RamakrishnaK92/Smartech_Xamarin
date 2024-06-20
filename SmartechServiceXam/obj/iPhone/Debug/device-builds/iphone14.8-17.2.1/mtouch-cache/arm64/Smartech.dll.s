@@ -120,45 +120,103 @@ jit_code_start:
 	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 .text
 	.align 4
-	.no_dead_strip ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_System_nuint
-ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_System_nuint:
+	.no_dead_strip ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_uintptr
+ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_uintptr:
 .file 1 "<unknown>"
 .loc 1 1 0
-.word 0xa9bd7bfd
+.word 0xa9be7bfd
 .word 0x910003fd
-.word 0xa90167b8
+.word 0xf9000bb9
 .word 0xaa0003f9
-.word 0xf90013a1
-.word 0xaa1903e0
-bl _p_1
-.word 0xaa0003f9
-.word 0xb4000179
-.word 0xf9400320
-.word 0xf9400000
-.word 0xf9400800
-.word 0xf9400c00
+.word 0xf9000fa1
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #200]
-.word 0xeb01001f
-.word 0x10000011
-.word 0x54000161
-.word 0xaa1903f8
-.word 0xb40000b9
-.word 0xaa1803e0
-.word 0xf94013a1
-.word 0xf9400f10
+ldr x15, [x16, #200]
+.word 0xaa1903e0
+bl _p_1
+.word 0xaa0003f9
+.word 0xaa1903e0
+.word 0xeb1f001f
+.word 0x9a9f97e0
+.word 0x53001c00
+.word 0x340000a0
+.word 0xf9400fa1
+.word 0xaa1903e0
+.word 0xf9400f30
 .word 0xd63f0200
-.word 0xa94167b8
+.word 0xf9400bb9
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2800e20
-.word 0xaa1103e1
-bl _p_2
 
 Lme_4:
+.text
+	.align 4
+	.no_dead_strip ObjCRuntime_Trampolines_SDActionArity1V0_CreateBlock_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption
+ObjCRuntime_Trampolines_SDActionArity1V0_CreateBlock_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption:
+.loc 1 1 0
+.word 0xa9b87bfd
+.word 0x910003fd
+.word 0xf9000ba8
+.word 0xf9000fa0
+.word 0xd2800000
+.word 0xf9002ba0
+.word 0xf9002fa0
+.word 0xf90033a0
+.word 0xf90037a0
+.word 0xf9003ba0
+.word 0xf9003fa0
+.word 0xd2800000
+.word 0xf9002ba0
+.word 0xf9002fa0
+.word 0xf90033a0
+.word 0xf90037a0
+.word 0xf9003ba0
+.word 0xf9003fa0
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #208]
+.word 0xf9400001
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x4, [x16, #216]
+.word 0x910143a0
+.word 0xf9400fa2
+.word 0xd2800003
+bl _p_2
+.word 0xf9402ba0
+.word 0xf90013a0
+.word 0xf9402fa0
+.word 0xf90017a0
+.word 0xf94033a0
+.word 0xf9001ba0
+.word 0xf94037a0
+.word 0xf9001fa0
+.word 0xf9403ba0
+.word 0xf90023a0
+.word 0xf9403fa0
+.word 0xf90027a0
+.word 0xf9400ba0
+.word 0xf94013a1
+.word 0xf9000001
+.word 0xf94017a1
+.word 0xf9000401
+.word 0xf9401ba1
+.word 0xf9000801
+.word 0xf9401fa1
+.word 0xf9000c01
+.word 0xf94023a1
+.word 0xf9001001
+.word 0xf94027a1
+.word 0xf9001401
+.word 0x910003bf
+.word 0xa8c87bfd
+.word 0xd65f03c0
+
+Lme_5:
 .text
 	.align 4
 	.no_dead_strip ObjCRuntime_Trampolines_SDActionArity1V0__cctor
@@ -169,24 +227,24 @@ ObjCRuntime_Trampolines_SDActionArity1V0__cctor:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #224]
 .word 0xd2801001
 bl _p_3
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #232]
 .word 0xf9001420
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #240]
 .word 0xf9002020
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #248]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -195,7 +253,7 @@ ldr x0, [x16, #232]
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #208]
 .word 0xf9000ba0
 .word 0xd5033bbf
 .word 0xf9400ba0
@@ -204,7 +262,7 @@ ldr x0, [x16, #240]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_5:
+Lme_6:
 .text
 	.align 4
 	.no_dead_strip ObjCRuntime_Trampolines_NIDActionArity1V0__ctor_ObjCRuntime_BlockLiteral_
@@ -220,7 +278,7 @@ bl _p_4
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x15, [x16, #248]
+ldr x15, [x16, #256]
 .word 0xf9400fa0
 bl _p_5
 .word 0xf9001ba0
@@ -244,7 +302,7 @@ ldr x2, [x16, #16]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_6:
+Lme_7:
 .text
 	.align 4
 	.no_dead_strip ObjCRuntime_Trampolines_NIDActionArity1V0_Create_intptr
@@ -252,21 +310,21 @@ ObjCRuntime_Trampolines_NIDActionArity1V0_Create_intptr:
 .loc 1 1 0
 .word 0xa9bb7bfd
 .word 0x910003fd
-.word 0xf9000bb9
-.word 0xf9000fa0
+.word 0xa9016bb9
+.word 0xaa0003fa
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #256]
-.word 0xf9400001
-.word 0xf9400fa0
-.word 0xeb01001f
+ldr x0, [x16, #264]
+.word 0xf9400000
+.word 0xeb00035f
 .word 0x9a9f17e0
 .word 0x53001c00
+.word 0x53001c00
 .word 0x34000060
-.word 0xd2800000
-.word 0x1400004b
-.word 0xf9400fa0
+.word 0xd280001a
+.word 0x14000049
+.word 0xaa1a03e0
 bl _p_6
 .word 0xaa0003f9
 .word 0xb4000179
@@ -277,40 +335,38 @@ bl _p_6
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #200]
+ldr x1, [x16, #272]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x540008e1
+.word 0x540008c1
 .word 0xf90013b9
 .word 0xf94013a0
 .word 0xaa0003f9
-.word 0xb5000700
-.word 0xf9400fa0
-.word 0xf90027a0
+.word 0xb50006c0
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #264]
+ldr x0, [x16, #280]
 bl _p_7
-.word 0xf94027a1
 .word 0xf90023a0
+.word 0xaa1a03e1
 bl _p_8
 .word 0xf94023a0
 .word 0xf9001fa0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000640
+.word 0x54000660
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #272]
+ldr x0, [x16, #288]
 .word 0xd2801001
 bl _p_3
 .word 0xf9001ba0
 .word 0xf9401fa1
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x540004a0
+.word 0x540004c0
 .word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xf9001001
@@ -329,63 +385,70 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #280]
+ldr x1, [x16, #296]
 .word 0xf9001401
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #288]
+ldr x1, [x16, #304]
 .word 0xf9002001
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #296]
+ldr x1, [x16, #312]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
 .word 0xf9000801
 .word 0x3901c01f
 .word 0xaa0003f9
-.word 0xaa1903e0
-.word 0xf9400bb9
+.word 0xaa1903fa
+.word 0xaa1a03e0
+.word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xd2801000
 .word 0xaa1103e1
-bl _p_2
+bl _p_9
 .word 0xd28007c0
 .word 0xaa1103e1
-bl _p_2
+bl _p_9
 .word 0xd2800e20
 .word 0xaa1103e1
-bl _p_2
+bl _p_9
 
-Lme_7:
+Lme_8:
 .text
 	.align 4
 	.no_dead_strip ObjCRuntime_Trampolines_NIDActionArity1V0_Invoke_UserNotificationsUI_UNNotificationContentExtensionResponseOption
 ObjCRuntime_Trampolines_NIDActionArity1V0_Invoke_UserNotificationsUI_UNNotificationContentExtensionResponseOption:
 .loc 1 1 0
-.word 0xa9bd7bfd
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000bb9
 .word 0xaa0003f9
 .word 0xf9000fa1
-.word 0xf9400f23
-.word 0xf9400b21
+.word 0xf9400f20
+.word 0xf90023a0
+.word 0xf9400b20
+.word 0xf9001fa0
+.word 0xf9400fa0
+bl _p_10
+.word 0xaa0003e2
+.word 0xf9401fa1
+.word 0xf94023a3
 .word 0xaa0303e0
-.word 0xf9400fa2
-.word 0xf90013a3
+.word 0xf9001ba3
 .word 0xf9400c70
 .word 0xd63f0200
-.word 0xf94013a0
+.word 0xf9401ba0
 .word 0xf9400bb9
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_8:
+Lme_9:
 .text
 	.align 4
 	.no_dead_strip ApiDefinition_Messaging__cctor
@@ -396,7 +459,7 @@ ApiDefinition_Messaging__cctor:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #304]
+ldr x1, [x16, #320]
 .word 0xaa0103e0
 .word 0xf9400021
 .word 0xf9413030
@@ -405,7 +468,7 @@ ldr x1, [x16, #304]
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #328]
 .word 0xf9000ba0
 .word 0xd5033bbf
 .word 0xf9400ba0
@@ -414,7 +477,7 @@ ldr x0, [x16, #312]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_18:
+Lme_20:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreAppTracking_get_ClassHandle
@@ -426,13 +489,13 @@ NetCorePush_NetCoreAppTracking_get_ClassHandle:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #336]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_19:
+Lme_21:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreAppTracking__ctor
@@ -445,10 +508,10 @@ NetCorePush_NetCoreAppTracking__ctor:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #344]
 .word 0xf9400001
 .word 0xaa1a03e0
-bl _p_9
+bl _p_11
 .word 0xf9400340
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -458,30 +521,47 @@ bl _p_9
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1a03e0
-bl _p_11
+bl _p_13
+.word 0xd2800020
+.word 0x53001c00
+.word 0x340001a0
 .word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_0@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_0@PAGEOFF
 ldr x1, [x1]
-bl _p_12
+bl _p_14
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x2, [x16, #336]
+ldr x2, [x16, #352]
 .word 0xaa1a03e0
-bl _p_13
+bl _p_15
+.word 0x1400000d
+.word 0xaa1a03e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_0@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_0@PAGEOFF
+ldr x1, [x1]
+bl _p_17
+.word 0xaa0003e1
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x2, [x16, #352]
+.word 0xaa1a03e0
+bl _p_15
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_1a:
+Lme_22:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreAppTracking__ctor_Foundation_NSObjectFlag
@@ -494,7 +574,7 @@ NetCorePush_NetCoreAppTracking__ctor_Foundation_NSObjectFlag:
 .word 0xf9000fa1
 .word 0xaa1903e0
 .word 0xf9400fa1
-bl _p_9
+bl _p_11
 .word 0xf9400320
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -504,18 +584,18 @@ bl _p_9
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1903e0
-bl _p_11
+bl _p_13
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_1b:
+Lme_23:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreAppTracking__ctor_intptr
@@ -528,7 +608,7 @@ NetCorePush_NetCoreAppTracking__ctor_intptr:
 .word 0xf9000fa1
 .word 0xaa1903e0
 .word 0xf9400fa1
-bl _p_14
+bl _p_18
 .word 0xf9400320
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -538,18 +618,18 @@ bl _p_14
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1903e0
-bl _p_11
+bl _p_13
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_1c:
+Lme_24:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreAppTracking_SendAppTrackingEvent_System_nint
@@ -559,18 +639,29 @@ NetCorePush_NetCoreAppTracking_SendAppTrackingEvent_System_nint:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
 .word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_1@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_1@PAGEOFF
 ldr x1, [x1]
 .word 0xf9400fa2
-bl _p_15
+bl _p_19
+.word 0x14000008
+.word 0xf9400ba0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_1@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_1@PAGEOFF
+ldr x1, [x1]
+.word 0xf9400fa2
+bl _p_20
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_1d:
+Lme_25:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreAppTracking_SendAppTrackingEventWithCustomPayload_System_nint_Foundation_NSMutableArray
@@ -578,28 +669,43 @@ NetCorePush_NetCoreAppTracking_SendAppTrackingEventWithCustomPayload_System_nint
 .loc 1 1 0
 .word 0xa9bd7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
-.word 0xf90013a2
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xf90013a1
+.word 0xaa0203fa
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #344]
-.word 0xf94013a0
-bl _p_16
-.word 0xaa0003e3
-.word 0xf9400ba0
+ldr x1, [x16, #360]
+.word 0xaa1a03e0
+bl _p_21
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000140
+.word 0xf9400fa0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_2@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_2@PAGEOFF
 ldr x1, [x1]
-.word 0xf9400fa2
-bl _p_17
+.word 0xf94013a2
+.word 0xaa1a03e3
+bl _p_22
+.word 0x14000009
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_2@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_2@PAGEOFF
+ldr x1, [x1]
+.word 0xf94013a2
+.word 0xaa1a03e3
+bl _p_23
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_1e:
+Lme_26:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreAppTracking_SharedInstance
@@ -610,59 +716,74 @@ NetCorePush_NetCoreAppTracking_SharedInstance:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #336]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_3@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_3@PAGEOFF
 ldr x1, [x1]
-bl _p_12
+bl _p_14
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x15, [x16, #352]
-bl _p_18
+ldr x15, [x16, #368]
+bl _p_24
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
 
-Lme_1f:
+Lme_27:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreAppTracking_TrackEvent_string
 NetCorePush_NetCoreAppTracking_TrackEvent_string:
 .loc 1 1 0
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xf9000fa0
 .word 0xaa0103fa
-.word 0xb500011a
+.word 0xeb1f035f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #360]
+ldr x1, [x16, #376]
 .word 0xd28007e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_19
+bl _p_25
 .word 0xaa1a03e0
-bl _p_20
+bl _p_26
 .word 0xaa0003fa
+.word 0xd2800021
+.word 0x53001c20
+.word 0x390083a1
+.word 0x34000120
 .word 0xf9400fa0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_4@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_4@PAGEOFF
 ldr x1, [x1]
 .word 0xaa1a03e2
-bl _p_21
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_4@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_4@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
 .word 0xaa1a03e0
-bl _p_22
+bl _p_27
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_20:
+Lme_28:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreAppTracking_TrackEventWithCustomPayload_string_Foundation_NSMutableDictionary
@@ -673,26 +794,33 @@ NetCorePush_NetCoreAppTracking_TrackEventWithCustomPayload_string_Foundation_NSM
 .word 0xa9016bb9
 .word 0xf90013a0
 .word 0xaa0103f9
-.word 0xf90017a2
-.word 0xb5000119
+.word 0xaa0203fa
+.word 0xeb1f033f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #360]
+ldr x1, [x16, #376]
 .word 0xd28007e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_19
+bl _p_25
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #368]
-.word 0xf94017a0
-bl _p_16
+ldr x1, [x16, #384]
+.word 0xaa1a03e0
+bl _p_21
 .word 0xaa0003fa
 .word 0xaa1903e0
-bl _p_20
+bl _p_26
 .word 0xaa0003f9
+.word 0xd2800021
+.word 0x53001c20
+.word 0x3900a3a1
+.word 0x34000140
 .word 0xf94013a0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_5@PAGE
@@ -700,15 +828,24 @@ add x1, x1, L_OBJC_SELECTOR_REFERENCES_5@PAGEOFF
 ldr x1, [x1]
 .word 0xaa1903e2
 .word 0xaa1a03e3
+bl _p_22
+.word 0x14000009
+.word 0xf94013a0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_5@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_5@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1903e2
+.word 0xaa1a03e3
 bl _p_23
 .word 0xaa1903e0
-bl _p_22
+bl _p_27
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_21:
+Lme_29:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreAppTracking__cctor
@@ -719,19 +856,19 @@ NetCorePush_NetCoreAppTracking__cctor:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #376]
-bl _p_24
+ldr x0, [x16, #392]
+bl _p_28
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #336]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
 
-Lme_22:
+Lme_2a:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreInstallation_get_ClassHandle
@@ -743,13 +880,13 @@ NetCorePush_NetCoreInstallation_get_ClassHandle:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #384]
+ldr x0, [x16, #400]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_23:
+Lme_2b:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreInstallation__ctor
@@ -762,10 +899,10 @@ NetCorePush_NetCoreInstallation__ctor:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #344]
 .word 0xf9400001
 .word 0xaa1a03e0
-bl _p_9
+bl _p_11
 .word 0xf9400340
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -775,30 +912,47 @@ bl _p_9
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1a03e0
-bl _p_11
+bl _p_13
+.word 0xd2800020
+.word 0x53001c00
+.word 0x340001a0
 .word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_0@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_0@PAGEOFF
 ldr x1, [x1]
-bl _p_12
+bl _p_14
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x2, [x16, #336]
+ldr x2, [x16, #352]
 .word 0xaa1a03e0
-bl _p_13
+bl _p_15
+.word 0x1400000d
+.word 0xaa1a03e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_0@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_0@PAGEOFF
+ldr x1, [x1]
+bl _p_17
+.word 0xaa0003e1
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x2, [x16, #352]
+.word 0xaa1a03e0
+bl _p_15
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_24:
+Lme_2c:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreInstallation__ctor_Foundation_NSObjectFlag
@@ -811,7 +965,7 @@ NetCorePush_NetCoreInstallation__ctor_Foundation_NSObjectFlag:
 .word 0xf9000fa1
 .word 0xaa1903e0
 .word 0xf9400fa1
-bl _p_9
+bl _p_11
 .word 0xf9400320
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -821,18 +975,18 @@ bl _p_9
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1903e0
-bl _p_11
+bl _p_13
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_25:
+Lme_2d:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreInstallation__ctor_intptr
@@ -845,7 +999,7 @@ NetCorePush_NetCoreInstallation__ctor_intptr:
 .word 0xf9000fa1
 .word 0xaa1903e0
 .word 0xf9400fa1
-bl _p_14
+bl _p_18
 .word 0xf9400320
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -855,18 +1009,18 @@ bl _p_14
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1903e0
-bl _p_11
+bl _p_13
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_26:
+Lme_2e:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreInstallation_NetCoreProfilePush_string_Foundation_NSDictionary
@@ -877,26 +1031,33 @@ NetCorePush_NetCoreInstallation_NetCoreProfilePush_string_Foundation_NSDictionar
 .word 0xa9016bb9
 .word 0xf90013a0
 .word 0xaa0103f9
-.word 0xf90017a2
-.word 0xb5000119
+.word 0xaa0203fa
+.word 0xeb1f033f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #392]
+ldr x1, [x16, #408]
 .word 0xd28007e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_19
+bl _p_25
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #344]
-.word 0xf94017a0
-bl _p_16
+ldr x1, [x16, #360]
+.word 0xaa1a03e0
+bl _p_21
 .word 0xaa0003fa
 .word 0xaa1903e0
-bl _p_20
+bl _p_26
 .word 0xaa0003f9
+.word 0xd2800021
+.word 0x53001c20
+.word 0x3900a3a1
+.word 0x34000140
 .word 0xf94013a0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_6@PAGE
@@ -904,52 +1065,76 @@ add x1, x1, L_OBJC_SELECTOR_REFERENCES_6@PAGEOFF
 ldr x1, [x1]
 .word 0xaa1903e2
 .word 0xaa1a03e3
+bl _p_22
+.word 0x14000009
+.word 0xf94013a0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_6@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_6@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1903e2
+.word 0xaa1a03e3
 bl _p_23
 .word 0xaa1903e0
-bl _p_22
+bl _p_27
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_27:
+Lme_2f:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreInstallation_NetCorePushLogin_string
 NetCorePush_NetCoreInstallation_NetCorePushLogin_string:
 .loc 1 1 0
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xf9000fa0
 .word 0xaa0103fa
-.word 0xb500011a
+.word 0xeb1f035f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #392]
+ldr x1, [x16, #408]
 .word 0xd28007e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_19
+bl _p_25
 .word 0xaa1a03e0
-bl _p_20
+bl _p_26
 .word 0xaa0003fa
+.word 0xd2800021
+.word 0x53001c20
+.word 0x390083a1
+.word 0x34000120
 .word 0xf9400fa0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_7@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_7@PAGEOFF
 ldr x1, [x1]
 .word 0xaa1a03e2
-bl _p_21
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_7@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_7@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
 .word 0xaa1a03e0
-bl _p_22
+bl _p_27
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_28:
+Lme_30:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreInstallation_NetCorePushLogout
@@ -958,54 +1143,79 @@ NetCorePush_NetCoreInstallation_NetCorePushLogout:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000100
 .word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_8@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_8@PAGEOFF
 ldr x1, [x1]
-bl _p_25
+bl _p_29
+.word 0x14000007
+.word 0xf9400ba0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_8@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_8@PAGEOFF
+ldr x1, [x1]
+bl _p_30
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_29:
+Lme_31:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreInstallation_NetCorePushRegisteration_string
 NetCorePush_NetCoreInstallation_NetCorePushRegisteration_string:
 .loc 1 1 0
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xf9000fa0
 .word 0xaa0103fa
-.word 0xb500011a
+.word 0xeb1f035f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #392]
+ldr x1, [x16, #408]
 .word 0xd28007e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_19
+bl _p_25
 .word 0xaa1a03e0
-bl _p_20
+bl _p_26
 .word 0xaa0003fa
+.word 0xd2800021
+.word 0x53001c20
+.word 0x390083a1
+.word 0x34000120
 .word 0xf9400fa0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_9@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_9@PAGEOFF
 ldr x1, [x1]
 .word 0xaa1a03e2
-bl _p_21
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_9@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_9@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
 .word 0xaa1a03e0
-bl _p_22
+bl _p_27
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_2a:
+Lme_32:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreInstallation_NetCorePushRegisteration_string_Foundation_NSData
@@ -1016,26 +1226,33 @@ NetCorePush_NetCoreInstallation_NetCorePushRegisteration_string_Foundation_NSDat
 .word 0xa9016bb9
 .word 0xf90013a0
 .word 0xaa0103f9
-.word 0xf90017a2
-.word 0xb5000119
+.word 0xaa0203fa
+.word 0xeb1f033f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #392]
+ldr x1, [x16, #408]
 .word 0xd28007e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_19
+bl _p_25
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #400]
-.word 0xf94017a0
-bl _p_16
+ldr x1, [x16, #416]
+.word 0xaa1a03e0
+bl _p_21
 .word 0xaa0003fa
 .word 0xaa1903e0
-bl _p_20
+bl _p_26
 .word 0xaa0003f9
+.word 0xd2800021
+.word 0x53001c20
+.word 0x3900a3a1
+.word 0x34000140
 .word 0xf94013a0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_10@PAGE
@@ -1043,15 +1260,24 @@ add x1, x1, L_OBJC_SELECTOR_REFERENCES_10@PAGEOFF
 ldr x1, [x1]
 .word 0xaa1903e2
 .word 0xaa1a03e3
+bl _p_22
+.word 0x14000009
+.word 0xf94013a0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_10@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_10@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1903e2
+.word 0xaa1a03e3
 bl _p_23
 .word 0xaa1903e0
-bl _p_22
+bl _p_27
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_2b:
+Lme_33:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreInstallation_SharedInstance
@@ -1062,22 +1288,22 @@ NetCorePush_NetCoreInstallation_SharedInstance:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #384]
+ldr x0, [x16, #400]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_3@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_3@PAGEOFF
 ldr x1, [x1]
-bl _p_12
+bl _p_14
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x15, [x16, #408]
-bl _p_26
+ldr x15, [x16, #424]
+bl _p_31
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
 
-Lme_2c:
+Lme_34:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreInstallation__cctor
@@ -1088,19 +1314,19 @@ NetCorePush_NetCoreInstallation__cctor:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #416]
-bl _p_24
+ldr x0, [x16, #432]
+bl _p_28
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #384]
+ldr x0, [x16, #400]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
 
-Lme_2d:
+Lme_35:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreNotificationService_get_ClassHandle
@@ -1112,13 +1338,13 @@ NetCorePush_NetCoreNotificationService_get_ClassHandle:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #440]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_2e:
+Lme_36:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreNotificationService__ctor
@@ -1131,10 +1357,10 @@ NetCorePush_NetCoreNotificationService__ctor:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #344]
 .word 0xf9400001
 .word 0xaa1a03e0
-bl _p_27
+bl _p_32
 .word 0xf9400340
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -1144,30 +1370,47 @@ bl _p_27
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1a03e0
-bl _p_11
+bl _p_13
+.word 0xd2800020
+.word 0x53001c00
+.word 0x340001a0
 .word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_0@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_0@PAGEOFF
 ldr x1, [x1]
-bl _p_12
+bl _p_14
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x2, [x16, #336]
+ldr x2, [x16, #352]
 .word 0xaa1a03e0
-bl _p_13
+bl _p_15
+.word 0x1400000d
+.word 0xaa1a03e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_0@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_0@PAGEOFF
+ldr x1, [x1]
+bl _p_17
+.word 0xaa0003e1
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x2, [x16, #352]
+.word 0xaa1a03e0
+bl _p_15
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_2f:
+Lme_37:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreNotificationService__ctor_Foundation_NSObjectFlag
@@ -1180,7 +1423,7 @@ NetCorePush_NetCoreNotificationService__ctor_Foundation_NSObjectFlag:
 .word 0xf9000fa1
 .word 0xaa1903e0
 .word 0xf9400fa1
-bl _p_27
+bl _p_32
 .word 0xf9400320
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -1190,18 +1433,18 @@ bl _p_27
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1903e0
-bl _p_11
+bl _p_13
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_30:
+Lme_38:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreNotificationService__ctor_intptr
@@ -1214,7 +1457,7 @@ NetCorePush_NetCoreNotificationService__ctor_intptr:
 .word 0xf9000fa1
 .word 0xaa1903e0
 .word 0xf9400fa1
-bl _p_28
+bl _p_33
 .word 0xf9400320
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -1224,18 +1467,18 @@ bl _p_28
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1903e0
-bl _p_11
+bl _p_13
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_31:
+Lme_39:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreNotificationService_ContentViewDidLoad_UIKit_UIView
@@ -1243,26 +1486,40 @@ NetCorePush_NetCoreNotificationService_ContentViewDidLoad_UIKit_UIView:
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #432]
+ldr x1, [x16, #448]
+.word 0xaa1a03e0
+bl _p_21
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
 .word 0xf9400fa0
-bl _p_16
-.word 0xaa0003e2
-.word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_11@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_11@PAGEOFF
 ldr x1, [x1]
-bl _p_21
+.word 0xaa1a03e2
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_11@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_11@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_32:
+Lme_3a:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreNotificationService_DidReceiveNotification_UserNotifications_UNNotification
@@ -1270,110 +1527,69 @@ NetCorePush_NetCoreNotificationService_DidReceiveNotification_UserNotifications_
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #440]
+ldr x1, [x16, #456]
+.word 0xaa1a03e0
+bl _p_21
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
 .word 0xf9400fa0
-bl _p_16
-.word 0xaa0003e2
-.word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_12@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_12@PAGEOFF
 ldr x1, [x1]
-bl _p_21
+.word 0xaa1a03e2
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_12@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_12@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_33:
+Lme_3b:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreNotificationService_DidReceiveNotificationResponse_UserNotifications_UNNotificationResponse_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption
 NetCorePush_NetCoreNotificationService_DidReceiveNotificationResponse_UserNotifications_UNNotificationResponse_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption:
 .loc 1 1 0
-.word 0xa9b97bfd
+.word 0xa9b87bfd
 .word 0x910003fd
-.word 0xf9000bb9
-.word 0xf9000fa0
-.word 0xf90013a1
-.word 0xf90017a2
+.word 0xa9016bb9
+.word 0xf90013a0
+.word 0xaa0103f9
+.word 0xaa0203fa
 .word 0xd2800000
+.word 0xf90017a0
 .word 0xf9001ba0
 .word 0xf9001fa0
 .word 0xf90023a0
 .word 0xf90027a0
 .word 0xf9002ba0
-.word 0xf9002fa0
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #448]
-.word 0xf94013a0
-bl _p_16
+ldr x1, [x16, #464]
+.word 0xaa1903e0
+bl _p_21
 .word 0xaa0003f9
-.word 0xf94017a0
-.word 0xb5000100
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #456]
-.word 0xd28007e0
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_19
-.word 0xd2800000
-.word 0xf9001ba0
-.word 0xf9001fa0
-.word 0xf90023a0
-.word 0xf90027a0
-.word 0xf9002ba0
-.word 0xf9002fa0
-.word 0x9100c3a0
-.word 0xf90033a0
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #240]
-.word 0xf9400001
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x4, [x16, #464]
-.word 0x9100c3a0
-.word 0xf94017a2
-.word 0xd2800003
-bl _p_29
-.word 0xf9400fa0
-.word 0xf9400800
-adrp x1, L_OBJC_SELECTOR_REFERENCES_13@PAGE
-add x1, x1, L_OBJC_SELECTOR_REFERENCES_13@PAGEOFF
-ldr x1, [x1]
-.word 0x9100c3a3
-.word 0xaa1903e2
-bl _p_23
-.word 0x9100c3a0
-bl _p_30
-.word 0xf9400bb9
-.word 0x910003bf
-.word 0xa8c77bfd
-.word 0xd65f03c0
-
-Lme_34:
-.text
-	.align 4
-	.no_dead_strip NetCorePush_NetCoreNotificationService_SetUpAppGroup_string
-NetCorePush_NetCoreNotificationService_SetUpAppGroup_string:
-.loc 1 1 0
-.word 0xa9be7bfd
-.word 0x910003fd
-.word 0xf9000bba
-.word 0xf9000fa0
-.word 0xaa0103fa
-.word 0xb500011a
+.word 0xeb1f035f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
@@ -1381,25 +1597,101 @@ ldr x1, [x16, #472]
 .word 0xd28007e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_19
+bl _p_25
+.word 0x9100a3a8
 .word 0xaa1a03e0
-bl _p_20
+bl _p_34
+.word 0x9100a3ba
+.word 0xd2800021
+.word 0x53001c20
+.word 0x390163a1
+.word 0x34000140
+.word 0xf94013a0
+.word 0xf9400800
+adrp x1, L_OBJC_SELECTOR_REFERENCES_13@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_13@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1903e2
+.word 0xaa1a03e3
+bl _p_22
+.word 0x14000009
+.word 0xf94013a0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_13@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_13@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1903e2
+.word 0xaa1a03e3
+bl _p_23
+.word 0xf90033bf
+.word 0x94000005
+.word 0xf94033a0
+.word 0xb4000040
+bl _p_35
+.word 0x14000006
+.word 0xf90037be
+.word 0x9100a3a0
+bl _p_36
+.word 0xf94037be
+.word 0xd61f03c0
+.word 0xa9416bb9
+.word 0x910003bf
+.word 0xa8c87bfd
+.word 0xd65f03c0
+
+Lme_3c:
+.text
+	.align 4
+	.no_dead_strip NetCorePush_NetCoreNotificationService_SetUpAppGroup_string
+NetCorePush_NetCoreNotificationService_SetUpAppGroup_string:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
+.word 0xeb1f035f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x1, [x16, #480]
+.word 0xd28007e0
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_25
+.word 0xaa1a03e0
+bl _p_26
 .word 0xaa0003fa
+.word 0xd2800021
+.word 0x53001c20
+.word 0x390083a1
+.word 0x34000120
 .word 0xf9400fa0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_14@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_14@PAGEOFF
 ldr x1, [x1]
 .word 0xaa1a03e2
-bl _p_21
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_14@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_14@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
 .word 0xaa1a03e0
-bl _p_22
+bl _p_27
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_35:
+Lme_3d:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreNotificationService_SharedInstance
@@ -1410,22 +1702,22 @@ NetCorePush_NetCoreNotificationService_SharedInstance:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #440]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_3@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_3@PAGEOFF
 ldr x1, [x1]
-bl _p_12
+bl _p_14
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x15, [x16, #480]
-bl _p_31
+ldr x15, [x16, #488]
+bl _p_37
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
 
-Lme_36:
+Lme_3e:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreNotificationService__cctor
@@ -1436,19 +1728,19 @@ NetCorePush_NetCoreNotificationService__cctor:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #488]
-bl _p_24
+ldr x0, [x16, #496]
+bl _p_28
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #440]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
 
-Lme_37:
+Lme_3f:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager_get_ClassHandle
@@ -1460,13 +1752,13 @@ NetCorePush_NetCorePushTaskManager_get_ClassHandle:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #504]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_38:
+Lme_40:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager__ctor
@@ -1479,10 +1771,10 @@ NetCorePush_NetCorePushTaskManager__ctor:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #344]
 .word 0xf9400001
 .word 0xaa1a03e0
-bl _p_9
+bl _p_11
 .word 0xf9400340
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -1492,30 +1784,47 @@ bl _p_9
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1a03e0
-bl _p_11
+bl _p_13
+.word 0xd2800020
+.word 0x53001c00
+.word 0x340001a0
 .word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_0@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_0@PAGEOFF
 ldr x1, [x1]
-bl _p_12
+bl _p_14
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x2, [x16, #336]
+ldr x2, [x16, #352]
 .word 0xaa1a03e0
-bl _p_13
+bl _p_15
+.word 0x1400000d
+.word 0xaa1a03e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_0@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_0@PAGEOFF
+ldr x1, [x1]
+bl _p_17
+.word 0xaa0003e1
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x2, [x16, #352]
+.word 0xaa1a03e0
+bl _p_15
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_39:
+Lme_41:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager__ctor_Foundation_NSObjectFlag
@@ -1528,7 +1837,7 @@ NetCorePush_NetCorePushTaskManager__ctor_Foundation_NSObjectFlag:
 .word 0xf9000fa1
 .word 0xaa1903e0
 .word 0xf9400fa1
-bl _p_9
+bl _p_11
 .word 0xf9400320
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -1538,18 +1847,18 @@ bl _p_9
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1903e0
-bl _p_11
+bl _p_13
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_3a:
+Lme_42:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager__ctor_intptr
@@ -1562,7 +1871,7 @@ NetCorePush_NetCorePushTaskManager__ctor_intptr:
 .word 0xf9000fa1
 .word 0xaa1903e0
 .word 0xf9400fa1
-bl _p_14
+bl _p_18
 .word 0xf9400320
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -1572,59 +1881,78 @@ bl _p_14
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1903e0
-bl _p_11
+bl _p_13
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_3b:
+Lme_43:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager_DeleteNotification_Foundation_NSObject__
 NetCorePush_NetCorePushTaskManager_DeleteNotification_Foundation_NSObject__:
 .loc 1 1 0
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xaa0003f9
 .word 0xaa0103fa
-.word 0xb500011a
+.word 0xeb1f035f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #504]
+ldr x1, [x16, #512]
 .word 0xd28007e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_19
+bl _p_25
 .word 0xaa1a03e0
-bl _p_32
+bl _p_38
 .word 0xaa0003fa
+.word 0xd2800021
+.word 0x53001c20
+.word 0x390083a1
+.word 0x34000160
 .word 0xf9400b20
 adrp x1, L_OBJC_SELECTOR_REFERENCES_15@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_15@PAGEOFF
 ldr x1, [x1]
 .word 0x3940035e
 .word 0xf9400b42
-bl _p_33
+bl _p_39
+.word 0x53001c00
+.word 0x53001c19
+.word 0x1400000b
+.word 0xaa1903e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_15@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_15@PAGEOFF
+ldr x1, [x1]
+.word 0x3940035e
+.word 0xf9400b42
+bl _p_40
 .word 0x53001c00
 .word 0x53001c19
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_34
-.word 0xaa1903e0
+bl _p_41
+.word 0x53001f3a
+.word 0xaa1a03e0
 .word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_3c:
+Lme_44:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager_DidReceiveLocalNotification_Foundation_NSDictionary
@@ -1632,26 +1960,40 @@ NetCorePush_NetCorePushTaskManager_DidReceiveLocalNotification_Foundation_NSDict
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #512]
+ldr x1, [x16, #520]
+.word 0xaa1a03e0
+bl _p_21
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
 .word 0xf9400fa0
-bl _p_16
-.word 0xaa0003e2
-.word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_16@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_16@PAGEOFF
 ldr x1, [x1]
-bl _p_21
+.word 0xaa1a03e2
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_16@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_16@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_3d:
+Lme_45:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager_DidReceiveNotificationRequest_UserNotifications_UNNotificationRequest
@@ -1659,26 +2001,40 @@ NetCorePush_NetCorePushTaskManager_DidReceiveNotificationRequest_UserNotificatio
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #520]
+ldr x1, [x16, #528]
+.word 0xaa1a03e0
+bl _p_21
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
 .word 0xf9400fa0
-bl _p_16
-.word 0xaa0003e2
-.word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_17@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_17@PAGEOFF
 ldr x1, [x1]
-bl _p_21
+.word 0xaa1a03e2
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_17@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_17@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_3e:
+Lme_46:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager_DidReceiveRemoteNotification_Foundation_NSDictionary
@@ -1686,26 +2042,40 @@ NetCorePush_NetCorePushTaskManager_DidReceiveRemoteNotification_Foundation_NSDic
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #512]
+ldr x1, [x16, #520]
+.word 0xaa1a03e0
+bl _p_21
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
 .word 0xf9400fa0
-bl _p_16
-.word 0xaa0003e2
-.word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_18@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_18@PAGEOFF
 ldr x1, [x1]
-bl _p_21
+.word 0xaa1a03e2
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_18@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_18@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_3f:
+Lme_47:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager_HandelApplicationLaunchEvent_Foundation_NSObject
@@ -1713,22 +2083,36 @@ NetCorePush_NetCorePushTaskManager_HandelApplicationLaunchEvent_Foundation_NSObj
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
+.word 0xaa1a03e0
+bl _p_42
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
 .word 0xf9400fa0
-bl _p_35
-.word 0xaa0003e2
-.word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_19@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_19@PAGEOFF
 ldr x1, [x1]
-bl _p_21
+.word 0xaa1a03e2
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_19@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_19@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_40:
+Lme_48:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager_IsNotificationFromNetCore_Foundation_NSDictionary
@@ -1736,27 +2120,45 @@ NetCorePush_NetCorePushTaskManager_IsNotificationFromNetCore_Foundation_NSDictio
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #512]
+ldr x1, [x16, #520]
+.word 0xaa1a03e0
+bl _p_21
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000160
 .word 0xf9400fa0
-bl _p_16
-.word 0xaa0003e2
-.word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_20@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_20@PAGEOFF
 ldr x1, [x1]
-bl _p_33
+.word 0xaa1a03e2
+bl _p_39
 .word 0x53001c00
+.word 0x53001c1a
+.word 0x1400000a
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_20@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_20@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_40
+.word 0x53001c00
+.word 0x53001c1a
+.word 0xaa1a03e0
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_41:
+Lme_49:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager_MarkNotificationAsRead_Foundation_NSDictionary_bool_string
@@ -1767,46 +2169,63 @@ NetCorePush_NetCorePushTaskManager_MarkNotificationAsRead_Foundation_NSDictionar
 .word 0xf9000bb8
 .word 0xf9000fba
 .word 0xf90013a0
-.word 0xf90017a1
-.word 0xf9001ba2
+.word 0xaa0103f8
+.word 0xf90017a2
 .word 0xaa0303fa
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #528]
-.word 0xf94017a0
-bl _p_16
+ldr x1, [x16, #536]
+.word 0xaa1803e0
+bl _p_21
 .word 0xaa0003f8
-.word 0xb500011a
+.word 0xeb1f035f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #536]
+ldr x1, [x16, #544]
 .word 0xd28007e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_19
+bl _p_25
 .word 0xaa1a03e0
-bl _p_20
+bl _p_26
 .word 0xaa0003fa
+.word 0xd2800021
+.word 0x53001c20
+.word 0x3900c3a1
+.word 0x34000160
 .word 0xf94013a0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_21@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_21@PAGEOFF
 ldr x1, [x1]
 .word 0xaa1803e2
-.word 0x3940c3a3
+.word 0x3940a3a3
 .word 0xaa1a03e4
-bl _p_36
+bl _p_43
+.word 0x1400000a
+.word 0xf94013a0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_21@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_21@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1803e2
+.word 0x3940a3a3
+.word 0xaa1a03e4
+bl _p_44
 .word 0xaa1a03e0
-bl _p_22
+bl _p_27
 .word 0xf9400bb8
 .word 0xf9400fba
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_42:
+Lme_4a:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager_SharedInstance
@@ -1817,22 +2236,22 @@ NetCorePush_NetCorePushTaskManager_SharedInstance:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #504]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_3@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_3@PAGEOFF
 ldr x1, [x1]
-bl _p_12
+bl _p_14
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x15, [x16, #544]
-bl _p_37
+ldr x15, [x16, #552]
+bl _p_45
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
 
-Lme_43:
+Lme_4b:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager_UserNotificationWillPresentNotification_UserNotifications_UNNotification
@@ -1840,26 +2259,40 @@ NetCorePush_NetCorePushTaskManager_UserNotificationWillPresentNotification_UserN
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #440]
+ldr x1, [x16, #456]
+.word 0xaa1a03e0
+bl _p_21
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
 .word 0xf9400fa0
-bl _p_16
-.word 0xaa0003e2
-.word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_22@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_22@PAGEOFF
 ldr x1, [x1]
-bl _p_21
+.word 0xaa1a03e2
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_22@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_22@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_44:
+Lme_4c:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager_UserNotificationdidReceiveNotificationResponse_UserNotifications_UNNotificationResponse
@@ -1867,26 +2300,40 @@ NetCorePush_NetCorePushTaskManager_UserNotificationdidReceiveNotificationRespons
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #448]
+ldr x1, [x16, #464]
+.word 0xaa1a03e0
+bl _p_21
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
 .word 0xf9400fa0
-bl _p_16
-.word 0xaa0003e2
-.word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_23@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_23@PAGEOFF
 ldr x1, [x1]
-bl _p_21
+.word 0xaa1a03e2
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_23@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_23@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_45:
+Lme_4d:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager_get_Delegate
@@ -1898,7 +2345,7 @@ NetCorePush_NetCorePushTaskManager_get_Delegate:
 .word 0xaa0003fa
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_38
+bl _p_46
 .word 0xaa0003fa
 .word 0xaa1a03f9
 .word 0xeb1f035f
@@ -1910,35 +2357,42 @@ bl _p_38
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #552]
+ldr x1, [x16, #560]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
+.word 0xaa1903fa
 .word 0xaa1903e0
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_46:
+Lme_4e:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager_set_Delegate_NetCorePush_NetCorePushTaskManagerDelegate
 NetCorePush_NetCorePushTaskManager_set_Delegate_NetCorePush_NetCorePushTaskManagerDelegate:
 .loc 1 1 0
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
-.word 0xa90167b8
-.word 0xf90013ba
+.word 0xa90163b7
+.word 0xa9026bb9
 .word 0xaa0003f9
 .word 0xaa0103fa
 .word 0xaa1a03f8
-.word 0xb400043a
-.word 0xb5000418
+.word 0xb400009a
+.word 0xeb1f031f
+.word 0x9a9f17f7
+.word 0x14000002
+.word 0xd2800017
+.word 0x53001ee0
+.word 0x3900c3b7
+.word 0x34000400
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x2, [x16, #560]
+ldr x2, [x16, #568]
 .word 0xf9400340
 .word 0xf9400c00
 .word 0xaa0003e1
@@ -1958,27 +2412,27 @@ adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x0, [x16, #0]
 .word 0xd280eda1
-bl _p_39
+bl _p_47
 .word 0xaa0003e2
 .word 0xaa1a03e0
 .word 0xaa1903e1
-bl _p_40
+bl _p_48
 .word 0xaa0003e1
 .word 0xd28007c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_19
+bl _p_25
 .word 0xaa1903e0
 .word 0xaa1803e1
 .word 0x3940033e
-bl _p_41
-.word 0xa94167b8
-.word 0xf94013ba
+bl _p_49
+.word 0xa94163b7
+.word 0xa9426bb9
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_47:
+Lme_4f:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager_get_WeakDelegate
@@ -1986,18 +2440,86 @@ NetCorePush_NetCorePushTaskManager_get_WeakDelegate:
 .loc 1 1 0
 .word 0xa9bd7bfd
 .word 0x910003fd
-.word 0xf9000bba
+.word 0xa9016bb9
 .word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
 .word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_24@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_24@PAGEOFF
 ldr x1, [x1]
-bl _p_12
-bl _p_42
-.word 0xf90013a0
+bl _p_14
+bl _p_50
+.word 0xaa0003f9
+.word 0x14000009
 .word 0xaa1a03e0
-bl _p_43
-.word 0x9100a341
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_24@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_24@PAGEOFF
+ldr x1, [x1]
+bl _p_17
+bl _p_50
+.word 0xaa0003f9
+.word 0xaa1a03e0
+bl _p_51
+.word 0x9100a340
+.word 0xf90013a0
+.word 0xd5033bbf
+.word 0xf94013a0
+.word 0xf9000019
+.word 0xd349fc00
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0000
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x1, [x16, #16]
+.word 0x8b010000
+.word 0xd280003e
+.word 0x3900001e
+.word 0xaa1903fa
+.word 0xaa1903e0
+.word 0xa9416bb9
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_50:
+.text
+	.align 4
+	.no_dead_strip NetCorePush_NetCorePushTaskManager_set_WeakDelegate_Foundation_NSObject
+NetCorePush_NetCorePushTaskManager_set_WeakDelegate_Foundation_NSObject:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xa90167b8
+.word 0xaa0003f9
+.word 0xf90013a1
+.word 0xf94013a0
+bl _p_42
+.word 0xaa0003f8
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000100
+.word 0xf9400b20
+adrp x1, L_OBJC_SELECTOR_REFERENCES_25@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_25@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1803e2
+bl _p_19
+.word 0x14000008
+.word 0xaa1903e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_25@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_25@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1803e2
+bl _p_20
+.word 0xaa1903e0
+bl _p_51
+.word 0x9100a321
 .word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
@@ -2012,53 +2534,12 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0xf9400bba
+.word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_48:
-.text
-	.align 4
-	.no_dead_strip NetCorePush_NetCorePushTaskManager_set_WeakDelegate_Foundation_NSObject
-NetCorePush_NetCorePushTaskManager_set_WeakDelegate_Foundation_NSObject:
-.loc 1 1 0
-.word 0xa9be7bfd
-.word 0x910003fd
-.word 0xf9000bb9
-.word 0xaa0003f9
-.word 0xf9000fa1
-.word 0xf9400fa0
-bl _p_35
-.word 0xaa0003e2
-.word 0xf9400b20
-adrp x1, L_OBJC_SELECTOR_REFERENCES_25@PAGE
-add x1, x1, L_OBJC_SELECTOR_REFERENCES_25@PAGEOFF
-ldr x1, [x1]
-bl _p_21
-.word 0xaa1903e0
-bl _p_43
-.word 0x9100a321
-.word 0xd5033bbf
-.word 0xf9400fa0
-.word 0xf9000020
-.word 0xd349fc21
-.word 0xd29ffffe
-.word 0xf2a00ffe
-.word 0x8a1e0021
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x2, [x16, #16]
-.word 0x8b020021
-.word 0xd280003e
-.word 0x3900003e
-.word 0xf9400bb9
-.word 0x910003bf
-.word 0xa8c27bfd
-.word 0xd65f03c0
-
-Lme_49:
+Lme_51:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager_Dispose_bool
@@ -2071,15 +2552,16 @@ NetCorePush_NetCorePushTaskManager_Dispose_bool:
 .word 0xf9000fa1
 .word 0xaa1903e0
 .word 0x394063a1
-bl _p_44
+bl _p_52
 .word 0xf9400b20
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #256]
+ldr x1, [x16, #264]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x9a9f17e0
+.word 0x53001c00
 .word 0x53001c00
 .word 0x34000040
 .word 0xf900173f
@@ -2088,7 +2570,7 @@ ldr x1, [x16, #256]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_4a:
+Lme_52:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManager__cctor
@@ -2099,19 +2581,19 @@ NetCorePush_NetCorePushTaskManager__cctor:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #568]
-bl _p_24
+ldr x0, [x16, #576]
+bl _p_28
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #504]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
 
-Lme_4b:
+Lme_53:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManagerDelegateWrapper__ctor_intptr_bool
@@ -2125,12 +2607,12 @@ NetCorePush_NetCorePushTaskManagerDelegateWrapper__ctor_intptr_bool:
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0x394083a2
-bl _p_45
+bl _p_53
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_4c:
+Lme_54:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManagerDelegate__ctor
@@ -2143,32 +2625,32 @@ NetCorePush_NetCorePushTaskManagerDelegate__ctor:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #344]
 .word 0xf9400001
 .word 0xaa1a03e0
-bl _p_9
-.word 0xaa1a03e0
-.word 0xd2800001
 bl _p_11
 .word 0xaa1a03e0
-bl _p_46
+.word 0xd2800001
+bl _p_13
+.word 0xaa1a03e0
+bl _p_16
 adrp x1, L_OBJC_SELECTOR_REFERENCES_0@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_0@PAGEOFF
 ldr x1, [x1]
-bl _p_47
+bl _p_17
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x2, [x16, #336]
+ldr x2, [x16, #352]
 .word 0xaa1a03e0
-bl _p_13
+bl _p_15
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_4d:
+Lme_55:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManagerDelegate__ctor_Foundation_NSObjectFlag
@@ -2180,15 +2662,15 @@ NetCorePush_NetCorePushTaskManagerDelegate__ctor_Foundation_NSObjectFlag:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl _p_9
+bl _p_11
 .word 0xf9400ba0
 .word 0xd2800001
-bl _p_11
+bl _p_13
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_4e:
+Lme_56:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManagerDelegate__ctor_intptr
@@ -2200,15 +2682,15 @@ NetCorePush_NetCorePushTaskManagerDelegate__ctor_intptr:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl _p_14
+bl _p_18
 .word 0xf9400ba0
 .word 0xd2800001
-bl _p_11
+bl _p_13
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_4f:
+Lme_57:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManagerDelegate_HandleDeeplinkActionWithURLString_string_Foundation_NSDictionary
@@ -2222,18 +2704,18 @@ NetCorePush_NetCorePushTaskManagerDelegate_HandleDeeplinkActionWithURLString_str
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #576]
+ldr x0, [x16, #584]
 .word 0xd2801201
 bl _p_3
 .word 0xf9001ba0
-bl _p_48
+bl _p_54
 .word 0xf9401ba0
-bl _p_19
+bl _p_25
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_50:
+Lme_58:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManagerDelegate_HandleNotificationCustomPayload_Foundation_NSDictionary
@@ -2246,18 +2728,18 @@ NetCorePush_NetCorePushTaskManagerDelegate_HandleNotificationCustomPayload_Found
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #576]
+ldr x0, [x16, #584]
 .word 0xd2801201
 bl _p_3
 .word 0xf90013a0
-bl _p_48
+bl _p_54
 .word 0xf94013a0
-bl _p_19
+bl _p_25
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_51:
+Lme_59:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManagerDelegate_HandleNotificationOpenAction_Foundation_NSDictionary_string
@@ -2271,18 +2753,18 @@ NetCorePush_NetCorePushTaskManagerDelegate_HandleNotificationOpenAction_Foundati
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #576]
+ldr x0, [x16, #584]
 .word 0xd2801201
 bl _p_3
 .word 0xf9001ba0
-bl _p_48
+bl _p_54
 .word 0xf9401ba0
-bl _p_19
+bl _p_25
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_52:
+Lme_5a:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCorePushTaskManagerDelegate_HandleSmartechDeeplink_NetCorePush_SMTDeeplink
@@ -2295,18 +2777,18 @@ NetCorePush_NetCorePushTaskManagerDelegate_HandleSmartechDeeplink_NetCorePush_SM
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #576]
+ldr x0, [x16, #584]
 .word 0xd2801201
 bl _p_3
 .word 0xf90013a0
-bl _p_48
+bl _p_54
 .word 0xf94013a0
-bl _p_19
+bl _p_25
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_53:
+Lme_5b:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_get_ClassHandle
@@ -2318,13 +2800,13 @@ NetCorePush_NetCoreSharedManager_get_ClassHandle:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #584]
+ldr x0, [x16, #592]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_54:
+Lme_5c:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager__ctor
@@ -2337,10 +2819,10 @@ NetCorePush_NetCoreSharedManager__ctor:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #344]
 .word 0xf9400001
 .word 0xaa1a03e0
-bl _p_9
+bl _p_11
 .word 0xf9400340
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -2350,30 +2832,47 @@ bl _p_9
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1a03e0
-bl _p_11
+bl _p_13
+.word 0xd2800020
+.word 0x53001c00
+.word 0x340001a0
 .word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_0@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_0@PAGEOFF
 ldr x1, [x1]
-bl _p_12
+bl _p_14
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x2, [x16, #336]
+ldr x2, [x16, #352]
 .word 0xaa1a03e0
-bl _p_13
+bl _p_15
+.word 0x1400000d
+.word 0xaa1a03e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_0@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_0@PAGEOFF
+ldr x1, [x1]
+bl _p_17
+.word 0xaa0003e1
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x2, [x16, #352]
+.word 0xaa1a03e0
+bl _p_15
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_55:
+Lme_5d:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager__ctor_Foundation_NSObjectFlag
@@ -2386,7 +2885,7 @@ NetCorePush_NetCoreSharedManager__ctor_Foundation_NSObjectFlag:
 .word 0xf9000fa1
 .word 0xaa1903e0
 .word 0xf9400fa1
-bl _p_9
+bl _p_11
 .word 0xf9400320
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -2396,18 +2895,18 @@ bl _p_9
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1903e0
-bl _p_11
+bl _p_13
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_56:
+Lme_5e:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager__ctor_intptr
@@ -2420,7 +2919,7 @@ NetCorePush_NetCoreSharedManager__ctor_intptr:
 .word 0xf9000fa1
 .word 0xaa1903e0
 .word 0xf9400fa1
-bl _p_14
+bl _p_18
 .word 0xf9400320
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -2430,18 +2929,18 @@ bl _p_14
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1903e0
-bl _p_11
+bl _p_13
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_57:
+Lme_5f:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_ClearIdentity
@@ -2450,39 +2949,56 @@ NetCorePush_NetCoreSharedManager_ClearIdentity:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000100
 .word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_26@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_26@PAGEOFF
 ldr x1, [x1]
-bl _p_25
+bl _p_29
+.word 0x14000007
+.word 0xf9400ba0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_26@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_26@PAGEOFF
+ldr x1, [x1]
+bl _p_30
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_58:
+Lme_60:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_GetAppGroupDataToUserDefault_string__
 NetCorePush_NetCoreSharedManager_GetAppGroupDataToUserDefault_string__:
 .loc 1 1 0
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xf9000fa0
 .word 0xaa0103fa
-.word 0xb500011a
+.word 0xeb1f035f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #592]
+ldr x1, [x16, #600]
 .word 0xd28007e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_19
+bl _p_25
 .word 0xaa1a03e0
-bl _p_49
+bl _p_55
 .word 0xaa0003fa
+.word 0xd2800021
+.word 0x53001c20
+.word 0x390083a1
+.word 0x34000140
 .word 0xf9400fa0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_27@PAGE
@@ -2490,16 +3006,25 @@ add x1, x1, L_OBJC_SELECTOR_REFERENCES_27@PAGEOFF
 ldr x1, [x1]
 .word 0x3940035e
 .word 0xf9400b42
-bl _p_21
+bl _p_19
+.word 0x14000009
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_27@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_27@PAGEOFF
+ldr x1, [x1]
+.word 0x3940035e
+.word 0xf9400b42
+bl _p_20
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_34
+bl _p_41
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_59:
+Lme_61:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_GetNotificationsWithCount_System_nint
@@ -2507,25 +3032,46 @@ NetCorePush_NetCoreSharedManager_GetNotificationsWithCount_System_nint:
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
-.word 0xf9400ba0
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x340001c0
+.word 0xf9400fa0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_28@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_28@PAGEOFF
 ldr x1, [x1]
-.word 0xf9400fa2
-bl _p_50
+.word 0xaa1a03e2
+bl _p_56
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x15, [x16, #600]
-bl _p_51
+ldr x15, [x16, #608]
+bl _p_57
+.word 0xaa0003fa
+.word 0x1400000d
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_28@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_28@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_58
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x15, [x16, #608]
+bl _p_57
+.word 0xaa0003fa
+.word 0xaa1a03e0
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_5a:
+Lme_62:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_HandleApplicationLaunchEvent_Foundation_NSObject_string
@@ -2535,23 +3081,30 @@ NetCorePush_NetCoreSharedManager_HandleApplicationLaunchEvent_Foundation_NSObjec
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xf90013a0
-.word 0xf90017a1
+.word 0xaa0103f9
 .word 0xaa0203fa
-.word 0xf94017a0
-bl _p_35
+.word 0xaa1903e0
+bl _p_42
 .word 0xaa0003f9
-.word 0xb500011a
+.word 0xeb1f035f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #608]
+ldr x1, [x16, #616]
 .word 0xd28007e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_19
+bl _p_25
 .word 0xaa1a03e0
-bl _p_20
+bl _p_26
 .word 0xaa0003fa
+.word 0xd2800021
+.word 0x53001c20
+.word 0x3900a3a1
+.word 0x34000140
 .word 0xf94013a0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_29@PAGE
@@ -2559,15 +3112,24 @@ add x1, x1, L_OBJC_SELECTOR_REFERENCES_29@PAGEOFF
 ldr x1, [x1]
 .word 0xaa1903e2
 .word 0xaa1a03e3
+bl _p_22
+.word 0x14000009
+.word 0xf94013a0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_29@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_29@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1903e2
+.word 0xaa1a03e3
 bl _p_23
 .word 0xaa1a03e0
-bl _p_22
+bl _p_27
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_5b:
+Lme_63:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_OptOut_bool
@@ -2577,18 +3139,29 @@ NetCorePush_NetCoreSharedManager_OptOut_bool:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
 .word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_30@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_30@PAGEOFF
 ldr x1, [x1]
 .word 0x394063a2
-bl _p_52
+bl _p_59
+.word 0x14000008
+.word 0xf9400ba0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_30@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_30@PAGEOFF
+ldr x1, [x1]
+.word 0x394063a2
+bl _p_60
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_5c:
+Lme_64:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_PrintDeviceToken
@@ -2597,17 +3170,27 @@ NetCorePush_NetCoreSharedManager_PrintDeviceToken:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000100
 .word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_31@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_31@PAGEOFF
 ldr x1, [x1]
-bl _p_25
+bl _p_29
+.word 0x14000007
+.word 0xf9400ba0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_31@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_31@PAGEOFF
+ldr x1, [x1]
+bl _p_30
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_5d:
+Lme_65:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_ResetSession
@@ -2616,39 +3199,56 @@ NetCorePush_NetCoreSharedManager_ResetSession:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000100
 .word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_32@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_32@PAGEOFF
 ldr x1, [x1]
-bl _p_25
+bl _p_29
+.word 0x14000007
+.word 0xf9400ba0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_32@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_32@PAGEOFF
+ldr x1, [x1]
+bl _p_30
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_5e:
+Lme_66:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_SetAssociateDomain_Foundation_NSObject__
 NetCorePush_NetCoreSharedManager_SetAssociateDomain_Foundation_NSObject__:
 .loc 1 1 0
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xf9000fa0
 .word 0xaa0103fa
-.word 0xb500011a
+.word 0xeb1f035f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #616]
+ldr x1, [x16, #624]
 .word 0xd28007e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_19
+bl _p_25
 .word 0xaa1a03e0
-bl _p_32
+bl _p_38
 .word 0xaa0003fa
+.word 0xd2800021
+.word 0x53001c20
+.word 0x390083a1
+.word 0x34000140
 .word 0xf9400fa0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_33@PAGE
@@ -2656,16 +3256,25 @@ add x1, x1, L_OBJC_SELECTOR_REFERENCES_33@PAGEOFF
 ldr x1, [x1]
 .word 0x3940035e
 .word 0xf9400b42
-bl _p_21
+bl _p_19
+.word 0x14000009
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_33@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_33@PAGEOFF
+ldr x1, [x1]
+.word 0x3940035e
+.word 0xf9400b42
+bl _p_20
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_34
+bl _p_41
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_5f:
+Lme_67:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_SetDeepLinkQueryParameters_Foundation_NSDictionary
@@ -2673,111 +3282,54 @@ NetCorePush_NetCoreSharedManager_SetDeepLinkQueryParameters_Foundation_NSDiction
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #624]
+ldr x1, [x16, #632]
+.word 0xaa1a03e0
+bl _p_21
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
 .word 0xf9400fa0
-bl _p_16
-.word 0xaa0003e2
-.word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_34@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_34@PAGEOFF
 ldr x1, [x1]
-bl _p_21
+.word 0xaa1a03e2
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_34@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_34@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_60:
+Lme_68:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_SetDeviceToken_string
 NetCorePush_NetCoreSharedManager_SetDeviceToken_string:
 .loc 1 1 0
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xf9000fa0
 .word 0xaa0103fa
-.word 0xb500011a
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #632]
-.word 0xd28007e0
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_19
-.word 0xaa1a03e0
-bl _p_20
-.word 0xaa0003fa
-.word 0xf9400fa0
-.word 0xf9400800
-adrp x1, L_OBJC_SELECTOR_REFERENCES_35@PAGE
-add x1, x1, L_OBJC_SELECTOR_REFERENCES_35@PAGEOFF
-ldr x1, [x1]
-.word 0xaa1a03e2
-bl _p_21
-.word 0xaa1a03e0
-bl _p_22
-.word 0xf9400bba
-.word 0x910003bf
-.word 0xa8c27bfd
-.word 0xd65f03c0
-
-Lme_61:
-.text
-	.align 4
-	.no_dead_strip NetCorePush_NetCoreSharedManager_SetUpAppGroup_string
-NetCorePush_NetCoreSharedManager_SetUpAppGroup_string:
-.loc 1 1 0
-.word 0xa9be7bfd
-.word 0x910003fd
-.word 0xf9000bba
-.word 0xf9000fa0
-.word 0xaa0103fa
-.word 0xb500011a
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #472]
-.word 0xd28007e0
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_19
-.word 0xaa1a03e0
-bl _p_20
-.word 0xaa0003fa
-.word 0xf9400fa0
-.word 0xf9400800
-adrp x1, L_OBJC_SELECTOR_REFERENCES_14@PAGE
-add x1, x1, L_OBJC_SELECTOR_REFERENCES_14@PAGEOFF
-ldr x1, [x1]
-.word 0xaa1a03e2
-bl _p_21
-.word 0xaa1a03e0
-bl _p_22
-.word 0xf9400bba
-.word 0x910003bf
-.word 0xa8c27bfd
-.word 0xd65f03c0
-
-Lme_62:
-.text
-	.align 4
-	.no_dead_strip NetCorePush_NetCoreSharedManager_SetUpApplicationId_string
-NetCorePush_NetCoreSharedManager_SetUpApplicationId_string:
-.loc 1 1 0
-.word 0xa9be7bfd
-.word 0x910003fd
-.word 0xf9000bba
-.word 0xf9000fa0
-.word 0xaa0103fa
-.word 0xb500011a
+.word 0xeb1f035f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
@@ -2785,62 +3337,193 @@ ldr x1, [x16, #640]
 .word 0xd28007e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_19
+bl _p_25
 .word 0xaa1a03e0
-bl _p_20
+bl _p_26
 .word 0xaa0003fa
+.word 0xd2800021
+.word 0x53001c20
+.word 0x390083a1
+.word 0x34000120
+.word 0xf9400fa0
+.word 0xf9400800
+adrp x1, L_OBJC_SELECTOR_REFERENCES_35@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_35@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_35@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_35@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
+.word 0xaa1a03e0
+bl _p_27
+.word 0xf9400bba
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_69:
+.text
+	.align 4
+	.no_dead_strip NetCorePush_NetCoreSharedManager_SetUpAppGroup_string
+NetCorePush_NetCoreSharedManager_SetUpAppGroup_string:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
+.word 0xeb1f035f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x1, [x16, #480]
+.word 0xd28007e0
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_25
+.word 0xaa1a03e0
+bl _p_26
+.word 0xaa0003fa
+.word 0xd2800021
+.word 0x53001c20
+.word 0x390083a1
+.word 0x34000120
+.word 0xf9400fa0
+.word 0xf9400800
+adrp x1, L_OBJC_SELECTOR_REFERENCES_14@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_14@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_14@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_14@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
+.word 0xaa1a03e0
+bl _p_27
+.word 0xf9400bba
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_6a:
+.text
+	.align 4
+	.no_dead_strip NetCorePush_NetCoreSharedManager_SetUpApplicationId_string
+NetCorePush_NetCoreSharedManager_SetUpApplicationId_string:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
+.word 0xeb1f035f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x1, [x16, #648]
+.word 0xd28007e0
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_25
+.word 0xaa1a03e0
+bl _p_26
+.word 0xaa0003fa
+.word 0xd2800021
+.word 0x53001c20
+.word 0x390083a1
+.word 0x34000120
 .word 0xf9400fa0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_36@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_36@PAGEOFF
 ldr x1, [x1]
 .word 0xaa1a03e2
-bl _p_21
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_36@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_36@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
 .word 0xaa1a03e0
-bl _p_22
+bl _p_27
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_63:
+Lme_6b:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_SetUpIdentity_string
 NetCorePush_NetCoreSharedManager_SetUpIdentity_string:
 .loc 1 1 0
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xf9000fa0
 .word 0xaa0103fa
-.word 0xb500011a
+.word 0xeb1f035f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000100
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #392]
+ldr x1, [x16, #408]
 .word 0xd28007e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_19
+bl _p_25
 .word 0xaa1a03e0
-bl _p_20
+bl _p_26
 .word 0xaa0003fa
+.word 0xd2800021
+.word 0x53001c20
+.word 0x390083a1
+.word 0x34000120
 .word 0xf9400fa0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_37@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_37@PAGEOFF
 ldr x1, [x1]
 .word 0xaa1a03e2
-bl _p_21
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_37@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_37@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
 .word 0xaa1a03e0
-bl _p_22
+bl _p_27
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_64:
+Lme_6c:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_SharedInstance
@@ -2851,22 +3534,22 @@ NetCorePush_NetCoreSharedManager_SharedInstance:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #584]
+ldr x0, [x16, #592]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_3@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_3@PAGEOFF
 ldr x1, [x1]
-bl _p_12
+bl _p_14
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x15, [x16, #648]
-bl _p_53
+ldr x15, [x16, #656]
+bl _p_61
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
 
-Lme_65:
+Lme_6d:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_get_DeviceToken
@@ -2874,19 +3557,34 @@ NetCorePush_NetCoreSharedManager_get_DeviceToken:
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9400ba0
-.word 0xf9400800
+.word 0xf9000bba
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
+.word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_38@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_38@PAGEOFF
 ldr x1, [x1]
-bl _p_12
-bl _p_54
+bl _p_14
+bl _p_62
+.word 0xaa0003fa
+.word 0x14000009
+.word 0xaa1a03e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_38@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_38@PAGEOFF
+ldr x1, [x1]
+bl _p_17
+bl _p_62
+.word 0xaa0003fa
+.word 0xaa1a03e0
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_66:
+Lme_6e:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_get_GUID
@@ -2894,19 +3592,34 @@ NetCorePush_NetCoreSharedManager_get_GUID:
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9400ba0
-.word 0xf9400800
+.word 0xf9000bba
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
+.word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_39@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_39@PAGEOFF
 ldr x1, [x1]
-bl _p_12
-bl _p_54
+bl _p_14
+bl _p_62
+.word 0xaa0003fa
+.word 0x14000009
+.word 0xaa1a03e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_39@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_39@PAGEOFF
+ldr x1, [x1]
+bl _p_17
+bl _p_62
+.word 0xaa0003fa
+.word 0xaa1a03e0
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_67:
+Lme_6f:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_get_Identity
@@ -2914,19 +3627,34 @@ NetCorePush_NetCoreSharedManager_get_Identity:
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9400ba0
-.word 0xf9400800
+.word 0xf9000bba
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
+.word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_40@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_40@PAGEOFF
 ldr x1, [x1]
-bl _p_12
-bl _p_54
+bl _p_14
+bl _p_62
+.word 0xaa0003fa
+.word 0x14000009
+.word 0xaa1a03e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_40@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_40@PAGEOFF
+ldr x1, [x1]
+bl _p_17
+bl _p_62
+.word 0xaa0003fa
+.word 0xaa1a03e0
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_68:
+Lme_70:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_get_Notifications
@@ -2934,23 +3662,43 @@ NetCorePush_NetCoreSharedManager_get_Notifications:
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9400ba0
-.word 0xf9400800
+.word 0xf9000bba
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000180
+.word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_41@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_41@PAGEOFF
 ldr x1, [x1]
-bl _p_12
+bl _p_14
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x15, [x16, #600]
-bl _p_51
+ldr x15, [x16, #608]
+bl _p_57
+.word 0xaa0003fa
+.word 0x1400000c
+.word 0xaa1a03e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_41@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_41@PAGEOFF
+ldr x1, [x1]
+bl _p_17
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x15, [x16, #608]
+bl _p_57
+.word 0xaa0003fa
+.word 0xf9000fba
+.word 0xf9400fa0
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_69:
+Lme_71:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_get_OptOutStatus
@@ -2958,38 +3706,75 @@ NetCorePush_NetCoreSharedManager_get_OptOutStatus:
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9400ba0
-.word 0xf9400800
+.word 0xf9000bba
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
+.word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_42@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_42@PAGEOFF
 ldr x1, [x1]
-bl _p_55
+bl _p_63
 .word 0x53001c00
+.word 0x53001c1a
+.word 0x14000009
+.word 0xaa1a03e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_42@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_42@PAGEOFF
+ldr x1, [x1]
+bl _p_64
+.word 0x53001c00
+.word 0x53001c1a
+.word 0xaa1a03e0
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_6a:
+Lme_72:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager_get_UnreadNotificationsCount
 NetCorePush_NetCoreSharedManager_get_UnreadNotificationsCount:
 .loc 1 1 0
-.word 0xa9be7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9400ba0
-.word 0xf9400800
+.word 0xf9000bba
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000180
+.word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_43@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_43@PAGEOFF
 ldr x1, [x1]
-bl _p_56
+bl _p_65
+.word 0xf90017a0
+.word 0xf94017a0
+.word 0xf9001bbf
+.word 0xf9001ba0
+.word 0xf9401bba
+.word 0x1400000c
+.word 0xaa1a03e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_43@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_43@PAGEOFF
+ldr x1, [x1]
+bl _p_66
+.word 0xf9000fa0
+.word 0xf9400fa0
+.word 0xf90013bf
+.word 0xf90013a0
+.word 0xf94013ba
+.word 0xaa1a03e0
+.word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_6b:
+Lme_73:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_NetCoreSharedManager__cctor
@@ -3000,19 +3785,19 @@ NetCorePush_NetCoreSharedManager__cctor:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #656]
-bl _p_24
+ldr x0, [x16, #664]
+bl _p_28
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #584]
+ldr x0, [x16, #592]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
 
-Lme_6c:
+Lme_74:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_SMTDeeplink_get_ClassHandle
@@ -3024,13 +3809,13 @@ NetCorePush_SMTDeeplink_get_ClassHandle:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #664]
+ldr x0, [x16, #672]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_6d:
+Lme_75:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_SMTDeeplink__ctor
@@ -3043,10 +3828,10 @@ NetCorePush_SMTDeeplink__ctor:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #344]
 .word 0xf9400001
 .word 0xaa1a03e0
-bl _p_9
+bl _p_11
 .word 0xf9400340
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -3056,30 +3841,47 @@ bl _p_9
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1a03e0
-bl _p_11
+bl _p_13
+.word 0xd2800020
+.word 0x53001c00
+.word 0x340001a0
 .word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_0@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_0@PAGEOFF
 ldr x1, [x1]
-bl _p_12
+bl _p_14
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x2, [x16, #336]
+ldr x2, [x16, #352]
 .word 0xaa1a03e0
-bl _p_13
+bl _p_15
+.word 0x1400000d
+.word 0xaa1a03e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_0@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_0@PAGEOFF
+ldr x1, [x1]
+bl _p_17
+.word 0xaa0003e1
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x2, [x16, #352]
+.word 0xaa1a03e0
+bl _p_15
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_6e:
+Lme_76:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_SMTDeeplink__ctor_Foundation_NSObjectFlag
@@ -3092,7 +3894,7 @@ NetCorePush_SMTDeeplink__ctor_Foundation_NSObjectFlag:
 .word 0xf9000fa1
 .word 0xaa1903e0
 .word 0xf9400fa1
-bl _p_9
+bl _p_11
 .word 0xf9400320
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -3102,18 +3904,18 @@ bl _p_9
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1903e0
-bl _p_11
+bl _p_13
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_6f:
+Lme_77:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_SMTDeeplink__ctor_intptr
@@ -3126,7 +3928,7 @@ NetCorePush_SMTDeeplink__ctor_intptr:
 .word 0xf9000fa1
 .word 0xaa1903e0
 .word 0xf9400fa1
-bl _p_14
+bl _p_18
 .word 0xf9400320
 .word 0xf9400c01
 .word 0xaa0103e0
@@ -3136,18 +3938,18 @@ bl _p_14
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #328]
 .word 0xf9400021
-bl _p_10
+bl _p_12
 .word 0x53001c01
 .word 0xaa1903e0
-bl _p_11
+bl _p_13
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_70:
+Lme_78:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_SMTDeeplink_get_CustomPayload
@@ -3155,22 +3957,98 @@ NetCorePush_SMTDeeplink_get_CustomPayload:
 .loc 1 1 0
 .word 0xa9bd7bfd
 .word 0x910003fd
-.word 0xf9000bba
+.word 0xa9016bb9
 .word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000180
 .word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_44@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_44@PAGEOFF
 ldr x1, [x1]
-bl _p_12
+bl _p_14
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x15, [x16, #672]
-bl _p_57
-.word 0xf90013a0
+ldr x15, [x16, #680]
+bl _p_67
+.word 0xaa0003f9
+.word 0x1400000c
 .word 0xaa1a03e0
-bl _p_43
-.word 0x9100a341
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_44@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_44@PAGEOFF
+ldr x1, [x1]
+bl _p_17
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x15, [x16, #680]
+bl _p_67
+.word 0xaa0003f9
+.word 0xaa1a03e0
+bl _p_51
+.word 0x9100a340
+.word 0xf90013a0
+.word 0xd5033bbf
+.word 0xf94013a0
+.word 0xf9000019
+.word 0xd349fc00
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0000
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x1, [x16, #16]
+.word 0x8b010000
+.word 0xd280003e
+.word 0x3900001e
+.word 0xaa1903fa
+.word 0xaa1903e0
+.word 0xa9416bb9
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_79:
+.text
+	.align 4
+	.no_dead_strip NetCorePush_SMTDeeplink_set_CustomPayload_Foundation_NSDictionary
+NetCorePush_SMTDeeplink_set_CustomPayload_Foundation_NSDictionary:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xa90167b8
+.word 0xaa0003f9
+.word 0xf90013a1
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x1, [x16, #688]
+.word 0xf94013a0
+bl _p_21
+.word 0xaa0003f8
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000100
+.word 0xf9400b20
+adrp x1, L_OBJC_SELECTOR_REFERENCES_45@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_45@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1803e2
+bl _p_19
+.word 0x14000008
+.word 0xaa1903e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_45@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_45@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1803e2
+bl _p_20
+.word 0xaa1903e0
+bl _p_51
+.word 0x9100a321
 .word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
@@ -3185,57 +4063,12 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0xf9400bba
+.word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_71:
-.text
-	.align 4
-	.no_dead_strip NetCorePush_SMTDeeplink_set_CustomPayload_Foundation_NSDictionary
-NetCorePush_SMTDeeplink_set_CustomPayload_Foundation_NSDictionary:
-.loc 1 1 0
-.word 0xa9be7bfd
-.word 0x910003fd
-.word 0xf9000bb9
-.word 0xaa0003f9
-.word 0xf9000fa1
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #680]
-.word 0xf9400fa0
-bl _p_16
-.word 0xaa0003e2
-.word 0xf9400b20
-adrp x1, L_OBJC_SELECTOR_REFERENCES_45@PAGE
-add x1, x1, L_OBJC_SELECTOR_REFERENCES_45@PAGEOFF
-ldr x1, [x1]
-bl _p_21
-.word 0xaa1903e0
-bl _p_43
-.word 0x9100a321
-.word 0xd5033bbf
-.word 0xf9400fa0
-.word 0xf9000020
-.word 0xd349fc21
-.word 0xd29ffffe
-.word 0xf2a00ffe
-.word 0x8a1e0021
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x2, [x16, #16]
-.word 0x8b020021
-.word 0xd280003e
-.word 0x3900003e
-.word 0xf9400bb9
-.word 0x910003bf
-.word 0xa8c27bfd
-.word 0xd65f03c0
-
-Lme_72:
+Lme_7a:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_SMTDeeplink_get_DeepLink
@@ -3243,45 +4076,73 @@ NetCorePush_SMTDeeplink_get_DeepLink:
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9400ba0
-.word 0xf9400800
+.word 0xf9000bba
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
+.word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_46@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_46@PAGEOFF
 ldr x1, [x1]
-bl _p_12
-bl _p_54
+bl _p_14
+bl _p_62
+.word 0xaa0003fa
+.word 0x14000009
+.word 0xaa1a03e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_46@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_46@PAGEOFF
+ldr x1, [x1]
+bl _p_17
+bl _p_62
+.word 0xaa0003fa
+.word 0xaa1a03e0
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_73:
+Lme_7b:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_SMTDeeplink_set_DeepLink_string
 NetCorePush_SMTDeeplink_set_DeepLink_string:
 .loc 1 1 0
-.word 0xa9bd7bfd
+.word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
+.word 0xaa1a03e0
+bl _p_26
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
 .word 0xf9400fa0
-bl _p_20
-.word 0xaa0003e2
-.word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_47@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_47@PAGEOFF
 ldr x1, [x1]
-.word 0xf90013a2
-bl _p_21
-.word 0xf94013a0
-bl _p_22
+.word 0xaa1a03e2
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_47@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_47@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
+.word 0xaa1a03e0
+bl _p_27
+.word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_74:
+Lme_7c:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_SMTDeeplink_get_DeepLinkType
@@ -3289,39 +4150,77 @@ NetCorePush_SMTDeeplink_get_DeepLinkType:
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9400ba0
-.word 0xf9400800
+.word 0xf9000bba
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000100
+.word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_48@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_48@PAGEOFF
 ldr x1, [x1]
-bl _p_58
+bl _p_65
+.word 0xaa0003fa
+.word 0x14000008
+.word 0xaa1a03e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_48@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_48@PAGEOFF
+ldr x1, [x1]
+bl _p_66
+.word 0xaa0003fa
+.word 0xf9000fba
+.word 0xf9400fa0
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_75:
+Lme_7d:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_SMTDeeplink_set_DeepLinkType_NetCorePush_SMTDeeplinkType
 NetCorePush_SMTDeeplink_set_DeepLinkType_NetCorePush_SMTDeeplinkType:
 .loc 1 1 0
-.word 0xa9be7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
+.word 0xd2800020
+.word 0x53001c00
+.word 0x340001e0
 .word 0xf9400ba0
 .word 0xf9400800
-adrp x1, L_OBJC_SELECTOR_REFERENCES_49@PAGE
-add x1, x1, L_OBJC_SELECTOR_REFERENCES_49@PAGEOFF
-ldr x1, [x1]
-.word 0xf9400fa2
-bl _p_59
+.word 0xf9001ba0
+adrp x0, L_OBJC_SELECTOR_REFERENCES_49@PAGE
+add x0, x0, L_OBJC_SELECTOR_REFERENCES_49@PAGEOFF
+ldr x0, [x0]
+.word 0xf9001fa0
+.word 0xf9400fa0
+bl _p_10
+.word 0xaa0003e2
+.word 0xf9401ba0
+.word 0xf9401fa1
+bl _p_68
+.word 0x1400000e
+.word 0xf9400ba0
+bl _p_16
+.word 0xf9001ba0
+adrp x0, L_OBJC_SELECTOR_REFERENCES_49@PAGE
+add x0, x0, L_OBJC_SELECTOR_REFERENCES_49@PAGEOFF
+ldr x0, [x0]
+.word 0xf9001fa0
+.word 0xf9400fa0
+bl _p_10
+.word 0xaa0003e2
+.word 0xf9401ba0
+.word 0xf9401fa1
+bl _p_69
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_76:
+Lme_7e:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_SMTDeeplink_get_UserInfo
@@ -3329,23 +4228,43 @@ NetCorePush_SMTDeeplink_get_UserInfo:
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9400ba0
-.word 0xf9400800
+.word 0xf9000bba
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000180
+.word 0xf9400b40
 adrp x1, L_OBJC_SELECTOR_REFERENCES_50@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_50@PAGEOFF
 ldr x1, [x1]
-bl _p_12
+bl _p_14
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x15, [x16, #672]
-bl _p_57
+ldr x15, [x16, #680]
+bl _p_67
+.word 0xaa0003fa
+.word 0x1400000c
+.word 0xaa1a03e0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_50@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_50@PAGEOFF
+ldr x1, [x1]
+bl _p_17
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x15, [x16, #680]
+bl _p_67
+.word 0xaa0003fa
+.word 0xf9000fba
+.word 0xf9400fa0
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_77:
+Lme_7f:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_SMTDeeplink_set_UserInfo_Foundation_NSDictionary
@@ -3353,22 +4272,36 @@ NetCorePush_SMTDeeplink_set_UserInfo_Foundation_NSDictionary:
 .loc 1 1 0
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
+.word 0xaa1a03e0
+bl _p_42
+.word 0xaa0003fa
+.word 0xd2800020
+.word 0x53001c00
+.word 0x34000120
 .word 0xf9400fa0
-bl _p_35
-.word 0xaa0003e2
-.word 0xf9400ba0
 .word 0xf9400800
 adrp x1, L_OBJC_SELECTOR_REFERENCES_51@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_51@PAGEOFF
 ldr x1, [x1]
-bl _p_21
+.word 0xaa1a03e2
+bl _p_19
+.word 0x14000008
+.word 0xf9400fa0
+bl _p_16
+adrp x1, L_OBJC_SELECTOR_REFERENCES_51@PAGE
+add x1, x1, L_OBJC_SELECTOR_REFERENCES_51@PAGEOFF
+ldr x1, [x1]
+.word 0xaa1a03e2
+bl _p_20
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_78:
+Lme_80:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_SMTDeeplink_Dispose_bool
@@ -3381,15 +4314,16 @@ NetCorePush_SMTDeeplink_Dispose_bool:
 .word 0xf9000fa1
 .word 0xaa1903e0
 .word 0x394063a1
-bl _p_44
+bl _p_52
 .word 0xf9400b20
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #256]
+ldr x1, [x16, #264]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x9a9f17e0
+.word 0x53001c00
 .word 0x53001c00
 .word 0x34000040
 .word 0xf900173f
@@ -3398,7 +4332,7 @@ ldr x1, [x16, #256]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_79:
+Lme_81:
 .text
 	.align 4
 	.no_dead_strip NetCorePush_SMTDeeplink__cctor
@@ -3409,19 +4343,19 @@ NetCorePush_SMTDeeplink__cctor:
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #688]
-bl _p_24
+ldr x0, [x16, #696]
+bl _p_28
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #664]
+ldr x0, [x16, #672]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
 
-Lme_7a:
+Lme_82:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption_invoke_void_T_UserNotificationsUI_UNNotificationContentExtensionResponseOption
@@ -3490,20 +4424,20 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1803e0
-bl _p_60
-bl _p_61
+bl _p_70
+bl _p_71
 .word 0xaa0003f8
 .word 0xb5ffff20
 .word 0x17ffffca
 .word 0xd2800da0
 .word 0xaa1103e1
-bl _p_2
+bl _p_9
 
-Lme_80:
+Lme_88:
 .text
 	.align 4
-	.no_dead_strip wrapper_delegate_invoke__Module_invoke_void_intptr_nuint_intptr_System_nuint
-wrapper_delegate_invoke__Module_invoke_void_intptr_nuint_intptr_System_nuint:
+	.no_dead_strip wrapper_delegate_invoke__Module_invoke_void_intptr_uintptr_intptr_uintptr
+wrapper_delegate_invoke__Module_invoke_void_intptr_uintptr_intptr_uintptr:
 .loc 1 1 0
 .word 0xa9bb7bfd
 .word 0x910003fd
@@ -3573,20 +4507,20 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_60
-bl _p_61
+bl _p_70
+bl _p_71
 .word 0xaa0003f7
 .word 0xb5ffff20
 .word 0x17ffffc7
 .word 0xd2800da0
 .word 0xaa1103e1
-bl _p_2
+bl _p_9
 
-Lme_81:
+Lme_89:
 .text
 	.align 4
-	.no_dead_strip wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_nuint_AsyncCallback_object_intptr_System_nuint_System_AsyncCallback_object
-wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_nuint_AsyncCallback_object_intptr_System_nuint_System_AsyncCallback_object:
+	.no_dead_strip wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_uintptr_AsyncCallback_object_intptr_uintptr_System_AsyncCallback_object
+wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_uintptr_AsyncCallback_object_intptr_uintptr_System_AsyncCallback_object:
 .loc 1 1 0
 .word 0xa9bb7bfd
 .word 0x910003fd
@@ -3628,13 +4562,13 @@ wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_n
 .word 0xf9000320
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_62
+bl _p_72
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_82:
+Lme_8a:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_end_invoke__Module_end_invoke_void__this___IAsyncResult_System_IAsyncResult
@@ -3669,17 +4603,17 @@ wrapper_delegate_end_invoke__Module_end_invoke_void__this___IAsyncResult_System_
 .word 0xf9000300
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_63
+bl _p_73
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_83:
+Lme_8b:
 .text
 	.align 4
-	.no_dead_strip wrapper_managed_to_native_ObjCRuntime_Trampolines_DActionArity1V0_wrapper_aot_native_object_intptr_System_nuint
-wrapper_managed_to_native_ObjCRuntime_Trampolines_DActionArity1V0_wrapper_aot_native_object_intptr_System_nuint:
+	.no_dead_strip wrapper_managed_to_native_ObjCRuntime_Trampolines_DActionArity1V0_wrapper_aot_native_object_intptr_uintptr
+wrapper_managed_to_native_ObjCRuntime_Trampolines_DActionArity1V0_wrapper_aot_native_object_intptr_uintptr:
 .loc 1 1 0
 .word 0xa9b57bfd
 .word 0x910003fd
@@ -3719,7 +4653,7 @@ bl _mono_threads_enter_gc_safe_region_unbalanced
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x1, [x16, #696]
+ldr x1, [x16, #704]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540003c1
@@ -3748,20 +4682,20 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1a03e0
-bl _p_60
-bl _p_61
+bl _p_70
+bl _p_71
 .word 0xaa0003fa
 .word 0xb5ffff20
 .word 0x17fffff1
 .word 0xd2800e20
 .word 0xaa1103e1
-bl _p_2
+bl _p_9
 
-Lme_84:
+Lme_8c:
 .text
 	.align 4
-	.no_dead_strip wrapper_delegate_invoke__Module_invoke_bound_void_object_intptr_nuint_intptr_System_nuint
-wrapper_delegate_invoke__Module_invoke_bound_void_object_intptr_nuint_intptr_System_nuint:
+	.no_dead_strip wrapper_delegate_invoke__Module_invoke_bound_void_object_intptr_uintptr_intptr_uintptr
+wrapper_delegate_invoke__Module_invoke_bound_void_object_intptr_uintptr_intptr_uintptr:
 .loc 1 1 0
 .word 0xa9bb7bfd
 .word 0x910003fd
@@ -3823,92 +4757,20 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_60
-bl _p_61
+bl _p_70
+bl _p_71
 .word 0xaa0003f7
 .word 0xb5ffff20
 .word 0x17ffffcf
 .word 0xd2800da0
 .word 0xaa1103e1
-bl _p_2
+bl _p_9
 
-Lme_85:
+Lme_8d:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
 wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
-.loc 1 1 0
-.word 0xa9b57bfd
-.word 0x910003fd
-.word 0x1000001e
-.word 0xf9001bbe
-.word 0xa903d3b3
-.word 0xa904dbb5
-.word 0xa905e3b7
-.word 0xa906ebb9
-.word 0xa907f3bb
-.word 0xf90047bd
-.word 0x910003f1
-.word 0xf9004bb1
-.word 0xaa0003f9
-.word 0xaa0103fa
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #80]
-.word 0xd63f0000
-.word 0xaa0003f8
-.word 0x910083a0
-.word 0xf9400301
-.word 0xf90013a1
-.word 0xf9000300
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #704]
-.word 0x910063a0
-bl _mono_threads_enter_gc_safe_region_unbalanced
-.word 0xf90057a0
-.word 0xaa1903e0
-.word 0xaa1a03e1
-bl _p_64
-.word 0xaa0003e1
-.word 0xf94057a0
-.word 0xf90053a1
-.word 0x910043a1
-bl _mono_threads_exit_gc_safe_region_unbalanced
-.word 0xf94053a0
-.word 0xaa0003fa
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #48]
-.word 0xb9400000
-.word 0x350001e0
-.word 0x14000001
-.word 0xf94013a0
-.word 0xf9000300
-.word 0xaa1a03e0
-.word 0xa94667b8
-.word 0xf9403bba
-.word 0x910003bf
-.word 0xa8cb7bfd
-.word 0xd65f03c0
-.word 0x91022320
-.word 0xd280003e
-.word 0xb900001e
-.word 0xaa1903e0
-bl _p_60
-bl _p_61
-.word 0xaa0003f9
-.word 0xb5ffff20
-.word 0x17fffff0
-
-Lme_86:
-.text
-	.align 4
-	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
-wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr:
 .loc 1 1 0
 .word 0xa9b57bfd
 .word 0x910003fd
@@ -3943,7 +4805,7 @@ bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf90057a0
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_65
+bl _p_74
 .word 0xaa0003e1
 .word 0xf94057a0
 .word 0xf90053a1
@@ -3970,158 +4832,238 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1903e0
-bl _p_60
-bl _p_61
+bl _p_70
+bl _p_71
 .word 0xaa0003f9
 .word 0xb5ffff20
 .word 0x17fffff0
 
-Lme_87:
+Lme_8e:
 .text
 	.align 4
-	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint
-wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint:
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr:
 .loc 1 1 0
-.word 0xa9b47bfd
+.word 0xa9b57bfd
 .word 0x910003fd
 .word 0x1000001e
-.word 0xf90023be
-.word 0xa904d3b3
-.word 0xa905dbb5
-.word 0xa906e3b7
-.word 0xa907ebb9
-.word 0xa908f3bb
-.word 0xf9004fbd
+.word 0xf9001bbe
+.word 0xa903d3b3
+.word 0xa904dbb5
+.word 0xa905e3b7
+.word 0xa906ebb9
+.word 0xa907f3bb
+.word 0xf90047bd
 .word 0x910003f1
-.word 0xf90053b1
-.word 0xf9000ba0
-.word 0xf9000fa1
-.word 0xaa0203fa
+.word 0xf9004bb1
+.word 0xaa0003f9
+.word 0xaa0103fa
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x0, [x16, #80]
 .word 0xd63f0000
-.word 0xaa0003f7
-.word 0x9100c3a0
-.word 0xf94002e1
-.word 0xf9001ba1
-.word 0xf90002e0
+.word 0xaa0003f8
+.word 0x910083a0
+.word 0xf9400301
+.word 0xf90013a1
+.word 0xf9000300
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x0, [x16, #720]
-.word 0x9100a3a0
+.word 0x910063a0
 bl _mono_threads_enter_gc_safe_region_unbalanced
-.word 0xf9005ba0
-.word 0xf9400ba0
-.word 0xf9400fa1
-.word 0xaa1a03e2
-bl _p_66
-.word 0xf9405ba0
-.word 0x910083a1
+.word 0xf90057a0
+.word 0xaa1903e0
+.word 0xaa1a03e1
+bl _p_75
+.word 0xaa0003e1
+.word 0xf94057a0
+.word 0xf90053a1
+.word 0x910043a1
 bl _mono_threads_exit_gc_safe_region_unbalanced
+.word 0xf94053a0
+.word 0xaa0003fa
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350001c0
+.word 0x350001e0
 .word 0x14000001
-.word 0xf9401ba0
-.word 0xf90002e0
-.word 0xf94037b7
-.word 0xf94043ba
+.word 0xf94013a0
+.word 0xf9000300
+.word 0xaa1a03e0
+.word 0xa94667b8
+.word 0xf9403bba
 .word 0x910003bf
-.word 0xa8cc7bfd
+.word 0xa8cb7bfd
 .word 0xd65f03c0
-.word 0x91022340
+.word 0x91022320
 .word 0xd280003e
 .word 0xb900001e
-.word 0xaa1a03e0
-bl _p_60
-bl _p_61
-.word 0xaa0003fa
+.word 0xaa1903e0
+bl _p_70
+bl _p_71
+.word 0xaa0003f9
 .word 0xb5ffff20
-.word 0x17fffff1
+.word 0x17fffff0
 
-Lme_88:
-.text
-	.align 4
-	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_intptr
-wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_intptr:
-.loc 1 1 0
-.word 0xa9b47bfd
-.word 0x910003fd
-.word 0x1000001e
-.word 0xf90027be
-.word 0xa90553b3
-.word 0xa9065bb5
-.word 0xa90763b7
-.word 0xa9086bb9
-.word 0xa90973bb
-.word 0xf90053bd
-.word 0x910003f1
-.word 0xf90057b1
-.word 0xf9000ba0
-.word 0xf9000fa1
-.word 0xf90013a2
-.word 0xaa0303fa
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #80]
-.word 0xd63f0000
-.word 0xaa0003f6
-.word 0x9100e3a0
-.word 0xf94002c1
-.word 0xf9001fa1
-.word 0xf90002c0
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #728]
-.word 0x9100c3a0
-bl _mono_threads_enter_gc_safe_region_unbalanced
-.word 0xf9005ba0
-.word 0xf9400ba0
-.word 0xf9400fa1
-.word 0xf94013a2
-.word 0xaa1a03e3
-bl _p_67
-.word 0xf9405ba0
-.word 0x9100a3a1
-bl _mono_threads_exit_gc_safe_region_unbalanced
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #48]
-.word 0xb9400000
-.word 0x350001c0
-.word 0x14000001
-.word 0xf9401fa0
-.word 0xf90002c0
-.word 0xf94037b6
-.word 0xf94047ba
-.word 0x910003bf
-.word 0xa8cc7bfd
-.word 0xd65f03c0
-.word 0x91022340
-.word 0xd280003e
-.word 0xb900001e
-.word 0xaa1a03e0
-bl _p_60
-bl _p_61
-.word 0xaa0003fa
-.word 0xb5ffff20
-.word 0x17fffff1
-
-Lme_89:
+Lme_8f:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
 wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
 .loc 1 1 0
+.word 0xa9b57bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf9001fbe
+.word 0xa90453b3
+.word 0xa9055bb5
+.word 0xa90663b7
+.word 0xa9076bb9
+.word 0xa90873bb
+.word 0xf9004bbd
+.word 0x910003f1
+.word 0xf9004fb1
+.word 0xf9000ba0
+.word 0xaa0103f9
+.word 0xaa0203fa
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003f7
+.word 0x9100a3a0
+.word 0xf94002e1
+.word 0xf90017a1
+.word 0xf90002e0
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #728]
+.word 0x910083a0
+bl _mono_threads_enter_gc_safe_region_unbalanced
+.word 0xf90057a0
+.word 0xf9400ba0
+.word 0xaa1903e1
+.word 0xaa1a03e2
+bl _p_76
+.word 0xaa0003e1
+.word 0xf94057a0
+.word 0xf90053a1
+.word 0x910063a1
+bl _mono_threads_exit_gc_safe_region_unbalanced
+.word 0xf94053a0
+.word 0xaa0003fa
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x350001e0
+.word 0x14000001
+.word 0xf94017a0
+.word 0xf90002e0
+.word 0xaa1a03e0
+.word 0xf94033b7
+.word 0xa9476bb9
+.word 0x910003bf
+.word 0xa8cb7bfd
+.word 0xd65f03c0
+.word 0x91022320
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1903e0
+bl _p_70
+bl _p_71
+.word 0xaa0003f9
+.word 0xb5ffff20
+.word 0x17fffff0
+
+Lme_90:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr:
+.loc 1 1 0
+.word 0xa9b57bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf9001fbe
+.word 0xa90453b3
+.word 0xa9055bb5
+.word 0xa90663b7
+.word 0xa9076bb9
+.word 0xa90873bb
+.word 0xf9004bbd
+.word 0x910003f1
+.word 0xf9004fb1
+.word 0xf9000ba0
+.word 0xaa0103f9
+.word 0xaa0203fa
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003f7
+.word 0x9100a3a0
+.word 0xf94002e1
+.word 0xf90017a1
+.word 0xf90002e0
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #736]
+.word 0x910083a0
+bl _mono_threads_enter_gc_safe_region_unbalanced
+.word 0xf90057a0
+.word 0xf9400ba0
+.word 0xaa1903e1
+.word 0xaa1a03e2
+bl _p_77
+.word 0xaa0003e1
+.word 0xf94057a0
+.word 0xf90053a1
+.word 0x910063a1
+bl _mono_threads_exit_gc_safe_region_unbalanced
+.word 0xf94053a0
+.word 0xaa0003fa
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x350001e0
+.word 0x14000001
+.word 0xf94017a0
+.word 0xf90002e0
+.word 0xaa1a03e0
+.word 0xf94033b7
+.word 0xa9476bb9
+.word 0x910003bf
+.word 0xa8cb7bfd
+.word 0xd65f03c0
+.word 0x91022320
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1903e0
+bl _p_70
+bl _p_71
+.word 0xaa0003f9
+.word 0xb5ffff20
+.word 0x17fffff0
+
+Lme_91:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0:
+.loc 1 1 0
 .word 0xa9b47bfd
 .word 0x910003fd
 .word 0x1000001e
@@ -4150,14 +5092,14 @@ ldr x0, [x16, #80]
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #736]
+ldr x0, [x16, #744]
 .word 0x9100a3a0
 bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf9005ba0
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xaa1a03e2
-bl _p_68
+bl _p_78
 .word 0xf9405ba0
 .word 0x910083a1
 bl _mono_threads_exit_gc_safe_region_unbalanced
@@ -4179,13 +5121,82 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1a03e0
-bl _p_60
-bl _p_61
+bl _p_70
+bl _p_71
 .word 0xaa0003fa
 .word 0xb5ffff20
 .word 0x17fffff1
 
-Lme_8a:
+Lme_92:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_0
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_0:
+.loc 1 1 0
+.word 0xa9b47bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf90023be
+.word 0xa904d3b3
+.word 0xa905dbb5
+.word 0xa906e3b7
+.word 0xa907ebb9
+.word 0xa908f3bb
+.word 0xf9004fbd
+.word 0x910003f1
+.word 0xf90053b1
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xaa0203fa
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003f7
+.word 0x9100c3a0
+.word 0xf94002e1
+.word 0xf9001ba1
+.word 0xf90002e0
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #752]
+.word 0x9100a3a0
+bl _mono_threads_enter_gc_safe_region_unbalanced
+.word 0xf9005ba0
+.word 0xf9400ba0
+.word 0xf9400fa1
+.word 0xaa1a03e2
+bl _p_79
+.word 0xf9405ba0
+.word 0x910083a1
+bl _mono_threads_exit_gc_safe_region_unbalanced
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x350001c0
+.word 0x14000001
+.word 0xf9401ba0
+.word 0xf90002e0
+.word 0xf94037b7
+.word 0xf94043ba
+.word 0x910003bf
+.word 0xa8cc7bfd
+.word 0xd65f03c0
+.word 0x91022340
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1a03e0
+bl _p_70
+bl _p_71
+.word 0xaa0003fa
+.word 0xb5ffff20
+.word 0x17fffff1
+
+Lme_93:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
@@ -4220,7 +5231,7 @@ ldr x0, [x16, #80]
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #744]
+ldr x0, [x16, #760]
 .word 0x9100c3a0
 bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf9005ba0
@@ -4228,7 +5239,7 @@ bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf9400fa1
 .word 0xf94013a2
 .word 0xaa1a03e3
-bl _p_69
+bl _p_80
 .word 0xf9405ba0
 .word 0x9100a3a1
 bl _mono_threads_exit_gc_safe_region_unbalanced
@@ -4250,13 +5261,84 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1a03e0
-bl _p_60
-bl _p_61
+bl _p_70
+bl _p_71
 .word 0xaa0003fa
 .word 0xb5ffff20
 .word 0x17fffff1
 
-Lme_8b:
+Lme_94:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_intptr
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_intptr:
+.loc 1 1 0
+.word 0xa9b47bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf90027be
+.word 0xa90553b3
+.word 0xa9065bb5
+.word 0xa90763b7
+.word 0xa9086bb9
+.word 0xa90973bb
+.word 0xf90053bd
+.word 0x910003f1
+.word 0xf90057b1
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf90013a2
+.word 0xaa0303fa
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003f6
+.word 0x9100e3a0
+.word 0xf94002c1
+.word 0xf9001fa1
+.word 0xf90002c0
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #768]
+.word 0x9100c3a0
+bl _mono_threads_enter_gc_safe_region_unbalanced
+.word 0xf9005ba0
+.word 0xf9400ba0
+.word 0xf9400fa1
+.word 0xf94013a2
+.word 0xaa1a03e3
+bl _p_81
+.word 0xf9405ba0
+.word 0x9100a3a1
+bl _mono_threads_exit_gc_safe_region_unbalanced
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x350001c0
+.word 0x14000001
+.word 0xf9401fa0
+.word 0xf90002c0
+.word 0xf94037b6
+.word 0xf94047ba
+.word 0x910003bf
+.word 0xa8cc7bfd
+.word 0xd65f03c0
+.word 0x91022340
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1a03e0
+bl _p_70
+bl _p_71
+.word 0xaa0003fa
+.word 0xb5ffff20
+.word 0x17fffff1
+
+Lme_95:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
@@ -4289,13 +5371,13 @@ ldr x0, [x16, #80]
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #752]
+ldr x0, [x16, #776]
 .word 0x910083a0
 bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf90053a0
 .word 0xf9400ba0
 .word 0xaa1a03e1
-bl _p_70
+bl _p_82
 .word 0xf94053a0
 .word 0x910063a1
 bl _mono_threads_exit_gc_safe_region_unbalanced
@@ -4317,17 +5399,84 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1a03e0
-bl _p_60
-bl _p_61
+bl _p_70
+bl _p_71
 .word 0xaa0003fa
 .word 0xb5ffff20
 .word 0x17fffff1
 
-Lme_8c:
+Lme_96:
 .text
 	.align 4
-	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
-wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0:
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_0
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_0:
+.loc 1 1 0
+.word 0xa9b57bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf9001fbe
+.word 0xa90453b3
+.word 0xa9055bb5
+.word 0xa90663b7
+.word 0xa9076bb9
+.word 0xa90873bb
+.word 0xf9004bbd
+.word 0x910003f1
+.word 0xf9004fb1
+.word 0xf9000ba0
+.word 0xaa0103fa
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003f8
+.word 0x9100a3a0
+.word 0xf9400301
+.word 0xf90017a1
+.word 0xf9000300
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #784]
+.word 0x910083a0
+bl _mono_threads_enter_gc_safe_region_unbalanced
+.word 0xf90053a0
+.word 0xf9400ba0
+.word 0xaa1a03e1
+bl _p_83
+.word 0xf94053a0
+.word 0x910063a1
+bl _mono_threads_exit_gc_safe_region_unbalanced
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x350001c0
+.word 0x14000001
+.word 0xf94017a0
+.word 0xf9000300
+.word 0xf94037b8
+.word 0xf9403fba
+.word 0x910003bf
+.word 0xa8cb7bfd
+.word 0xd65f03c0
+.word 0x91022340
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1a03e0
+bl _p_70
+bl _p_71
+.word 0xaa0003fa
+.word 0xb5ffff20
+.word 0x17fffff1
+
+Lme_97:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1:
 .loc 1 1 0
 .word 0xa9b57bfd
 .word 0x910003fd
@@ -4357,14 +5506,14 @@ ldr x0, [x16, #80]
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #760]
+ldr x0, [x16, #792]
 .word 0x910083a0
 bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf90057a0
 .word 0xf9400ba0
 .word 0xaa1903e1
 .word 0xaa1a03e2
-bl _p_71
+bl _p_84
 .word 0xaa0003e1
 .word 0xf94057a0
 .word 0x53001c21
@@ -4392,308 +5541,17 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1903e0
-bl _p_60
-bl _p_61
+bl _p_70
+bl _p_71
 .word 0xaa0003f9
 .word 0xb5ffff20
 .word 0x17fffff0
 
-Lme_8d:
+Lme_98:
 .text
 	.align 4
-	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr
-wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr:
-.loc 1 1 0
-.word 0xa9b57bfd
-.word 0x910003fd
-.word 0x1000001e
-.word 0xf90027be
-.word 0xa90553b3
-.word 0xa9065bb5
-.word 0xa90763b7
-.word 0xa9086bb9
-.word 0xa90973bb
-.word 0xf90053bd
-.word 0x910003f1
-.word 0xf90057b1
-.word 0xf9000ba0
-.word 0xf9000fa1
-.word 0xf90013a2
-.word 0xaa0303f9
-.word 0xaa0403fa
-.word 0xd2800015
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #80]
-.word 0xd63f0000
-.word 0xaa0003f4
-.word 0x9100e3a0
-.word 0xf9400281
-.word 0xf9001fa1
-.word 0xf9000280
-.word 0x34000059
-.word 0xd2800035
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #768]
-.word 0x9100c3a0
-bl _mono_threads_enter_gc_safe_region_unbalanced
-.word 0xaa0003f9
-.word 0xf9400ba0
-.word 0xf9400fa1
-.word 0xf94013a2
-.word 0xaa1503e3
-.word 0xaa1a03e4
-bl _p_72
-.word 0xaa1903e0
-.word 0x9100a3a1
-bl _mono_threads_exit_gc_safe_region_unbalanced
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #48]
-.word 0xb9400000
-.word 0x35000120
-.word 0x14000001
-.word 0xf9401fa0
-.word 0xf9000280
-.word 0xa945d7b4
-.word 0xa9486bb9
-.word 0x910003bf
-.word 0xa8cb7bfd
-.word 0xd65f03c0
-bl _p_61
-.word 0xaa0003fa
-.word 0xb4fffee0
-.word 0x91022340
-.word 0xd280003e
-.word 0xb900001e
-.word 0xaa1a03e0
-bl _p_60
-
-Lme_8e:
-.text
-	.align 4
-	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
-wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1:
-.loc 1 1 0
-.word 0xa9b57bfd
-.word 0x910003fd
-.word 0x1000001e
-.word 0xf9001bbe
-.word 0xa903d3b3
-.word 0xa904dbb5
-.word 0xa905e3b7
-.word 0xa906ebb9
-.word 0xa907f3bb
-.word 0xf90047bd
-.word 0x910003f1
-.word 0xf9004bb1
-.word 0xaa0003f9
-.word 0xaa0103fa
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #80]
-.word 0xd63f0000
-.word 0xaa0003f8
-.word 0x910083a0
-.word 0xf9400301
-.word 0xf90013a1
-.word 0xf9000300
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #776]
-.word 0x910063a0
-bl _mono_threads_enter_gc_safe_region_unbalanced
-.word 0xf90057a0
-.word 0xaa1903e0
-.word 0xaa1a03e1
-bl _p_73
-.word 0xaa0003e1
-.word 0xf94057a0
-.word 0x53001c21
-.word 0xf90053a1
-.word 0x910043a1
-bl _mono_threads_exit_gc_safe_region_unbalanced
-.word 0xf94053a0
-.word 0x53001c1a
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #48]
-.word 0xb9400000
-.word 0x350001e0
-.word 0x14000001
-.word 0xf94013a0
-.word 0xf9000300
-.word 0xaa1a03e0
-.word 0xa94667b8
-.word 0xf9403bba
-.word 0x910003bf
-.word 0xa8cb7bfd
-.word 0xd65f03c0
-.word 0x91022320
-.word 0xd280003e
-.word 0xb900001e
-.word 0xaa1903e0
-bl _p_60
-bl _p_61
-.word 0xaa0003f9
-.word 0xb5ffff20
-.word 0x17fffff0
-
-Lme_8f:
-.text
-	.align 4
-	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
-wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2:
-.loc 1 1 0
-.word 0xa9b57bfd
-.word 0x910003fd
-.word 0x1000001e
-.word 0xf9001bbe
-.word 0xa903d3b3
-.word 0xa904dbb5
-.word 0xa905e3b7
-.word 0xa906ebb9
-.word 0xa907f3bb
-.word 0xf90047bd
-.word 0x910003f1
-.word 0xf9004bb1
-.word 0xaa0003f9
-.word 0xaa0103fa
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #80]
-.word 0xd63f0000
-.word 0xaa0003f8
-.word 0x910083a0
-.word 0xf9400301
-.word 0xf90013a1
-.word 0xf9000300
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #784]
-.word 0x910063a0
-bl _mono_threads_enter_gc_safe_region_unbalanced
-.word 0xf90057a0
-.word 0xaa1903e0
-.word 0xaa1a03e1
-bl _p_74
-.word 0xaa0003e1
-.word 0xf94057a0
-.word 0xf90053a1
-.word 0x910043a1
-bl _mono_threads_exit_gc_safe_region_unbalanced
-.word 0xf94053a0
-.word 0xaa0003fa
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #48]
-.word 0xb9400000
-.word 0x350001e0
-.word 0x14000001
-.word 0xf94013a0
-.word 0xf9000300
-.word 0xaa1a03e0
-.word 0xa94667b8
-.word 0xf9403bba
-.word 0x910003bf
-.word 0xa8cb7bfd
-.word 0xd65f03c0
-.word 0x91022320
-.word 0xd280003e
-.word 0xb900001e
-.word 0xaa1903e0
-bl _p_60
-bl _p_61
-.word 0xaa0003f9
-.word 0xb5ffff20
-.word 0x17fffff0
-
-Lme_90:
-.text
-	.align 4
-	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
-wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
-.loc 1 1 0
-.word 0xa9b57bfd
-.word 0x910003fd
-.word 0x1000001e
-.word 0xf90023be
-.word 0xa904d3b3
-.word 0xa905dbb5
-.word 0xa906e3b7
-.word 0xa907ebb9
-.word 0xa908f3bb
-.word 0xf9004fbd
-.word 0x910003f1
-.word 0xf90053b1
-.word 0xf9000ba0
-.word 0xf9000fa1
-.word 0xaa0203fa
-.word 0xd2800017
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #80]
-.word 0xd63f0000
-.word 0xaa0003f6
-.word 0x9100c3a0
-.word 0xf94002c1
-.word 0xf9001ba1
-.word 0xf90002c0
-.word 0x3400005a
-.word 0xd2800037
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #792]
-.word 0x9100a3a0
-bl _mono_threads_enter_gc_safe_region_unbalanced
-.word 0xaa0003fa
-.word 0xf9400ba0
-.word 0xf9400fa1
-.word 0xaa1703e2
-bl _p_75
-.word 0xaa1a03e0
-.word 0x910083a1
-bl _mono_threads_exit_gc_safe_region_unbalanced
-
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #48]
-.word 0xb9400000
-.word 0x35000120
-.word 0x14000001
-.word 0xf9401ba0
-.word 0xf90002c0
-.word 0xa9465fb6
-.word 0xf94043ba
-.word 0x910003bf
-.word 0xa8cb7bfd
-.word 0xd65f03c0
-bl _p_61
-.word 0xaa0003fa
-.word 0xb4fffee0
-.word 0x91022340
-.word 0xd280003e
-.word 0xb900001e
-.word 0xaa1a03e0
-bl _p_60
-
-Lme_91:
-.text
-	.align 4
-	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_0
-wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_0:
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_1
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_1:
 .loc 1 1 0
 .word 0xa9b57bfd
 .word 0x910003fd
@@ -4730,14 +5588,15 @@ bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf9400ba0
 .word 0xaa1903e1
 .word 0xaa1a03e2
-bl _p_76
+bl _p_85
 .word 0xaa0003e1
 .word 0xf94057a0
+.word 0x53001c21
 .word 0xf90053a1
 .word 0x910063a1
 bl _mono_threads_exit_gc_safe_region_unbalanced
 .word 0xf94053a0
-.word 0xaa0003fa
+.word 0x53001c1a
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
@@ -4757,17 +5616,169 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1903e0
-bl _p_60
-bl _p_61
+bl _p_70
+bl _p_71
 .word 0xaa0003f9
 .word 0xb5ffff20
 .word 0x17fffff0
 
-Lme_92:
+Lme_99:
 .text
 	.align 4
-	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_3
-wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_3:
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr:
+.loc 1 1 0
+.word 0xa9b57bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf90027be
+.word 0xa90553b3
+.word 0xa9065bb5
+.word 0xa90763b7
+.word 0xa9086bb9
+.word 0xa90973bb
+.word 0xf90053bd
+.word 0x910003f1
+.word 0xf90057b1
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf90013a2
+.word 0xaa0303f9
+.word 0xaa0403fa
+.word 0xd2800015
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003f4
+.word 0x9100e3a0
+.word 0xf9400281
+.word 0xf9001fa1
+.word 0xf9000280
+.word 0x34000079
+.word 0xd2800020
+.word 0x53001c15
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #808]
+.word 0x9100c3a0
+bl _mono_threads_enter_gc_safe_region_unbalanced
+.word 0xaa0003f9
+.word 0xf9400ba0
+.word 0xf9400fa1
+.word 0xf94013a2
+.word 0xaa1503e3
+.word 0xaa1a03e4
+bl _p_86
+.word 0xaa1903e0
+.word 0x9100a3a1
+bl _mono_threads_exit_gc_safe_region_unbalanced
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x35000120
+.word 0x14000001
+.word 0xf9401fa0
+.word 0xf9000280
+.word 0xa945d7b4
+.word 0xa9486bb9
+.word 0x910003bf
+.word 0xa8cb7bfd
+.word 0xd65f03c0
+bl _p_71
+.word 0xaa0003fa
+.word 0xb4fffee0
+.word 0x91022340
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1a03e0
+bl _p_70
+
+Lme_9a:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_bool_intptr
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_bool_intptr:
+.loc 1 1 0
+.word 0xa9b57bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf90027be
+.word 0xa90553b3
+.word 0xa9065bb5
+.word 0xa90763b7
+.word 0xa9086bb9
+.word 0xa90973bb
+.word 0xf90053bd
+.word 0x910003f1
+.word 0xf90057b1
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf90013a2
+.word 0xaa0303f9
+.word 0xaa0403fa
+.word 0xd2800015
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003f4
+.word 0x9100e3a0
+.word 0xf9400281
+.word 0xf9001fa1
+.word 0xf9000280
+.word 0x34000079
+.word 0xd2800020
+.word 0x53001c15
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #816]
+.word 0x9100c3a0
+bl _mono_threads_enter_gc_safe_region_unbalanced
+.word 0xaa0003f9
+.word 0xf9400ba0
+.word 0xf9400fa1
+.word 0xf94013a2
+.word 0xaa1503e3
+.word 0xaa1a03e4
+bl _p_87
+.word 0xaa1903e0
+.word 0x9100a3a1
+bl _mono_threads_exit_gc_safe_region_unbalanced
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x35000120
+.word 0x14000001
+.word 0xf9401fa0
+.word 0xf9000280
+.word 0xa945d7b4
+.word 0xa9486bb9
+.word 0x910003bf
+.word 0xa8cb7bfd
+.word 0xd65f03c0
+bl _p_71
+.word 0xaa0003fa
+.word 0xb4fffee0
+.word 0x91022340
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1a03e0
+bl _p_70
+
+Lme_9b:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1:
 .loc 1 1 0
 .word 0xa9b57bfd
 .word 0x910003fd
@@ -4796,16 +5807,162 @@ ldr x0, [x16, #80]
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #808]
+ldr x0, [x16, #824]
 .word 0x910063a0
 bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf90057a0
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_77
+bl _p_88
 .word 0xaa0003e1
-.word 0xf90053a1
 .word 0xf94057a0
+.word 0x53001c21
+.word 0xf90053a1
+.word 0x910043a1
+bl _mono_threads_exit_gc_safe_region_unbalanced
+.word 0xf94053a0
+.word 0x53001c1a
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x350001e0
+.word 0x14000001
+.word 0xf94013a0
+.word 0xf9000300
+.word 0xaa1a03e0
+.word 0xa94667b8
+.word 0xf9403bba
+.word 0x910003bf
+.word 0xa8cb7bfd
+.word 0xd65f03c0
+.word 0x91022320
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1903e0
+bl _p_70
+bl _p_71
+.word 0xaa0003f9
+.word 0xb5ffff20
+.word 0x17fffff0
+
+Lme_9c:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_1
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_1:
+.loc 1 1 0
+.word 0xa9b57bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf9001bbe
+.word 0xa903d3b3
+.word 0xa904dbb5
+.word 0xa905e3b7
+.word 0xa906ebb9
+.word 0xa907f3bb
+.word 0xf90047bd
+.word 0x910003f1
+.word 0xf9004bb1
+.word 0xaa0003f9
+.word 0xaa0103fa
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003f8
+.word 0x910083a0
+.word 0xf9400301
+.word 0xf90013a1
+.word 0xf9000300
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #832]
+.word 0x910063a0
+bl _mono_threads_enter_gc_safe_region_unbalanced
+.word 0xf90057a0
+.word 0xaa1903e0
+.word 0xaa1a03e1
+bl _p_89
+.word 0xaa0003e1
+.word 0xf94057a0
+.word 0x53001c21
+.word 0xf90053a1
+.word 0x910043a1
+bl _mono_threads_exit_gc_safe_region_unbalanced
+.word 0xf94053a0
+.word 0x53001c1a
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x350001e0
+.word 0x14000001
+.word 0xf94013a0
+.word 0xf9000300
+.word 0xaa1a03e0
+.word 0xa94667b8
+.word 0xf9403bba
+.word 0x910003bf
+.word 0xa8cb7bfd
+.word 0xd65f03c0
+.word 0x91022320
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1903e0
+bl _p_70
+bl _p_71
+.word 0xaa0003f9
+.word 0xb5ffff20
+.word 0x17fffff0
+
+Lme_9d:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2:
+.loc 1 1 0
+.word 0xa9b57bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf9001bbe
+.word 0xa903d3b3
+.word 0xa904dbb5
+.word 0xa905e3b7
+.word 0xa906ebb9
+.word 0xa907f3bb
+.word 0xf90047bd
+.word 0x910003f1
+.word 0xf9004bb1
+.word 0xaa0003f9
+.word 0xaa0103fa
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003f8
+.word 0x910083a0
+.word 0xf9400301
+.word 0xf90013a1
+.word 0xf9000300
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #840]
+.word 0x910063a0
+bl _mono_threads_enter_gc_safe_region_unbalanced
+.word 0xf90057a0
+.word 0xaa1903e0
+.word 0xaa1a03e1
+bl _p_90
+.word 0xaa0003e1
+.word 0xf94057a0
+.word 0xf90053a1
 .word 0x910043a1
 bl _mono_threads_exit_gc_safe_region_unbalanced
 .word 0xf94053a0
@@ -4829,17 +5986,233 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1903e0
-bl _p_60
-bl _p_61
+bl _p_70
+bl _p_71
 .word 0xaa0003f9
 .word 0xb5ffff20
 .word 0x17fffff0
 
-Lme_93:
+Lme_9e:
 .text
 	.align 4
-	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong
-wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong:
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_2
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_2:
+.loc 1 1 0
+.word 0xa9b57bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf9001bbe
+.word 0xa903d3b3
+.word 0xa904dbb5
+.word 0xa905e3b7
+.word 0xa906ebb9
+.word 0xa907f3bb
+.word 0xf90047bd
+.word 0x910003f1
+.word 0xf9004bb1
+.word 0xaa0003f9
+.word 0xaa0103fa
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003f8
+.word 0x910083a0
+.word 0xf9400301
+.word 0xf90013a1
+.word 0xf9000300
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #848]
+.word 0x910063a0
+bl _mono_threads_enter_gc_safe_region_unbalanced
+.word 0xf90057a0
+.word 0xaa1903e0
+.word 0xaa1a03e1
+bl _p_91
+.word 0xaa0003e1
+.word 0xf94057a0
+.word 0xf90053a1
+.word 0x910043a1
+bl _mono_threads_exit_gc_safe_region_unbalanced
+.word 0xf94053a0
+.word 0xaa0003fa
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x350001e0
+.word 0x14000001
+.word 0xf94013a0
+.word 0xf9000300
+.word 0xaa1a03e0
+.word 0xa94667b8
+.word 0xf9403bba
+.word 0x910003bf
+.word 0xa8cb7bfd
+.word 0xd65f03c0
+.word 0x91022320
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1903e0
+bl _p_70
+bl _p_71
+.word 0xaa0003f9
+.word 0xb5ffff20
+.word 0x17fffff0
+
+Lme_9f:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
+.loc 1 1 0
+.word 0xa9b57bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf90023be
+.word 0xa904d3b3
+.word 0xa905dbb5
+.word 0xa906e3b7
+.word 0xa907ebb9
+.word 0xa908f3bb
+.word 0xf9004fbd
+.word 0x910003f1
+.word 0xf90053b1
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xaa0203fa
+.word 0xd2800017
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003f6
+.word 0x9100c3a0
+.word 0xf94002c1
+.word 0xf9001ba1
+.word 0xf90002c0
+.word 0x3400007a
+.word 0xd2800020
+.word 0x53001c17
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #856]
+.word 0x9100a3a0
+bl _mono_threads_enter_gc_safe_region_unbalanced
+.word 0xaa0003fa
+.word 0xf9400ba0
+.word 0xf9400fa1
+.word 0xaa1703e2
+bl _p_92
+.word 0xaa1a03e0
+.word 0x910083a1
+bl _mono_threads_exit_gc_safe_region_unbalanced
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x35000120
+.word 0x14000001
+.word 0xf9401ba0
+.word 0xf90002c0
+.word 0xa9465fb6
+.word 0xf94043ba
+.word 0x910003bf
+.word 0xa8cb7bfd
+.word 0xd65f03c0
+bl _p_71
+.word 0xaa0003fa
+.word 0xb4fffee0
+.word 0x91022340
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1a03e0
+bl _p_70
+
+Lme_a0:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_bool
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_bool:
+.loc 1 1 0
+.word 0xa9b57bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf90023be
+.word 0xa904d3b3
+.word 0xa905dbb5
+.word 0xa906e3b7
+.word 0xa907ebb9
+.word 0xa908f3bb
+.word 0xf9004fbd
+.word 0x910003f1
+.word 0xf90053b1
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xaa0203fa
+.word 0xd2800017
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003f6
+.word 0x9100c3a0
+.word 0xf94002c1
+.word 0xf9001ba1
+.word 0xf90002c0
+.word 0x3400007a
+.word 0xd2800020
+.word 0x53001c17
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #864]
+.word 0x9100a3a0
+bl _mono_threads_enter_gc_safe_region_unbalanced
+.word 0xaa0003fa
+.word 0xf9400ba0
+.word 0xf9400fa1
+.word 0xaa1703e2
+bl _p_93
+.word 0xaa1a03e0
+.word 0x910083a1
+bl _mono_threads_exit_gc_safe_region_unbalanced
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x35000120
+.word 0x14000001
+.word 0xf9401ba0
+.word 0xf90002c0
+.word 0xa9465fb6
+.word 0xf94043ba
+.word 0x910003bf
+.word 0xa8cb7bfd
+.word 0xd65f03c0
+bl _p_71
+.word 0xaa0003fa
+.word 0xb4fffee0
+.word 0x91022340
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1a03e0
+bl _p_70
+
+Lme_a1:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uintptr
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uintptr:
 .loc 1 1 0
 .word 0xa9b47bfd
 .word 0x910003fd
@@ -4869,14 +6242,14 @@ ldr x0, [x16, #80]
 
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x0, [x16, #816]
+ldr x0, [x16, #872]
 .word 0x9100a3a0
 bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf9005ba0
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xaa1a03e2
-bl _p_78
+bl _p_94
 .word 0xf9405ba0
 .word 0x910083a1
 bl _mono_threads_exit_gc_safe_region_unbalanced
@@ -4898,17 +6271,86 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1a03e0
-bl _p_60
-bl _p_61
+bl _p_70
+bl _p_71
 .word 0xaa0003fa
 .word 0xb5ffff20
 .word 0x17fffff1
 
-Lme_94:
+Lme_a2:
 .text
 	.align 4
-	.no_dead_strip wrapper_native_to_managed_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_System_nuint
-wrapper_native_to_managed_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_System_nuint:
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_uintptr
+wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_uintptr:
+.loc 1 1 0
+.word 0xa9b47bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf90023be
+.word 0xa904d3b3
+.word 0xa905dbb5
+.word 0xa906e3b7
+.word 0xa907ebb9
+.word 0xa908f3bb
+.word 0xf9004fbd
+.word 0x910003f1
+.word 0xf90053b1
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xaa0203fa
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003f7
+.word 0x9100c3a0
+.word 0xf94002e1
+.word 0xf9001ba1
+.word 0xf90002e0
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #880]
+.word 0x9100a3a0
+bl _mono_threads_enter_gc_safe_region_unbalanced
+.word 0xf9005ba0
+.word 0xf9400ba0
+.word 0xf9400fa1
+.word 0xaa1a03e2
+bl _p_95
+.word 0xf9405ba0
+.word 0x910083a1
+bl _mono_threads_exit_gc_safe_region_unbalanced
+
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x350001c0
+.word 0x14000001
+.word 0xf9401ba0
+.word 0xf90002e0
+.word 0xf94037b7
+.word 0xf94043ba
+.word 0x910003bf
+.word 0xa8cc7bfd
+.word 0xd65f03c0
+.word 0x91022340
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1a03e0
+bl _p_70
+bl _p_71
+.word 0xaa0003fa
+.word 0xb5ffff20
+.word 0x17fffff1
+
+Lme_a3:
+.text
+	.align 4
+	.no_dead_strip wrapper_native_to_managed_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_uintptr
+wrapper_native_to_managed_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_uintptr:
 .loc 1 1 0
 .word 0xa9bc7bfd
 .word 0x910003fd
@@ -4933,7 +6375,7 @@ ldr x0, [x16, #48]
 .word 0x14000001
 .word 0xf9400fa0
 .word 0xf94013a1
-bl _p_79
+bl _p_96
 .word 0xf9401ba0
 .word 0x9100a3a1
 bl _mono_threads_detach_coop
@@ -4941,16 +6383,16 @@ bl _mono_threads_detach_coop
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-bl _p_61
+bl _p_71
 .word 0xaa0003f7
 .word 0xb4fffe80
 .word 0x910222e0
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_60
+bl _p_70
 
-Lme_95:
+Lme_a4:
 .text
 	.align 3
 jit_code_end:
@@ -4964,11 +6406,19 @@ bl method_addresses
 bl method_addresses
 bl method_addresses
 bl method_addresses
-bl ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_System_nuint
+bl ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_uintptr
+bl ObjCRuntime_Trampolines_SDActionArity1V0_CreateBlock_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption
 bl ObjCRuntime_Trampolines_SDActionArity1V0__cctor
 bl ObjCRuntime_Trampolines_NIDActionArity1V0__ctor_ObjCRuntime_BlockLiteral_
 bl ObjCRuntime_Trampolines_NIDActionArity1V0_Create_intptr
 bl ObjCRuntime_Trampolines_NIDActionArity1V0_Invoke_UserNotificationsUI_UNNotificationContentExtensionResponseOption
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
 bl method_addresses
 bl method_addresses
 bl method_addresses
@@ -5089,27 +6539,34 @@ bl method_addresses
 bl method_addresses
 bl method_addresses
 bl wrapper_delegate_invoke_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption_invoke_void_T_UserNotificationsUI_UNNotificationContentExtensionResponseOption
-bl wrapper_delegate_invoke__Module_invoke_void_intptr_nuint_intptr_System_nuint
-bl wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_nuint_AsyncCallback_object_intptr_System_nuint_System_AsyncCallback_object
+bl wrapper_delegate_invoke__Module_invoke_void_intptr_uintptr_intptr_uintptr
+bl wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_uintptr_AsyncCallback_object_intptr_uintptr_System_AsyncCallback_object
 bl wrapper_delegate_end_invoke__Module_end_invoke_void__this___IAsyncResult_System_IAsyncResult
-bl wrapper_managed_to_native_ObjCRuntime_Trampolines_DActionArity1V0_wrapper_aot_native_object_intptr_System_nuint
-bl wrapper_delegate_invoke__Module_invoke_bound_void_object_intptr_nuint_intptr_System_nuint
+bl wrapper_managed_to_native_ObjCRuntime_Trampolines_DActionArity1V0_wrapper_aot_native_object_intptr_uintptr
+bl wrapper_delegate_invoke__Module_invoke_bound_void_object_intptr_uintptr_intptr_uintptr
 bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
 bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
-bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint
-bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_intptr
 bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
-bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
-bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr
 bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_0
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_intptr
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_0
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_1
 bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_bool_intptr
 bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_1
 bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_2
 bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
-bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_0
-bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_3
-bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong
-bl wrapper_native_to_managed_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_System_nuint
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_bool
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uintptr
+bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_uintptr
+bl wrapper_native_to_managed_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_uintptr
 method_addresses_end:
 
 .section __TEXT, __const
@@ -5127,666 +6584,804 @@ unbox_trampoline_addresses:
 	.align 3
 unwind_info:
 
-	.byte 18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,13,12,31,0,68,14,32,157,4,158,3,68,13
-	.byte 29,13,12,31,0,68,14,64,157,8,158,7,68,13,29,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8
-	.byte 16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68
-	.byte 154,2,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,13,12,31,0,68,14,48,157,6,158,5,68,13
-	.byte 29,13,12,31,0,68,14,16,157,2,158,1,68,13,29,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4
-	.byte 154,3,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,153,12,18,12,31,0,68,14,32,157,4,158,3,68,13
-	.byte 29,68,153,2,154,1,19,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,68,154,5,21,12,31,0,68,14
-	.byte 48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,154
-	.byte 4,26,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4,28,12,31,0
-	.byte 68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3,18,12,31,0,68,14,80
-	.byte 157,10,158,9,68,13,29,68,152,8,153,7,18,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,39
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
-	.byte 154,7,68,155,6,156,5,39,12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12
-	.byte 68,151,11,152,10,68,153,9,154,8,68,155,7,156,6,39,12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147
-	.byte 15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9,154,8,68,155,7,156,6,39,12,31,0,68,14,192,1,157
-	.byte 24,158,23,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8,154,7,68,155,6,156,5,39
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
-	.byte 154,5,68,155,4,156,3,39,12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,13,148,12,68,149,11,150,10
-	.byte 68,151,9,152,8,68,153,7,154,6,68,155,5,156,4,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6
+	.byte 16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,14,12,31,0,68,14,128,1,157,16,158,15,68,13,29
+	.byte 13,12,31,0,68,14,32,157,4,158,3,68,13,29,13,12,31,0,68,14,64,157,8,158,7,68,13,29,18,12,31,0
+	.byte 68,14,80,157,10,158,9,68,13,29,68,153,8,154,7,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8
+	.byte 16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68
+	.byte 154,4,13,12,31,0,68,14,16,157,2,158,1,68,13,29,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153
+	.byte 4,154,3,19,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,153,14,154,13,19,12,31,0,68,14,64,157,8
+	.byte 158,7,68,13,29,68,152,6,68,154,5,18,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1,23,12
+	.byte 31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,152,5,68,153,4,154,3,18,12,31,0,68,14,48,157,6,158
+	.byte 5,68,13,29,68,152,4,153,3,13,12,31,0,68,14,48,157,6,158,5,68,13,29,16,12,31,0,68,14,64,157,8
+	.byte 158,7,68,13,29,68,154,6,26,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5
+	.byte 68,154,4,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3
+	.byte 18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,18,12,31,0,68,14,64,157,8,158,7,68,13
+	.byte 29,68,152,6,153,5,39,12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,14,148,13,68,149,12,150,11,68
+	.byte 151,10,152,9,68,153,8,154,7,68,155,6,156,5,39,12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15
+	.byte 148,14,68,149,13,150,12,68,151,11,152,10,68,153,9,154,8,68,155,7,156,6,39,12,31,0,68,14,192,1,157,24
+	.byte 158,23,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9,154,8,68,155,7,156,6,39,12
+	.byte 31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8,154
+	.byte 7,68,155,6,156,5,39,12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,12,148,11,68,149,10,150,9,68
+	.byte 151,8,152,7,68,153,6,154,5,68,155,4,156,3,39,12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,13
+	.byte 148,12,68,149,11,150,10,68,151,9,152,8,68,153,7,154,6,68,155,5,156,4,16,12,31,0,68,14,64,157,8,158
+	.byte 7,68,13,29,68,151,6
 
 .text
 	.align 4
 plt:
 mono_aot_Smartech_plt:
-	.no_dead_strip plt_ObjCRuntime_BlockLiteral_get_Target
-plt_ObjCRuntime_BlockLiteral_get_Target:
+	.no_dead_strip plt_ObjCRuntime_BlockLiteral_GetTarget_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption_intptr
+plt_ObjCRuntime_BlockLiteral_GetTarget_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption_intptr:
 _p_1:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x16, [x16, #832]
+ldr x16, [x16, #896]
 br x16
-.word 1200
-	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
-plt__jit_icall_mono_arch_throw_corlib_exception:
+.word 1321
+	.no_dead_strip plt_ObjCRuntime_BlockLiteral_SetupBlockImpl_System_Delegate_System_Delegate_bool_string
+plt_ObjCRuntime_BlockLiteral_SetupBlockImpl_System_Delegate_System_Delegate_bool_string:
 _p_2:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x16, [x16, #840]
+ldr x16, [x16, #904]
 br x16
-.word 1205
+.word 1333
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_3:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x16, [x16, #848]
+ldr x16, [x16, #912]
 br x16
-.word 1207
+.word 1338
 	.no_dead_strip plt_ObjCRuntime_TrampolineBlockBase__ctor_ObjCRuntime_BlockLiteral_
 plt_ObjCRuntime_TrampolineBlockBase__ctor_ObjCRuntime_BlockLiteral_:
 _p_4:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x16, [x16, #856]
+ldr x16, [x16, #920]
 br x16
-.word 1215
+.word 1346
 	.no_dead_strip plt_ObjCRuntime_BlockLiteral_GetDelegateForBlock_ObjCRuntime_Trampolines_DActionArity1V0
 plt_ObjCRuntime_BlockLiteral_GetDelegateForBlock_ObjCRuntime_Trampolines_DActionArity1V0:
 _p_5:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x16, [x16, #864]
+ldr x16, [x16, #928]
 br x16
-.word 1220
+.word 1351
 	.no_dead_strip plt_ObjCRuntime_TrampolineBlockBase_GetExistingManagedDelegate_intptr
 plt_ObjCRuntime_TrampolineBlockBase_GetExistingManagedDelegate_intptr:
 _p_6:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x16, [x16, #872]
+ldr x16, [x16, #936]
 br x16
-.word 1232
+.word 1363
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
 plt__jit_icall_ves_icall_object_new_specific:
 _p_7:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x16, [x16, #880]
+ldr x16, [x16, #944]
 br x16
-.word 1237
+.word 1368
 	.no_dead_strip plt_ObjCRuntime_Trampolines_NIDActionArity1V0__ctor_ObjCRuntime_BlockLiteral_
 plt_ObjCRuntime_Trampolines_NIDActionArity1V0__ctor_ObjCRuntime_BlockLiteral_:
 _p_8:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x16, [x16, #888]
-br x16
-.word 1240
-	.no_dead_strip plt_Foundation_NSObject__ctor_Foundation_NSObjectFlag
-plt_Foundation_NSObject__ctor_Foundation_NSObjectFlag:
-_p_9:
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x16, [x16, #896]
-br x16
-.word 1242
-	.no_dead_strip plt_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly
-plt_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly:
-_p_10:
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x16, [x16, #904]
-br x16
-.word 1247
-	.no_dead_strip plt_Foundation_NSObject_set_IsDirectBinding_bool
-plt_Foundation_NSObject_set_IsDirectBinding_bool:
-_p_11:
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x16, [x16, #912]
-br x16
-.word 1252
-	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
-plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
-_p_12:
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x16, [x16, #920]
-br x16
-.word 1257
-	.no_dead_strip plt_Foundation_NSObject_InitializeHandle_intptr_string
-plt_Foundation_NSObject_InitializeHandle_intptr_string:
-_p_13:
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x16, [x16, #928]
-br x16
-.word 1259
-	.no_dead_strip plt_Foundation_NSObject__ctor_intptr
-plt_Foundation_NSObject__ctor_intptr:
-_p_14:
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x16, [x16, #936]
-br x16
-.word 1264
-	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint
-plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint:
-_p_15:
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
-ldr x16, [x16, #944]
-br x16
-.word 1269
-	.no_dead_strip plt_ObjCRuntime_NativeObjectExtensions_GetNonNullHandle_ObjCRuntime_INativeObject_string
-plt_ObjCRuntime_NativeObjectExtensions_GetNonNullHandle_ObjCRuntime_INativeObject_string:
-_p_16:
-adrp x16, mono_aot_Smartech_got@PAGE+0
-add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 1271
-	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_intptr
-plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_intptr:
-_p_17:
+.word 1371
+	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
+plt__jit_icall_mono_arch_throw_corlib_exception:
+_p_9:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 1276
-	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCoreAppTracking_intptr
-plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCoreAppTracking_intptr:
-_p_18:
+.word 1373
+	.no_dead_strip plt_uintptr_op_Explicit_ulong
+plt_uintptr_op_Explicit_ulong:
+_p_10:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 1278
-	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
-plt__jit_icall_mono_arch_throw_exception:
-_p_19:
+.word 1375
+	.no_dead_strip plt_Foundation_NSObject__ctor_Foundation_NSObjectFlag
+plt_Foundation_NSObject__ctor_Foundation_NSObjectFlag:
+_p_11:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 1290
-	.no_dead_strip plt_Foundation_NSString_CreateNative_string
-plt_Foundation_NSString_CreateNative_string:
-_p_20:
+.word 1380
+	.no_dead_strip plt_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly
+plt_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly:
+_p_12:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 1292
-	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
-plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
-_p_21:
+.word 1385
+	.no_dead_strip plt_Foundation_NSObject_set_IsDirectBinding_bool
+plt_Foundation_NSObject_set_IsDirectBinding_bool:
+_p_13:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 1297
-	.no_dead_strip plt_Foundation_NSString_ReleaseNative_intptr
-plt_Foundation_NSString_ReleaseNative_intptr:
-_p_22:
+.word 1390
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
+_p_14:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 1299
-	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
-plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
-_p_23:
+.word 1395
+	.no_dead_strip plt_Foundation_NSObject_InitializeHandle_intptr_string
+plt_Foundation_NSObject_InitializeHandle_intptr_string:
+_p_15:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 1304
-	.no_dead_strip plt_ObjCRuntime_Class_GetHandle_string
-plt_ObjCRuntime_Class_GetHandle_string:
-_p_24:
+.word 1397
+	.no_dead_strip plt_Foundation_NSObject_get_SuperHandle
+plt_Foundation_NSObject_get_SuperHandle:
+_p_16:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 1306
-	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
-plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
-_p_25:
+.word 1402
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr:
+_p_17:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 1311
-	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCoreInstallation_intptr
-plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCoreInstallation_intptr:
-_p_26:
+.word 1407
+	.no_dead_strip plt_Foundation_NSObject__ctor_intptr
+plt_Foundation_NSObject__ctor_intptr:
+_p_18:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 1313
-	.no_dead_strip plt_UserNotifications_UNNotificationServiceExtension__ctor_Foundation_NSObjectFlag
-plt_UserNotifications_UNNotificationServiceExtension__ctor_Foundation_NSObjectFlag:
-_p_27:
+.word 1409
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
+_p_19:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 1325
-	.no_dead_strip plt_UserNotifications_UNNotificationServiceExtension__ctor_intptr
-plt_UserNotifications_UNNotificationServiceExtension__ctor_intptr:
-_p_28:
+.word 1414
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr
+plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr:
+_p_20:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 1330
-	.no_dead_strip plt_ObjCRuntime_BlockLiteral_SetupBlockImpl_System_Delegate_System_Delegate_bool_string
-plt_ObjCRuntime_BlockLiteral_SetupBlockImpl_System_Delegate_System_Delegate_bool_string:
-_p_29:
+.word 1416
+	.no_dead_strip plt_ObjCRuntime_NativeObjectExtensions_GetNonNullHandle_ObjCRuntime_INativeObject_string
+plt_ObjCRuntime_NativeObjectExtensions_GetNonNullHandle_ObjCRuntime_INativeObject_string:
+_p_21:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 1335
-	.no_dead_strip plt_ObjCRuntime_BlockLiteral_CleanupBlock
-plt_ObjCRuntime_BlockLiteral_CleanupBlock:
-_p_30:
+.word 1418
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
+_p_22:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 1340
-	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCoreNotificationService_intptr
-plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCoreNotificationService_intptr:
-_p_31:
+.word 1423
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_intptr
+plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_intptr:
+_p_23:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 1345
-	.no_dead_strip plt_Foundation_NSArray_FromNSObjects_Foundation_NSObject__
-plt_Foundation_NSArray_FromNSObjects_Foundation_NSObject__:
-_p_32:
+.word 1425
+	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCoreAppTracking_intptr
+plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCoreAppTracking_intptr:
+_p_24:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 1357
-	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
-plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0:
-_p_33:
+.word 1427
+	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
+plt__jit_icall_mono_arch_throw_exception:
+_p_25:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 1362
-	.no_dead_strip plt_Foundation_NSObject_Dispose
-plt_Foundation_NSObject_Dispose:
-_p_34:
+.word 1439
+	.no_dead_strip plt_CoreFoundation_CFString_CreateNative_string
+plt_CoreFoundation_CFString_CreateNative_string:
+_p_26:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 1364
-	.no_dead_strip plt_ObjCRuntime_NativeObjectExtensions_GetHandle_ObjCRuntime_INativeObject
-plt_ObjCRuntime_NativeObjectExtensions_GetHandle_ObjCRuntime_INativeObject:
-_p_35:
+.word 1441
+	.no_dead_strip plt_CoreFoundation_CFString_ReleaseNative_intptr
+plt_CoreFoundation_CFString_ReleaseNative_intptr:
+_p_27:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 1369
-	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr
-plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr:
-_p_36:
+.word 1446
+	.no_dead_strip plt_ObjCRuntime_Class_GetHandle_string
+plt_ObjCRuntime_Class_GetHandle_string:
+_p_28:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 1374
-	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCorePushTaskManager_intptr
-plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCorePushTaskManager_intptr:
-_p_37:
+.word 1451
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
+_p_29:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 1376
-	.no_dead_strip plt_NetCorePush_NetCorePushTaskManager_get_WeakDelegate
-plt_NetCorePush_NetCorePushTaskManager_get_WeakDelegate:
-_p_38:
+.word 1456
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_0
+plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_0:
+_p_30:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 1388
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr
-plt__jit_icall_mono_helper_ldstr:
-_p_39:
+.word 1458
+	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCoreInstallation_intptr
+plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCoreInstallation_intptr:
+_p_31:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 1390
-	.no_dead_strip plt_string_Concat_string_string_string
-plt_string_Concat_string_string_string:
-_p_40:
+.word 1460
+	.no_dead_strip plt_UserNotifications_UNNotificationServiceExtension__ctor_Foundation_NSObjectFlag
+plt_UserNotifications_UNNotificationServiceExtension__ctor_Foundation_NSObjectFlag:
+_p_32:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 1393
-	.no_dead_strip plt_NetCorePush_NetCorePushTaskManager_set_WeakDelegate_Foundation_NSObject
-plt_NetCorePush_NetCorePushTaskManager_set_WeakDelegate_Foundation_NSObject:
-_p_41:
+.word 1472
+	.no_dead_strip plt_UserNotifications_UNNotificationServiceExtension__ctor_intptr
+plt_UserNotifications_UNNotificationServiceExtension__ctor_intptr:
+_p_33:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 1398
-	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_intptr
-plt_ObjCRuntime_Runtime_GetNSObject_intptr:
-_p_42:
+.word 1477
+	.no_dead_strip plt_ObjCRuntime_Trampolines_SDActionArity1V0_CreateBlock_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption
+plt_ObjCRuntime_Trampolines_SDActionArity1V0_CreateBlock_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption:
+_p_34:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 1400
-	.no_dead_strip plt_Foundation_NSObject_MarkDirty
-plt_Foundation_NSObject_MarkDirty:
-_p_43:
+.word 1482
+	.no_dead_strip plt__jit_icall_ves_icall_thread_finish_async_abort
+plt__jit_icall_ves_icall_thread_finish_async_abort:
+_p_35:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 1405
-	.no_dead_strip plt_Foundation_NSObject_Dispose_bool
-plt_Foundation_NSObject_Dispose_bool:
-_p_44:
+.word 1484
+	.no_dead_strip plt_ObjCRuntime_BlockLiteral_Dispose
+plt_ObjCRuntime_BlockLiteral_Dispose:
+_p_36:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 1410
-	.no_dead_strip plt_ObjCRuntime_BaseWrapper__ctor_intptr_bool
-plt_ObjCRuntime_BaseWrapper__ctor_intptr_bool:
-_p_45:
+.word 1487
+	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCoreNotificationService_intptr
+plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCoreNotificationService_intptr:
+_p_37:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 1415
-	.no_dead_strip plt_Foundation_NSObject_get_SuperHandle
-plt_Foundation_NSObject_get_SuperHandle:
-_p_46:
+.word 1492
+	.no_dead_strip plt_Foundation_NSArray_FromNSObjects_Foundation_NSObject__
+plt_Foundation_NSArray_FromNSObjects_Foundation_NSObject__:
+_p_38:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 1420
-	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
-plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr:
-_p_47:
+.word 1504
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
+plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0:
+_p_39:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 1425
-	.no_dead_strip plt_Foundation_You_Should_Not_Call_base_In_This_Method__ctor
-plt_Foundation_You_Should_Not_Call_base_In_This_Method__ctor:
-_p_48:
+.word 1509
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_0
+plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_0:
+_p_40:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 1427
-	.no_dead_strip plt_Foundation_NSArray_FromStrings_string__
-plt_Foundation_NSArray_FromStrings_string__:
-_p_49:
+.word 1511
+	.no_dead_strip plt_Foundation_NSObject_Dispose
+plt_Foundation_NSObject_Dispose:
+_p_41:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 1432
-	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_0
-plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_0:
-_p_50:
+.word 1513
+	.no_dead_strip plt_ObjCRuntime_NativeObjectExtensions_GetHandle_ObjCRuntime_INativeObject
+plt_ObjCRuntime_NativeObjectExtensions_GetHandle_ObjCRuntime_INativeObject:
+_p_42:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 1437
-	.no_dead_strip plt_Foundation_NSArray_ArrayFromHandle_Foundation_NSObject_intptr
-plt_Foundation_NSArray_ArrayFromHandle_Foundation_NSObject_intptr:
-_p_51:
+.word 1518
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr
+plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr:
+_p_43:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 1439
-	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
-plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
-_p_52:
+.word 1523
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_bool_intptr
+plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_bool_intptr:
+_p_44:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 1451
-	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCoreSharedManager_intptr
-plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCoreSharedManager_intptr:
-_p_53:
+.word 1525
+	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCorePushTaskManager_intptr
+plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCorePushTaskManager_intptr:
+_p_45:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 1453
-	.no_dead_strip plt_Foundation_NSString_FromHandle_intptr
-plt_Foundation_NSString_FromHandle_intptr:
-_p_54:
+.word 1527
+	.no_dead_strip plt_NetCorePush_NetCorePushTaskManager_get_WeakDelegate
+plt_NetCorePush_NetCorePushTaskManager_get_WeakDelegate:
+_p_46:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 1465
-	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
-plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1:
-_p_55:
+.word 1539
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr
+plt__jit_icall_mono_helper_ldstr:
+_p_47:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 1470
-	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
-plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2:
-_p_56:
+.word 1541
+	.no_dead_strip plt_string_Concat_string_string_string
+plt_string_Concat_string_string_string:
+_p_48:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 1472
-	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_intptr
-plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_intptr:
-_p_57:
+.word 1544
+	.no_dead_strip plt_NetCorePush_NetCorePushTaskManager_set_WeakDelegate_Foundation_NSObject
+plt_NetCorePush_NetCorePushTaskManager_set_WeakDelegate_Foundation_NSObject:
+_p_49:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 1474
-	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_3
-plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_3:
-_p_58:
+.word 1549
+	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_intptr
+plt_ObjCRuntime_Runtime_GetNSObject_intptr:
+_p_50:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 1486
-	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong
-plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong:
-_p_59:
+.word 1551
+	.no_dead_strip plt_Foundation_NSObject_MarkDirty
+plt_Foundation_NSObject_MarkDirty:
+_p_51:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 1488
-	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
-plt__jit_icall_mono_arch_rethrow_exception:
-_p_60:
+.word 1556
+	.no_dead_strip plt_Foundation_NSObject_Dispose_bool
+plt_Foundation_NSObject_Dispose_bool:
+_p_52:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 1490
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
-_p_61:
+.word 1561
+	.no_dead_strip plt_ObjCRuntime_BaseWrapper__ctor_intptr_bool
+plt_ObjCRuntime_BaseWrapper__ctor_intptr_bool:
+_p_53:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 1492
-	.no_dead_strip plt__jit_icall_mono_delegate_begin_invoke
-plt__jit_icall_mono_delegate_begin_invoke:
-_p_62:
+.word 1566
+	.no_dead_strip plt_Foundation_You_Should_Not_Call_base_In_This_Method__ctor
+plt_Foundation_You_Should_Not_Call_base_In_This_Method__ctor:
+_p_54:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 1495
-	.no_dead_strip plt__jit_icall_mono_delegate_end_invoke
-plt__jit_icall_mono_delegate_end_invoke:
-_p_63:
+.word 1571
+	.no_dead_strip plt_Foundation_NSArray_FromStrings_string__
+plt_Foundation_NSArray_FromStrings_string__:
+_p_55:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 1498
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
-_p_64:
+.word 1576
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1
+plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1:
+_p_56:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 1501
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr:
-_p_65:
+.word 1581
+	.no_dead_strip plt_CoreFoundation_CFArray_ArrayFromHandle_Foundation_NSObject_intptr
+plt_CoreFoundation_CFArray_ArrayFromHandle_Foundation_NSObject_intptr:
+_p_57:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 1503
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint:
-_p_66:
+.word 1583
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_1
+plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_1:
+_p_58:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 1505
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_intptr:
-_p_67:
+.word 1595
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
+_p_59:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 1507
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
-_p_68:
+.word 1597
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_bool
+plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_bool:
+_p_60:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 1509
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
-_p_69:
+.word 1599
+	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCoreSharedManager_intptr
+plt_ObjCRuntime_Runtime_GetNSObject_NetCorePush_NetCoreSharedManager_intptr:
+_p_61:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 1511
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
-_p_70:
+.word 1601
+	.no_dead_strip plt_CoreFoundation_CFString_FromHandle_intptr
+plt_CoreFoundation_CFString_FromHandle_intptr:
+_p_62:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 1513
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0:
-_p_71:
+.word 1613
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
+plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1:
+_p_63:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 1515
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr:
-_p_72:
+.word 1618
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_1
+plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_1:
+_p_64:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 1517
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1:
-_p_73:
+.word 1620
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
+plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2:
+_p_65:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 1519
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2:
-_p_74:
+.word 1622
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_2
+plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_2:
+_p_66:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 1521
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
-_p_75:
+.word 1624
+	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_intptr
+plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_intptr:
+_p_67:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 1523
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_0
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_0:
-_p_76:
+.word 1626
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uintptr
+plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uintptr:
+_p_68:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 1525
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_3
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_3:
-_p_77:
+.word 1638
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_uintptr
+plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_uintptr:
+_p_69:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 1527
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong:
-_p_78:
+.word 1640
+	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
+plt__jit_icall_mono_arch_rethrow_exception:
+_p_70:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 1529
-	.no_dead_strip plt_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_System_nuint
-plt_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_System_nuint:
-_p_79:
+.word 1642
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
+_p_71:
 adrp x16, mono_aot_Smartech_got@PAGE+0
 add x16, x16, mono_aot_Smartech_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 1531
+.word 1644
+	.no_dead_strip plt__jit_icall_mono_delegate_begin_invoke
+plt__jit_icall_mono_delegate_begin_invoke:
+_p_72:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1464]
+br x16
+.word 1647
+	.no_dead_strip plt__jit_icall_mono_delegate_end_invoke
+plt__jit_icall_mono_delegate_end_invoke:
+_p_73:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1472]
+br x16
+.word 1650
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
+_p_74:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1480]
+br x16
+.word 1653
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr:
+_p_75:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1488]
+br x16
+.word 1655
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
+_p_76:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1496]
+br x16
+.word 1657
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr:
+_p_77:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1504]
+br x16
+.word 1659
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0:
+_p_78:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1512]
+br x16
+.word 1661
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_0
+plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_0:
+_p_79:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1520]
+br x16
+.word 1663
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
+_p_80:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1528]
+br x16
+.word 1665
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_intptr:
+_p_81:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1536]
+br x16
+.word 1667
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
+_p_82:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1544]
+br x16
+.word 1669
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_0
+plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_0:
+_p_83:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1552]
+br x16
+.word 1671
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1:
+_p_84:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1560]
+br x16
+.word 1673
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_1
+plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_1:
+_p_85:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1568]
+br x16
+.word 1675
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr:
+_p_86:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1576]
+br x16
+.word 1677
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_bool_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_bool_intptr:
+_p_87:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1584]
+br x16
+.word 1679
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1:
+_p_88:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1592]
+br x16
+.word 1681
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_1
+plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_1:
+_p_89:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1600]
+br x16
+.word 1683
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2:
+_p_90:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1608]
+br x16
+.word 1685
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_2
+plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_2:
+_p_91:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1616]
+br x16
+.word 1687
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
+_p_92:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1624]
+br x16
+.word 1689
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_bool
+plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_bool:
+_p_93:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1632]
+br x16
+.word 1691
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uintptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uintptr:
+_p_94:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1640]
+br x16
+.word 1693
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_uintptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_uintptr:
+_p_95:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1648]
+br x16
+.word 1695
+	.no_dead_strip plt_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_uintptr
+plt_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_uintptr:
+_p_96:
+adrp x16, mono_aot_Smartech_got@PAGE+0
+add x16, x16, mono_aot_Smartech_got@PAGEOFF
+ldr x16, [x16, #1656]
+br x16
+.word 1697
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Smartech_got, 1464
+.lcomm mono_aot_Smartech_got, 1664
 got_end:
 .section	__DATA,__objc_selrefs,literal_pointers,no_dead_strip
 .align	3
@@ -6077,7 +7672,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "047765C0-566D-4065-B21D-5058C6927090"
+	.asciz "D931962E-42D7-4544-AE7F-4F703E328CF1"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -6164,14 +7759,14 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 103,1464,80,150,22,98,391195135,0
-	.long 3051,128,8,8,8,9,8388607,0
-	.long 4,25,4856,0,0,1792,1528,944
-	.long 0,1264,1488,1104,0,728,216,1784
+	.long 111,1664,97,165,29,98,391195135,0
+	.long 3276,128,8,8,8,9,8388607,0
+	.long 4,25,5632,0,0,2344,2080,1472
+	.long 0,1800,2040,1632,0,1200,240,2336
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 100,71,42,173,185,92,155,130,15,226,131,182,24,173,74,130
+	.byte 102,110,246,32,128,3,47,35,198,242,141,133,70,188,154,248
 	.globl _mono_aot_module_Smartech_info
 	.align 3
 _mono_aot_module_Smartech_info:
@@ -6525,10 +8120,10 @@ LDIFF_SYM64=LTDIE_0 - Ldebug_info_start
 	.long LDIFF_SYM64
 	.byte 2
 	.asciz "ObjCRuntime.Trampolines/SDActionArity1V0:Invoke"
-	.asciz "ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_System_nuint"
+	.asciz "ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_uintptr"
 
 	.byte 0,0
-	.quad ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_System_nuint
+	.quad ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_uintptr
 	.quad Lme_4
 
 	.byte 2,118,16,3
@@ -6539,19 +8134,19 @@ LDIFF_SYM65=LDIE_I - Ldebug_info_start
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM66=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM66=LDIE_U - Ldebug_info_start
 	.long LDIFF_SYM66
-	.byte 2,141,32,11
+	.byte 2,141,24,11
 	.asciz "V_0"
 
-LDIFF_SYM67=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM67=LTDIE_0_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM67
-	.byte 0,11
+	.byte 1,105,11
 	.asciz "V_1"
 
-LDIFF_SYM68=LTDIE_0_REFERENCE - Ldebug_info_start
+LDIFF_SYM68=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM68
-	.byte 1,104,0
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -6561,14 +8156,58 @@ Lfde0_start:
 
 	.long 0
 	.align 3
-	.quad ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_System_nuint
+	.quad ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_uintptr
 
-LDIFF_SYM70=Lme_4 - ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_System_nuint
+LDIFF_SYM70=Lme_4 - ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_uintptr
 	.long LDIFF_SYM70
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
 Lfde0_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "ObjCRuntime.Trampolines/SDActionArity1V0:CreateBlock"
+	.asciz "ObjCRuntime_Trampolines_SDActionArity1V0_CreateBlock_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption"
+
+	.byte 0,0
+	.quad ObjCRuntime_Trampolines_SDActionArity1V0_CreateBlock_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption
+	.quad Lme_5
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM71=LTDIE_0_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM71
+	.byte 2,141,24,11
+	.asciz "V_0"
+
+LDIFF_SYM72=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM72
+	.byte 3,141,208,0,11
+	.asciz "V_1"
+
+LDIFF_SYM73=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM73
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM74=Lfde1_end - Lfde1_start
+	.long LDIFF_SYM74
+Lfde1_start:
+
+	.long 0
+	.align 3
+	.quad ObjCRuntime_Trampolines_SDActionArity1V0_CreateBlock_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption
+
+LDIFF_SYM75=Lme_5 - ObjCRuntime_Trampolines_SDActionArity1V0_CreateBlock_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption
+	.long LDIFF_SYM75
+	.long 0
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29
+	.align 3
+Lfde1_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -6578,26 +8217,26 @@ Lfde0_end:
 
 	.byte 0,0
 	.quad ObjCRuntime_Trampolines_SDActionArity1V0__cctor
-	.quad Lme_5
+	.quad Lme_6
 
 	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM71=Lfde1_end - Lfde1_start
-	.long LDIFF_SYM71
-Lfde1_start:
+LDIFF_SYM76=Lfde2_end - Lfde2_start
+	.long LDIFF_SYM76
+Lfde2_start:
 
 	.long 0
 	.align 3
 	.quad ObjCRuntime_Trampolines_SDActionArity1V0__cctor
 
-LDIFF_SYM72=Lme_5 - ObjCRuntime_Trampolines_SDActionArity1V0__cctor
-	.long LDIFF_SYM72
+LDIFF_SYM77=Lme_6 - ObjCRuntime_Trampolines_SDActionArity1V0__cctor
+	.long LDIFF_SYM77
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde1_end:
+Lfde2_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_12:
@@ -6606,115 +8245,115 @@ LTDIE_12:
 	.asciz "ObjCRuntime_TrampolineBlockBase"
 
 	.byte 24,16
-LDIFF_SYM73=LTDIE_3 - Ldebug_info_start
-	.long LDIFF_SYM73
+LDIFF_SYM78=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM78
 	.byte 2,35,0,6
 	.asciz "blockPtr"
 
-LDIFF_SYM74=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM74
+LDIFF_SYM79=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM79
 	.byte 2,35,16,0,7
 	.asciz "ObjCRuntime_TrampolineBlockBase"
 
-LDIFF_SYM75=LTDIE_12 - Ldebug_info_start
-	.long LDIFF_SYM75
+LDIFF_SYM80=LTDIE_12 - Ldebug_info_start
+	.long LDIFF_SYM80
 LTDIE_12_POINTER:
 
 	.byte 13
-LDIFF_SYM76=LTDIE_12 - Ldebug_info_start
-	.long LDIFF_SYM76
+LDIFF_SYM81=LTDIE_12 - Ldebug_info_start
+	.long LDIFF_SYM81
 LTDIE_12_REFERENCE:
 
 	.byte 14
-LDIFF_SYM77=LTDIE_12 - Ldebug_info_start
-	.long LDIFF_SYM77
+LDIFF_SYM82=LTDIE_12 - Ldebug_info_start
+	.long LDIFF_SYM82
 LTDIE_13:
 
 	.byte 5
 	.asciz "_DActionArity1V0"
 
 	.byte 128,1,16
-LDIFF_SYM78=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM78
+LDIFF_SYM83=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM83
 	.byte 2,35,0,0,7
 	.asciz "_DActionArity1V0"
 
-LDIFF_SYM79=LTDIE_13 - Ldebug_info_start
-	.long LDIFF_SYM79
+LDIFF_SYM84=LTDIE_13 - Ldebug_info_start
+	.long LDIFF_SYM84
 LTDIE_13_POINTER:
 
 	.byte 13
-LDIFF_SYM80=LTDIE_13 - Ldebug_info_start
-	.long LDIFF_SYM80
+LDIFF_SYM85=LTDIE_13 - Ldebug_info_start
+	.long LDIFF_SYM85
 LTDIE_13_REFERENCE:
 
 	.byte 14
-LDIFF_SYM81=LTDIE_13 - Ldebug_info_start
-	.long LDIFF_SYM81
+LDIFF_SYM86=LTDIE_13 - Ldebug_info_start
+	.long LDIFF_SYM86
 LTDIE_11:
 
 	.byte 5
 	.asciz "_NIDActionArity1V0"
 
 	.byte 32,16
-LDIFF_SYM82=LTDIE_12 - Ldebug_info_start
-	.long LDIFF_SYM82
+LDIFF_SYM87=LTDIE_12 - Ldebug_info_start
+	.long LDIFF_SYM87
 	.byte 2,35,0,6
 	.asciz "invoker"
 
-LDIFF_SYM83=LTDIE_13_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM83
+LDIFF_SYM88=LTDIE_13_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM88
 	.byte 2,35,24,0,7
 	.asciz "_NIDActionArity1V0"
 
-LDIFF_SYM84=LTDIE_11 - Ldebug_info_start
-	.long LDIFF_SYM84
+LDIFF_SYM89=LTDIE_11 - Ldebug_info_start
+	.long LDIFF_SYM89
 LTDIE_11_POINTER:
 
 	.byte 13
-LDIFF_SYM85=LTDIE_11 - Ldebug_info_start
-	.long LDIFF_SYM85
+LDIFF_SYM90=LTDIE_11 - Ldebug_info_start
+	.long LDIFF_SYM90
 LTDIE_11_REFERENCE:
 
 	.byte 14
-LDIFF_SYM86=LTDIE_11 - Ldebug_info_start
-	.long LDIFF_SYM86
+LDIFF_SYM91=LTDIE_11 - Ldebug_info_start
+	.long LDIFF_SYM91
 	.byte 2
 	.asciz "ObjCRuntime.Trampolines/NIDActionArity1V0:.ctor"
 	.asciz "ObjCRuntime_Trampolines_NIDActionArity1V0__ctor_ObjCRuntime_BlockLiteral_"
 
 	.byte 0,0
 	.quad ObjCRuntime_Trampolines_NIDActionArity1V0__ctor_ObjCRuntime_BlockLiteral_
-	.quad Lme_6
+	.quad Lme_7
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM87=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM87
+LDIFF_SYM92=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM92
 	.byte 2,141,16,3
 	.asciz "param0"
 
-LDIFF_SYM88=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM88
+LDIFF_SYM93=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM93
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM89=Lfde2_end - Lfde2_start
-	.long LDIFF_SYM89
-Lfde2_start:
+LDIFF_SYM94=Lfde3_end - Lfde3_start
+	.long LDIFF_SYM94
+Lfde3_start:
 
 	.long 0
 	.align 3
 	.quad ObjCRuntime_Trampolines_NIDActionArity1V0__ctor_ObjCRuntime_BlockLiteral_
 
-LDIFF_SYM90=Lme_6 - ObjCRuntime_Trampolines_NIDActionArity1V0__ctor_ObjCRuntime_BlockLiteral_
-	.long LDIFF_SYM90
+LDIFF_SYM95=Lme_7 - ObjCRuntime_Trampolines_NIDActionArity1V0__ctor_ObjCRuntime_BlockLiteral_
+	.long LDIFF_SYM95
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde2_end:
+Lfde3_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -6724,36 +8363,46 @@ Lfde2_end:
 
 	.byte 0,0
 	.quad ObjCRuntime_Trampolines_NIDActionArity1V0_Create_intptr
-	.quad Lme_7
+	.quad Lme_8
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM91=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM91
-	.byte 2,141,24,11
+LDIFF_SYM96=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM96
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM92=LTDIE_0_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM92
-	.byte 2,141,32,0
+LDIFF_SYM97=LTDIE_0_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM97
+	.byte 2,141,32,11
+	.asciz "V_1"
+
+LDIFF_SYM98=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM98
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM99=LTDIE_0_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM99
+	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM93=Lfde3_end - Lfde3_start
-	.long LDIFF_SYM93
-Lfde3_start:
+LDIFF_SYM100=Lfde4_end - Lfde4_start
+	.long LDIFF_SYM100
+Lfde4_start:
 
 	.long 0
 	.align 3
 	.quad ObjCRuntime_Trampolines_NIDActionArity1V0_Create_intptr
 
-LDIFF_SYM94=Lme_7 - ObjCRuntime_Trampolines_NIDActionArity1V0_Create_intptr
-	.long LDIFF_SYM94
+LDIFF_SYM101=Lme_8 - ObjCRuntime_Trampolines_NIDActionArity1V0_Create_intptr
+	.long LDIFF_SYM101
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,154,7
 	.align 3
-Lfde3_end:
+Lfde4_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_14:
@@ -6762,8 +8411,8 @@ LTDIE_14:
 	.asciz "UserNotificationsUI_UNNotificationContentExtensionResponseOption"
 
 	.byte 8
-LDIFF_SYM95=LDIE_U8 - Ldebug_info_start
-	.long LDIFF_SYM95
+LDIFF_SYM102=LDIE_U8 - Ldebug_info_start
+	.long LDIFF_SYM102
 	.byte 9
 	.asciz "DoNotDismiss"
 
@@ -6776,54 +8425,54 @@ LDIFF_SYM95=LDIE_U8 - Ldebug_info_start
 	.byte 2,0,7
 	.asciz "UserNotificationsUI_UNNotificationContentExtensionResponseOption"
 
-LDIFF_SYM96=LTDIE_14 - Ldebug_info_start
-	.long LDIFF_SYM96
+LDIFF_SYM103=LTDIE_14 - Ldebug_info_start
+	.long LDIFF_SYM103
 LTDIE_14_POINTER:
 
 	.byte 13
-LDIFF_SYM97=LTDIE_14 - Ldebug_info_start
-	.long LDIFF_SYM97
+LDIFF_SYM104=LTDIE_14 - Ldebug_info_start
+	.long LDIFF_SYM104
 LTDIE_14_REFERENCE:
 
 	.byte 14
-LDIFF_SYM98=LTDIE_14 - Ldebug_info_start
-	.long LDIFF_SYM98
+LDIFF_SYM105=LTDIE_14 - Ldebug_info_start
+	.long LDIFF_SYM105
 	.byte 2
 	.asciz "ObjCRuntime.Trampolines/NIDActionArity1V0:Invoke"
 	.asciz "ObjCRuntime_Trampolines_NIDActionArity1V0_Invoke_UserNotificationsUI_UNNotificationContentExtensionResponseOption"
 
 	.byte 0,0
 	.quad ObjCRuntime_Trampolines_NIDActionArity1V0_Invoke_UserNotificationsUI_UNNotificationContentExtensionResponseOption
-	.quad Lme_8
+	.quad Lme_9
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM99=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM99
+LDIFF_SYM106=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM106
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM100=LTDIE_14 - Ldebug_info_start
-	.long LDIFF_SYM100
+LDIFF_SYM107=LTDIE_14 - Ldebug_info_start
+	.long LDIFF_SYM107
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM101=Lfde4_end - Lfde4_start
-	.long LDIFF_SYM101
-Lfde4_start:
+LDIFF_SYM108=Lfde5_end - Lfde5_start
+	.long LDIFF_SYM108
+Lfde5_start:
 
 	.long 0
 	.align 3
 	.quad ObjCRuntime_Trampolines_NIDActionArity1V0_Invoke_UserNotificationsUI_UNNotificationContentExtensionResponseOption
 
-LDIFF_SYM102=Lme_8 - ObjCRuntime_Trampolines_NIDActionArity1V0_Invoke_UserNotificationsUI_UNNotificationContentExtensionResponseOption
-	.long LDIFF_SYM102
+LDIFF_SYM109=Lme_9 - ObjCRuntime_Trampolines_NIDActionArity1V0_Invoke_UserNotificationsUI_UNNotificationContentExtensionResponseOption
+	.long LDIFF_SYM109
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8
 	.align 3
-Lfde4_end:
+Lfde5_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -6833,26 +8482,26 @@ Lfde4_end:
 
 	.byte 0,0
 	.quad ApiDefinition_Messaging__cctor
-	.quad Lme_18
+	.quad Lme_20
 
 	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM103=Lfde5_end - Lfde5_start
-	.long LDIFF_SYM103
-Lfde5_start:
+LDIFF_SYM110=Lfde6_end - Lfde6_start
+	.long LDIFF_SYM110
+Lfde6_start:
 
 	.long 0
 	.align 3
 	.quad ApiDefinition_Messaging__cctor
 
-LDIFF_SYM104=Lme_18 - ApiDefinition_Messaging__cctor
-	.long LDIFF_SYM104
+LDIFF_SYM111=Lme_20 - ApiDefinition_Messaging__cctor
+	.long LDIFF_SYM111
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde5_end:
+Lfde6_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_17:
@@ -6861,8 +8510,8 @@ LTDIE_17:
 	.asciz "_Flags"
 
 	.byte 1
-LDIFF_SYM105=LDIE_U1 - Ldebug_info_start
-	.long LDIFF_SYM105
+LDIFF_SYM112=LDIE_U1 - Ldebug_info_start
+	.long LDIFF_SYM112
 	.byte 9
 	.asciz "Disposed"
 
@@ -6887,110 +8536,115 @@ LDIFF_SYM105=LDIE_U1 - Ldebug_info_start
 	.byte 128,127,0,7
 	.asciz "_Flags"
 
-LDIFF_SYM106=LTDIE_17 - Ldebug_info_start
-	.long LDIFF_SYM106
+LDIFF_SYM113=LTDIE_17 - Ldebug_info_start
+	.long LDIFF_SYM113
 LTDIE_17_POINTER:
 
 	.byte 13
-LDIFF_SYM107=LTDIE_17 - Ldebug_info_start
-	.long LDIFF_SYM107
+LDIFF_SYM114=LTDIE_17 - Ldebug_info_start
+	.long LDIFF_SYM114
 LTDIE_17_REFERENCE:
 
 	.byte 14
-LDIFF_SYM108=LTDIE_17 - Ldebug_info_start
-	.long LDIFF_SYM108
+LDIFF_SYM115=LTDIE_17 - Ldebug_info_start
+	.long LDIFF_SYM115
 LTDIE_16:
 
 	.byte 5
 	.asciz "Foundation_NSObject"
 
 	.byte 40,16
-LDIFF_SYM109=LTDIE_3 - Ldebug_info_start
-	.long LDIFF_SYM109
+LDIFF_SYM116=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM116
 	.byte 2,35,0,6
 	.asciz "handle"
 
-LDIFF_SYM110=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM110
+LDIFF_SYM117=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM117
 	.byte 2,35,16,6
 	.asciz "super"
 
-LDIFF_SYM111=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM111
+LDIFF_SYM118=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM118
 	.byte 2,35,24,6
 	.asciz "flags"
 
-LDIFF_SYM112=LTDIE_17 - Ldebug_info_start
-	.long LDIFF_SYM112
+LDIFF_SYM119=LTDIE_17 - Ldebug_info_start
+	.long LDIFF_SYM119
 	.byte 2,35,32,0,7
 	.asciz "Foundation_NSObject"
 
-LDIFF_SYM113=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM113
+LDIFF_SYM120=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM120
 LTDIE_16_POINTER:
 
 	.byte 13
-LDIFF_SYM114=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM114
+LDIFF_SYM121=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM121
 LTDIE_16_REFERENCE:
 
 	.byte 14
-LDIFF_SYM115=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM115
+LDIFF_SYM122=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM122
 LTDIE_15:
 
 	.byte 5
 	.asciz "NetCorePush_NetCoreAppTracking"
 
 	.byte 40,16
-LDIFF_SYM116=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM116
+LDIFF_SYM123=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM123
 	.byte 2,35,0,0,7
 	.asciz "NetCorePush_NetCoreAppTracking"
 
-LDIFF_SYM117=LTDIE_15 - Ldebug_info_start
-	.long LDIFF_SYM117
+LDIFF_SYM124=LTDIE_15 - Ldebug_info_start
+	.long LDIFF_SYM124
 LTDIE_15_POINTER:
 
 	.byte 13
-LDIFF_SYM118=LTDIE_15 - Ldebug_info_start
-	.long LDIFF_SYM118
+LDIFF_SYM125=LTDIE_15 - Ldebug_info_start
+	.long LDIFF_SYM125
 LTDIE_15_REFERENCE:
 
 	.byte 14
-LDIFF_SYM119=LTDIE_15 - Ldebug_info_start
-	.long LDIFF_SYM119
+LDIFF_SYM126=LTDIE_15 - Ldebug_info_start
+	.long LDIFF_SYM126
 	.byte 2
 	.asciz "NetCorePush.NetCoreAppTracking:get_ClassHandle"
 	.asciz "NetCorePush_NetCoreAppTracking_get_ClassHandle"
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreAppTracking_get_ClassHandle
-	.quad Lme_19
+	.quad Lme_21
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM120=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM120
+LDIFF_SYM127=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM127
+	.byte 0,11
+	.asciz "V_0"
+
+LDIFF_SYM128=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM128
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM121=Lfde6_end - Lfde6_start
-	.long LDIFF_SYM121
-Lfde6_start:
+LDIFF_SYM129=Lfde7_end - Lfde7_start
+	.long LDIFF_SYM129
+Lfde7_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreAppTracking_get_ClassHandle
 
-LDIFF_SYM122=Lme_19 - NetCorePush_NetCoreAppTracking_get_ClassHandle
-	.long LDIFF_SYM122
+LDIFF_SYM130=Lme_21 - NetCorePush_NetCoreAppTracking_get_ClassHandle
+	.long LDIFF_SYM130
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde6_end:
+Lfde7_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -7000,31 +8654,36 @@ Lfde6_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreAppTracking__ctor
-	.quad Lme_1a
+	.quad Lme_22
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM123=LTDIE_15_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM123
-	.byte 1,106,0
+LDIFF_SYM131=LTDIE_15_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM131
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM132=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM132
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM124=Lfde7_end - Lfde7_start
-	.long LDIFF_SYM124
-Lfde7_start:
+LDIFF_SYM133=Lfde8_end - Lfde8_start
+	.long LDIFF_SYM133
+Lfde8_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreAppTracking__ctor
 
-LDIFF_SYM125=Lme_1a - NetCorePush_NetCoreAppTracking__ctor
-	.long LDIFF_SYM125
+LDIFF_SYM134=Lme_22 - NetCorePush_NetCoreAppTracking__ctor
+	.long LDIFF_SYM134
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde7_end:
+Lfde8_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_18:
@@ -7033,59 +8692,59 @@ LTDIE_18:
 	.asciz "Foundation_NSObjectFlag"
 
 	.byte 16,16
-LDIFF_SYM126=LTDIE_3 - Ldebug_info_start
-	.long LDIFF_SYM126
+LDIFF_SYM135=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM135
 	.byte 2,35,0,0,7
 	.asciz "Foundation_NSObjectFlag"
 
-LDIFF_SYM127=LTDIE_18 - Ldebug_info_start
-	.long LDIFF_SYM127
+LDIFF_SYM136=LTDIE_18 - Ldebug_info_start
+	.long LDIFF_SYM136
 LTDIE_18_POINTER:
 
 	.byte 13
-LDIFF_SYM128=LTDIE_18 - Ldebug_info_start
-	.long LDIFF_SYM128
+LDIFF_SYM137=LTDIE_18 - Ldebug_info_start
+	.long LDIFF_SYM137
 LTDIE_18_REFERENCE:
 
 	.byte 14
-LDIFF_SYM129=LTDIE_18 - Ldebug_info_start
-	.long LDIFF_SYM129
+LDIFF_SYM138=LTDIE_18 - Ldebug_info_start
+	.long LDIFF_SYM138
 	.byte 2
 	.asciz "NetCorePush.NetCoreAppTracking:.ctor"
 	.asciz "NetCorePush_NetCoreAppTracking__ctor_Foundation_NSObjectFlag"
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreAppTracking__ctor_Foundation_NSObjectFlag
-	.quad Lme_1b
+	.quad Lme_23
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM130=LTDIE_15_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM130
+LDIFF_SYM139=LTDIE_15_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM139
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM131=LTDIE_18_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM131
+LDIFF_SYM140=LTDIE_18_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM140
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM132=Lfde8_end - Lfde8_start
-	.long LDIFF_SYM132
-Lfde8_start:
+LDIFF_SYM141=Lfde9_end - Lfde9_start
+	.long LDIFF_SYM141
+Lfde9_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreAppTracking__ctor_Foundation_NSObjectFlag
 
-LDIFF_SYM133=Lme_1b - NetCorePush_NetCoreAppTracking__ctor_Foundation_NSObjectFlag
-	.long LDIFF_SYM133
+LDIFF_SYM142=Lme_23 - NetCorePush_NetCoreAppTracking__ctor_Foundation_NSObjectFlag
+	.long LDIFF_SYM142
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
-Lfde8_end:
+Lfde9_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -7095,36 +8754,36 @@ Lfde8_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreAppTracking__ctor_intptr
-	.quad Lme_1c
+	.quad Lme_24
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM134=LTDIE_15_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM134
+LDIFF_SYM143=LTDIE_15_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM143
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM135=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM135
+LDIFF_SYM144=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM144
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM136=Lfde9_end - Lfde9_start
-	.long LDIFF_SYM136
-Lfde9_start:
+LDIFF_SYM145=Lfde10_end - Lfde10_start
+	.long LDIFF_SYM145
+Lfde10_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreAppTracking__ctor_intptr
 
-LDIFF_SYM137=Lme_1c - NetCorePush_NetCoreAppTracking__ctor_intptr
-	.long LDIFF_SYM137
+LDIFF_SYM146=Lme_24 - NetCorePush_NetCoreAppTracking__ctor_intptr
+	.long LDIFF_SYM146
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
-Lfde9_end:
+Lfde10_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -7134,36 +8793,41 @@ Lfde9_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreAppTracking_SendAppTrackingEvent_System_nint
-	.quad Lme_1d
+	.quad Lme_25
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM138=LTDIE_15_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM138
+LDIFF_SYM147=LTDIE_15_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM147
 	.byte 2,141,16,3
 	.asciz "param0"
 
-LDIFF_SYM139=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM139
-	.byte 2,141,24,0
+LDIFF_SYM148=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM148
+	.byte 2,141,24,11
+	.asciz "V_0"
+
+LDIFF_SYM149=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM149
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM140=Lfde10_end - Lfde10_start
-	.long LDIFF_SYM140
-Lfde10_start:
+LDIFF_SYM150=Lfde11_end - Lfde11_start
+	.long LDIFF_SYM150
+Lfde11_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreAppTracking_SendAppTrackingEvent_System_nint
 
-LDIFF_SYM141=Lme_1d - NetCorePush_NetCoreAppTracking_SendAppTrackingEvent_System_nint
-	.long LDIFF_SYM141
+LDIFF_SYM151=Lme_25 - NetCorePush_NetCoreAppTracking_SendAppTrackingEvent_System_nint
+	.long LDIFF_SYM151
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde10_end:
+Lfde11_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_20:
@@ -7172,92 +8836,97 @@ LTDIE_20:
 	.asciz "Foundation_NSArray"
 
 	.byte 40,16
-LDIFF_SYM142=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM142
+LDIFF_SYM152=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM152
 	.byte 2,35,0,0,7
 	.asciz "Foundation_NSArray"
 
-LDIFF_SYM143=LTDIE_20 - Ldebug_info_start
-	.long LDIFF_SYM143
+LDIFF_SYM153=LTDIE_20 - Ldebug_info_start
+	.long LDIFF_SYM153
 LTDIE_20_POINTER:
 
 	.byte 13
-LDIFF_SYM144=LTDIE_20 - Ldebug_info_start
-	.long LDIFF_SYM144
+LDIFF_SYM154=LTDIE_20 - Ldebug_info_start
+	.long LDIFF_SYM154
 LTDIE_20_REFERENCE:
 
 	.byte 14
-LDIFF_SYM145=LTDIE_20 - Ldebug_info_start
-	.long LDIFF_SYM145
+LDIFF_SYM155=LTDIE_20 - Ldebug_info_start
+	.long LDIFF_SYM155
 LTDIE_19:
 
 	.byte 5
 	.asciz "Foundation_NSMutableArray"
 
 	.byte 40,16
-LDIFF_SYM146=LTDIE_20 - Ldebug_info_start
-	.long LDIFF_SYM146
+LDIFF_SYM156=LTDIE_20 - Ldebug_info_start
+	.long LDIFF_SYM156
 	.byte 2,35,0,0,7
 	.asciz "Foundation_NSMutableArray"
 
-LDIFF_SYM147=LTDIE_19 - Ldebug_info_start
-	.long LDIFF_SYM147
+LDIFF_SYM157=LTDIE_19 - Ldebug_info_start
+	.long LDIFF_SYM157
 LTDIE_19_POINTER:
 
 	.byte 13
-LDIFF_SYM148=LTDIE_19 - Ldebug_info_start
-	.long LDIFF_SYM148
+LDIFF_SYM158=LTDIE_19 - Ldebug_info_start
+	.long LDIFF_SYM158
 LTDIE_19_REFERENCE:
 
 	.byte 14
-LDIFF_SYM149=LTDIE_19 - Ldebug_info_start
-	.long LDIFF_SYM149
+LDIFF_SYM159=LTDIE_19 - Ldebug_info_start
+	.long LDIFF_SYM159
 	.byte 2
 	.asciz "NetCorePush.NetCoreAppTracking:SendAppTrackingEventWithCustomPayload"
 	.asciz "NetCorePush_NetCoreAppTracking_SendAppTrackingEventWithCustomPayload_System_nint_Foundation_NSMutableArray"
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreAppTracking_SendAppTrackingEventWithCustomPayload_System_nint_Foundation_NSMutableArray
-	.quad Lme_1e
+	.quad Lme_26
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM150=LTDIE_15_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM150
-	.byte 2,141,16,3
+LDIFF_SYM160=LTDIE_15_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM160
+	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM151=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM151
-	.byte 2,141,24,3
+LDIFF_SYM161=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM161
+	.byte 2,141,32,3
 	.asciz "param1"
 
-LDIFF_SYM152=LTDIE_19_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM152
-	.byte 2,141,32,11
+LDIFF_SYM162=LTDIE_19_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM162
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM153=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM153
+LDIFF_SYM163=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM163
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM164=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM164
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM154=Lfde11_end - Lfde11_start
-	.long LDIFF_SYM154
-Lfde11_start:
+LDIFF_SYM165=Lfde12_end - Lfde12_start
+	.long LDIFF_SYM165
+Lfde12_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreAppTracking_SendAppTrackingEventWithCustomPayload_System_nint_Foundation_NSMutableArray
 
-LDIFF_SYM155=Lme_1e - NetCorePush_NetCoreAppTracking_SendAppTrackingEventWithCustomPayload_System_nint_Foundation_NSMutableArray
-	.long LDIFF_SYM155
+LDIFF_SYM166=Lme_26 - NetCorePush_NetCoreAppTracking_SendAppTrackingEventWithCustomPayload_System_nint_Foundation_NSMutableArray
+	.long LDIFF_SYM166
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde11_end:
+Lfde12_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -7267,26 +8936,31 @@ Lfde11_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreAppTracking_SharedInstance
-	.quad Lme_1f
+	.quad Lme_27
 
-	.byte 2,118,16,0
+	.byte 2,118,16,11
+	.asciz "V_0"
+
+LDIFF_SYM167=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM167
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM156=Lfde12_end - Lfde12_start
-	.long LDIFF_SYM156
-Lfde12_start:
+LDIFF_SYM168=Lfde13_end - Lfde13_start
+	.long LDIFF_SYM168
+Lfde13_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreAppTracking_SharedInstance
 
-LDIFF_SYM157=Lme_1f - NetCorePush_NetCoreAppTracking_SharedInstance
-	.long LDIFF_SYM157
+LDIFF_SYM169=Lme_27 - NetCorePush_NetCoreAppTracking_SharedInstance
+	.long LDIFF_SYM169
 	.long 0
 	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
 	.align 3
-Lfde12_end:
+Lfde13_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -7296,41 +8970,51 @@ Lfde12_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreAppTracking_TrackEvent_string
-	.quad Lme_20
+	.quad Lme_28
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM158=LTDIE_15_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM158
+LDIFF_SYM170=LTDIE_15_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM170
 	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM159=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM159
+LDIFF_SYM171=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM171
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM160=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM160
-	.byte 1,106,0
+LDIFF_SYM172=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM172
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM173=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM173
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM174=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM174
+	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM161=Lfde13_end - Lfde13_start
-	.long LDIFF_SYM161
-Lfde13_start:
+LDIFF_SYM175=Lfde14_end - Lfde14_start
+	.long LDIFF_SYM175
+Lfde14_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreAppTracking_TrackEvent_string
 
-LDIFF_SYM162=Lme_20 - NetCorePush_NetCoreAppTracking_TrackEvent_string
-	.long LDIFF_SYM162
+LDIFF_SYM176=Lme_28 - NetCorePush_NetCoreAppTracking_TrackEvent_string
+	.long LDIFF_SYM176
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde13_end:
+Lfde14_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_22:
@@ -7339,97 +9023,107 @@ LTDIE_22:
 	.asciz "Foundation_NSDictionary"
 
 	.byte 40,16
-LDIFF_SYM163=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM163
+LDIFF_SYM177=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM177
 	.byte 2,35,0,0,7
 	.asciz "Foundation_NSDictionary"
 
-LDIFF_SYM164=LTDIE_22 - Ldebug_info_start
-	.long LDIFF_SYM164
+LDIFF_SYM178=LTDIE_22 - Ldebug_info_start
+	.long LDIFF_SYM178
 LTDIE_22_POINTER:
 
 	.byte 13
-LDIFF_SYM165=LTDIE_22 - Ldebug_info_start
-	.long LDIFF_SYM165
+LDIFF_SYM179=LTDIE_22 - Ldebug_info_start
+	.long LDIFF_SYM179
 LTDIE_22_REFERENCE:
 
 	.byte 14
-LDIFF_SYM166=LTDIE_22 - Ldebug_info_start
-	.long LDIFF_SYM166
+LDIFF_SYM180=LTDIE_22 - Ldebug_info_start
+	.long LDIFF_SYM180
 LTDIE_21:
 
 	.byte 5
 	.asciz "Foundation_NSMutableDictionary"
 
 	.byte 40,16
-LDIFF_SYM167=LTDIE_22 - Ldebug_info_start
-	.long LDIFF_SYM167
+LDIFF_SYM181=LTDIE_22 - Ldebug_info_start
+	.long LDIFF_SYM181
 	.byte 2,35,0,0,7
 	.asciz "Foundation_NSMutableDictionary"
 
-LDIFF_SYM168=LTDIE_21 - Ldebug_info_start
-	.long LDIFF_SYM168
+LDIFF_SYM182=LTDIE_21 - Ldebug_info_start
+	.long LDIFF_SYM182
 LTDIE_21_POINTER:
 
 	.byte 13
-LDIFF_SYM169=LTDIE_21 - Ldebug_info_start
-	.long LDIFF_SYM169
+LDIFF_SYM183=LTDIE_21 - Ldebug_info_start
+	.long LDIFF_SYM183
 LTDIE_21_REFERENCE:
 
 	.byte 14
-LDIFF_SYM170=LTDIE_21 - Ldebug_info_start
-	.long LDIFF_SYM170
+LDIFF_SYM184=LTDIE_21 - Ldebug_info_start
+	.long LDIFF_SYM184
 	.byte 2
 	.asciz "NetCorePush.NetCoreAppTracking:TrackEventWithCustomPayload"
 	.asciz "NetCorePush_NetCoreAppTracking_TrackEventWithCustomPayload_string_Foundation_NSMutableDictionary"
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreAppTracking_TrackEventWithCustomPayload_string_Foundation_NSMutableDictionary
-	.quad Lme_21
+	.quad Lme_29
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM171=LTDIE_15_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM171
+LDIFF_SYM185=LTDIE_15_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM185
 	.byte 2,141,32,3
 	.asciz "param0"
 
-LDIFF_SYM172=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM172
+LDIFF_SYM186=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM186
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM173=LTDIE_21_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM173
-	.byte 2,141,40,11
+LDIFF_SYM187=LTDIE_21_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM187
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM174=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM174
+LDIFF_SYM188=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM188
 	.byte 1,106,11
 	.asciz "V_1"
 
-LDIFF_SYM175=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM175
-	.byte 1,105,0
+LDIFF_SYM189=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM189
+	.byte 1,105,11
+	.asciz "V_2"
+
+LDIFF_SYM190=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM190
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM191=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM191
+	.byte 2,141,40,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM176=Lfde14_end - Lfde14_start
-	.long LDIFF_SYM176
-Lfde14_start:
+LDIFF_SYM192=Lfde15_end - Lfde15_start
+	.long LDIFF_SYM192
+Lfde15_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreAppTracking_TrackEventWithCustomPayload_string_Foundation_NSMutableDictionary
 
-LDIFF_SYM177=Lme_21 - NetCorePush_NetCoreAppTracking_TrackEventWithCustomPayload_string_Foundation_NSMutableDictionary
-	.long LDIFF_SYM177
+LDIFF_SYM193=Lme_29 - NetCorePush_NetCoreAppTracking_TrackEventWithCustomPayload_string_Foundation_NSMutableDictionary
+	.long LDIFF_SYM193
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
 	.align 3
-Lfde14_end:
+Lfde15_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -7439,26 +9133,26 @@ Lfde14_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreAppTracking__cctor
-	.quad Lme_22
+	.quad Lme_2a
 
 	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM178=Lfde15_end - Lfde15_start
-	.long LDIFF_SYM178
-Lfde15_start:
+LDIFF_SYM194=Lfde16_end - Lfde16_start
+	.long LDIFF_SYM194
+Lfde16_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreAppTracking__cctor
 
-LDIFF_SYM179=Lme_22 - NetCorePush_NetCoreAppTracking__cctor
-	.long LDIFF_SYM179
+LDIFF_SYM195=Lme_2a - NetCorePush_NetCoreAppTracking__cctor
+	.long LDIFF_SYM195
 	.long 0
 	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
 	.align 3
-Lfde15_end:
+Lfde16_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_23:
@@ -7467,54 +9161,59 @@ LTDIE_23:
 	.asciz "NetCorePush_NetCoreInstallation"
 
 	.byte 40,16
-LDIFF_SYM180=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM180
+LDIFF_SYM196=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM196
 	.byte 2,35,0,0,7
 	.asciz "NetCorePush_NetCoreInstallation"
 
-LDIFF_SYM181=LTDIE_23 - Ldebug_info_start
-	.long LDIFF_SYM181
+LDIFF_SYM197=LTDIE_23 - Ldebug_info_start
+	.long LDIFF_SYM197
 LTDIE_23_POINTER:
 
 	.byte 13
-LDIFF_SYM182=LTDIE_23 - Ldebug_info_start
-	.long LDIFF_SYM182
+LDIFF_SYM198=LTDIE_23 - Ldebug_info_start
+	.long LDIFF_SYM198
 LTDIE_23_REFERENCE:
 
 	.byte 14
-LDIFF_SYM183=LTDIE_23 - Ldebug_info_start
-	.long LDIFF_SYM183
+LDIFF_SYM199=LTDIE_23 - Ldebug_info_start
+	.long LDIFF_SYM199
 	.byte 2
 	.asciz "NetCorePush.NetCoreInstallation:get_ClassHandle"
 	.asciz "NetCorePush_NetCoreInstallation_get_ClassHandle"
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreInstallation_get_ClassHandle
-	.quad Lme_23
+	.quad Lme_2b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM184=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM184
+LDIFF_SYM200=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM200
+	.byte 0,11
+	.asciz "V_0"
+
+LDIFF_SYM201=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM201
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM185=Lfde16_end - Lfde16_start
-	.long LDIFF_SYM185
-Lfde16_start:
+LDIFF_SYM202=Lfde17_end - Lfde17_start
+	.long LDIFF_SYM202
+Lfde17_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreInstallation_get_ClassHandle
 
-LDIFF_SYM186=Lme_23 - NetCorePush_NetCoreInstallation_get_ClassHandle
-	.long LDIFF_SYM186
+LDIFF_SYM203=Lme_2b - NetCorePush_NetCoreInstallation_get_ClassHandle
+	.long LDIFF_SYM203
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde16_end:
+Lfde17_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -7524,31 +9223,36 @@ Lfde16_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreInstallation__ctor
-	.quad Lme_24
+	.quad Lme_2c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM187=LTDIE_23_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM187
-	.byte 1,106,0
+LDIFF_SYM204=LTDIE_23_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM204
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM205=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM205
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM188=Lfde17_end - Lfde17_start
-	.long LDIFF_SYM188
-Lfde17_start:
+LDIFF_SYM206=Lfde18_end - Lfde18_start
+	.long LDIFF_SYM206
+Lfde18_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreInstallation__ctor
 
-LDIFF_SYM189=Lme_24 - NetCorePush_NetCoreInstallation__ctor
-	.long LDIFF_SYM189
+LDIFF_SYM207=Lme_2c - NetCorePush_NetCoreInstallation__ctor
+	.long LDIFF_SYM207
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde17_end:
+Lfde18_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -7558,36 +9262,36 @@ Lfde17_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreInstallation__ctor_Foundation_NSObjectFlag
-	.quad Lme_25
+	.quad Lme_2d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM190=LTDIE_23_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM190
+LDIFF_SYM208=LTDIE_23_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM208
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM191=LTDIE_18_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM191
+LDIFF_SYM209=LTDIE_18_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM209
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM192=Lfde18_end - Lfde18_start
-	.long LDIFF_SYM192
-Lfde18_start:
+LDIFF_SYM210=Lfde19_end - Lfde19_start
+	.long LDIFF_SYM210
+Lfde19_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreInstallation__ctor_Foundation_NSObjectFlag
 
-LDIFF_SYM193=Lme_25 - NetCorePush_NetCoreInstallation__ctor_Foundation_NSObjectFlag
-	.long LDIFF_SYM193
+LDIFF_SYM211=Lme_2d - NetCorePush_NetCoreInstallation__ctor_Foundation_NSObjectFlag
+	.long LDIFF_SYM211
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
-Lfde18_end:
+Lfde19_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -7597,36 +9301,36 @@ Lfde18_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreInstallation__ctor_intptr
-	.quad Lme_26
+	.quad Lme_2e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM194=LTDIE_23_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM194
+LDIFF_SYM212=LTDIE_23_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM212
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM195=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM195
+LDIFF_SYM213=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM213
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM196=Lfde19_end - Lfde19_start
-	.long LDIFF_SYM196
-Lfde19_start:
+LDIFF_SYM214=Lfde20_end - Lfde20_start
+	.long LDIFF_SYM214
+Lfde20_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreInstallation__ctor_intptr
 
-LDIFF_SYM197=Lme_26 - NetCorePush_NetCoreInstallation__ctor_intptr
-	.long LDIFF_SYM197
+LDIFF_SYM215=Lme_2e - NetCorePush_NetCoreInstallation__ctor_intptr
+	.long LDIFF_SYM215
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
-Lfde19_end:
+Lfde20_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -7636,51 +9340,61 @@ Lfde19_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreInstallation_NetCoreProfilePush_string_Foundation_NSDictionary
-	.quad Lme_27
+	.quad Lme_2f
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM198=LTDIE_23_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM198
+LDIFF_SYM216=LTDIE_23_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM216
 	.byte 2,141,32,3
 	.asciz "param0"
 
-LDIFF_SYM199=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM199
+LDIFF_SYM217=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM217
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM200=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM200
-	.byte 2,141,40,11
+LDIFF_SYM218=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM218
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM201=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM201
+LDIFF_SYM219=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM219
 	.byte 1,106,11
 	.asciz "V_1"
 
-LDIFF_SYM202=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM202
-	.byte 1,105,0
+LDIFF_SYM220=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM220
+	.byte 1,105,11
+	.asciz "V_2"
+
+LDIFF_SYM221=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM221
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM222=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM222
+	.byte 2,141,40,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM203=Lfde20_end - Lfde20_start
-	.long LDIFF_SYM203
-Lfde20_start:
+LDIFF_SYM223=Lfde21_end - Lfde21_start
+	.long LDIFF_SYM223
+Lfde21_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreInstallation_NetCoreProfilePush_string_Foundation_NSDictionary
 
-LDIFF_SYM204=Lme_27 - NetCorePush_NetCoreInstallation_NetCoreProfilePush_string_Foundation_NSDictionary
-	.long LDIFF_SYM204
+LDIFF_SYM224=Lme_2f - NetCorePush_NetCoreInstallation_NetCoreProfilePush_string_Foundation_NSDictionary
+	.long LDIFF_SYM224
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
 	.align 3
-Lfde20_end:
+Lfde21_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -7690,41 +9404,51 @@ Lfde20_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreInstallation_NetCorePushLogin_string
-	.quad Lme_28
+	.quad Lme_30
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM205=LTDIE_23_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM205
+LDIFF_SYM225=LTDIE_23_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM225
 	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM206=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM206
+LDIFF_SYM226=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM226
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM207=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM207
-	.byte 1,106,0
+LDIFF_SYM227=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM227
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM228=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM228
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM229=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM229
+	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM208=Lfde21_end - Lfde21_start
-	.long LDIFF_SYM208
-Lfde21_start:
+LDIFF_SYM230=Lfde22_end - Lfde22_start
+	.long LDIFF_SYM230
+Lfde22_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreInstallation_NetCorePushLogin_string
 
-LDIFF_SYM209=Lme_28 - NetCorePush_NetCoreInstallation_NetCorePushLogin_string
-	.long LDIFF_SYM209
+LDIFF_SYM231=Lme_30 - NetCorePush_NetCoreInstallation_NetCorePushLogin_string
+	.long LDIFF_SYM231
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde21_end:
+Lfde22_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -7734,31 +9458,36 @@ Lfde21_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreInstallation_NetCorePushLogout
-	.quad Lme_29
+	.quad Lme_31
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM210=LTDIE_23_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM210
-	.byte 2,141,16,0
+LDIFF_SYM232=LTDIE_23_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM232
+	.byte 2,141,16,11
+	.asciz "V_0"
+
+LDIFF_SYM233=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM233
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM211=Lfde22_end - Lfde22_start
-	.long LDIFF_SYM211
-Lfde22_start:
+LDIFF_SYM234=Lfde23_end - Lfde23_start
+	.long LDIFF_SYM234
+Lfde23_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreInstallation_NetCorePushLogout
 
-LDIFF_SYM212=Lme_29 - NetCorePush_NetCoreInstallation_NetCorePushLogout
-	.long LDIFF_SYM212
+LDIFF_SYM235=Lme_31 - NetCorePush_NetCoreInstallation_NetCorePushLogout
+	.long LDIFF_SYM235
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde22_end:
+Lfde23_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -7768,41 +9497,51 @@ Lfde22_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreInstallation_NetCorePushRegisteration_string
-	.quad Lme_2a
+	.quad Lme_32
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM213=LTDIE_23_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM213
+LDIFF_SYM236=LTDIE_23_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM236
 	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM214=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM214
+LDIFF_SYM237=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM237
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM215=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM215
-	.byte 1,106,0
+LDIFF_SYM238=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM238
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM239=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM239
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM240=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM240
+	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM216=Lfde23_end - Lfde23_start
-	.long LDIFF_SYM216
-Lfde23_start:
+LDIFF_SYM241=Lfde24_end - Lfde24_start
+	.long LDIFF_SYM241
+Lfde24_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreInstallation_NetCorePushRegisteration_string
 
-LDIFF_SYM217=Lme_2a - NetCorePush_NetCoreInstallation_NetCorePushRegisteration_string
-	.long LDIFF_SYM217
+LDIFF_SYM242=Lme_32 - NetCorePush_NetCoreInstallation_NetCorePushRegisteration_string
+	.long LDIFF_SYM242
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde23_end:
+Lfde24_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_24:
@@ -7811,74 +9550,84 @@ LTDIE_24:
 	.asciz "Foundation_NSData"
 
 	.byte 40,16
-LDIFF_SYM218=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM218
+LDIFF_SYM243=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM243
 	.byte 2,35,0,0,7
 	.asciz "Foundation_NSData"
 
-LDIFF_SYM219=LTDIE_24 - Ldebug_info_start
-	.long LDIFF_SYM219
+LDIFF_SYM244=LTDIE_24 - Ldebug_info_start
+	.long LDIFF_SYM244
 LTDIE_24_POINTER:
 
 	.byte 13
-LDIFF_SYM220=LTDIE_24 - Ldebug_info_start
-	.long LDIFF_SYM220
+LDIFF_SYM245=LTDIE_24 - Ldebug_info_start
+	.long LDIFF_SYM245
 LTDIE_24_REFERENCE:
 
 	.byte 14
-LDIFF_SYM221=LTDIE_24 - Ldebug_info_start
-	.long LDIFF_SYM221
+LDIFF_SYM246=LTDIE_24 - Ldebug_info_start
+	.long LDIFF_SYM246
 	.byte 2
 	.asciz "NetCorePush.NetCoreInstallation:NetCorePushRegisteration"
 	.asciz "NetCorePush_NetCoreInstallation_NetCorePushRegisteration_string_Foundation_NSData"
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreInstallation_NetCorePushRegisteration_string_Foundation_NSData
-	.quad Lme_2b
+	.quad Lme_33
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM222=LTDIE_23_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM222
+LDIFF_SYM247=LTDIE_23_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM247
 	.byte 2,141,32,3
 	.asciz "param0"
 
-LDIFF_SYM223=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM223
+LDIFF_SYM248=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM248
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM224=LTDIE_24_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM224
-	.byte 2,141,40,11
+LDIFF_SYM249=LTDIE_24_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM249
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM225=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM225
+LDIFF_SYM250=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM250
 	.byte 1,106,11
 	.asciz "V_1"
 
-LDIFF_SYM226=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM226
-	.byte 1,105,0
+LDIFF_SYM251=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM251
+	.byte 1,105,11
+	.asciz "V_2"
+
+LDIFF_SYM252=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM252
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM253=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM253
+	.byte 2,141,40,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM227=Lfde24_end - Lfde24_start
-	.long LDIFF_SYM227
-Lfde24_start:
+LDIFF_SYM254=Lfde25_end - Lfde25_start
+	.long LDIFF_SYM254
+Lfde25_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreInstallation_NetCorePushRegisteration_string_Foundation_NSData
 
-LDIFF_SYM228=Lme_2b - NetCorePush_NetCoreInstallation_NetCorePushRegisteration_string_Foundation_NSData
-	.long LDIFF_SYM228
+LDIFF_SYM255=Lme_33 - NetCorePush_NetCoreInstallation_NetCorePushRegisteration_string_Foundation_NSData
+	.long LDIFF_SYM255
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
 	.align 3
-Lfde24_end:
+Lfde25_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -7888,26 +9637,31 @@ Lfde24_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreInstallation_SharedInstance
-	.quad Lme_2c
+	.quad Lme_34
 
-	.byte 2,118,16,0
+	.byte 2,118,16,11
+	.asciz "V_0"
+
+LDIFF_SYM256=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM256
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM229=Lfde25_end - Lfde25_start
-	.long LDIFF_SYM229
-Lfde25_start:
+LDIFF_SYM257=Lfde26_end - Lfde26_start
+	.long LDIFF_SYM257
+Lfde26_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreInstallation_SharedInstance
 
-LDIFF_SYM230=Lme_2c - NetCorePush_NetCoreInstallation_SharedInstance
-	.long LDIFF_SYM230
+LDIFF_SYM258=Lme_34 - NetCorePush_NetCoreInstallation_SharedInstance
+	.long LDIFF_SYM258
 	.long 0
 	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
 	.align 3
-Lfde25_end:
+Lfde26_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -7917,26 +9671,26 @@ Lfde25_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreInstallation__cctor
-	.quad Lme_2d
+	.quad Lme_35
 
 	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM231=Lfde26_end - Lfde26_start
-	.long LDIFF_SYM231
-Lfde26_start:
+LDIFF_SYM259=Lfde27_end - Lfde27_start
+	.long LDIFF_SYM259
+Lfde27_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreInstallation__cctor
 
-LDIFF_SYM232=Lme_2d - NetCorePush_NetCoreInstallation__cctor
-	.long LDIFF_SYM232
+LDIFF_SYM260=Lme_35 - NetCorePush_NetCoreInstallation__cctor
+	.long LDIFF_SYM260
 	.long 0
 	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
 	.align 3
-Lfde26_end:
+Lfde27_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_26:
@@ -7945,77 +9699,82 @@ LTDIE_26:
 	.asciz "UserNotifications_UNNotificationServiceExtension"
 
 	.byte 40,16
-LDIFF_SYM233=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM233
+LDIFF_SYM261=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM261
 	.byte 2,35,0,0,7
 	.asciz "UserNotifications_UNNotificationServiceExtension"
 
-LDIFF_SYM234=LTDIE_26 - Ldebug_info_start
-	.long LDIFF_SYM234
+LDIFF_SYM262=LTDIE_26 - Ldebug_info_start
+	.long LDIFF_SYM262
 LTDIE_26_POINTER:
 
 	.byte 13
-LDIFF_SYM235=LTDIE_26 - Ldebug_info_start
-	.long LDIFF_SYM235
+LDIFF_SYM263=LTDIE_26 - Ldebug_info_start
+	.long LDIFF_SYM263
 LTDIE_26_REFERENCE:
 
 	.byte 14
-LDIFF_SYM236=LTDIE_26 - Ldebug_info_start
-	.long LDIFF_SYM236
+LDIFF_SYM264=LTDIE_26 - Ldebug_info_start
+	.long LDIFF_SYM264
 LTDIE_25:
 
 	.byte 5
 	.asciz "NetCorePush_NetCoreNotificationService"
 
 	.byte 40,16
-LDIFF_SYM237=LTDIE_26 - Ldebug_info_start
-	.long LDIFF_SYM237
+LDIFF_SYM265=LTDIE_26 - Ldebug_info_start
+	.long LDIFF_SYM265
 	.byte 2,35,0,0,7
 	.asciz "NetCorePush_NetCoreNotificationService"
 
-LDIFF_SYM238=LTDIE_25 - Ldebug_info_start
-	.long LDIFF_SYM238
+LDIFF_SYM266=LTDIE_25 - Ldebug_info_start
+	.long LDIFF_SYM266
 LTDIE_25_POINTER:
 
 	.byte 13
-LDIFF_SYM239=LTDIE_25 - Ldebug_info_start
-	.long LDIFF_SYM239
+LDIFF_SYM267=LTDIE_25 - Ldebug_info_start
+	.long LDIFF_SYM267
 LTDIE_25_REFERENCE:
 
 	.byte 14
-LDIFF_SYM240=LTDIE_25 - Ldebug_info_start
-	.long LDIFF_SYM240
+LDIFF_SYM268=LTDIE_25 - Ldebug_info_start
+	.long LDIFF_SYM268
 	.byte 2
 	.asciz "NetCorePush.NetCoreNotificationService:get_ClassHandle"
 	.asciz "NetCorePush_NetCoreNotificationService_get_ClassHandle"
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreNotificationService_get_ClassHandle
-	.quad Lme_2e
+	.quad Lme_36
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM241=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM241
+LDIFF_SYM269=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM269
+	.byte 0,11
+	.asciz "V_0"
+
+LDIFF_SYM270=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM270
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM242=Lfde27_end - Lfde27_start
-	.long LDIFF_SYM242
-Lfde27_start:
+LDIFF_SYM271=Lfde28_end - Lfde28_start
+	.long LDIFF_SYM271
+Lfde28_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreNotificationService_get_ClassHandle
 
-LDIFF_SYM243=Lme_2e - NetCorePush_NetCoreNotificationService_get_ClassHandle
-	.long LDIFF_SYM243
+LDIFF_SYM272=Lme_36 - NetCorePush_NetCoreNotificationService_get_ClassHandle
+	.long LDIFF_SYM272
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde27_end:
+Lfde28_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -8025,31 +9784,36 @@ Lfde27_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreNotificationService__ctor
-	.quad Lme_2f
+	.quad Lme_37
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM244=LTDIE_25_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM244
-	.byte 1,106,0
+LDIFF_SYM273=LTDIE_25_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM273
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM274=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM274
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM245=Lfde28_end - Lfde28_start
-	.long LDIFF_SYM245
-Lfde28_start:
+LDIFF_SYM275=Lfde29_end - Lfde29_start
+	.long LDIFF_SYM275
+Lfde29_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreNotificationService__ctor
 
-LDIFF_SYM246=Lme_2f - NetCorePush_NetCoreNotificationService__ctor
-	.long LDIFF_SYM246
+LDIFF_SYM276=Lme_37 - NetCorePush_NetCoreNotificationService__ctor
+	.long LDIFF_SYM276
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde28_end:
+Lfde29_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -8059,36 +9823,36 @@ Lfde28_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreNotificationService__ctor_Foundation_NSObjectFlag
-	.quad Lme_30
+	.quad Lme_38
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM247=LTDIE_25_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM247
+LDIFF_SYM277=LTDIE_25_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM277
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM248=LTDIE_18_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM248
+LDIFF_SYM278=LTDIE_18_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM278
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM249=Lfde29_end - Lfde29_start
-	.long LDIFF_SYM249
-Lfde29_start:
+LDIFF_SYM279=Lfde30_end - Lfde30_start
+	.long LDIFF_SYM279
+Lfde30_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreNotificationService__ctor_Foundation_NSObjectFlag
 
-LDIFF_SYM250=Lme_30 - NetCorePush_NetCoreNotificationService__ctor_Foundation_NSObjectFlag
-	.long LDIFF_SYM250
+LDIFF_SYM280=Lme_38 - NetCorePush_NetCoreNotificationService__ctor_Foundation_NSObjectFlag
+	.long LDIFF_SYM280
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
-Lfde29_end:
+Lfde30_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -8098,36 +9862,36 @@ Lfde29_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreNotificationService__ctor_intptr
-	.quad Lme_31
+	.quad Lme_39
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM251=LTDIE_25_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM251
+LDIFF_SYM281=LTDIE_25_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM281
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM252=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM252
+LDIFF_SYM282=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM282
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM253=Lfde30_end - Lfde30_start
-	.long LDIFF_SYM253
-Lfde30_start:
+LDIFF_SYM283=Lfde31_end - Lfde31_start
+	.long LDIFF_SYM283
+Lfde31_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreNotificationService__ctor_intptr
 
-LDIFF_SYM254=Lme_31 - NetCorePush_NetCoreNotificationService__ctor_intptr
-	.long LDIFF_SYM254
+LDIFF_SYM284=Lme_39 - NetCorePush_NetCoreNotificationService__ctor_intptr
+	.long LDIFF_SYM284
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
-Lfde30_end:
+Lfde31_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_28:
@@ -8136,87 +9900,92 @@ LTDIE_28:
 	.asciz "UIKit_UIResponder"
 
 	.byte 40,16
-LDIFF_SYM255=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM255
+LDIFF_SYM285=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM285
 	.byte 2,35,0,0,7
 	.asciz "UIKit_UIResponder"
 
-LDIFF_SYM256=LTDIE_28 - Ldebug_info_start
-	.long LDIFF_SYM256
+LDIFF_SYM286=LTDIE_28 - Ldebug_info_start
+	.long LDIFF_SYM286
 LTDIE_28_POINTER:
 
 	.byte 13
-LDIFF_SYM257=LTDIE_28 - Ldebug_info_start
-	.long LDIFF_SYM257
+LDIFF_SYM287=LTDIE_28 - Ldebug_info_start
+	.long LDIFF_SYM287
 LTDIE_28_REFERENCE:
 
 	.byte 14
-LDIFF_SYM258=LTDIE_28 - Ldebug_info_start
-	.long LDIFF_SYM258
+LDIFF_SYM288=LTDIE_28 - Ldebug_info_start
+	.long LDIFF_SYM288
 LTDIE_27:
 
 	.byte 5
 	.asciz "UIKit_UIView"
 
 	.byte 40,16
-LDIFF_SYM259=LTDIE_28 - Ldebug_info_start
-	.long LDIFF_SYM259
+LDIFF_SYM289=LTDIE_28 - Ldebug_info_start
+	.long LDIFF_SYM289
 	.byte 2,35,0,0,7
 	.asciz "UIKit_UIView"
 
-LDIFF_SYM260=LTDIE_27 - Ldebug_info_start
-	.long LDIFF_SYM260
+LDIFF_SYM290=LTDIE_27 - Ldebug_info_start
+	.long LDIFF_SYM290
 LTDIE_27_POINTER:
 
 	.byte 13
-LDIFF_SYM261=LTDIE_27 - Ldebug_info_start
-	.long LDIFF_SYM261
+LDIFF_SYM291=LTDIE_27 - Ldebug_info_start
+	.long LDIFF_SYM291
 LTDIE_27_REFERENCE:
 
 	.byte 14
-LDIFF_SYM262=LTDIE_27 - Ldebug_info_start
-	.long LDIFF_SYM262
+LDIFF_SYM292=LTDIE_27 - Ldebug_info_start
+	.long LDIFF_SYM292
 	.byte 2
 	.asciz "NetCorePush.NetCoreNotificationService:ContentViewDidLoad"
 	.asciz "NetCorePush_NetCoreNotificationService_ContentViewDidLoad_UIKit_UIView"
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreNotificationService_ContentViewDidLoad_UIKit_UIView
-	.quad Lme_32
+	.quad Lme_3a
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM263=LTDIE_25_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM263
-	.byte 2,141,16,3
+LDIFF_SYM293=LTDIE_25_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM293
+	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM264=LTDIE_27_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM264
-	.byte 2,141,24,11
+LDIFF_SYM294=LTDIE_27_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM294
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM265=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM265
+LDIFF_SYM295=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM295
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM296=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM296
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM266=Lfde31_end - Lfde31_start
-	.long LDIFF_SYM266
-Lfde31_start:
+LDIFF_SYM297=Lfde32_end - Lfde32_start
+	.long LDIFF_SYM297
+Lfde32_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreNotificationService_ContentViewDidLoad_UIKit_UIView
 
-LDIFF_SYM267=Lme_32 - NetCorePush_NetCoreNotificationService_ContentViewDidLoad_UIKit_UIView
-	.long LDIFF_SYM267
+LDIFF_SYM298=Lme_3a - NetCorePush_NetCoreNotificationService_ContentViewDidLoad_UIKit_UIView
+	.long LDIFF_SYM298
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde31_end:
+Lfde32_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_29:
@@ -8225,64 +9994,69 @@ LTDIE_29:
 	.asciz "UserNotifications_UNNotification"
 
 	.byte 40,16
-LDIFF_SYM268=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM268
+LDIFF_SYM299=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM299
 	.byte 2,35,0,0,7
 	.asciz "UserNotifications_UNNotification"
 
-LDIFF_SYM269=LTDIE_29 - Ldebug_info_start
-	.long LDIFF_SYM269
+LDIFF_SYM300=LTDIE_29 - Ldebug_info_start
+	.long LDIFF_SYM300
 LTDIE_29_POINTER:
 
 	.byte 13
-LDIFF_SYM270=LTDIE_29 - Ldebug_info_start
-	.long LDIFF_SYM270
+LDIFF_SYM301=LTDIE_29 - Ldebug_info_start
+	.long LDIFF_SYM301
 LTDIE_29_REFERENCE:
 
 	.byte 14
-LDIFF_SYM271=LTDIE_29 - Ldebug_info_start
-	.long LDIFF_SYM271
+LDIFF_SYM302=LTDIE_29 - Ldebug_info_start
+	.long LDIFF_SYM302
 	.byte 2
 	.asciz "NetCorePush.NetCoreNotificationService:DidReceiveNotification"
 	.asciz "NetCorePush_NetCoreNotificationService_DidReceiveNotification_UserNotifications_UNNotification"
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreNotificationService_DidReceiveNotification_UserNotifications_UNNotification
-	.quad Lme_33
+	.quad Lme_3b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM272=LTDIE_25_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM272
-	.byte 2,141,16,3
+LDIFF_SYM303=LTDIE_25_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM303
+	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM273=LTDIE_29_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM273
-	.byte 2,141,24,11
+LDIFF_SYM304=LTDIE_29_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM304
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM274=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM274
+LDIFF_SYM305=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM305
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM306=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM306
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM275=Lfde32_end - Lfde32_start
-	.long LDIFF_SYM275
-Lfde32_start:
+LDIFF_SYM307=Lfde33_end - Lfde33_start
+	.long LDIFF_SYM307
+Lfde33_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreNotificationService_DidReceiveNotification_UserNotifications_UNNotification
 
-LDIFF_SYM276=Lme_33 - NetCorePush_NetCoreNotificationService_DidReceiveNotification_UserNotifications_UNNotification
-	.long LDIFF_SYM276
+LDIFF_SYM308=Lme_3b - NetCorePush_NetCoreNotificationService_DidReceiveNotification_UserNotifications_UNNotification
+	.long LDIFF_SYM308
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde32_end:
+Lfde33_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_30:
@@ -8291,79 +10065,89 @@ LTDIE_30:
 	.asciz "UserNotifications_UNNotificationResponse"
 
 	.byte 40,16
-LDIFF_SYM277=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM277
+LDIFF_SYM309=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM309
 	.byte 2,35,0,0,7
 	.asciz "UserNotifications_UNNotificationResponse"
 
-LDIFF_SYM278=LTDIE_30 - Ldebug_info_start
-	.long LDIFF_SYM278
+LDIFF_SYM310=LTDIE_30 - Ldebug_info_start
+	.long LDIFF_SYM310
 LTDIE_30_POINTER:
 
 	.byte 13
-LDIFF_SYM279=LTDIE_30 - Ldebug_info_start
-	.long LDIFF_SYM279
+LDIFF_SYM311=LTDIE_30 - Ldebug_info_start
+	.long LDIFF_SYM311
 LTDIE_30_REFERENCE:
 
 	.byte 14
-LDIFF_SYM280=LTDIE_30 - Ldebug_info_start
-	.long LDIFF_SYM280
+LDIFF_SYM312=LTDIE_30 - Ldebug_info_start
+	.long LDIFF_SYM312
 	.byte 2
 	.asciz "NetCorePush.NetCoreNotificationService:DidReceiveNotificationResponse"
 	.asciz "NetCorePush_NetCoreNotificationService_DidReceiveNotificationResponse_UserNotifications_UNNotificationResponse_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption"
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreNotificationService_DidReceiveNotificationResponse_UserNotifications_UNNotificationResponse_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption
-	.quad Lme_34
+	.quad Lme_3c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM281=LTDIE_25_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM281
-	.byte 2,141,24,3
+LDIFF_SYM313=LTDIE_25_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM313
+	.byte 2,141,32,3
 	.asciz "param0"
 
-LDIFF_SYM282=LTDIE_30_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM282
-	.byte 2,141,32,3
+LDIFF_SYM314=LTDIE_30_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM314
+	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM283=LTDIE_0_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM283
-	.byte 2,141,40,11
+LDIFF_SYM315=LTDIE_0_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM315
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM284=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM284
+LDIFF_SYM316=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM316
 	.byte 1,105,11
 	.asciz "V_1"
 
-LDIFF_SYM285=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM285
-	.byte 3,141,224,0,11
+LDIFF_SYM317=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM317
+	.byte 2,141,40,11
 	.asciz "V_2"
 
-LDIFF_SYM286=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM286
-	.byte 2,141,48,0
+LDIFF_SYM318=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM318
+	.byte 1,106,11
+	.asciz "V_3"
+
+LDIFF_SYM319=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM319
+	.byte 0,11
+	.asciz "V_4"
+
+LDIFF_SYM320=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM320
+	.byte 3,141,216,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM287=Lfde33_end - Lfde33_start
-	.long LDIFF_SYM287
-Lfde33_start:
+LDIFF_SYM321=Lfde34_end - Lfde34_start
+	.long LDIFF_SYM321
+Lfde34_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreNotificationService_DidReceiveNotificationResponse_UserNotifications_UNNotificationResponse_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption
 
-LDIFF_SYM288=Lme_34 - NetCorePush_NetCoreNotificationService_DidReceiveNotificationResponse_UserNotifications_UNNotificationResponse_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption
-	.long LDIFF_SYM288
+LDIFF_SYM322=Lme_3c - NetCorePush_NetCoreNotificationService_DidReceiveNotificationResponse_UserNotifications_UNNotificationResponse_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption
+	.long LDIFF_SYM322
 	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,153,12
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,153,14,154,13
 	.align 3
-Lfde33_end:
+Lfde34_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -8373,41 +10157,51 @@ Lfde33_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreNotificationService_SetUpAppGroup_string
-	.quad Lme_35
+	.quad Lme_3d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM289=LTDIE_25_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM289
+LDIFF_SYM323=LTDIE_25_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM323
 	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM290=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM290
+LDIFF_SYM324=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM324
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM291=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM291
-	.byte 1,106,0
+LDIFF_SYM325=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM325
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM326=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM326
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM327=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM327
+	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM292=Lfde34_end - Lfde34_start
-	.long LDIFF_SYM292
-Lfde34_start:
+LDIFF_SYM328=Lfde35_end - Lfde35_start
+	.long LDIFF_SYM328
+Lfde35_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreNotificationService_SetUpAppGroup_string
 
-LDIFF_SYM293=Lme_35 - NetCorePush_NetCoreNotificationService_SetUpAppGroup_string
-	.long LDIFF_SYM293
+LDIFF_SYM329=Lme_3d - NetCorePush_NetCoreNotificationService_SetUpAppGroup_string
+	.long LDIFF_SYM329
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde34_end:
+Lfde35_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -8417,26 +10211,31 @@ Lfde34_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreNotificationService_SharedInstance
-	.quad Lme_36
+	.quad Lme_3e
 
-	.byte 2,118,16,0
+	.byte 2,118,16,11
+	.asciz "V_0"
+
+LDIFF_SYM330=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM330
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM294=Lfde35_end - Lfde35_start
-	.long LDIFF_SYM294
-Lfde35_start:
+LDIFF_SYM331=Lfde36_end - Lfde36_start
+	.long LDIFF_SYM331
+Lfde36_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreNotificationService_SharedInstance
 
-LDIFF_SYM295=Lme_36 - NetCorePush_NetCoreNotificationService_SharedInstance
-	.long LDIFF_SYM295
+LDIFF_SYM332=Lme_3e - NetCorePush_NetCoreNotificationService_SharedInstance
+	.long LDIFF_SYM332
 	.long 0
 	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
 	.align 3
-Lfde35_end:
+Lfde36_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -8446,26 +10245,26 @@ Lfde35_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreNotificationService__cctor
-	.quad Lme_37
+	.quad Lme_3f
 
 	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM296=Lfde36_end - Lfde36_start
-	.long LDIFF_SYM296
-Lfde36_start:
+LDIFF_SYM333=Lfde37_end - Lfde37_start
+	.long LDIFF_SYM333
+Lfde37_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreNotificationService__cctor
 
-LDIFF_SYM297=Lme_37 - NetCorePush_NetCoreNotificationService__cctor
-	.long LDIFF_SYM297
+LDIFF_SYM334=Lme_3f - NetCorePush_NetCoreNotificationService__cctor
+	.long LDIFF_SYM334
 	.long 0
 	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
 	.align 3
-Lfde36_end:
+Lfde37_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_31:
@@ -8474,59 +10273,64 @@ LTDIE_31:
 	.asciz "NetCorePush_NetCorePushTaskManager"
 
 	.byte 48,16
-LDIFF_SYM298=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM298
+LDIFF_SYM335=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM335
 	.byte 2,35,0,6
 	.asciz "__mt_WeakDelegate_var"
 
-LDIFF_SYM299=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM299
+LDIFF_SYM336=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM336
 	.byte 2,35,40,0,7
 	.asciz "NetCorePush_NetCorePushTaskManager"
 
-LDIFF_SYM300=LTDIE_31 - Ldebug_info_start
-	.long LDIFF_SYM300
+LDIFF_SYM337=LTDIE_31 - Ldebug_info_start
+	.long LDIFF_SYM337
 LTDIE_31_POINTER:
 
 	.byte 13
-LDIFF_SYM301=LTDIE_31 - Ldebug_info_start
-	.long LDIFF_SYM301
+LDIFF_SYM338=LTDIE_31 - Ldebug_info_start
+	.long LDIFF_SYM338
 LTDIE_31_REFERENCE:
 
 	.byte 14
-LDIFF_SYM302=LTDIE_31 - Ldebug_info_start
-	.long LDIFF_SYM302
+LDIFF_SYM339=LTDIE_31 - Ldebug_info_start
+	.long LDIFF_SYM339
 	.byte 2
 	.asciz "NetCorePush.NetCorePushTaskManager:get_ClassHandle"
 	.asciz "NetCorePush_NetCorePushTaskManager_get_ClassHandle"
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager_get_ClassHandle
-	.quad Lme_38
+	.quad Lme_40
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM303=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM303
+LDIFF_SYM340=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM340
+	.byte 0,11
+	.asciz "V_0"
+
+LDIFF_SYM341=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM341
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM304=Lfde37_end - Lfde37_start
-	.long LDIFF_SYM304
-Lfde37_start:
+LDIFF_SYM342=Lfde38_end - Lfde38_start
+	.long LDIFF_SYM342
+Lfde38_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager_get_ClassHandle
 
-LDIFF_SYM305=Lme_38 - NetCorePush_NetCorePushTaskManager_get_ClassHandle
-	.long LDIFF_SYM305
+LDIFF_SYM343=Lme_40 - NetCorePush_NetCorePushTaskManager_get_ClassHandle
+	.long LDIFF_SYM343
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde37_end:
+Lfde38_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -8536,31 +10340,36 @@ Lfde37_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager__ctor
-	.quad Lme_39
+	.quad Lme_41
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM306=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM306
-	.byte 1,106,0
+LDIFF_SYM344=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM344
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM345=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM345
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM307=Lfde38_end - Lfde38_start
-	.long LDIFF_SYM307
-Lfde38_start:
+LDIFF_SYM346=Lfde39_end - Lfde39_start
+	.long LDIFF_SYM346
+Lfde39_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager__ctor
 
-LDIFF_SYM308=Lme_39 - NetCorePush_NetCorePushTaskManager__ctor
-	.long LDIFF_SYM308
+LDIFF_SYM347=Lme_41 - NetCorePush_NetCorePushTaskManager__ctor
+	.long LDIFF_SYM347
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde38_end:
+Lfde39_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -8570,36 +10379,36 @@ Lfde38_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager__ctor_Foundation_NSObjectFlag
-	.quad Lme_3a
+	.quad Lme_42
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM309=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM309
+LDIFF_SYM348=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM348
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM310=LTDIE_18_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM310
+LDIFF_SYM349=LTDIE_18_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM349
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM311=Lfde39_end - Lfde39_start
-	.long LDIFF_SYM311
-Lfde39_start:
+LDIFF_SYM350=Lfde40_end - Lfde40_start
+	.long LDIFF_SYM350
+Lfde40_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager__ctor_Foundation_NSObjectFlag
 
-LDIFF_SYM312=Lme_3a - NetCorePush_NetCorePushTaskManager__ctor_Foundation_NSObjectFlag
-	.long LDIFF_SYM312
+LDIFF_SYM351=Lme_42 - NetCorePush_NetCorePushTaskManager__ctor_Foundation_NSObjectFlag
+	.long LDIFF_SYM351
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
-Lfde39_end:
+Lfde40_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -8609,36 +10418,36 @@ Lfde39_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager__ctor_intptr
-	.quad Lme_3b
+	.quad Lme_43
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM313=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM313
+LDIFF_SYM352=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM352
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM314=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM314
+LDIFF_SYM353=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM353
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM315=Lfde40_end - Lfde40_start
-	.long LDIFF_SYM315
-Lfde40_start:
+LDIFF_SYM354=Lfde41_end - Lfde41_start
+	.long LDIFF_SYM354
+Lfde41_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager__ctor_intptr
 
-LDIFF_SYM316=Lme_3b - NetCorePush_NetCorePushTaskManager__ctor_intptr
-	.long LDIFF_SYM316
+LDIFF_SYM355=Lme_43 - NetCorePush_NetCorePushTaskManager__ctor_intptr
+	.long LDIFF_SYM355
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
-Lfde40_end:
+Lfde41_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -8648,46 +10457,61 @@ Lfde40_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager_DeleteNotification_Foundation_NSObject__
-	.quad Lme_3c
+	.quad Lme_44
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM317=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM317
+LDIFF_SYM356=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM356
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM318=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM318
+LDIFF_SYM357=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM357
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM319=LTDIE_20_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM319
+LDIFF_SYM358=LTDIE_20_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM358
 	.byte 1,106,11
 	.asciz "V_1"
 
-LDIFF_SYM320=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM320
-	.byte 1,105,0
+LDIFF_SYM359=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM359
+	.byte 1,105,11
+	.asciz "V_2"
+
+LDIFF_SYM360=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM360
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM361=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM361
+	.byte 2,141,32,11
+	.asciz "V_4"
+
+LDIFF_SYM362=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM362
+	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM321=Lfde41_end - Lfde41_start
-	.long LDIFF_SYM321
-Lfde41_start:
+LDIFF_SYM363=Lfde42_end - Lfde42_start
+	.long LDIFF_SYM363
+Lfde42_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager_DeleteNotification_Foundation_NSObject__
 
-LDIFF_SYM322=Lme_3c - NetCorePush_NetCorePushTaskManager_DeleteNotification_Foundation_NSObject__
-	.long LDIFF_SYM322
+LDIFF_SYM364=Lme_44 - NetCorePush_NetCorePushTaskManager_DeleteNotification_Foundation_NSObject__
+	.long LDIFF_SYM364
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
 	.align 3
-Lfde41_end:
+Lfde42_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -8697,41 +10521,46 @@ Lfde41_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager_DidReceiveLocalNotification_Foundation_NSDictionary
-	.quad Lme_3d
+	.quad Lme_45
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM323=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM323
-	.byte 2,141,16,3
+LDIFF_SYM365=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM365
+	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM324=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM324
-	.byte 2,141,24,11
+LDIFF_SYM366=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM366
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM325=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM325
+LDIFF_SYM367=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM367
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM368=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM368
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM326=Lfde42_end - Lfde42_start
-	.long LDIFF_SYM326
-Lfde42_start:
+LDIFF_SYM369=Lfde43_end - Lfde43_start
+	.long LDIFF_SYM369
+Lfde43_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager_DidReceiveLocalNotification_Foundation_NSDictionary
 
-LDIFF_SYM327=Lme_3d - NetCorePush_NetCorePushTaskManager_DidReceiveLocalNotification_Foundation_NSDictionary
-	.long LDIFF_SYM327
+LDIFF_SYM370=Lme_45 - NetCorePush_NetCorePushTaskManager_DidReceiveLocalNotification_Foundation_NSDictionary
+	.long LDIFF_SYM370
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde42_end:
+Lfde43_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_32:
@@ -8740,64 +10569,69 @@ LTDIE_32:
 	.asciz "UserNotifications_UNNotificationRequest"
 
 	.byte 40,16
-LDIFF_SYM328=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM328
+LDIFF_SYM371=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM371
 	.byte 2,35,0,0,7
 	.asciz "UserNotifications_UNNotificationRequest"
 
-LDIFF_SYM329=LTDIE_32 - Ldebug_info_start
-	.long LDIFF_SYM329
+LDIFF_SYM372=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM372
 LTDIE_32_POINTER:
 
 	.byte 13
-LDIFF_SYM330=LTDIE_32 - Ldebug_info_start
-	.long LDIFF_SYM330
+LDIFF_SYM373=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM373
 LTDIE_32_REFERENCE:
 
 	.byte 14
-LDIFF_SYM331=LTDIE_32 - Ldebug_info_start
-	.long LDIFF_SYM331
+LDIFF_SYM374=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM374
 	.byte 2
 	.asciz "NetCorePush.NetCorePushTaskManager:DidReceiveNotificationRequest"
 	.asciz "NetCorePush_NetCorePushTaskManager_DidReceiveNotificationRequest_UserNotifications_UNNotificationRequest"
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager_DidReceiveNotificationRequest_UserNotifications_UNNotificationRequest
-	.quad Lme_3e
+	.quad Lme_46
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM332=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM332
-	.byte 2,141,16,3
+LDIFF_SYM375=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM375
+	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM333=LTDIE_32_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM333
-	.byte 2,141,24,11
+LDIFF_SYM376=LTDIE_32_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM376
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM334=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM334
+LDIFF_SYM377=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM377
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM378=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM378
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM335=Lfde43_end - Lfde43_start
-	.long LDIFF_SYM335
-Lfde43_start:
+LDIFF_SYM379=Lfde44_end - Lfde44_start
+	.long LDIFF_SYM379
+Lfde44_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager_DidReceiveNotificationRequest_UserNotifications_UNNotificationRequest
 
-LDIFF_SYM336=Lme_3e - NetCorePush_NetCorePushTaskManager_DidReceiveNotificationRequest_UserNotifications_UNNotificationRequest
-	.long LDIFF_SYM336
+LDIFF_SYM380=Lme_46 - NetCorePush_NetCorePushTaskManager_DidReceiveNotificationRequest_UserNotifications_UNNotificationRequest
+	.long LDIFF_SYM380
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde43_end:
+Lfde44_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -8807,41 +10641,46 @@ Lfde43_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager_DidReceiveRemoteNotification_Foundation_NSDictionary
-	.quad Lme_3f
+	.quad Lme_47
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM337=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM337
-	.byte 2,141,16,3
+LDIFF_SYM381=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM381
+	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM338=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM338
-	.byte 2,141,24,11
+LDIFF_SYM382=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM382
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM339=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM339
+LDIFF_SYM383=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM383
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM384=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM384
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM340=Lfde44_end - Lfde44_start
-	.long LDIFF_SYM340
-Lfde44_start:
+LDIFF_SYM385=Lfde45_end - Lfde45_start
+	.long LDIFF_SYM385
+Lfde45_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager_DidReceiveRemoteNotification_Foundation_NSDictionary
 
-LDIFF_SYM341=Lme_3f - NetCorePush_NetCorePushTaskManager_DidReceiveRemoteNotification_Foundation_NSDictionary
-	.long LDIFF_SYM341
+LDIFF_SYM386=Lme_47 - NetCorePush_NetCorePushTaskManager_DidReceiveRemoteNotification_Foundation_NSDictionary
+	.long LDIFF_SYM386
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde44_end:
+Lfde45_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -8851,41 +10690,46 @@ Lfde44_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager_HandelApplicationLaunchEvent_Foundation_NSObject
-	.quad Lme_40
+	.quad Lme_48
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM342=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM342
-	.byte 2,141,16,3
+LDIFF_SYM387=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM387
+	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM343=LTDIE_16_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM343
-	.byte 2,141,24,11
+LDIFF_SYM388=LTDIE_16_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM388
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM344=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM344
+LDIFF_SYM389=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM389
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM390=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM390
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM345=Lfde45_end - Lfde45_start
-	.long LDIFF_SYM345
-Lfde45_start:
+LDIFF_SYM391=Lfde46_end - Lfde46_start
+	.long LDIFF_SYM391
+Lfde46_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager_HandelApplicationLaunchEvent_Foundation_NSObject
 
-LDIFF_SYM346=Lme_40 - NetCorePush_NetCorePushTaskManager_HandelApplicationLaunchEvent_Foundation_NSObject
-	.long LDIFF_SYM346
+LDIFF_SYM392=Lme_48 - NetCorePush_NetCorePushTaskManager_HandelApplicationLaunchEvent_Foundation_NSObject
+	.long LDIFF_SYM392
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde45_end:
+Lfde46_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -8895,41 +10739,51 @@ Lfde45_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager_IsNotificationFromNetCore_Foundation_NSDictionary
-	.quad Lme_41
+	.quad Lme_49
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM347=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM347
-	.byte 2,141,16,3
+LDIFF_SYM393=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM393
+	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM348=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM348
-	.byte 2,141,24,11
+LDIFF_SYM394=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM394
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM349=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM349
-	.byte 0,0
+LDIFF_SYM395=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM395
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM396=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM396
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM397=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM397
+	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM350=Lfde46_end - Lfde46_start
-	.long LDIFF_SYM350
-Lfde46_start:
+LDIFF_SYM398=Lfde47_end - Lfde47_start
+	.long LDIFF_SYM398
+Lfde47_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager_IsNotificationFromNetCore_Foundation_NSDictionary
 
-LDIFF_SYM351=Lme_41 - NetCorePush_NetCorePushTaskManager_IsNotificationFromNetCore_Foundation_NSDictionary
-	.long LDIFF_SYM351
+LDIFF_SYM399=Lme_49 - NetCorePush_NetCorePushTaskManager_IsNotificationFromNetCore_Foundation_NSDictionary
+	.long LDIFF_SYM399
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde46_end:
+Lfde47_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -8939,56 +10793,66 @@ Lfde46_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager_MarkNotificationAsRead_Foundation_NSDictionary_bool_string
-	.quad Lme_42
+	.quad Lme_4a
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM352=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM352
+LDIFF_SYM400=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM400
 	.byte 2,141,32,3
 	.asciz "param0"
 
-LDIFF_SYM353=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM353
-	.byte 2,141,40,3
+LDIFF_SYM401=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM401
+	.byte 1,104,3
 	.asciz "param1"
 
-LDIFF_SYM354=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM354
-	.byte 2,141,48,3
+LDIFF_SYM402=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM402
+	.byte 2,141,40,3
 	.asciz "param2"
 
-LDIFF_SYM355=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM355
+LDIFF_SYM403=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM403
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM356=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM356
+LDIFF_SYM404=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM404
 	.byte 1,104,11
 	.asciz "V_1"
 
-LDIFF_SYM357=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM357
-	.byte 1,106,0
+LDIFF_SYM405=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM405
+	.byte 1,106,11
+	.asciz "V_2"
+
+LDIFF_SYM406=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM406
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM407=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM407
+	.byte 2,141,48,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM358=Lfde47_end - Lfde47_start
-	.long LDIFF_SYM358
-Lfde47_start:
+LDIFF_SYM408=Lfde48_end - Lfde48_start
+	.long LDIFF_SYM408
+Lfde48_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager_MarkNotificationAsRead_Foundation_NSDictionary_bool_string
 
-LDIFF_SYM359=Lme_42 - NetCorePush_NetCorePushTaskManager_MarkNotificationAsRead_Foundation_NSDictionary_bool_string
-	.long LDIFF_SYM359
+LDIFF_SYM409=Lme_4a - NetCorePush_NetCorePushTaskManager_MarkNotificationAsRead_Foundation_NSDictionary_bool_string
+	.long LDIFF_SYM409
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,68,154,5
 	.align 3
-Lfde47_end:
+Lfde48_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -8998,26 +10862,31 @@ Lfde47_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager_SharedInstance
-	.quad Lme_43
+	.quad Lme_4b
 
-	.byte 2,118,16,0
+	.byte 2,118,16,11
+	.asciz "V_0"
+
+LDIFF_SYM410=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM410
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM360=Lfde48_end - Lfde48_start
-	.long LDIFF_SYM360
-Lfde48_start:
+LDIFF_SYM411=Lfde49_end - Lfde49_start
+	.long LDIFF_SYM411
+Lfde49_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager_SharedInstance
 
-LDIFF_SYM361=Lme_43 - NetCorePush_NetCorePushTaskManager_SharedInstance
-	.long LDIFF_SYM361
+LDIFF_SYM412=Lme_4b - NetCorePush_NetCorePushTaskManager_SharedInstance
+	.long LDIFF_SYM412
 	.long 0
 	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
 	.align 3
-Lfde48_end:
+Lfde49_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -9027,41 +10896,46 @@ Lfde48_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager_UserNotificationWillPresentNotification_UserNotifications_UNNotification
-	.quad Lme_44
+	.quad Lme_4c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM362=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM362
-	.byte 2,141,16,3
+LDIFF_SYM413=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM413
+	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM363=LTDIE_29_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM363
-	.byte 2,141,24,11
+LDIFF_SYM414=LTDIE_29_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM414
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM364=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM364
+LDIFF_SYM415=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM415
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM416=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM416
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM365=Lfde49_end - Lfde49_start
-	.long LDIFF_SYM365
-Lfde49_start:
+LDIFF_SYM417=Lfde50_end - Lfde50_start
+	.long LDIFF_SYM417
+Lfde50_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager_UserNotificationWillPresentNotification_UserNotifications_UNNotification
 
-LDIFF_SYM366=Lme_44 - NetCorePush_NetCorePushTaskManager_UserNotificationWillPresentNotification_UserNotifications_UNNotification
-	.long LDIFF_SYM366
+LDIFF_SYM418=Lme_4c - NetCorePush_NetCorePushTaskManager_UserNotificationWillPresentNotification_UserNotifications_UNNotification
+	.long LDIFF_SYM418
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde49_end:
+Lfde50_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -9071,73 +10945,44 @@ Lfde49_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager_UserNotificationdidReceiveNotificationResponse_UserNotifications_UNNotificationResponse
-	.quad Lme_45
+	.quad Lme_4d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM367=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM367
-	.byte 2,141,16,3
+LDIFF_SYM419=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM419
+	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM368=LTDIE_30_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM368
-	.byte 2,141,24,11
+LDIFF_SYM420=LTDIE_30_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM420
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM369=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM369
+LDIFF_SYM421=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM421
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM422=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM422
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM370=Lfde50_end - Lfde50_start
-	.long LDIFF_SYM370
-Lfde50_start:
+LDIFF_SYM423=Lfde51_end - Lfde51_start
+	.long LDIFF_SYM423
+Lfde51_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager_UserNotificationdidReceiveNotificationResponse_UserNotifications_UNNotificationResponse
 
-LDIFF_SYM371=Lme_45 - NetCorePush_NetCorePushTaskManager_UserNotificationdidReceiveNotificationResponse_UserNotifications_UNNotificationResponse
-	.long LDIFF_SYM371
+LDIFF_SYM424=Lme_4d - NetCorePush_NetCorePushTaskManager_UserNotificationdidReceiveNotificationResponse_UserNotifications_UNNotificationResponse
+	.long LDIFF_SYM424
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde50_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "NetCorePush.NetCorePushTaskManager:get_Delegate"
-	.asciz "NetCorePush_NetCorePushTaskManager_get_Delegate"
-
-	.byte 0,0
-	.quad NetCorePush_NetCorePushTaskManager_get_Delegate
-	.quad Lme_46
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM372=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM372
-	.byte 1,106,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM373=Lfde51_end - Lfde51_start
-	.long LDIFF_SYM373
-Lfde51_start:
-
-	.long 0
-	.align 3
-	.quad NetCorePush_NetCorePushTaskManager_get_Delegate
-
-LDIFF_SYM374=Lme_46 - NetCorePush_NetCorePushTaskManager_get_Delegate
-	.long LDIFF_SYM374
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
 Lfde51_end:
 
@@ -9148,64 +10993,108 @@ LTDIE_33:
 	.asciz "NetCorePush_NetCorePushTaskManagerDelegate"
 
 	.byte 40,16
-LDIFF_SYM375=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM375
+LDIFF_SYM425=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM425
 	.byte 2,35,0,0,7
 	.asciz "NetCorePush_NetCorePushTaskManagerDelegate"
 
-LDIFF_SYM376=LTDIE_33 - Ldebug_info_start
-	.long LDIFF_SYM376
+LDIFF_SYM426=LTDIE_33 - Ldebug_info_start
+	.long LDIFF_SYM426
 LTDIE_33_POINTER:
 
 	.byte 13
-LDIFF_SYM377=LTDIE_33 - Ldebug_info_start
-	.long LDIFF_SYM377
+LDIFF_SYM427=LTDIE_33 - Ldebug_info_start
+	.long LDIFF_SYM427
 LTDIE_33_REFERENCE:
 
 	.byte 14
-LDIFF_SYM378=LTDIE_33 - Ldebug_info_start
-	.long LDIFF_SYM378
+LDIFF_SYM428=LTDIE_33 - Ldebug_info_start
+	.long LDIFF_SYM428
+	.byte 2
+	.asciz "NetCorePush.NetCorePushTaskManager:get_Delegate"
+	.asciz "NetCorePush_NetCorePushTaskManager_get_Delegate"
+
+	.byte 0,0
+	.quad NetCorePush_NetCorePushTaskManager_get_Delegate
+	.quad Lme_4e
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM429=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM429
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM430=LTDIE_33_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM430
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM431=Lfde52_end - Lfde52_start
+	.long LDIFF_SYM431
+Lfde52_start:
+
+	.long 0
+	.align 3
+	.quad NetCorePush_NetCorePushTaskManager_get_Delegate
+
+LDIFF_SYM432=Lme_4e - NetCorePush_NetCorePushTaskManager_get_Delegate
+	.long LDIFF_SYM432
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
+	.align 3
+Lfde52_end:
+
+.section __DWARF, __debug_info,regular,debug
+
 	.byte 2
 	.asciz "NetCorePush.NetCorePushTaskManager:set_Delegate"
 	.asciz "NetCorePush_NetCorePushTaskManager_set_Delegate_NetCorePush_NetCorePushTaskManagerDelegate"
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager_set_Delegate_NetCorePush_NetCorePushTaskManagerDelegate
-	.quad Lme_47
+	.quad Lme_4f
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM379=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM379
+LDIFF_SYM433=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM433
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM380=LTDIE_33_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM380
+LDIFF_SYM434=LTDIE_33_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM434
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM381=LTDIE_16_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM381
-	.byte 1,104,0
+LDIFF_SYM435=LTDIE_16_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM435
+	.byte 1,104,11
+	.asciz "V_1"
+
+LDIFF_SYM436=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM436
+	.byte 2,141,48,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM382=Lfde52_end - Lfde52_start
-	.long LDIFF_SYM382
-Lfde52_start:
+LDIFF_SYM437=Lfde53_end - Lfde53_start
+	.long LDIFF_SYM437
+Lfde53_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager_set_Delegate_NetCorePush_NetCorePushTaskManagerDelegate
 
-LDIFF_SYM383=Lme_47 - NetCorePush_NetCorePushTaskManager_set_Delegate_NetCorePush_NetCorePushTaskManagerDelegate
-	.long LDIFF_SYM383
+LDIFF_SYM438=Lme_4f - NetCorePush_NetCorePushTaskManager_set_Delegate_NetCorePush_NetCorePushTaskManagerDelegate
+	.long LDIFF_SYM438
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,152,5,68,153,4,154,3
 	.align 3
-Lfde52_end:
+Lfde53_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -9215,36 +11104,46 @@ Lfde52_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager_get_WeakDelegate
-	.quad Lme_48
+	.quad Lme_50
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM384=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM384
+LDIFF_SYM439=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM439
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM385=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM385
-	.byte 0,0
+LDIFF_SYM440=LTDIE_16_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM440
+	.byte 1,105,11
+	.asciz "V_1"
+
+LDIFF_SYM441=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM441
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM442=LTDIE_16_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM442
+	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM386=Lfde53_end - Lfde53_start
-	.long LDIFF_SYM386
-Lfde53_start:
+LDIFF_SYM443=Lfde54_end - Lfde54_start
+	.long LDIFF_SYM443
+Lfde54_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager_get_WeakDelegate
 
-LDIFF_SYM387=Lme_48 - NetCorePush_NetCorePushTaskManager_get_WeakDelegate
-	.long LDIFF_SYM387
+LDIFF_SYM444=Lme_50 - NetCorePush_NetCorePushTaskManager_get_WeakDelegate
+	.long LDIFF_SYM444
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
 	.align 3
-Lfde53_end:
+Lfde54_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -9254,41 +11153,46 @@ Lfde53_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager_set_WeakDelegate_Foundation_NSObject
-	.quad Lme_49
+	.quad Lme_51
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM388=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM388
+LDIFF_SYM445=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM445
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM389=LTDIE_16_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM389
-	.byte 2,141,24,11
+LDIFF_SYM446=LTDIE_16_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM446
+	.byte 2,141,32,11
 	.asciz "V_0"
 
-LDIFF_SYM390=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM390
+LDIFF_SYM447=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM447
+	.byte 1,104,11
+	.asciz "V_1"
+
+LDIFF_SYM448=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM448
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM391=Lfde54_end - Lfde54_start
-	.long LDIFF_SYM391
-Lfde54_start:
+LDIFF_SYM449=Lfde55_end - Lfde55_start
+	.long LDIFF_SYM449
+Lfde55_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager_set_WeakDelegate_Foundation_NSObject
 
-LDIFF_SYM392=Lme_49 - NetCorePush_NetCorePushTaskManager_set_WeakDelegate_Foundation_NSObject
-	.long LDIFF_SYM392
+LDIFF_SYM450=Lme_51 - NetCorePush_NetCorePushTaskManager_set_WeakDelegate_Foundation_NSObject
+	.long LDIFF_SYM450
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3
 	.align 3
-Lfde54_end:
+Lfde55_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -9298,36 +11202,41 @@ Lfde54_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager_Dispose_bool
-	.quad Lme_4a
+	.quad Lme_52
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM393=LTDIE_31_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM393
+LDIFF_SYM451=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM451
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM394=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM394
-	.byte 2,141,24,0
+LDIFF_SYM452=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM452
+	.byte 2,141,24,11
+	.asciz "V_0"
+
+LDIFF_SYM453=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM453
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM395=Lfde55_end - Lfde55_start
-	.long LDIFF_SYM395
-Lfde55_start:
+LDIFF_SYM454=Lfde56_end - Lfde56_start
+	.long LDIFF_SYM454
+Lfde56_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager_Dispose_bool
 
-LDIFF_SYM396=Lme_4a - NetCorePush_NetCorePushTaskManager_Dispose_bool
-	.long LDIFF_SYM396
+LDIFF_SYM455=Lme_52 - NetCorePush_NetCorePushTaskManager_Dispose_bool
+	.long LDIFF_SYM455
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
-Lfde55_end:
+Lfde56_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -9337,26 +11246,26 @@ Lfde55_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManager__cctor
-	.quad Lme_4b
+	.quad Lme_53
 
 	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM397=Lfde56_end - Lfde56_start
-	.long LDIFF_SYM397
-Lfde56_start:
+LDIFF_SYM456=Lfde57_end - Lfde57_start
+	.long LDIFF_SYM456
+Lfde57_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManager__cctor
 
-LDIFF_SYM398=Lme_4b - NetCorePush_NetCorePushTaskManager__cctor
-	.long LDIFF_SYM398
+LDIFF_SYM457=Lme_53 - NetCorePush_NetCorePushTaskManager__cctor
+	.long LDIFF_SYM457
 	.long 0
 	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
 	.align 3
-Lfde56_end:
+Lfde57_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_37:
@@ -9365,143 +11274,143 @@ LTDIE_37:
 	.asciz "ObjCRuntime_DisposableObject"
 
 	.byte 32,16
-LDIFF_SYM399=LTDIE_3 - Ldebug_info_start
-	.long LDIFF_SYM399
+LDIFF_SYM458=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM458
 	.byte 2,35,0,6
 	.asciz "handle"
 
-LDIFF_SYM400=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM400
+LDIFF_SYM459=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM459
 	.byte 2,35,16,6
 	.asciz "owns"
 
-LDIFF_SYM401=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM401
+LDIFF_SYM460=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM460
 	.byte 2,35,24,0,7
 	.asciz "ObjCRuntime_DisposableObject"
 
-LDIFF_SYM402=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM402
+LDIFF_SYM461=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM461
 LTDIE_37_POINTER:
 
 	.byte 13
-LDIFF_SYM403=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM403
+LDIFF_SYM462=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM462
 LTDIE_37_REFERENCE:
 
 	.byte 14
-LDIFF_SYM404=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM404
+LDIFF_SYM463=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM463
 LTDIE_36:
 
 	.byte 5
 	.asciz "CoreFoundation_NativeObject"
 
 	.byte 32,16
-LDIFF_SYM405=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM405
+LDIFF_SYM464=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM464
 	.byte 2,35,0,0,7
 	.asciz "CoreFoundation_NativeObject"
 
-LDIFF_SYM406=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM406
+LDIFF_SYM465=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM465
 LTDIE_36_POINTER:
 
 	.byte 13
-LDIFF_SYM407=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM407
+LDIFF_SYM466=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM466
 LTDIE_36_REFERENCE:
 
 	.byte 14
-LDIFF_SYM408=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM408
+LDIFF_SYM467=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM467
 LTDIE_35:
 
 	.byte 5
 	.asciz "ObjCRuntime_BaseWrapper"
 
 	.byte 32,16
-LDIFF_SYM409=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM409
+LDIFF_SYM468=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM468
 	.byte 2,35,0,0,7
 	.asciz "ObjCRuntime_BaseWrapper"
 
-LDIFF_SYM410=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM410
+LDIFF_SYM469=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM469
 LTDIE_35_POINTER:
 
 	.byte 13
-LDIFF_SYM411=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM411
+LDIFF_SYM470=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM470
 LTDIE_35_REFERENCE:
 
 	.byte 14
-LDIFF_SYM412=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM412
+LDIFF_SYM471=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM471
 LTDIE_34:
 
 	.byte 5
 	.asciz "NetCorePush_NetCorePushTaskManagerDelegateWrapper"
 
 	.byte 32,16
-LDIFF_SYM413=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM413
+LDIFF_SYM472=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM472
 	.byte 2,35,0,0,7
 	.asciz "NetCorePush_NetCorePushTaskManagerDelegateWrapper"
 
-LDIFF_SYM414=LTDIE_34 - Ldebug_info_start
-	.long LDIFF_SYM414
+LDIFF_SYM473=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM473
 LTDIE_34_POINTER:
 
 	.byte 13
-LDIFF_SYM415=LTDIE_34 - Ldebug_info_start
-	.long LDIFF_SYM415
+LDIFF_SYM474=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM474
 LTDIE_34_REFERENCE:
 
 	.byte 14
-LDIFF_SYM416=LTDIE_34 - Ldebug_info_start
-	.long LDIFF_SYM416
+LDIFF_SYM475=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM475
 	.byte 2
 	.asciz "NetCorePush.NetCorePushTaskManagerDelegateWrapper:.ctor"
 	.asciz "NetCorePush_NetCorePushTaskManagerDelegateWrapper__ctor_intptr_bool"
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManagerDelegateWrapper__ctor_intptr_bool
-	.quad Lme_4c
+	.quad Lme_54
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM417=LTDIE_34_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM417
+LDIFF_SYM476=LTDIE_34_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM476
 	.byte 2,141,16,3
 	.asciz "param0"
 
-LDIFF_SYM418=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM418
+LDIFF_SYM477=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM477
 	.byte 2,141,24,3
 	.asciz "param1"
 
-LDIFF_SYM419=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM419
+LDIFF_SYM478=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM478
 	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM420=Lfde57_end - Lfde57_start
-	.long LDIFF_SYM420
-Lfde57_start:
+LDIFF_SYM479=Lfde58_end - Lfde58_start
+	.long LDIFF_SYM479
+Lfde58_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManagerDelegateWrapper__ctor_intptr_bool
 
-LDIFF_SYM421=Lme_4c - NetCorePush_NetCorePushTaskManagerDelegateWrapper__ctor_intptr_bool
-	.long LDIFF_SYM421
+LDIFF_SYM480=Lme_54 - NetCorePush_NetCorePushTaskManagerDelegateWrapper__ctor_intptr_bool
+	.long LDIFF_SYM480
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde57_end:
+Lfde58_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -9511,31 +11420,31 @@ Lfde57_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManagerDelegate__ctor
-	.quad Lme_4d
+	.quad Lme_55
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM422=LTDIE_33_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM422
+LDIFF_SYM481=LTDIE_33_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM481
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM423=Lfde58_end - Lfde58_start
-	.long LDIFF_SYM423
-Lfde58_start:
+LDIFF_SYM482=Lfde59_end - Lfde59_start
+	.long LDIFF_SYM482
+Lfde59_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManagerDelegate__ctor
 
-LDIFF_SYM424=Lme_4d - NetCorePush_NetCorePushTaskManagerDelegate__ctor
-	.long LDIFF_SYM424
+LDIFF_SYM483=Lme_55 - NetCorePush_NetCorePushTaskManagerDelegate__ctor
+	.long LDIFF_SYM483
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde58_end:
+Lfde59_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -9545,36 +11454,36 @@ Lfde58_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManagerDelegate__ctor_Foundation_NSObjectFlag
-	.quad Lme_4e
+	.quad Lme_56
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM425=LTDIE_33_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM425
+LDIFF_SYM484=LTDIE_33_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM484
 	.byte 2,141,16,3
 	.asciz "param0"
 
-LDIFF_SYM426=LTDIE_18_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM426
+LDIFF_SYM485=LTDIE_18_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM485
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM427=Lfde59_end - Lfde59_start
-	.long LDIFF_SYM427
-Lfde59_start:
+LDIFF_SYM486=Lfde60_end - Lfde60_start
+	.long LDIFF_SYM486
+Lfde60_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManagerDelegate__ctor_Foundation_NSObjectFlag
 
-LDIFF_SYM428=Lme_4e - NetCorePush_NetCorePushTaskManagerDelegate__ctor_Foundation_NSObjectFlag
-	.long LDIFF_SYM428
+LDIFF_SYM487=Lme_56 - NetCorePush_NetCorePushTaskManagerDelegate__ctor_Foundation_NSObjectFlag
+	.long LDIFF_SYM487
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde59_end:
+Lfde60_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -9584,36 +11493,36 @@ Lfde59_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManagerDelegate__ctor_intptr
-	.quad Lme_4f
+	.quad Lme_57
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM429=LTDIE_33_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM429
+LDIFF_SYM488=LTDIE_33_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM488
 	.byte 2,141,16,3
 	.asciz "param0"
 
-LDIFF_SYM430=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM430
+LDIFF_SYM489=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM489
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM431=Lfde60_end - Lfde60_start
-	.long LDIFF_SYM431
-Lfde60_start:
+LDIFF_SYM490=Lfde61_end - Lfde61_start
+	.long LDIFF_SYM490
+Lfde61_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManagerDelegate__ctor_intptr
 
-LDIFF_SYM432=Lme_4f - NetCorePush_NetCorePushTaskManagerDelegate__ctor_intptr
-	.long LDIFF_SYM432
+LDIFF_SYM491=Lme_57 - NetCorePush_NetCorePushTaskManagerDelegate__ctor_intptr
+	.long LDIFF_SYM491
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde60_end:
+Lfde61_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -9623,41 +11532,41 @@ Lfde60_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManagerDelegate_HandleDeeplinkActionWithURLString_string_Foundation_NSDictionary
-	.quad Lme_50
+	.quad Lme_58
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM433=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM433
+LDIFF_SYM492=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM492
 	.byte 0,3
 	.asciz "param0"
 
-LDIFF_SYM434=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM434
+LDIFF_SYM493=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM493
 	.byte 0,3
 	.asciz "param1"
 
-LDIFF_SYM435=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM435
+LDIFF_SYM494=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM494
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM436=Lfde61_end - Lfde61_start
-	.long LDIFF_SYM436
-Lfde61_start:
+LDIFF_SYM495=Lfde62_end - Lfde62_start
+	.long LDIFF_SYM495
+Lfde62_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManagerDelegate_HandleDeeplinkActionWithURLString_string_Foundation_NSDictionary
 
-LDIFF_SYM437=Lme_50 - NetCorePush_NetCorePushTaskManagerDelegate_HandleDeeplinkActionWithURLString_string_Foundation_NSDictionary
-	.long LDIFF_SYM437
+LDIFF_SYM496=Lme_58 - NetCorePush_NetCorePushTaskManagerDelegate_HandleDeeplinkActionWithURLString_string_Foundation_NSDictionary
+	.long LDIFF_SYM496
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde61_end:
+Lfde62_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -9667,36 +11576,36 @@ Lfde61_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManagerDelegate_HandleNotificationCustomPayload_Foundation_NSDictionary
-	.quad Lme_51
+	.quad Lme_59
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM438=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM438
+LDIFF_SYM497=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM497
 	.byte 0,3
 	.asciz "param0"
 
-LDIFF_SYM439=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM439
+LDIFF_SYM498=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM498
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM440=Lfde62_end - Lfde62_start
-	.long LDIFF_SYM440
-Lfde62_start:
+LDIFF_SYM499=Lfde63_end - Lfde63_start
+	.long LDIFF_SYM499
+Lfde63_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManagerDelegate_HandleNotificationCustomPayload_Foundation_NSDictionary
 
-LDIFF_SYM441=Lme_51 - NetCorePush_NetCorePushTaskManagerDelegate_HandleNotificationCustomPayload_Foundation_NSDictionary
-	.long LDIFF_SYM441
+LDIFF_SYM500=Lme_59 - NetCorePush_NetCorePushTaskManagerDelegate_HandleNotificationCustomPayload_Foundation_NSDictionary
+	.long LDIFF_SYM500
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde62_end:
+Lfde63_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -9706,41 +11615,41 @@ Lfde62_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManagerDelegate_HandleNotificationOpenAction_Foundation_NSDictionary_string
-	.quad Lme_52
+	.quad Lme_5a
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM442=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM442
+LDIFF_SYM501=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM501
 	.byte 0,3
 	.asciz "param0"
 
-LDIFF_SYM443=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM443
+LDIFF_SYM502=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM502
 	.byte 0,3
 	.asciz "param1"
 
-LDIFF_SYM444=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM444
+LDIFF_SYM503=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM503
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM445=Lfde63_end - Lfde63_start
-	.long LDIFF_SYM445
-Lfde63_start:
+LDIFF_SYM504=Lfde64_end - Lfde64_start
+	.long LDIFF_SYM504
+Lfde64_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManagerDelegate_HandleNotificationOpenAction_Foundation_NSDictionary_string
 
-LDIFF_SYM446=Lme_52 - NetCorePush_NetCorePushTaskManagerDelegate_HandleNotificationOpenAction_Foundation_NSDictionary_string
-	.long LDIFF_SYM446
+LDIFF_SYM505=Lme_5a - NetCorePush_NetCorePushTaskManagerDelegate_HandleNotificationOpenAction_Foundation_NSDictionary_string
+	.long LDIFF_SYM505
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde63_end:
+Lfde64_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_38:
@@ -9749,64 +11658,64 @@ LTDIE_38:
 	.asciz "NetCorePush_SMTDeeplink"
 
 	.byte 48,16
-LDIFF_SYM447=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM447
+LDIFF_SYM506=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM506
 	.byte 2,35,0,6
 	.asciz "__mt_CustomPayload_var"
 
-LDIFF_SYM448=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM448
+LDIFF_SYM507=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM507
 	.byte 2,35,40,0,7
 	.asciz "NetCorePush_SMTDeeplink"
 
-LDIFF_SYM449=LTDIE_38 - Ldebug_info_start
-	.long LDIFF_SYM449
+LDIFF_SYM508=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM508
 LTDIE_38_POINTER:
 
 	.byte 13
-LDIFF_SYM450=LTDIE_38 - Ldebug_info_start
-	.long LDIFF_SYM450
+LDIFF_SYM509=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM509
 LTDIE_38_REFERENCE:
 
 	.byte 14
-LDIFF_SYM451=LTDIE_38 - Ldebug_info_start
-	.long LDIFF_SYM451
+LDIFF_SYM510=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM510
 	.byte 2
 	.asciz "NetCorePush.NetCorePushTaskManagerDelegate:HandleSmartechDeeplink"
 	.asciz "NetCorePush_NetCorePushTaskManagerDelegate_HandleSmartechDeeplink_NetCorePush_SMTDeeplink"
 
 	.byte 0,0
 	.quad NetCorePush_NetCorePushTaskManagerDelegate_HandleSmartechDeeplink_NetCorePush_SMTDeeplink
-	.quad Lme_53
+	.quad Lme_5b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM452=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM452
+LDIFF_SYM511=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM511
 	.byte 0,3
 	.asciz "param0"
 
-LDIFF_SYM453=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM453
+LDIFF_SYM512=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM512
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM454=Lfde64_end - Lfde64_start
-	.long LDIFF_SYM454
-Lfde64_start:
+LDIFF_SYM513=Lfde65_end - Lfde65_start
+	.long LDIFF_SYM513
+Lfde65_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCorePushTaskManagerDelegate_HandleSmartechDeeplink_NetCorePush_SMTDeeplink
 
-LDIFF_SYM455=Lme_53 - NetCorePush_NetCorePushTaskManagerDelegate_HandleSmartechDeeplink_NetCorePush_SMTDeeplink
-	.long LDIFF_SYM455
+LDIFF_SYM514=Lme_5b - NetCorePush_NetCorePushTaskManagerDelegate_HandleSmartechDeeplink_NetCorePush_SMTDeeplink
+	.long LDIFF_SYM514
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde64_end:
+Lfde65_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_39:
@@ -9815,54 +11724,59 @@ LTDIE_39:
 	.asciz "NetCorePush_NetCoreSharedManager"
 
 	.byte 40,16
-LDIFF_SYM456=LTDIE_16 - Ldebug_info_start
-	.long LDIFF_SYM456
+LDIFF_SYM515=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM515
 	.byte 2,35,0,0,7
 	.asciz "NetCorePush_NetCoreSharedManager"
 
-LDIFF_SYM457=LTDIE_39 - Ldebug_info_start
-	.long LDIFF_SYM457
+LDIFF_SYM516=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM516
 LTDIE_39_POINTER:
 
 	.byte 13
-LDIFF_SYM458=LTDIE_39 - Ldebug_info_start
-	.long LDIFF_SYM458
+LDIFF_SYM517=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM517
 LTDIE_39_REFERENCE:
 
 	.byte 14
-LDIFF_SYM459=LTDIE_39 - Ldebug_info_start
-	.long LDIFF_SYM459
+LDIFF_SYM518=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM518
 	.byte 2
 	.asciz "NetCorePush.NetCoreSharedManager:get_ClassHandle"
 	.asciz "NetCorePush_NetCoreSharedManager_get_ClassHandle"
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_get_ClassHandle
-	.quad Lme_54
+	.quad Lme_5c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM460=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM460
+LDIFF_SYM519=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM519
+	.byte 0,11
+	.asciz "V_0"
+
+LDIFF_SYM520=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM520
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM461=Lfde65_end - Lfde65_start
-	.long LDIFF_SYM461
-Lfde65_start:
+LDIFF_SYM521=Lfde66_end - Lfde66_start
+	.long LDIFF_SYM521
+Lfde66_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_get_ClassHandle
 
-LDIFF_SYM462=Lme_54 - NetCorePush_NetCoreSharedManager_get_ClassHandle
-	.long LDIFF_SYM462
+LDIFF_SYM522=Lme_5c - NetCorePush_NetCoreSharedManager_get_ClassHandle
+	.long LDIFF_SYM522
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde65_end:
+Lfde66_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -9872,31 +11786,36 @@ Lfde65_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager__ctor
-	.quad Lme_55
+	.quad Lme_5d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM463=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM463
-	.byte 1,106,0
+LDIFF_SYM523=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM523
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM524=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM524
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM464=Lfde66_end - Lfde66_start
-	.long LDIFF_SYM464
-Lfde66_start:
+LDIFF_SYM525=Lfde67_end - Lfde67_start
+	.long LDIFF_SYM525
+Lfde67_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager__ctor
 
-LDIFF_SYM465=Lme_55 - NetCorePush_NetCoreSharedManager__ctor
-	.long LDIFF_SYM465
+LDIFF_SYM526=Lme_5d - NetCorePush_NetCoreSharedManager__ctor
+	.long LDIFF_SYM526
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde66_end:
+Lfde67_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -9906,36 +11825,36 @@ Lfde66_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager__ctor_Foundation_NSObjectFlag
-	.quad Lme_56
+	.quad Lme_5e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM466=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM466
+LDIFF_SYM527=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM527
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM467=LTDIE_18_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM467
+LDIFF_SYM528=LTDIE_18_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM528
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM468=Lfde67_end - Lfde67_start
-	.long LDIFF_SYM468
-Lfde67_start:
+LDIFF_SYM529=Lfde68_end - Lfde68_start
+	.long LDIFF_SYM529
+Lfde68_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager__ctor_Foundation_NSObjectFlag
 
-LDIFF_SYM469=Lme_56 - NetCorePush_NetCoreSharedManager__ctor_Foundation_NSObjectFlag
-	.long LDIFF_SYM469
+LDIFF_SYM530=Lme_5e - NetCorePush_NetCoreSharedManager__ctor_Foundation_NSObjectFlag
+	.long LDIFF_SYM530
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
-Lfde67_end:
+Lfde68_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -9945,36 +11864,36 @@ Lfde67_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager__ctor_intptr
-	.quad Lme_57
+	.quad Lme_5f
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM470=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM470
+LDIFF_SYM531=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM531
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM471=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM471
+LDIFF_SYM532=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM532
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM472=Lfde68_end - Lfde68_start
-	.long LDIFF_SYM472
-Lfde68_start:
+LDIFF_SYM533=Lfde69_end - Lfde69_start
+	.long LDIFF_SYM533
+Lfde69_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager__ctor_intptr
 
-LDIFF_SYM473=Lme_57 - NetCorePush_NetCoreSharedManager__ctor_intptr
-	.long LDIFF_SYM473
+LDIFF_SYM534=Lme_5f - NetCorePush_NetCoreSharedManager__ctor_intptr
+	.long LDIFF_SYM534
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
-Lfde68_end:
+Lfde69_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -9984,31 +11903,36 @@ Lfde68_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_ClearIdentity
-	.quad Lme_58
+	.quad Lme_60
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM474=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM474
-	.byte 2,141,16,0
+LDIFF_SYM535=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM535
+	.byte 2,141,16,11
+	.asciz "V_0"
+
+LDIFF_SYM536=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM536
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM475=Lfde69_end - Lfde69_start
-	.long LDIFF_SYM475
-Lfde69_start:
+LDIFF_SYM537=Lfde70_end - Lfde70_start
+	.long LDIFF_SYM537
+Lfde70_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_ClearIdentity
 
-LDIFF_SYM476=Lme_58 - NetCorePush_NetCoreSharedManager_ClearIdentity
-	.long LDIFF_SYM476
+LDIFF_SYM538=Lme_60 - NetCorePush_NetCoreSharedManager_ClearIdentity
+	.long LDIFF_SYM538
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde69_end:
+Lfde70_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10018,41 +11942,51 @@ Lfde69_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_GetAppGroupDataToUserDefault_string__
-	.quad Lme_59
+	.quad Lme_61
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM477=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM477
+LDIFF_SYM539=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM539
 	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM478=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM478
+LDIFF_SYM540=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM540
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM479=LTDIE_20_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM479
-	.byte 1,106,0
+LDIFF_SYM541=LTDIE_20_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM541
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM542=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM542
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM543=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM543
+	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM480=Lfde70_end - Lfde70_start
-	.long LDIFF_SYM480
-Lfde70_start:
+LDIFF_SYM544=Lfde71_end - Lfde71_start
+	.long LDIFF_SYM544
+Lfde71_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_GetAppGroupDataToUserDefault_string__
 
-LDIFF_SYM481=Lme_59 - NetCorePush_NetCoreSharedManager_GetAppGroupDataToUserDefault_string__
-	.long LDIFF_SYM481
+LDIFF_SYM545=Lme_61 - NetCorePush_NetCoreSharedManager_GetAppGroupDataToUserDefault_string__
+	.long LDIFF_SYM545
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde70_end:
+Lfde71_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10062,36 +11996,46 @@ Lfde70_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_GetNotificationsWithCount_System_nint
-	.quad Lme_5a
+	.quad Lme_62
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM482=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM482
-	.byte 2,141,16,3
+LDIFF_SYM546=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM546
+	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM483=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM483
-	.byte 2,141,24,0
+LDIFF_SYM547=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM547
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM548=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM548
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM549=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM549
+	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM484=Lfde71_end - Lfde71_start
-	.long LDIFF_SYM484
-Lfde71_start:
+LDIFF_SYM550=Lfde72_end - Lfde72_start
+	.long LDIFF_SYM550
+Lfde72_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_GetNotificationsWithCount_System_nint
 
-LDIFF_SYM485=Lme_5a - NetCorePush_NetCoreSharedManager_GetNotificationsWithCount_System_nint
-	.long LDIFF_SYM485
+LDIFF_SYM551=Lme_62 - NetCorePush_NetCoreSharedManager_GetNotificationsWithCount_System_nint
+	.long LDIFF_SYM551
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde71_end:
+Lfde72_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10101,51 +12045,61 @@ Lfde71_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_HandleApplicationLaunchEvent_Foundation_NSObject_string
-	.quad Lme_5b
+	.quad Lme_63
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM486=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM486
+LDIFF_SYM552=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM552
 	.byte 2,141,32,3
 	.asciz "param0"
 
-LDIFF_SYM487=LTDIE_16_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM487
-	.byte 2,141,40,3
+LDIFF_SYM553=LTDIE_16_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM553
+	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM488=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM488
+LDIFF_SYM554=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM554
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM489=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM489
+LDIFF_SYM555=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM555
 	.byte 1,105,11
 	.asciz "V_1"
 
-LDIFF_SYM490=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM490
-	.byte 1,106,0
+LDIFF_SYM556=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM556
+	.byte 1,106,11
+	.asciz "V_2"
+
+LDIFF_SYM557=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM557
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM558=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM558
+	.byte 2,141,40,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM491=Lfde72_end - Lfde72_start
-	.long LDIFF_SYM491
-Lfde72_start:
+LDIFF_SYM559=Lfde73_end - Lfde73_start
+	.long LDIFF_SYM559
+Lfde73_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_HandleApplicationLaunchEvent_Foundation_NSObject_string
 
-LDIFF_SYM492=Lme_5b - NetCorePush_NetCoreSharedManager_HandleApplicationLaunchEvent_Foundation_NSObject_string
-	.long LDIFF_SYM492
+LDIFF_SYM560=Lme_63 - NetCorePush_NetCoreSharedManager_HandleApplicationLaunchEvent_Foundation_NSObject_string
+	.long LDIFF_SYM560
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
 	.align 3
-Lfde72_end:
+Lfde73_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10155,36 +12109,41 @@ Lfde72_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_OptOut_bool
-	.quad Lme_5c
+	.quad Lme_64
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM493=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM493
+LDIFF_SYM561=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM561
 	.byte 2,141,16,3
 	.asciz "param0"
 
-LDIFF_SYM494=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM494
-	.byte 2,141,24,0
+LDIFF_SYM562=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM562
+	.byte 2,141,24,11
+	.asciz "V_0"
+
+LDIFF_SYM563=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM563
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM495=Lfde73_end - Lfde73_start
-	.long LDIFF_SYM495
-Lfde73_start:
+LDIFF_SYM564=Lfde74_end - Lfde74_start
+	.long LDIFF_SYM564
+Lfde74_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_OptOut_bool
 
-LDIFF_SYM496=Lme_5c - NetCorePush_NetCoreSharedManager_OptOut_bool
-	.long LDIFF_SYM496
+LDIFF_SYM565=Lme_64 - NetCorePush_NetCoreSharedManager_OptOut_bool
+	.long LDIFF_SYM565
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde73_end:
+Lfde74_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10194,31 +12153,36 @@ Lfde73_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_PrintDeviceToken
-	.quad Lme_5d
+	.quad Lme_65
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM497=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM497
-	.byte 2,141,16,0
+LDIFF_SYM566=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM566
+	.byte 2,141,16,11
+	.asciz "V_0"
+
+LDIFF_SYM567=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM567
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM498=Lfde74_end - Lfde74_start
-	.long LDIFF_SYM498
-Lfde74_start:
+LDIFF_SYM568=Lfde75_end - Lfde75_start
+	.long LDIFF_SYM568
+Lfde75_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_PrintDeviceToken
 
-LDIFF_SYM499=Lme_5d - NetCorePush_NetCoreSharedManager_PrintDeviceToken
-	.long LDIFF_SYM499
+LDIFF_SYM569=Lme_65 - NetCorePush_NetCoreSharedManager_PrintDeviceToken
+	.long LDIFF_SYM569
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde74_end:
+Lfde75_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10228,31 +12192,36 @@ Lfde74_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_ResetSession
-	.quad Lme_5e
+	.quad Lme_66
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM500=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM500
-	.byte 2,141,16,0
+LDIFF_SYM570=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM570
+	.byte 2,141,16,11
+	.asciz "V_0"
+
+LDIFF_SYM571=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM571
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM501=Lfde75_end - Lfde75_start
-	.long LDIFF_SYM501
-Lfde75_start:
+LDIFF_SYM572=Lfde76_end - Lfde76_start
+	.long LDIFF_SYM572
+Lfde76_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_ResetSession
 
-LDIFF_SYM502=Lme_5e - NetCorePush_NetCoreSharedManager_ResetSession
-	.long LDIFF_SYM502
+LDIFF_SYM573=Lme_66 - NetCorePush_NetCoreSharedManager_ResetSession
+	.long LDIFF_SYM573
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde75_end:
+Lfde76_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10262,41 +12231,51 @@ Lfde75_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_SetAssociateDomain_Foundation_NSObject__
-	.quad Lme_5f
+	.quad Lme_67
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM503=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM503
+LDIFF_SYM574=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM574
 	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM504=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM504
+LDIFF_SYM575=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM575
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM505=LTDIE_20_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM505
-	.byte 1,106,0
+LDIFF_SYM576=LTDIE_20_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM576
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM577=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM577
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM578=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM578
+	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM506=Lfde76_end - Lfde76_start
-	.long LDIFF_SYM506
-Lfde76_start:
+LDIFF_SYM579=Lfde77_end - Lfde77_start
+	.long LDIFF_SYM579
+Lfde77_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_SetAssociateDomain_Foundation_NSObject__
 
-LDIFF_SYM507=Lme_5f - NetCorePush_NetCoreSharedManager_SetAssociateDomain_Foundation_NSObject__
-	.long LDIFF_SYM507
+LDIFF_SYM580=Lme_67 - NetCorePush_NetCoreSharedManager_SetAssociateDomain_Foundation_NSObject__
+	.long LDIFF_SYM580
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde76_end:
+Lfde77_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10306,41 +12285,46 @@ Lfde76_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_SetDeepLinkQueryParameters_Foundation_NSDictionary
-	.quad Lme_60
+	.quad Lme_68
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM508=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM508
-	.byte 2,141,16,3
+LDIFF_SYM581=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM581
+	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM509=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM509
-	.byte 2,141,24,11
+LDIFF_SYM582=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM582
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM510=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM510
+LDIFF_SYM583=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM583
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM584=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM584
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM511=Lfde77_end - Lfde77_start
-	.long LDIFF_SYM511
-Lfde77_start:
+LDIFF_SYM585=Lfde78_end - Lfde78_start
+	.long LDIFF_SYM585
+Lfde78_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_SetDeepLinkQueryParameters_Foundation_NSDictionary
 
-LDIFF_SYM512=Lme_60 - NetCorePush_NetCoreSharedManager_SetDeepLinkQueryParameters_Foundation_NSDictionary
-	.long LDIFF_SYM512
+LDIFF_SYM586=Lme_68 - NetCorePush_NetCoreSharedManager_SetDeepLinkQueryParameters_Foundation_NSDictionary
+	.long LDIFF_SYM586
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde77_end:
+Lfde78_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10350,41 +12334,51 @@ Lfde77_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_SetDeviceToken_string
-	.quad Lme_61
+	.quad Lme_69
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM513=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM513
+LDIFF_SYM587=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM587
 	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM514=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM514
+LDIFF_SYM588=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM588
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM515=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM515
-	.byte 1,106,0
+LDIFF_SYM589=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM589
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM590=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM590
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM591=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM591
+	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM516=Lfde78_end - Lfde78_start
-	.long LDIFF_SYM516
-Lfde78_start:
+LDIFF_SYM592=Lfde79_end - Lfde79_start
+	.long LDIFF_SYM592
+Lfde79_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_SetDeviceToken_string
 
-LDIFF_SYM517=Lme_61 - NetCorePush_NetCoreSharedManager_SetDeviceToken_string
-	.long LDIFF_SYM517
+LDIFF_SYM593=Lme_69 - NetCorePush_NetCoreSharedManager_SetDeviceToken_string
+	.long LDIFF_SYM593
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde78_end:
+Lfde79_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10394,41 +12388,51 @@ Lfde78_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_SetUpAppGroup_string
-	.quad Lme_62
+	.quad Lme_6a
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM518=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM518
+LDIFF_SYM594=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM594
 	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM519=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM519
+LDIFF_SYM595=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM595
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM520=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM520
-	.byte 1,106,0
+LDIFF_SYM596=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM596
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM597=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM597
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM598=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM598
+	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM521=Lfde79_end - Lfde79_start
-	.long LDIFF_SYM521
-Lfde79_start:
+LDIFF_SYM599=Lfde80_end - Lfde80_start
+	.long LDIFF_SYM599
+Lfde80_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_SetUpAppGroup_string
 
-LDIFF_SYM522=Lme_62 - NetCorePush_NetCoreSharedManager_SetUpAppGroup_string
-	.long LDIFF_SYM522
+LDIFF_SYM600=Lme_6a - NetCorePush_NetCoreSharedManager_SetUpAppGroup_string
+	.long LDIFF_SYM600
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde79_end:
+Lfde80_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10438,41 +12442,51 @@ Lfde79_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_SetUpApplicationId_string
-	.quad Lme_63
+	.quad Lme_6b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM523=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM523
+LDIFF_SYM601=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM601
 	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM524=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM524
+LDIFF_SYM602=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM602
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM525=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM525
-	.byte 1,106,0
+LDIFF_SYM603=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM603
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM604=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM604
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM605=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM605
+	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM526=Lfde80_end - Lfde80_start
-	.long LDIFF_SYM526
-Lfde80_start:
+LDIFF_SYM606=Lfde81_end - Lfde81_start
+	.long LDIFF_SYM606
+Lfde81_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_SetUpApplicationId_string
 
-LDIFF_SYM527=Lme_63 - NetCorePush_NetCoreSharedManager_SetUpApplicationId_string
-	.long LDIFF_SYM527
+LDIFF_SYM607=Lme_6b - NetCorePush_NetCoreSharedManager_SetUpApplicationId_string
+	.long LDIFF_SYM607
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde80_end:
+Lfde81_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10482,41 +12496,51 @@ Lfde80_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_SetUpIdentity_string
-	.quad Lme_64
+	.quad Lme_6c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM528=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM528
+LDIFF_SYM608=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM608
 	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM529=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM529
+LDIFF_SYM609=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM609
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM530=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM530
-	.byte 1,106,0
+LDIFF_SYM610=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM610
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM611=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM611
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM612=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM612
+	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM531=Lfde81_end - Lfde81_start
-	.long LDIFF_SYM531
-Lfde81_start:
+LDIFF_SYM613=Lfde82_end - Lfde82_start
+	.long LDIFF_SYM613
+Lfde82_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_SetUpIdentity_string
 
-LDIFF_SYM532=Lme_64 - NetCorePush_NetCoreSharedManager_SetUpIdentity_string
-	.long LDIFF_SYM532
+LDIFF_SYM614=Lme_6c - NetCorePush_NetCoreSharedManager_SetUpIdentity_string
+	.long LDIFF_SYM614
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde81_end:
+Lfde82_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10526,26 +12550,31 @@ Lfde81_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_SharedInstance
-	.quad Lme_65
+	.quad Lme_6d
 
-	.byte 2,118,16,0
+	.byte 2,118,16,11
+	.asciz "V_0"
+
+LDIFF_SYM615=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM615
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM533=Lfde82_end - Lfde82_start
-	.long LDIFF_SYM533
-Lfde82_start:
+LDIFF_SYM616=Lfde83_end - Lfde83_start
+	.long LDIFF_SYM616
+Lfde83_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_SharedInstance
 
-LDIFF_SYM534=Lme_65 - NetCorePush_NetCoreSharedManager_SharedInstance
-	.long LDIFF_SYM534
+LDIFF_SYM617=Lme_6d - NetCorePush_NetCoreSharedManager_SharedInstance
+	.long LDIFF_SYM617
 	.long 0
 	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
 	.align 3
-Lfde82_end:
+Lfde83_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10555,31 +12584,41 @@ Lfde82_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_get_DeviceToken
-	.quad Lme_66
+	.quad Lme_6e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM535=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM535
-	.byte 2,141,16,0
+LDIFF_SYM618=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM618
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM619=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM619
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM620=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM620
+	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM536=Lfde83_end - Lfde83_start
-	.long LDIFF_SYM536
-Lfde83_start:
+LDIFF_SYM621=Lfde84_end - Lfde84_start
+	.long LDIFF_SYM621
+Lfde84_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_get_DeviceToken
 
-LDIFF_SYM537=Lme_66 - NetCorePush_NetCoreSharedManager_get_DeviceToken
-	.long LDIFF_SYM537
+LDIFF_SYM622=Lme_6e - NetCorePush_NetCoreSharedManager_get_DeviceToken
+	.long LDIFF_SYM622
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde83_end:
+Lfde84_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10589,31 +12628,41 @@ Lfde83_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_get_GUID
-	.quad Lme_67
+	.quad Lme_6f
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM538=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM538
-	.byte 2,141,16,0
+LDIFF_SYM623=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM623
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM624=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM624
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM625=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM625
+	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM539=Lfde84_end - Lfde84_start
-	.long LDIFF_SYM539
-Lfde84_start:
+LDIFF_SYM626=Lfde85_end - Lfde85_start
+	.long LDIFF_SYM626
+Lfde85_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_get_GUID
 
-LDIFF_SYM540=Lme_67 - NetCorePush_NetCoreSharedManager_get_GUID
-	.long LDIFF_SYM540
+LDIFF_SYM627=Lme_6f - NetCorePush_NetCoreSharedManager_get_GUID
+	.long LDIFF_SYM627
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde84_end:
+Lfde85_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10623,31 +12672,41 @@ Lfde84_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_get_Identity
-	.quad Lme_68
+	.quad Lme_70
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM541=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM541
-	.byte 2,141,16,0
+LDIFF_SYM628=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM628
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM629=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM629
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM630=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM630
+	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM542=Lfde85_end - Lfde85_start
-	.long LDIFF_SYM542
-Lfde85_start:
+LDIFF_SYM631=Lfde86_end - Lfde86_start
+	.long LDIFF_SYM631
+Lfde86_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_get_Identity
 
-LDIFF_SYM543=Lme_68 - NetCorePush_NetCoreSharedManager_get_Identity
-	.long LDIFF_SYM543
+LDIFF_SYM632=Lme_70 - NetCorePush_NetCoreSharedManager_get_Identity
+	.long LDIFF_SYM632
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde85_end:
+Lfde86_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10657,36 +12716,46 @@ Lfde85_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_get_Notifications
-	.quad Lme_69
+	.quad Lme_71
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM544=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM544
-	.byte 2,141,16,11
+LDIFF_SYM633=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM633
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM545=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM545
-	.byte 0,0
+LDIFF_SYM634=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM634
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM635=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM635
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM636=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM636
+	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM546=Lfde86_end - Lfde86_start
-	.long LDIFF_SYM546
-Lfde86_start:
+LDIFF_SYM637=Lfde87_end - Lfde87_start
+	.long LDIFF_SYM637
+Lfde87_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_get_Notifications
 
-LDIFF_SYM547=Lme_69 - NetCorePush_NetCoreSharedManager_get_Notifications
-	.long LDIFF_SYM547
+LDIFF_SYM638=Lme_71 - NetCorePush_NetCoreSharedManager_get_Notifications
+	.long LDIFF_SYM638
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde86_end:
+Lfde87_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10696,31 +12765,41 @@ Lfde86_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_get_OptOutStatus
-	.quad Lme_6a
+	.quad Lme_72
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM548=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM548
-	.byte 2,141,16,0
+LDIFF_SYM639=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM639
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM640=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM640
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM641=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM641
+	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM549=Lfde87_end - Lfde87_start
-	.long LDIFF_SYM549
-Lfde87_start:
+LDIFF_SYM642=Lfde88_end - Lfde88_start
+	.long LDIFF_SYM642
+Lfde88_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_get_OptOutStatus
 
-LDIFF_SYM550=Lme_6a - NetCorePush_NetCoreSharedManager_get_OptOutStatus
-	.long LDIFF_SYM550
+LDIFF_SYM643=Lme_72 - NetCorePush_NetCoreSharedManager_get_OptOutStatus
+	.long LDIFF_SYM643
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde87_end:
+Lfde88_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10730,31 +12809,41 @@ Lfde87_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager_get_UnreadNotificationsCount
-	.quad Lme_6b
+	.quad Lme_73
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM551=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM551
-	.byte 2,141,16,0
+LDIFF_SYM644=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM644
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM645=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM645
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM646=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM646
+	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM552=Lfde88_end - Lfde88_start
-	.long LDIFF_SYM552
-Lfde88_start:
+LDIFF_SYM647=Lfde89_end - Lfde89_start
+	.long LDIFF_SYM647
+Lfde89_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager_get_UnreadNotificationsCount
 
-LDIFF_SYM553=Lme_6b - NetCorePush_NetCoreSharedManager_get_UnreadNotificationsCount
-	.long LDIFF_SYM553
+LDIFF_SYM648=Lme_73 - NetCorePush_NetCoreSharedManager_get_UnreadNotificationsCount
+	.long LDIFF_SYM648
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
 	.align 3
-Lfde88_end:
+Lfde89_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10764,26 +12853,26 @@ Lfde88_end:
 
 	.byte 0,0
 	.quad NetCorePush_NetCoreSharedManager__cctor
-	.quad Lme_6c
+	.quad Lme_74
 
 	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM554=Lfde89_end - Lfde89_start
-	.long LDIFF_SYM554
-Lfde89_start:
+LDIFF_SYM649=Lfde90_end - Lfde90_start
+	.long LDIFF_SYM649
+Lfde90_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_NetCoreSharedManager__cctor
 
-LDIFF_SYM555=Lme_6c - NetCorePush_NetCoreSharedManager__cctor
-	.long LDIFF_SYM555
+LDIFF_SYM650=Lme_74 - NetCorePush_NetCoreSharedManager__cctor
+	.long LDIFF_SYM650
 	.long 0
 	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
 	.align 3
-Lfde89_end:
+Lfde90_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10793,31 +12882,36 @@ Lfde89_end:
 
 	.byte 0,0
 	.quad NetCorePush_SMTDeeplink_get_ClassHandle
-	.quad Lme_6d
+	.quad Lme_75
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM556=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM556
+LDIFF_SYM651=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM651
+	.byte 0,11
+	.asciz "V_0"
+
+LDIFF_SYM652=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM652
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM557=Lfde90_end - Lfde90_start
-	.long LDIFF_SYM557
-Lfde90_start:
+LDIFF_SYM653=Lfde91_end - Lfde91_start
+	.long LDIFF_SYM653
+Lfde91_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_SMTDeeplink_get_ClassHandle
 
-LDIFF_SYM558=Lme_6d - NetCorePush_SMTDeeplink_get_ClassHandle
-	.long LDIFF_SYM558
+LDIFF_SYM654=Lme_75 - NetCorePush_SMTDeeplink_get_ClassHandle
+	.long LDIFF_SYM654
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde90_end:
+Lfde91_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10827,31 +12921,36 @@ Lfde90_end:
 
 	.byte 0,0
 	.quad NetCorePush_SMTDeeplink__ctor
-	.quad Lme_6e
+	.quad Lme_76
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM559=LTDIE_38_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM559
-	.byte 1,106,0
+LDIFF_SYM655=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM655
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM656=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM656
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM560=Lfde91_end - Lfde91_start
-	.long LDIFF_SYM560
-Lfde91_start:
+LDIFF_SYM657=Lfde92_end - Lfde92_start
+	.long LDIFF_SYM657
+Lfde92_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_SMTDeeplink__ctor
 
-LDIFF_SYM561=Lme_6e - NetCorePush_SMTDeeplink__ctor
-	.long LDIFF_SYM561
+LDIFF_SYM658=Lme_76 - NetCorePush_SMTDeeplink__ctor
+	.long LDIFF_SYM658
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde91_end:
+Lfde92_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10861,36 +12960,36 @@ Lfde91_end:
 
 	.byte 0,0
 	.quad NetCorePush_SMTDeeplink__ctor_Foundation_NSObjectFlag
-	.quad Lme_6f
+	.quad Lme_77
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM562=LTDIE_38_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM562
+LDIFF_SYM659=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM659
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM563=LTDIE_18_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM563
+LDIFF_SYM660=LTDIE_18_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM660
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM564=Lfde92_end - Lfde92_start
-	.long LDIFF_SYM564
-Lfde92_start:
+LDIFF_SYM661=Lfde93_end - Lfde93_start
+	.long LDIFF_SYM661
+Lfde93_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_SMTDeeplink__ctor_Foundation_NSObjectFlag
 
-LDIFF_SYM565=Lme_6f - NetCorePush_SMTDeeplink__ctor_Foundation_NSObjectFlag
-	.long LDIFF_SYM565
+LDIFF_SYM662=Lme_77 - NetCorePush_SMTDeeplink__ctor_Foundation_NSObjectFlag
+	.long LDIFF_SYM662
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
-Lfde92_end:
+Lfde93_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10900,36 +12999,36 @@ Lfde92_end:
 
 	.byte 0,0
 	.quad NetCorePush_SMTDeeplink__ctor_intptr
-	.quad Lme_70
+	.quad Lme_78
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM566=LTDIE_38_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM566
+LDIFF_SYM663=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM663
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM567=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM567
+LDIFF_SYM664=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM664
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM568=Lfde93_end - Lfde93_start
-	.long LDIFF_SYM568
-Lfde93_start:
+LDIFF_SYM665=Lfde94_end - Lfde94_start
+	.long LDIFF_SYM665
+Lfde94_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_SMTDeeplink__ctor_intptr
 
-LDIFF_SYM569=Lme_70 - NetCorePush_SMTDeeplink__ctor_intptr
-	.long LDIFF_SYM569
+LDIFF_SYM666=Lme_78 - NetCorePush_SMTDeeplink__ctor_intptr
+	.long LDIFF_SYM666
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
-Lfde93_end:
+Lfde94_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10939,36 +13038,46 @@ Lfde93_end:
 
 	.byte 0,0
 	.quad NetCorePush_SMTDeeplink_get_CustomPayload
-	.quad Lme_71
+	.quad Lme_79
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM570=LTDIE_38_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM570
+LDIFF_SYM667=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM667
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM571=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM571
-	.byte 0,0
+LDIFF_SYM668=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM668
+	.byte 1,105,11
+	.asciz "V_1"
+
+LDIFF_SYM669=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM669
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM670=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM670
+	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM572=Lfde94_end - Lfde94_start
-	.long LDIFF_SYM572
-Lfde94_start:
+LDIFF_SYM671=Lfde95_end - Lfde95_start
+	.long LDIFF_SYM671
+Lfde95_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_SMTDeeplink_get_CustomPayload
 
-LDIFF_SYM573=Lme_71 - NetCorePush_SMTDeeplink_get_CustomPayload
-	.long LDIFF_SYM573
+LDIFF_SYM672=Lme_79 - NetCorePush_SMTDeeplink_get_CustomPayload
+	.long LDIFF_SYM672
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
 	.align 3
-Lfde94_end:
+Lfde95_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -10978,41 +13087,46 @@ Lfde94_end:
 
 	.byte 0,0
 	.quad NetCorePush_SMTDeeplink_set_CustomPayload_Foundation_NSDictionary
-	.quad Lme_72
+	.quad Lme_7a
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM574=LTDIE_38_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM574
+LDIFF_SYM673=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM673
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM575=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM575
-	.byte 2,141,24,11
+LDIFF_SYM674=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM674
+	.byte 2,141,32,11
 	.asciz "V_0"
 
-LDIFF_SYM576=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM576
+LDIFF_SYM675=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM675
+	.byte 1,104,11
+	.asciz "V_1"
+
+LDIFF_SYM676=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM676
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM577=Lfde95_end - Lfde95_start
-	.long LDIFF_SYM577
-Lfde95_start:
+LDIFF_SYM677=Lfde96_end - Lfde96_start
+	.long LDIFF_SYM677
+Lfde96_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_SMTDeeplink_set_CustomPayload_Foundation_NSDictionary
 
-LDIFF_SYM578=Lme_72 - NetCorePush_SMTDeeplink_set_CustomPayload_Foundation_NSDictionary
-	.long LDIFF_SYM578
+LDIFF_SYM678=Lme_7a - NetCorePush_SMTDeeplink_set_CustomPayload_Foundation_NSDictionary
+	.long LDIFF_SYM678
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3
 	.align 3
-Lfde95_end:
+Lfde96_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -11022,31 +13136,41 @@ Lfde95_end:
 
 	.byte 0,0
 	.quad NetCorePush_SMTDeeplink_get_DeepLink
-	.quad Lme_73
+	.quad Lme_7b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM579=LTDIE_38_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM579
-	.byte 2,141,16,0
+LDIFF_SYM679=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM679
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM680=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM680
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM681=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM681
+	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM580=Lfde96_end - Lfde96_start
-	.long LDIFF_SYM580
-Lfde96_start:
+LDIFF_SYM682=Lfde97_end - Lfde97_start
+	.long LDIFF_SYM682
+Lfde97_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_SMTDeeplink_get_DeepLink
 
-LDIFF_SYM581=Lme_73 - NetCorePush_SMTDeeplink_get_DeepLink
-	.long LDIFF_SYM581
+LDIFF_SYM683=Lme_7b - NetCorePush_SMTDeeplink_get_DeepLink
+	.long LDIFF_SYM683
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde96_end:
+Lfde97_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -11056,41 +13180,46 @@ Lfde96_end:
 
 	.byte 0,0
 	.quad NetCorePush_SMTDeeplink_set_DeepLink_string
-	.quad Lme_74
+	.quad Lme_7c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM582=LTDIE_38_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM582
-	.byte 2,141,16,3
+LDIFF_SYM684=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM684
+	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM583=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM583
-	.byte 2,141,24,11
+LDIFF_SYM685=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM685
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM584=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM584
+LDIFF_SYM686=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM686
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM687=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM687
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM585=Lfde97_end - Lfde97_start
-	.long LDIFF_SYM585
-Lfde97_start:
+LDIFF_SYM688=Lfde98_end - Lfde98_start
+	.long LDIFF_SYM688
+Lfde98_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_SMTDeeplink_set_DeepLink_string
 
-LDIFF_SYM586=Lme_74 - NetCorePush_SMTDeeplink_set_DeepLink_string
-	.long LDIFF_SYM586
+LDIFF_SYM689=Lme_7c - NetCorePush_SMTDeeplink_set_DeepLink_string
+	.long LDIFF_SYM689
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde97_end:
+Lfde98_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_40:
@@ -11099,8 +13228,8 @@ LTDIE_40:
 	.asciz "NetCorePush_SMTDeeplinkType"
 
 	.byte 8
-LDIFF_SYM587=LDIE_U8 - Ldebug_info_start
-	.long LDIFF_SYM587
+LDIFF_SYM690=LDIE_U8 - Ldebug_info_start
+	.long LDIFF_SYM690
 	.byte 9
 	.asciz "App"
 
@@ -11116,54 +13245,64 @@ LDIFF_SYM587=LDIE_U8 - Ldebug_info_start
 	.byte 3,0,7
 	.asciz "NetCorePush_SMTDeeplinkType"
 
-LDIFF_SYM588=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM588
+LDIFF_SYM691=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM691
 LTDIE_40_POINTER:
 
 	.byte 13
-LDIFF_SYM589=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM589
+LDIFF_SYM692=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM692
 LTDIE_40_REFERENCE:
 
 	.byte 14
-LDIFF_SYM590=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM590
+LDIFF_SYM693=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM693
 	.byte 2
 	.asciz "NetCorePush.SMTDeeplink:get_DeepLinkType"
 	.asciz "NetCorePush_SMTDeeplink_get_DeepLinkType"
 
 	.byte 0,0
 	.quad NetCorePush_SMTDeeplink_get_DeepLinkType
-	.quad Lme_75
+	.quad Lme_7d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM591=LTDIE_38_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM591
-	.byte 2,141,16,11
+LDIFF_SYM694=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM694
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM592=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM592
-	.byte 0,0
+LDIFF_SYM695=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM695
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM696=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM696
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM697=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM697
+	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM593=Lfde98_end - Lfde98_start
-	.long LDIFF_SYM593
-Lfde98_start:
+LDIFF_SYM698=Lfde99_end - Lfde99_start
+	.long LDIFF_SYM698
+Lfde99_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_SMTDeeplink_get_DeepLinkType
 
-LDIFF_SYM594=Lme_75 - NetCorePush_SMTDeeplink_get_DeepLinkType
-	.long LDIFF_SYM594
+LDIFF_SYM699=Lme_7d - NetCorePush_SMTDeeplink_get_DeepLinkType
+	.long LDIFF_SYM699
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde98_end:
+Lfde99_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -11173,36 +13312,41 @@ Lfde98_end:
 
 	.byte 0,0
 	.quad NetCorePush_SMTDeeplink_set_DeepLinkType_NetCorePush_SMTDeeplinkType
-	.quad Lme_76
+	.quad Lme_7e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM595=LTDIE_38_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM595
+LDIFF_SYM700=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM700
 	.byte 2,141,16,3
 	.asciz "param0"
 
-LDIFF_SYM596=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM596
-	.byte 2,141,24,0
+LDIFF_SYM701=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM701
+	.byte 2,141,24,11
+	.asciz "V_0"
+
+LDIFF_SYM702=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM702
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM597=Lfde99_end - Lfde99_start
-	.long LDIFF_SYM597
-Lfde99_start:
+LDIFF_SYM703=Lfde100_end - Lfde100_start
+	.long LDIFF_SYM703
+Lfde100_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_SMTDeeplink_set_DeepLinkType_NetCorePush_SMTDeeplinkType
 
-LDIFF_SYM598=Lme_76 - NetCorePush_SMTDeeplink_set_DeepLinkType_NetCorePush_SMTDeeplinkType
-	.long LDIFF_SYM598
+LDIFF_SYM704=Lme_7e - NetCorePush_SMTDeeplink_set_DeepLinkType_NetCorePush_SMTDeeplinkType
+	.long LDIFF_SYM704
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde99_end:
+Lfde100_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -11212,36 +13356,46 @@ Lfde99_end:
 
 	.byte 0,0
 	.quad NetCorePush_SMTDeeplink_get_UserInfo
-	.quad Lme_77
+	.quad Lme_7f
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM599=LTDIE_38_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM599
-	.byte 2,141,16,11
+LDIFF_SYM705=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM705
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM600=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM600
-	.byte 0,0
+LDIFF_SYM706=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM706
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM707=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM707
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM708=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM708
+	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM601=Lfde100_end - Lfde100_start
-	.long LDIFF_SYM601
-Lfde100_start:
+LDIFF_SYM709=Lfde101_end - Lfde101_start
+	.long LDIFF_SYM709
+Lfde101_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_SMTDeeplink_get_UserInfo
 
-LDIFF_SYM602=Lme_77 - NetCorePush_SMTDeeplink_get_UserInfo
-	.long LDIFF_SYM602
+LDIFF_SYM710=Lme_7f - NetCorePush_SMTDeeplink_get_UserInfo
+	.long LDIFF_SYM710
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde100_end:
+Lfde101_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -11251,41 +13405,46 @@ Lfde100_end:
 
 	.byte 0,0
 	.quad NetCorePush_SMTDeeplink_set_UserInfo_Foundation_NSDictionary
-	.quad Lme_78
+	.quad Lme_80
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM603=LTDIE_38_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM603
-	.byte 2,141,16,3
+LDIFF_SYM711=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM711
+	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM604=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM604
-	.byte 2,141,24,11
+LDIFF_SYM712=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM712
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM605=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM605
+LDIFF_SYM713=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM713
+	.byte 1,106,11
+	.asciz "V_1"
+
+LDIFF_SYM714=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM714
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM606=Lfde101_end - Lfde101_start
-	.long LDIFF_SYM606
-Lfde101_start:
+LDIFF_SYM715=Lfde102_end - Lfde102_start
+	.long LDIFF_SYM715
+Lfde102_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_SMTDeeplink_set_UserInfo_Foundation_NSDictionary
 
-LDIFF_SYM607=Lme_78 - NetCorePush_SMTDeeplink_set_UserInfo_Foundation_NSDictionary
-	.long LDIFF_SYM607
+LDIFF_SYM716=Lme_80 - NetCorePush_SMTDeeplink_set_UserInfo_Foundation_NSDictionary
+	.long LDIFF_SYM716
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde101_end:
+Lfde102_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -11295,36 +13454,41 @@ Lfde101_end:
 
 	.byte 0,0
 	.quad NetCorePush_SMTDeeplink_Dispose_bool
-	.quad Lme_79
+	.quad Lme_81
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM608=LTDIE_38_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM608
+LDIFF_SYM717=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM717
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM609=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM609
-	.byte 2,141,24,0
+LDIFF_SYM718=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM718
+	.byte 2,141,24,11
+	.asciz "V_0"
+
+LDIFF_SYM719=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM719
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM610=Lfde102_end - Lfde102_start
-	.long LDIFF_SYM610
-Lfde102_start:
+LDIFF_SYM720=Lfde103_end - Lfde103_start
+	.long LDIFF_SYM720
+Lfde103_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_SMTDeeplink_Dispose_bool
 
-LDIFF_SYM611=Lme_79 - NetCorePush_SMTDeeplink_Dispose_bool
-	.long LDIFF_SYM611
+LDIFF_SYM721=Lme_81 - NetCorePush_SMTDeeplink_Dispose_bool
+	.long LDIFF_SYM721
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
-Lfde102_end:
+Lfde103_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -11334,26 +13498,26 @@ Lfde102_end:
 
 	.byte 0,0
 	.quad NetCorePush_SMTDeeplink__cctor
-	.quad Lme_7a
+	.quad Lme_82
 
 	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM612=Lfde103_end - Lfde103_start
-	.long LDIFF_SYM612
-Lfde103_start:
+LDIFF_SYM722=Lfde104_end - Lfde104_start
+	.long LDIFF_SYM722
+Lfde104_start:
 
 	.long 0
 	.align 3
 	.quad NetCorePush_SMTDeeplink__cctor
 
-LDIFF_SYM613=Lme_7a - NetCorePush_SMTDeeplink__cctor
-	.long LDIFF_SYM613
+LDIFF_SYM723=Lme_82 - NetCorePush_SMTDeeplink__cctor
+	.long LDIFF_SYM723
 	.long 0
 	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
 	.align 3
-Lfde103_end:
+Lfde104_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_41:
@@ -11362,112 +13526,112 @@ LTDIE_41:
 	.asciz "System_Int32"
 
 	.byte 20,16
-LDIFF_SYM614=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM614
+LDIFF_SYM724=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM724
 	.byte 2,35,0,6
 	.asciz "m_value"
 
-LDIFF_SYM615=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM615
+LDIFF_SYM725=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM725
 	.byte 2,35,16,0,7
 	.asciz "System_Int32"
 
-LDIFF_SYM616=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM616
+LDIFF_SYM726=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM726
 LTDIE_41_POINTER:
 
 	.byte 13
-LDIFF_SYM617=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM617
+LDIFF_SYM727=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM727
 LTDIE_41_REFERENCE:
 
 	.byte 14
-LDIFF_SYM618=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM618
+LDIFF_SYM728=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM728
 LTDIE_42:
 
 	.byte 5
 	.asciz "System_Array"
 
 	.byte 16,16
-LDIFF_SYM619=LTDIE_3 - Ldebug_info_start
-	.long LDIFF_SYM619
+LDIFF_SYM729=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM729
 	.byte 2,35,0,0,7
 	.asciz "System_Array"
 
-LDIFF_SYM620=LTDIE_42 - Ldebug_info_start
-	.long LDIFF_SYM620
+LDIFF_SYM730=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM730
 LTDIE_42_POINTER:
 
 	.byte 13
-LDIFF_SYM621=LTDIE_42 - Ldebug_info_start
-	.long LDIFF_SYM621
+LDIFF_SYM731=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM731
 LTDIE_42_REFERENCE:
 
 	.byte 14
-LDIFF_SYM622=LTDIE_42 - Ldebug_info_start
-	.long LDIFF_SYM622
+LDIFF_SYM732=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM732
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Action`1<UserNotificationsUI.UNNotificationContentExtensionResponseOption>:invoke_void_T"
 	.asciz "wrapper_delegate_invoke_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption_invoke_void_T_UserNotificationsUI_UNNotificationContentExtensionResponseOption"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption_invoke_void_T_UserNotificationsUI_UNNotificationContentExtensionResponseOption
-	.quad Lme_80
+	.quad Lme_88
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM623=LTDIE_0_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM623
+LDIFF_SYM733=LTDIE_0_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM733
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM624=LTDIE_14 - Ldebug_info_start
-	.long LDIFF_SYM624
+LDIFF_SYM734=LTDIE_14 - Ldebug_info_start
+	.long LDIFF_SYM734
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM625=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM625
+LDIFF_SYM735=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM735
 	.byte 1,103,11
 	.asciz "V_1"
 
-LDIFF_SYM626=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM626
+LDIFF_SYM736=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM736
 	.byte 1,105,11
 	.asciz "V_2"
 
-LDIFF_SYM627=LTDIE_42_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM627
+LDIFF_SYM737=LTDIE_42_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM737
 	.byte 1,104,11
 	.asciz "V_3"
 
-LDIFF_SYM628=LTDIE_1_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM628
+LDIFF_SYM738=LTDIE_1_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM738
 	.byte 1,102,11
 	.asciz "V_4"
 
-LDIFF_SYM629=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM629
+LDIFF_SYM739=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM739
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM630=Lfde104_end - Lfde104_start
-	.long LDIFF_SYM630
-Lfde104_start:
+LDIFF_SYM740=Lfde105_end - Lfde105_start
+	.long LDIFF_SYM740
+Lfde105_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption_invoke_void_T_UserNotificationsUI_UNNotificationContentExtensionResponseOption
 
-LDIFF_SYM631=Lme_80 - wrapper_delegate_invoke_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption_invoke_void_T_UserNotificationsUI_UNNotificationContentExtensionResponseOption
-	.long LDIFF_SYM631
+LDIFF_SYM741=Lme_88 - wrapper_delegate_invoke_System_Action_1_UserNotificationsUI_UNNotificationContentExtensionResponseOption_invoke_void_T_UserNotificationsUI_UNNotificationContentExtensionResponseOption
+	.long LDIFF_SYM741
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
 	.align 3
-Lfde104_end:
+Lfde105_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_43:
@@ -11478,84 +13642,84 @@ LTDIE_43:
 	.byte 16,7
 	.asciz "_<Module>"
 
-LDIFF_SYM632=LTDIE_43 - Ldebug_info_start
-	.long LDIFF_SYM632
+LDIFF_SYM742=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM742
 LTDIE_43_POINTER:
 
 	.byte 13
-LDIFF_SYM633=LTDIE_43 - Ldebug_info_start
-	.long LDIFF_SYM633
+LDIFF_SYM743=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM743
 LTDIE_43_REFERENCE:
 
 	.byte 14
-LDIFF_SYM634=LTDIE_43 - Ldebug_info_start
-	.long LDIFF_SYM634
+LDIFF_SYM744=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM744
 	.byte 2
-	.asciz "(wrapper_delegate-invoke)_<Module>:invoke_void_intptr_nuint"
-	.asciz "wrapper_delegate_invoke__Module_invoke_void_intptr_nuint_intptr_System_nuint"
+	.asciz "(wrapper_delegate-invoke)_<Module>:invoke_void_intptr_uintptr"
+	.asciz "wrapper_delegate_invoke__Module_invoke_void_intptr_uintptr_intptr_uintptr"
 
 	.byte 0,0
-	.quad wrapper_delegate_invoke__Module_invoke_void_intptr_nuint_intptr_System_nuint
-	.quad Lme_81
+	.quad wrapper_delegate_invoke__Module_invoke_void_intptr_uintptr_intptr_uintptr
+	.quad Lme_89
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM635=LTDIE_43_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM635
+LDIFF_SYM745=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM745
 	.byte 1,104,3
 	.asciz "param0"
 
-LDIFF_SYM636=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM636
+LDIFF_SYM746=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM746
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM637=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM637
+LDIFF_SYM747=LDIE_U - Ldebug_info_start
+	.long LDIFF_SYM747
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM638=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM638
+LDIFF_SYM748=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM748
 	.byte 1,102,11
 	.asciz "V_1"
 
-LDIFF_SYM639=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM639
+LDIFF_SYM749=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM749
 	.byte 1,104,11
 	.asciz "V_2"
 
-LDIFF_SYM640=LTDIE_42_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM640
+LDIFF_SYM750=LTDIE_42_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM750
 	.byte 1,103,11
 	.asciz "V_3"
 
-LDIFF_SYM641=LTDIE_1_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM641
+LDIFF_SYM751=LTDIE_1_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM751
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM642=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM642
+LDIFF_SYM752=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM752
 	.byte 1,103,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM643=Lfde105_end - Lfde105_start
-	.long LDIFF_SYM643
-Lfde105_start:
+LDIFF_SYM753=Lfde106_end - Lfde106_start
+	.long LDIFF_SYM753
+Lfde106_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_delegate_invoke__Module_invoke_void_intptr_nuint_intptr_System_nuint
+	.quad wrapper_delegate_invoke__Module_invoke_void_intptr_uintptr_intptr_uintptr
 
-LDIFF_SYM644=Lme_81 - wrapper_delegate_invoke__Module_invoke_void_intptr_nuint_intptr_System_nuint
-	.long LDIFF_SYM644
+LDIFF_SYM754=Lme_89 - wrapper_delegate_invoke__Module_invoke_void_intptr_uintptr_intptr_uintptr
+	.long LDIFF_SYM754
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3
 	.align 3
-Lfde105_end:
+Lfde106_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_44:
@@ -11564,84 +13728,84 @@ LTDIE_44:
 	.asciz "System_AsyncCallback"
 
 	.byte 128,1,16
-LDIFF_SYM645=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM645
+LDIFF_SYM755=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM755
 	.byte 2,35,0,0,7
 	.asciz "System_AsyncCallback"
 
-LDIFF_SYM646=LTDIE_44 - Ldebug_info_start
-	.long LDIFF_SYM646
+LDIFF_SYM756=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM756
 LTDIE_44_POINTER:
 
 	.byte 13
-LDIFF_SYM647=LTDIE_44 - Ldebug_info_start
-	.long LDIFF_SYM647
+LDIFF_SYM757=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM757
 LTDIE_44_REFERENCE:
 
 	.byte 14
-LDIFF_SYM648=LTDIE_44 - Ldebug_info_start
-	.long LDIFF_SYM648
+LDIFF_SYM758=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM758
 	.byte 2
-	.asciz "(wrapper_delegate-begin-invoke)_<Module>:begin_invoke_IAsyncResult__this___intptr_nuint_AsyncCallback_object"
-	.asciz "wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_nuint_AsyncCallback_object_intptr_System_nuint_System_AsyncCallback_object"
+	.asciz "(wrapper_delegate-begin-invoke)_<Module>:begin_invoke_IAsyncResult__this___intptr_uintptr_AsyncCallback_object"
+	.asciz "wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_uintptr_AsyncCallback_object_intptr_uintptr_System_AsyncCallback_object"
 
 	.byte 0,0
-	.quad wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_nuint_AsyncCallback_object_intptr_System_nuint_System_AsyncCallback_object
-	.quad Lme_82
+	.quad wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_uintptr_AsyncCallback_object_intptr_uintptr_System_AsyncCallback_object
+	.quad Lme_8a
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM649=LTDIE_43_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM649
+LDIFF_SYM759=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM759
 	.byte 2,141,32,3
 	.asciz "param0"
 
-LDIFF_SYM650=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM650
+LDIFF_SYM760=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM760
 	.byte 2,141,40,3
 	.asciz "param1"
 
-LDIFF_SYM651=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM651
+LDIFF_SYM761=LDIE_U - Ldebug_info_start
+	.long LDIFF_SYM761
 	.byte 2,141,48,3
 	.asciz "param2"
 
-LDIFF_SYM652=LTDIE_44_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM652
+LDIFF_SYM762=LTDIE_44_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM762
 	.byte 2,141,56,3
 	.asciz "param3"
 
-LDIFF_SYM653=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM653
+LDIFF_SYM763=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM763
 	.byte 3,141,192,0,11
 	.asciz "V_0"
 
-LDIFF_SYM654=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM654
+LDIFF_SYM764=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM764
 	.byte 1,105,11
 	.asciz "V_1"
 
-LDIFF_SYM655=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM655
+LDIFF_SYM765=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM765
 	.byte 1,105,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM656=Lfde106_end - Lfde106_start
-	.long LDIFF_SYM656
-Lfde106_start:
+LDIFF_SYM766=Lfde107_end - Lfde107_start
+	.long LDIFF_SYM766
+Lfde107_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_nuint_AsyncCallback_object_intptr_System_nuint_System_AsyncCallback_object
+	.quad wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_uintptr_AsyncCallback_object_intptr_uintptr_System_AsyncCallback_object
 
-LDIFF_SYM657=Lme_82 - wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_nuint_AsyncCallback_object_intptr_System_nuint_System_AsyncCallback_object
-	.long LDIFF_SYM657
+LDIFF_SYM767=Lme_8a - wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_uintptr_AsyncCallback_object_intptr_uintptr_System_AsyncCallback_object
+	.long LDIFF_SYM767
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7
 	.align 3
-Lfde106_end:
+Lfde107_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_45:
@@ -11652,198 +13816,198 @@ LTDIE_45:
 	.byte 16,7
 	.asciz "System_IAsyncResult"
 
-LDIFF_SYM658=LTDIE_45 - Ldebug_info_start
-	.long LDIFF_SYM658
+LDIFF_SYM768=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM768
 LTDIE_45_POINTER:
 
 	.byte 13
-LDIFF_SYM659=LTDIE_45 - Ldebug_info_start
-	.long LDIFF_SYM659
+LDIFF_SYM769=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM769
 LTDIE_45_REFERENCE:
 
 	.byte 14
-LDIFF_SYM660=LTDIE_45 - Ldebug_info_start
-	.long LDIFF_SYM660
+LDIFF_SYM770=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM770
 	.byte 2
 	.asciz "(wrapper_delegate-end-invoke)_<Module>:end_invoke_void__this___IAsyncResult"
 	.asciz "wrapper_delegate_end_invoke__Module_end_invoke_void__this___IAsyncResult_System_IAsyncResult"
 
 	.byte 0,0
 	.quad wrapper_delegate_end_invoke__Module_end_invoke_void__this___IAsyncResult_System_IAsyncResult
-	.quad Lme_83
+	.quad Lme_8b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM661=LTDIE_43_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM661
+LDIFF_SYM771=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM771
 	.byte 2,141,32,3
 	.asciz "param0"
 
-LDIFF_SYM662=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM662
+LDIFF_SYM772=LTDIE_45_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM772
 	.byte 2,141,40,11
 	.asciz "V_0"
 
-LDIFF_SYM663=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM663
+LDIFF_SYM773=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM773
 	.byte 1,105,11
 	.asciz "V_1"
 
-LDIFF_SYM664=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM664
+LDIFF_SYM774=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM774
 	.byte 2,141,48,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM665=Lfde107_end - Lfde107_start
-	.long LDIFF_SYM665
-Lfde107_start:
+LDIFF_SYM775=Lfde108_end - Lfde108_start
+	.long LDIFF_SYM775
+Lfde108_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_end_invoke__Module_end_invoke_void__this___IAsyncResult_System_IAsyncResult
 
-LDIFF_SYM666=Lme_83 - wrapper_delegate_end_invoke__Module_end_invoke_void__this___IAsyncResult_System_IAsyncResult
-	.long LDIFF_SYM666
+LDIFF_SYM776=Lme_8b - wrapper_delegate_end_invoke__Module_end_invoke_void__this___IAsyncResult_System_IAsyncResult
+	.long LDIFF_SYM776
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5
-	.align 3
-Lfde107_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_ObjCRuntime.Trampolines/DActionArity1V0:wrapper_aot_native"
-	.asciz "wrapper_managed_to_native_ObjCRuntime_Trampolines_DActionArity1V0_wrapper_aot_native_object_intptr_System_nuint"
-
-	.byte 0,0
-	.quad wrapper_managed_to_native_ObjCRuntime_Trampolines_DActionArity1V0_wrapper_aot_native_object_intptr_System_nuint
-	.quad Lme_84
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM667=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM667
-	.byte 1,104,3
-	.asciz "param1"
-
-LDIFF_SYM668=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM668
-	.byte 2,141,16,3
-	.asciz "param2"
-
-LDIFF_SYM669=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM669
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM670=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM670
-	.byte 0,11
-	.asciz "V_1"
-
-LDIFF_SYM671=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM671
-	.byte 0,11
-	.asciz "V_2"
-
-LDIFF_SYM672=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM672
-	.byte 0,11
-	.asciz "V_3"
-
-LDIFF_SYM673=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM673
-	.byte 0,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM674=Lfde108_end - Lfde108_start
-	.long LDIFF_SYM674
-Lfde108_start:
-
-	.long 0
-	.align 3
-	.quad wrapper_managed_to_native_ObjCRuntime_Trampolines_DActionArity1V0_wrapper_aot_native_object_intptr_System_nuint
-
-LDIFF_SYM675=Lme_84 - wrapper_managed_to_native_ObjCRuntime_Trampolines_DActionArity1V0_wrapper_aot_native_object_intptr_System_nuint
-	.long LDIFF_SYM675
-	.long 0
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
-	.byte 154,7,68,155,6,156,5
 	.align 3
 Lfde108_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_delegate-invoke)_<Module>:invoke_bound_void_object_intptr_nuint"
-	.asciz "wrapper_delegate_invoke__Module_invoke_bound_void_object_intptr_nuint_intptr_System_nuint"
+	.asciz "(wrapper_managed-to-native)_ObjCRuntime.Trampolines/DActionArity1V0:wrapper_aot_native"
+	.asciz "wrapper_managed_to_native_ObjCRuntime_Trampolines_DActionArity1V0_wrapper_aot_native_object_intptr_uintptr"
 
 	.byte 0,0
-	.quad wrapper_delegate_invoke__Module_invoke_bound_void_object_intptr_nuint_intptr_System_nuint
-	.quad Lme_85
+	.quad wrapper_managed_to_native_ObjCRuntime_Trampolines_DActionArity1V0_wrapper_aot_native_object_intptr_uintptr
+	.quad Lme_8c
 
 	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM676=LTDIE_43_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM676
-	.byte 1,104,3
 	.asciz "param0"
 
-LDIFF_SYM677=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM677
-	.byte 1,105,3
+LDIFF_SYM777=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM777
+	.byte 1,104,3
 	.asciz "param1"
 
-LDIFF_SYM678=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM678
+LDIFF_SYM778=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM778
+	.byte 2,141,16,3
+	.asciz "param2"
+
+LDIFF_SYM779=LDIE_U - Ldebug_info_start
+	.long LDIFF_SYM779
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM679=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM679
-	.byte 1,102,11
+LDIFF_SYM780=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM780
+	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM680=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM680
-	.byte 1,104,11
+LDIFF_SYM781=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM781
+	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM681=LTDIE_42_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM681
-	.byte 1,103,11
+LDIFF_SYM782=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM782
+	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM682=LTDIE_1_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM682
-	.byte 1,101,11
-	.asciz "V_4"
-
-LDIFF_SYM683=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM683
-	.byte 1,103,0
+LDIFF_SYM783=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM783
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM684=Lfde109_end - Lfde109_start
-	.long LDIFF_SYM684
+LDIFF_SYM784=Lfde109_end - Lfde109_start
+	.long LDIFF_SYM784
 Lfde109_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_delegate_invoke__Module_invoke_bound_void_object_intptr_nuint_intptr_System_nuint
+	.quad wrapper_managed_to_native_ObjCRuntime_Trampolines_DActionArity1V0_wrapper_aot_native_object_intptr_uintptr
 
-LDIFF_SYM685=Lme_85 - wrapper_delegate_invoke__Module_invoke_bound_void_object_intptr_nuint_intptr_System_nuint
-	.long LDIFF_SYM685
+LDIFF_SYM785=Lme_8c - wrapper_managed_to_native_ObjCRuntime_Trampolines_DActionArity1V0_wrapper_aot_native_object_intptr_uintptr
+	.long LDIFF_SYM785
+	.long 0
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
+	.byte 154,7,68,155,6,156,5
+	.align 3
+Lfde109_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_delegate-invoke)_<Module>:invoke_bound_void_object_intptr_uintptr"
+	.asciz "wrapper_delegate_invoke__Module_invoke_bound_void_object_intptr_uintptr_intptr_uintptr"
+
+	.byte 0,0
+	.quad wrapper_delegate_invoke__Module_invoke_bound_void_object_intptr_uintptr_intptr_uintptr
+	.quad Lme_8d
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM786=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM786
+	.byte 1,104,3
+	.asciz "param0"
+
+LDIFF_SYM787=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM787
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM788=LDIE_U - Ldebug_info_start
+	.long LDIFF_SYM788
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM789=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM789
+	.byte 1,102,11
+	.asciz "V_1"
+
+LDIFF_SYM790=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM790
+	.byte 1,104,11
+	.asciz "V_2"
+
+LDIFF_SYM791=LTDIE_42_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM791
+	.byte 1,103,11
+	.asciz "V_3"
+
+LDIFF_SYM792=LTDIE_1_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM792
+	.byte 1,101,11
+	.asciz "V_4"
+
+LDIFF_SYM793=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM793
+	.byte 1,103,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM794=Lfde110_end - Lfde110_start
+	.long LDIFF_SYM794
+Lfde110_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_delegate_invoke__Module_invoke_bound_void_object_intptr_uintptr_intptr_uintptr
+
+LDIFF_SYM795=Lme_8d - wrapper_delegate_invoke__Module_invoke_bound_void_object_intptr_uintptr_intptr_uintptr
+	.long LDIFF_SYM795
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3
 	.align 3
-Lfde109_end:
+Lfde110_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -11853,122 +14017,57 @@ Lfde109_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
-	.quad Lme_86
+	.quad Lme_8e
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM686=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM686
+LDIFF_SYM796=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM796
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM687=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM687
+LDIFF_SYM797=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM797
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM688=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM688
+LDIFF_SYM798=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM798
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM689=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM689
+LDIFF_SYM799=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM799
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM690=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM690
+LDIFF_SYM800=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM800
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM691=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM691
+LDIFF_SYM801=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM801
 	.byte 1,106,11
 	.asciz "V_4"
 
-LDIFF_SYM692=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM692
+LDIFF_SYM802=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM802
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM693=Lfde110_end - Lfde110_start
-	.long LDIFF_SYM693
-Lfde110_start:
+LDIFF_SYM803=Lfde111_end - Lfde111_start
+	.long LDIFF_SYM803
+Lfde111_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
 
-LDIFF_SYM694=Lme_86 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
-	.long LDIFF_SYM694
-	.long 0
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
-	.byte 154,8,68,155,7,156,6
-	.align 3
-Lfde110_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSendSuper"
-	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr"
-
-	.byte 0,0
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
-	.quad Lme_87
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM695=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM695
-	.byte 1,105,3
-	.asciz "param1"
-
-LDIFF_SYM696=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM696
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM697=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM697
-	.byte 0,11
-	.asciz "V_1"
-
-LDIFF_SYM698=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM698
-	.byte 0,11
-	.asciz "V_2"
-
-LDIFF_SYM699=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM699
-	.byte 0,11
-	.asciz "V_3"
-
-LDIFF_SYM700=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM700
-	.byte 1,106,11
-	.asciz "V_4"
-
-LDIFF_SYM701=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM701
-	.byte 0,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM702=Lfde111_end - Lfde111_start
-	.long LDIFF_SYM702
-Lfde111_start:
-
-	.long 0
-	.align 3
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
-
-LDIFF_SYM703=Lme_87 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
-	.long LDIFF_SYM703
+LDIFF_SYM804=Lme_8e - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+	.long LDIFF_SYM804
 	.long 0
 	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
 	.byte 154,8,68,155,7,156,6
@@ -11978,137 +14077,67 @@ Lfde111_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
-	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint"
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSendSuper"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr"
 
 	.byte 0,0
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint
-	.quad Lme_88
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+	.quad Lme_8f
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM704=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM704
-	.byte 2,141,16,3
+LDIFF_SYM805=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM805
+	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM705=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM705
-	.byte 2,141,24,3
-	.asciz "param2"
-
-LDIFF_SYM706=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM706
+LDIFF_SYM806=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM806
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM707=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM707
+LDIFF_SYM807=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM807
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM708=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM708
+LDIFF_SYM808=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM808
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM709=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM709
+LDIFF_SYM809=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM809
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM710=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM710
+LDIFF_SYM810=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM810
+	.byte 1,106,11
+	.asciz "V_4"
+
+LDIFF_SYM811=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM811
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM711=Lfde112_end - Lfde112_start
-	.long LDIFF_SYM711
+LDIFF_SYM812=Lfde112_end - Lfde112_start
+	.long LDIFF_SYM812
 Lfde112_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
 
-LDIFF_SYM712=Lme_88 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint
-	.long LDIFF_SYM712
+LDIFF_SYM813=Lme_8f - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+	.long LDIFF_SYM813
 	.long 0
-	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
 	.byte 154,8,68,155,7,156,6
 	.align 3
 Lfde112_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
-	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_intptr"
-
-	.byte 0,0
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_intptr
-	.quad Lme_89
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM713=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM713
-	.byte 2,141,16,3
-	.asciz "param1"
-
-LDIFF_SYM714=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM714
-	.byte 2,141,24,3
-	.asciz "param2"
-
-LDIFF_SYM715=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM715
-	.byte 2,141,32,3
-	.asciz "param3"
-
-LDIFF_SYM716=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM716
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM717=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM717
-	.byte 0,11
-	.asciz "V_1"
-
-LDIFF_SYM718=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM718
-	.byte 0,11
-	.asciz "V_2"
-
-LDIFF_SYM719=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM719
-	.byte 0,11
-	.asciz "V_3"
-
-LDIFF_SYM720=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM720
-	.byte 0,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM721=Lfde113_end - Lfde113_start
-	.long LDIFF_SYM721
-Lfde113_start:
-
-	.long 0
-	.align 3
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_intptr
-
-LDIFF_SYM722=Lme_89 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_intptr
-	.long LDIFF_SYM722
-	.long 0
-	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
-	.byte 154,7,68,155,6,156,5
-	.align 3
-Lfde113_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -12118,192 +14147,137 @@ Lfde113_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
-	.quad Lme_8a
+	.quad Lme_90
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM723=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM723
+LDIFF_SYM814=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM814
 	.byte 2,141,16,3
 	.asciz "param1"
 
-LDIFF_SYM724=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM724
-	.byte 2,141,24,3
+LDIFF_SYM815=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM815
+	.byte 1,105,3
 	.asciz "param2"
 
-LDIFF_SYM725=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM725
+LDIFF_SYM816=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM816
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM726=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM726
+LDIFF_SYM817=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM817
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM727=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM727
+LDIFF_SYM818=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM818
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM728=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM728
+LDIFF_SYM819=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM819
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM729=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM729
+LDIFF_SYM820=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM820
+	.byte 1,106,11
+	.asciz "V_4"
+
+LDIFF_SYM821=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM821
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM730=Lfde114_end - Lfde114_start
-	.long LDIFF_SYM730
-Lfde114_start:
+LDIFF_SYM822=Lfde113_end - Lfde113_start
+	.long LDIFF_SYM822
+Lfde113_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
 
-LDIFF_SYM731=Lme_8a - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
-	.long LDIFF_SYM731
-	.long 0
-	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
-	.byte 154,8,68,155,7,156,6
-	.align 3
-Lfde114_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
-	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr"
-
-	.byte 0,0
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
-	.quad Lme_8b
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM732=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM732
-	.byte 2,141,16,3
-	.asciz "param1"
-
-LDIFF_SYM733=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM733
-	.byte 2,141,24,3
-	.asciz "param2"
-
-LDIFF_SYM734=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM734
-	.byte 2,141,32,3
-	.asciz "param3"
-
-LDIFF_SYM735=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM735
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM736=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM736
-	.byte 0,11
-	.asciz "V_1"
-
-LDIFF_SYM737=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM737
-	.byte 0,11
-	.asciz "V_2"
-
-LDIFF_SYM738=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM738
-	.byte 0,11
-	.asciz "V_3"
-
-LDIFF_SYM739=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM739
-	.byte 0,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM740=Lfde115_end - Lfde115_start
-	.long LDIFF_SYM740
-Lfde115_start:
-
-	.long 0
-	.align 3
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
-
-LDIFF_SYM741=Lme_8b - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
-	.long LDIFF_SYM741
-	.long 0
-	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
-	.byte 154,7,68,155,6,156,5
-	.align 3
-Lfde115_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
-	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0"
-
-	.byte 0,0
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
-	.quad Lme_8c
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM742=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM742
-	.byte 2,141,16,3
-	.asciz "param1"
-
-LDIFF_SYM743=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM743
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM744=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM744
-	.byte 0,11
-	.asciz "V_1"
-
-LDIFF_SYM745=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM745
-	.byte 0,11
-	.asciz "V_2"
-
-LDIFF_SYM746=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM746
-	.byte 0,11
-	.asciz "V_3"
-
-LDIFF_SYM747=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM747
-	.byte 0,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM748=Lfde116_end - Lfde116_start
-	.long LDIFF_SYM748
-Lfde116_start:
-
-	.long 0
-	.align 3
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
-
-LDIFF_SYM749=Lme_8c - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
-	.long LDIFF_SYM749
+LDIFF_SYM823=Lme_90 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+	.long LDIFF_SYM823
 	.long 0
 	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
 	.byte 154,7,68,155,6,156,5
 	.align 3
-Lfde116_end:
+Lfde113_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSendSuper"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr
+	.quad Lme_91
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM824=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM824
+	.byte 2,141,16,3
+	.asciz "param1"
+
+LDIFF_SYM825=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM825
+	.byte 1,105,3
+	.asciz "param2"
+
+LDIFF_SYM826=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM826
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM827=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM827
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM828=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM828
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM829=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM829
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM830=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM830
+	.byte 1,106,11
+	.asciz "V_4"
+
+LDIFF_SYM831=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM831
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM832=Lfde114_end - Lfde114_start
+	.long LDIFF_SYM832
+Lfde114_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr
+
+LDIFF_SYM833=Lme_91 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr
+	.long LDIFF_SYM833
+	.long 0
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
+	.byte 154,7,68,155,6,156,5
+	.align 3
+Lfde114_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -12313,64 +14287,194 @@ Lfde116_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
-	.quad Lme_8d
+	.quad Lme_92
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM750=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM750
+LDIFF_SYM834=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM834
 	.byte 2,141,16,3
 	.asciz "param1"
 
-LDIFF_SYM751=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM751
-	.byte 1,105,3
+LDIFF_SYM835=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM835
+	.byte 2,141,24,3
 	.asciz "param2"
 
-LDIFF_SYM752=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM752
+LDIFF_SYM836=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM836
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM753=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM753
+LDIFF_SYM837=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM837
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM754=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM754
+LDIFF_SYM838=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM838
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM755=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM755
+LDIFF_SYM839=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM839
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM756=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM756
-	.byte 1,106,11
-	.asciz "V_4"
-
-LDIFF_SYM757=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM757
+LDIFF_SYM840=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM840
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM758=Lfde117_end - Lfde117_start
-	.long LDIFF_SYM758
-Lfde117_start:
+LDIFF_SYM841=Lfde115_end - Lfde115_start
+	.long LDIFF_SYM841
+Lfde115_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
 
-LDIFF_SYM759=Lme_8d - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
-	.long LDIFF_SYM759
+LDIFF_SYM842=Lme_92 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
+	.long LDIFF_SYM842
 	.long 0
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
+	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
+	.byte 154,8,68,155,7,156,6
+	.align 3
+Lfde115_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSendSuper"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_0"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_0
+	.quad Lme_93
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM843=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM843
+	.byte 2,141,16,3
+	.asciz "param1"
+
+LDIFF_SYM844=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM844
+	.byte 2,141,24,3
+	.asciz "param2"
+
+LDIFF_SYM845=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM845
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM846=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM846
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM847=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM847
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM848=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM848
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM849=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM849
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM850=Lfde116_end - Lfde116_start
+	.long LDIFF_SYM850
+Lfde116_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_0
+
+LDIFF_SYM851=Lme_93 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_0
+	.long LDIFF_SYM851
+	.long 0
+	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
+	.byte 154,8,68,155,7,156,6
+	.align 3
+Lfde116_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+	.quad Lme_94
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM852=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM852
+	.byte 2,141,16,3
+	.asciz "param1"
+
+LDIFF_SYM853=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM853
+	.byte 2,141,24,3
+	.asciz "param2"
+
+LDIFF_SYM854=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM854
+	.byte 2,141,32,3
+	.asciz "param3"
+
+LDIFF_SYM855=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM855
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM856=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM856
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM857=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM857
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM858=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM858
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM859=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM859
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM860=Lfde117_end - Lfde117_start
+	.long LDIFF_SYM860
+Lfde117_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+
+LDIFF_SYM861=Lme_94 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+	.long LDIFF_SYM861
+	.long 0
+	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
 	.byte 154,7,68,155,6,156,5
 	.align 3
 Lfde117_end:
@@ -12378,80 +14482,70 @@ Lfde117_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
-	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr"
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSendSuper"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_intptr"
 
 	.byte 0,0
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr
-	.quad Lme_8e
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_intptr
+	.quad Lme_95
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM760=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM760
+LDIFF_SYM862=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM862
 	.byte 2,141,16,3
 	.asciz "param1"
 
-LDIFF_SYM761=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM761
+LDIFF_SYM863=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM863
 	.byte 2,141,24,3
 	.asciz "param2"
 
-LDIFF_SYM762=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM762
+LDIFF_SYM864=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM864
 	.byte 2,141,32,3
 	.asciz "param3"
 
-LDIFF_SYM763=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM763
-	.byte 1,105,3
-	.asciz "param4"
-
-LDIFF_SYM764=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM764
+LDIFF_SYM865=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM865
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM765=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM765
+LDIFF_SYM866=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM866
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM766=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM766
+LDIFF_SYM867=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM867
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM767=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM767
+LDIFF_SYM868=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM868
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM768=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM768
-	.byte 1,105,11
-	.asciz "V_4"
-
-LDIFF_SYM769=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM769
-	.byte 1,101,0
+LDIFF_SYM869=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM869
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM770=Lfde118_end - Lfde118_start
-	.long LDIFF_SYM770
+LDIFF_SYM870=Lfde118_end - Lfde118_start
+	.long LDIFF_SYM870
 Lfde118_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_intptr
 
-LDIFF_SYM771=Lme_8e - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr
-	.long LDIFF_SYM771
+LDIFF_SYM871=Lme_95 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_intptr
+	.long LDIFF_SYM871
 	.long 0
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
-	.byte 154,5,68,155,4,156,3
+	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
+	.byte 154,7,68,155,6,156,5
 	.align 3
 Lfde118_end:
 
@@ -12459,134 +14553,119 @@ Lfde118_end:
 
 	.byte 2
 	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
-	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0"
 
 	.byte 0,0
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
-	.quad Lme_8f
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+	.quad Lme_96
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM772=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM772
-	.byte 1,105,3
+LDIFF_SYM872=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM872
+	.byte 2,141,16,3
 	.asciz "param1"
 
-LDIFF_SYM773=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM773
+LDIFF_SYM873=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM873
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM774=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM774
+LDIFF_SYM874=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM874
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM775=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM775
+LDIFF_SYM875=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM875
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM776=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM776
+LDIFF_SYM876=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM876
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM777=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM777
-	.byte 1,106,11
-	.asciz "V_4"
-
-LDIFF_SYM778=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM778
+LDIFF_SYM877=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM877
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM779=Lfde119_end - Lfde119_start
-	.long LDIFF_SYM779
+LDIFF_SYM878=Lfde119_end - Lfde119_start
+	.long LDIFF_SYM878
 Lfde119_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
 
-LDIFF_SYM780=Lme_8f - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
-	.long LDIFF_SYM780
+LDIFF_SYM879=Lme_96 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+	.long LDIFF_SYM879
 	.long 0
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
-	.byte 154,8,68,155,7,156,6
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
+	.byte 154,7,68,155,6,156,5
 	.align 3
 Lfde119_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
-	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2"
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSendSuper"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_0"
 
 	.byte 0,0
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
-	.quad Lme_90
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_0
+	.quad Lme_97
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM781=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM781
-	.byte 1,105,3
+LDIFF_SYM880=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM880
+	.byte 2,141,16,3
 	.asciz "param1"
 
-LDIFF_SYM782=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM782
+LDIFF_SYM881=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM881
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM783=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM783
+LDIFF_SYM882=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM882
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM784=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM784
+LDIFF_SYM883=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM883
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM785=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM785
+LDIFF_SYM884=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM884
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM786=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM786
-	.byte 1,106,11
-	.asciz "V_4"
-
-LDIFF_SYM787=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM787
-	.byte 0,11
-	.asciz "V_5"
-
-LDIFF_SYM788=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM788
+LDIFF_SYM885=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM885
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM789=Lfde120_end - Lfde120_start
-	.long LDIFF_SYM789
+LDIFF_SYM886=Lfde120_end - Lfde120_start
+	.long LDIFF_SYM886
 Lfde120_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_0
 
-LDIFF_SYM790=Lme_90 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
-	.long LDIFF_SYM790
+LDIFF_SYM887=Lme_97 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_0
+	.long LDIFF_SYM887
 	.long 0
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
-	.byte 154,8,68,155,7,156,6
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
+	.byte 154,7,68,155,6,156,5
 	.align 3
 Lfde120_end:
 
@@ -12594,136 +14673,136 @@ Lfde120_end:
 
 	.byte 2
 	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
-	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1"
 
 	.byte 0,0
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
-	.quad Lme_91
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1
+	.quad Lme_98
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM791=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM791
+LDIFF_SYM888=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM888
 	.byte 2,141,16,3
 	.asciz "param1"
 
-LDIFF_SYM792=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM792
-	.byte 2,141,24,3
+LDIFF_SYM889=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM889
+	.byte 1,105,3
 	.asciz "param2"
 
-LDIFF_SYM793=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM793
+LDIFF_SYM890=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM890
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM794=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM794
+LDIFF_SYM891=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM891
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM795=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM795
+LDIFF_SYM892=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM892
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM796=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM796
+LDIFF_SYM893=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM893
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM797=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM797
+LDIFF_SYM894=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM894
 	.byte 1,106,11
 	.asciz "V_4"
 
-LDIFF_SYM798=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM798
-	.byte 1,103,0
+LDIFF_SYM895=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM895
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM799=Lfde121_end - Lfde121_start
-	.long LDIFF_SYM799
+LDIFF_SYM896=Lfde121_end - Lfde121_start
+	.long LDIFF_SYM896
 Lfde121_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1
 
-LDIFF_SYM800=Lme_91 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
-	.long LDIFF_SYM800
+LDIFF_SYM897=Lme_98 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1
+	.long LDIFF_SYM897
 	.long 0
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
-	.byte 154,6,68,155,5,156,4
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
+	.byte 154,7,68,155,6,156,5
 	.align 3
 Lfde121_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
-	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_0"
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSendSuper"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_1"
 
 	.byte 0,0
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_0
-	.quad Lme_92
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_1
+	.quad Lme_99
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM801=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM801
+LDIFF_SYM898=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM898
 	.byte 2,141,16,3
 	.asciz "param1"
 
-LDIFF_SYM802=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM802
+LDIFF_SYM899=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM899
 	.byte 1,105,3
 	.asciz "param2"
 
-LDIFF_SYM803=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM803
+LDIFF_SYM900=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM900
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM804=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM804
+LDIFF_SYM901=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM901
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM805=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM805
+LDIFF_SYM902=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM902
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM806=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM806
+LDIFF_SYM903=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM903
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM807=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM807
+LDIFF_SYM904=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM904
 	.byte 1,106,11
 	.asciz "V_4"
 
-LDIFF_SYM808=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM808
+LDIFF_SYM905=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM905
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM809=Lfde122_end - Lfde122_start
-	.long LDIFF_SYM809
+LDIFF_SYM906=Lfde122_end - Lfde122_start
+	.long LDIFF_SYM906
 Lfde122_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_1
 
-LDIFF_SYM810=Lme_92 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_System_nint_0
-	.long LDIFF_SYM810
+LDIFF_SYM907=Lme_99 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_1
+	.long LDIFF_SYM907
 	.long 0
 	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
 	.byte 154,7,68,155,6,156,5
@@ -12734,222 +14813,782 @@ Lfde122_end:
 LTDIE_46:
 
 	.byte 5
-	.asciz "System_UInt64"
+	.asciz "System_Byte"
 
-	.byte 24,16
-LDIFF_SYM811=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM811
+	.byte 17,16
+LDIFF_SYM908=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM908
 	.byte 2,35,0,6
 	.asciz "m_value"
 
-LDIFF_SYM812=LDIE_U8 - Ldebug_info_start
-	.long LDIFF_SYM812
+LDIFF_SYM909=LDIE_U1 - Ldebug_info_start
+	.long LDIFF_SYM909
 	.byte 2,35,16,0,7
-	.asciz "System_UInt64"
+	.asciz "System_Byte"
 
-LDIFF_SYM813=LTDIE_46 - Ldebug_info_start
-	.long LDIFF_SYM813
+LDIFF_SYM910=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM910
 LTDIE_46_POINTER:
 
 	.byte 13
-LDIFF_SYM814=LTDIE_46 - Ldebug_info_start
-	.long LDIFF_SYM814
+LDIFF_SYM911=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM911
 LTDIE_46_REFERENCE:
 
 	.byte 14
-LDIFF_SYM815=LTDIE_46 - Ldebug_info_start
-	.long LDIFF_SYM815
+LDIFF_SYM912=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM912
 	.byte 2
 	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
-	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_3"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr"
 
 	.byte 0,0
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_3
-	.quad Lme_93
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr
+	.quad Lme_9a
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM816=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM816
-	.byte 1,105,3
+LDIFF_SYM913=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM913
+	.byte 2,141,16,3
 	.asciz "param1"
 
-LDIFF_SYM817=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM817
+LDIFF_SYM914=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM914
+	.byte 2,141,24,3
+	.asciz "param2"
+
+LDIFF_SYM915=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM915
+	.byte 2,141,32,3
+	.asciz "param3"
+
+LDIFF_SYM916=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM916
+	.byte 1,105,3
+	.asciz "param4"
+
+LDIFF_SYM917=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM917
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM818=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM818
+LDIFF_SYM918=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM918
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM819=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM819
+LDIFF_SYM919=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM919
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM820=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM820
+LDIFF_SYM920=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM920
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM821=LDIE_U8 - Ldebug_info_start
-	.long LDIFF_SYM821
-	.byte 1,106,11
+LDIFF_SYM921=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM921
+	.byte 1,105,11
 	.asciz "V_4"
 
-LDIFF_SYM822=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM822
-	.byte 0,0
+LDIFF_SYM922=LDIE_U1 - Ldebug_info_start
+	.long LDIFF_SYM922
+	.byte 1,101,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM823=Lfde123_end - Lfde123_start
-	.long LDIFF_SYM823
+LDIFF_SYM923=Lfde123_end - Lfde123_start
+	.long LDIFF_SYM923
 Lfde123_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr
 
-LDIFF_SYM824=Lme_93 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_3
-	.long LDIFF_SYM824
+LDIFF_SYM924=Lme_9a - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_bool_intptr
+	.long LDIFF_SYM924
 	.long 0
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
-	.byte 154,8,68,155,7,156,6
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
+	.byte 154,5,68,155,4,156,3
 	.align 3
 Lfde123_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
-	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong"
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSendSuper"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_bool_intptr"
 
 	.byte 0,0
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong
-	.quad Lme_94
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_bool_intptr
+	.quad Lme_9b
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM825=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM825
+LDIFF_SYM925=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM925
 	.byte 2,141,16,3
 	.asciz "param1"
 
-LDIFF_SYM826=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM826
+LDIFF_SYM926=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM926
 	.byte 2,141,24,3
 	.asciz "param2"
 
-LDIFF_SYM827=LDIE_U8 - Ldebug_info_start
-	.long LDIFF_SYM827
+LDIFF_SYM927=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM927
+	.byte 2,141,32,3
+	.asciz "param3"
+
+LDIFF_SYM928=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM928
+	.byte 1,105,3
+	.asciz "param4"
+
+LDIFF_SYM929=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM929
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM828=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM828
+LDIFF_SYM930=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM930
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM829=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM829
+LDIFF_SYM931=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM931
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM830=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM830
+LDIFF_SYM932=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM932
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM831=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM831
-	.byte 0,0
+LDIFF_SYM933=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM933
+	.byte 1,105,11
+	.asciz "V_4"
+
+LDIFF_SYM934=LDIE_U1 - Ldebug_info_start
+	.long LDIFF_SYM934
+	.byte 1,101,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM832=Lfde124_end - Lfde124_start
-	.long LDIFF_SYM832
+LDIFF_SYM935=Lfde124_end - Lfde124_start
+	.long LDIFF_SYM935
 Lfde124_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_bool_intptr
 
-LDIFF_SYM833=Lme_94 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong
-	.long LDIFF_SYM833
+LDIFF_SYM936=Lme_9b - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_intptr_bool_intptr
+	.long LDIFF_SYM936
 	.long 0
-	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
-	.byte 154,8,68,155,7,156,6
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
+	.byte 154,5,68,155,4,156,3
 	.align 3
 Lfde124_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_native-to-managed)_ObjCRuntime.Trampolines/SDActionArity1V0:Invoke"
-	.asciz "wrapper_native_to_managed_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_System_nuint"
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1"
 
 	.byte 0,0
-	.quad wrapper_native_to_managed_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_System_nuint
-	.quad Lme_95
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
+	.quad Lme_9c
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM834=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM834
-	.byte 2,141,24,3
+LDIFF_SYM937=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM937
+	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM835=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM835
-	.byte 2,141,32,11
+LDIFF_SYM938=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM938
+	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM836=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM836
+LDIFF_SYM939=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM939
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM837=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM837
+LDIFF_SYM940=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM940
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM838=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM838
+LDIFF_SYM941=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM941
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM839=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM839
-	.byte 2,141,48,11
+LDIFF_SYM942=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM942
+	.byte 1,106,11
 	.asciz "V_4"
 
-LDIFF_SYM840=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM840
-	.byte 2,141,40,0
+LDIFF_SYM943=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM943
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM841=Lfde125_end - Lfde125_start
-	.long LDIFF_SYM841
+LDIFF_SYM944=Lfde125_end - Lfde125_start
+	.long LDIFF_SYM944
 Lfde125_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_native_to_managed_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_System_nuint
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
 
-LDIFF_SYM842=Lme_95 - wrapper_native_to_managed_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_System_nuint
-	.long LDIFF_SYM842
+LDIFF_SYM945=Lme_9c - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
+	.long LDIFF_SYM945
+	.long 0
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
+	.byte 154,8,68,155,7,156,6
+	.align 3
+Lfde125_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSendSuper"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_1"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_1
+	.quad Lme_9d
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM946=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM946
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM947=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM947
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM948=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM948
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM949=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM949
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM950=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM950
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM951=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM951
+	.byte 1,106,11
+	.asciz "V_4"
+
+LDIFF_SYM952=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM952
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM953=Lfde126_end - Lfde126_start
+	.long LDIFF_SYM953
+Lfde126_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_1
+
+LDIFF_SYM954=Lme_9d - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_1
+	.long LDIFF_SYM954
+	.long 0
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
+	.byte 154,8,68,155,7,156,6
+	.align 3
+Lfde126_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
+	.quad Lme_9e
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM955=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM955
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM956=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM956
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM957=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM957
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM958=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM958
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM959=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM959
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM960=LDIE_U - Ldebug_info_start
+	.long LDIFF_SYM960
+	.byte 1,106,11
+	.asciz "V_4"
+
+LDIFF_SYM961=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM961
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM962=Lfde127_end - Lfde127_start
+	.long LDIFF_SYM962
+Lfde127_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
+
+LDIFF_SYM963=Lme_9e - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
+	.long LDIFF_SYM963
+	.long 0
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
+	.byte 154,8,68,155,7,156,6
+	.align 3
+Lfde127_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSendSuper"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_2"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_2
+	.quad Lme_9f
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM964=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM964
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM965=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM965
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM966=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM966
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM967=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM967
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM968=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM968
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM969=LDIE_U - Ldebug_info_start
+	.long LDIFF_SYM969
+	.byte 1,106,11
+	.asciz "V_4"
+
+LDIFF_SYM970=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM970
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM971=Lfde128_end - Lfde128_start
+	.long LDIFF_SYM971
+Lfde128_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_2
+
+LDIFF_SYM972=Lme_9f - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_2
+	.long LDIFF_SYM972
+	.long 0
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
+	.byte 154,8,68,155,7,156,6
+	.align 3
+Lfde128_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+	.quad Lme_a0
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM973=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM973
+	.byte 2,141,16,3
+	.asciz "param1"
+
+LDIFF_SYM974=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM974
+	.byte 2,141,24,3
+	.asciz "param2"
+
+LDIFF_SYM975=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM975
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM976=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM976
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM977=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM977
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM978=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM978
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM979=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM979
+	.byte 1,106,11
+	.asciz "V_4"
+
+LDIFF_SYM980=LDIE_U1 - Ldebug_info_start
+	.long LDIFF_SYM980
+	.byte 1,103,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM981=Lfde129_end - Lfde129_start
+	.long LDIFF_SYM981
+Lfde129_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+
+LDIFF_SYM982=Lme_a0 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+	.long LDIFF_SYM982
+	.long 0
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
+	.byte 154,6,68,155,5,156,4
+	.align 3
+Lfde129_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSendSuper"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_bool"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_bool
+	.quad Lme_a1
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM983=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM983
+	.byte 2,141,16,3
+	.asciz "param1"
+
+LDIFF_SYM984=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM984
+	.byte 2,141,24,3
+	.asciz "param2"
+
+LDIFF_SYM985=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM985
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM986=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM986
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM987=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM987
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM988=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM988
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM989=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM989
+	.byte 1,106,11
+	.asciz "V_4"
+
+LDIFF_SYM990=LDIE_U1 - Ldebug_info_start
+	.long LDIFF_SYM990
+	.byte 1,103,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM991=Lfde130_end - Lfde130_start
+	.long LDIFF_SYM991
+Lfde130_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_bool
+
+LDIFF_SYM992=Lme_a1 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_bool
+	.long LDIFF_SYM992
+	.long 0
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
+	.byte 154,6,68,155,5,156,4
+	.align 3
+Lfde130_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSend"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uintptr"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uintptr
+	.quad Lme_a2
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM993=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM993
+	.byte 2,141,16,3
+	.asciz "param1"
+
+LDIFF_SYM994=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM994
+	.byte 2,141,24,3
+	.asciz "param2"
+
+LDIFF_SYM995=LDIE_U - Ldebug_info_start
+	.long LDIFF_SYM995
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM996=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM996
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM997=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM997
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM998=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM998
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM999=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM999
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1000=Lfde131_end - Lfde131_start
+	.long LDIFF_SYM1000
+Lfde131_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uintptr
+
+LDIFF_SYM1001=Lme_a2 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uintptr
+	.long LDIFF_SYM1001
+	.long 0
+	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
+	.byte 154,8,68,155,7,156,6
+	.align 3
+Lfde131_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:objc_msgSendSuper"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_uintptr"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_uintptr
+	.quad Lme_a3
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1002=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1002
+	.byte 2,141,16,3
+	.asciz "param1"
+
+LDIFF_SYM1003=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1003
+	.byte 2,141,24,3
+	.asciz "param2"
+
+LDIFF_SYM1004=LDIE_U - Ldebug_info_start
+	.long LDIFF_SYM1004
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM1005=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1005
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM1006=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1006
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM1007=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1007
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM1008=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1008
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1009=Lfde132_end - Lfde132_start
+	.long LDIFF_SYM1009
+Lfde132_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_uintptr
+
+LDIFF_SYM1010=Lme_a3 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr_uintptr
+	.long LDIFF_SYM1010
+	.long 0
+	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
+	.byte 154,8,68,155,7,156,6
+	.align 3
+Lfde132_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_native-to-managed)_ObjCRuntime.Trampolines/SDActionArity1V0:Invoke"
+	.asciz "wrapper_native_to_managed_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_uintptr"
+
+	.byte 0,0
+	.quad wrapper_native_to_managed_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_uintptr
+	.quad Lme_a4
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1011=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1011
+	.byte 2,141,24,3
+	.asciz "param1"
+
+LDIFF_SYM1012=LDIE_U - Ldebug_info_start
+	.long LDIFF_SYM1012
+	.byte 2,141,32,11
+	.asciz "V_0"
+
+LDIFF_SYM1013=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1013
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM1014=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1014
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM1015=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1015
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM1016=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1016
+	.byte 2,141,48,11
+	.asciz "V_4"
+
+LDIFF_SYM1017=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1017
+	.byte 2,141,40,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1018=Lfde133_end - Lfde133_start
+	.long LDIFF_SYM1018
+Lfde133_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_native_to_managed_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_uintptr
+
+LDIFF_SYM1019=Lme_a4 - wrapper_native_to_managed_ObjCRuntime_Trampolines_SDActionArity1V0_Invoke_intptr_uintptr
+	.long LDIFF_SYM1019
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6
 	.align 3
-Lfde125_end:
+Lfde133_end:
 
 .section __DWARF, __debug_info,regular,debug
 

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/PagerView.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>PagerView.nib</LogicalName>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/MainInterface.storyboardc/M4Y-Lb-cyx-view-ydp-1b-1W5.nib">
+      <Optimize>false</Optimize>
+      <InterfaceDefinition>MainInterface.storyboard</InterfaceDefinition>
+      <LogicalName>MainInterface.storyboardc/M4Y-Lb-cyx-view-ydp-1b-1W5.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/ibtool/MainInterface.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/MainInterface.storyboardc/UIViewController-M4Y-Lb-cyx.nib">
+      <Optimize>false</Optimize>
+      <InterfaceDefinition>MainInterface.storyboard</InterfaceDefinition>
+      <LogicalName>MainInterface.storyboardc/UIViewController-M4Y-Lb-cyx.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/ibtool/MainInterface.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/MainInterface.storyboardc/Info.plist">
+      <Optimize>false</Optimize>
+      <InterfaceDefinition>MainInterface.storyboard</InterfaceDefinition>
+      <LogicalName>MainInterface.storyboardc/Info.plist</LogicalName>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/ibtool/MainInterface.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+  </ItemGroup>
+</Project>

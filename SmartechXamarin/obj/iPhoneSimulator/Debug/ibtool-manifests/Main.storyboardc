@@ -7,6 +7,37 @@
 	<key>com.apple.ibtool.document.notices</key>
 	<dict/>
 	<key>com.apple.ibtool.document.warnings</key>
-	<dict/>
+	<dict>
+		<key>2O4-7S-ZaL</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>2O4-7S-ZaL</string>
+				</array>
+				<key>message</key>
+				<string>Filled Button Style before iOS 15.0</string>
+				<key>type</key>
+				<string>IBIssueTypeAttributeUnavailable</string>
+				<key>type-value</key>
+				<integer>5</integer>
+			</dict>
+		</array>
+		<key>nh1-Ui-gbK</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>nh1-Ui-gbK</string>
+				</array>
+				<key>message</key>
+				<string>Filled Button Style before iOS 15.0</string>
+				<key>type</key>
+				<string>IBIssueTypeAttributeUnavailable</string>
+				<key>type-value</key>
+				<integer>5</integer>
+			</dict>
+		</array>
+	</dict>
 </dict>
 </plist>

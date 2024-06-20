@@ -3,7 +3,7 @@
   <ItemGroup>
     <_CodesignBundle Include="SmartechXamarin.app/PlugIns//SmartechServiceXam.appex">
       <CodesignSigningKey>99F78747E95D93255274EC84C74C1346ED2F897C</CodesignSigningKey>
-      <CodesignEntitlements>/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechServiceXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/Entitlements.xcent</CodesignEntitlements>
+      <CodesignEntitlements>/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechServiceXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/Entitlements.xcent</CodesignEntitlements>
       <CodesignUseSecureTimestamp></CodesignUseSecureTimestamp>
       <CodesignAllocate>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate</CodesignAllocate>
       <RequireCodeSigning>true</RequireCodeSigning>
@@ -12,11 +12,24 @@
       <CodesignDisableTimestamp>false</CodesignDisableTimestamp>
       <CodesignKeychain></CodesignKeychain>
       <CodesignUseHardenedRuntime></CodesignUseHardenedRuntime>
-      <SourceProjectPath>/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechServiceXam</SourceProjectPath>
+      <SourceProjectPath>/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechServiceXam</SourceProjectPath>
+    </_CodesignBundle>
+    <_CodesignBundle Include="SmartechXamarin.app/PlugIns//SmartechContentXam.appex">
+      <CodesignSigningKey>99F78747E95D93255274EC84C74C1346ED2F897C</CodesignSigningKey>
+      <CodesignEntitlements>/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechContentXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/Entitlements.xcent</CodesignEntitlements>
+      <CodesignUseSecureTimestamp></CodesignUseSecureTimestamp>
+      <CodesignAllocate>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate</CodesignAllocate>
+      <RequireCodeSigning>true</RequireCodeSigning>
+      <CodesignExtraArgs></CodesignExtraArgs>
+      <CodesignResourceRules></CodesignResourceRules>
+      <CodesignDisableTimestamp>false</CodesignDisableTimestamp>
+      <CodesignKeychain></CodesignKeychain>
+      <CodesignUseHardenedRuntime></CodesignUseHardenedRuntime>
+      <SourceProjectPath>/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechContentXam</SourceProjectPath>
     </_CodesignBundle>
     <_CodesignBundle Include="SmartechXamarin.app">
       <CodesignSigningKey>99F78747E95D93255274EC84C74C1346ED2F897C</CodesignSigningKey>
-      <CodesignEntitlements>/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechXamarin/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/Entitlements.xcent</CodesignEntitlements>
+      <CodesignEntitlements>/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechXamarin/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/Entitlements.xcent</CodesignEntitlements>
       <CodesignUseSecureTimestamp></CodesignUseSecureTimestamp>
       <CodesignAllocate>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate</CodesignAllocate>
       <RequireCodeSigning>true</RequireCodeSigning>
@@ -25,7 +38,7 @@
       <CodesignDisableTimestamp>true</CodesignDisableTimestamp>
       <CodesignKeychain></CodesignKeychain>
       <CodesignUseHardenedRuntime></CodesignUseHardenedRuntime>
-      <SourceProjectPath>/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechXamarin</SourceProjectPath>
+      <SourceProjectPath>/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechXamarin</SourceProjectPath>
     </_CodesignBundle>
   </ItemGroup>
 </Project>

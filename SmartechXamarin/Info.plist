@@ -42,6 +42,8 @@
 	<string>Main</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>CFBundleExecutable</key>
+	<string>Main storyboard file base name (iPad)</string>
 	<key>UIMainStoryboardFile~ipad</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

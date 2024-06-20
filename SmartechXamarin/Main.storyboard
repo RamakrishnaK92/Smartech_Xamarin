@@ -1,27 +1,59 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2O4-7S-ZaL">
+                                <rect key="frame" x="148" y="408.66666666666669" width="97" height="34.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Checkout" cornerStyle="fixed">
+                                    <backgroundConfiguration key="background" cornerRadius="5"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="handleCheckout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N3V-cW-sI7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nh1-Ui-gbK">
+                                <rect key="frame" x="139.33333333333334" y="352.66666666666669" width="114.33333333333334" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add To Cart"/>
+                                <connections>
+                                    <action selector="handleAddToCart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfX-ej-FAH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2O4-7S-ZaL" firstAttribute="top" secondItem="nh1-Ui-gbK" secondAttribute="bottom" constant="21.666666666666686" id="GiQ-Ev-GNG"/>
+                            <constraint firstItem="2O4-7S-ZaL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HCc-HN-hBc"/>
+                            <constraint firstItem="2O4-7S-ZaL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bg2-j3-odS"/>
+                            <constraint firstItem="nh1-Ui-gbK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dhH-c8-SeZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnAddToCart" destination="nh1-Ui-gbK" id="df9-Rh-uqr"/>
+                        <outlet property="btnCheckout" destination="2O4-7S-ZaL" id="zC7-SO-HVA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-0.76335877862595414" y="0.0"/>
         </scene>
     </scenes>
 </document>

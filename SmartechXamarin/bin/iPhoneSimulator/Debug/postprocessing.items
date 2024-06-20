@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <_PostProcessingItem Include="SmartechXamarin.app/SmartechXamarin">
-      <BCSymbolMapName>SmartechXamarin.bcsymbolmap</BCSymbolMapName>
+    <_PostProcessingItem Include="SmartechXamarin.app/Main storyboard file base name (iPad)">
+      <BCSymbolMapName>Main storyboard file base name (iPad).bcsymbolmap</BCSymbolMapName>
       <NoDSymUtil>true</NoDSymUtil>
       <dSYMSourcePathExists>false</dSYMSourcePathExists>
       <NoSymbolStrip>true</NoSymbolStrip>
       <dSYMInfoPlistRelativePath>SmartechXamarin.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
-      <SymbolFile>/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechXamarin/obj/iPhoneSimulator/Debug/mtouch-symbols.list</SymbolFile>
+      <SymbolFile>/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechXamarin/obj/iPhoneSimulator/Debug/mtouch-symbols.list</SymbolFile>
       <DSymName>SmartechXamarin.app.dSYM</DSymName>
-      <SourceProjectPath>/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechXamarin</SourceProjectPath>
+      <SourceProjectPath>/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechXamarin</SourceProjectPath>
     </_PostProcessingItem>
     <_PostProcessingItem Include="SmartechXamarin.app/PlugIns/SmartechServiceXam.appex/SmartechServiceXam">
       <BCSymbolMapName>SmartechServiceXam.bcsymbolmap</BCSymbolMapName>
@@ -17,9 +17,19 @@
       <dSYMSourcePathExists>false</dSYMSourcePathExists>
       <NoSymbolStrip>true</NoSymbolStrip>
       <dSYMInfoPlistRelativePath>SmartechServiceXam.appex.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
-      <SymbolFile>/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam/obj/iPhoneSimulator/Debug/mtouch-symbols.list</SymbolFile>
+      <SymbolFile>/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechServiceXam/obj/iPhoneSimulator/Debug/mtouch-symbols.list</SymbolFile>
       <DSymName>SmartechServiceXam.appex.dSYM</DSymName>
-      <SourceProjectPath>/Users/ramakrishnakasuba/_GitLocal/SmartechXamarin/SmartechServiceXam</SourceProjectPath>
+      <SourceProjectPath>/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechServiceXam</SourceProjectPath>
+    </_PostProcessingItem>
+    <_PostProcessingItem Include="SmartechXamarin.app/PlugIns/SmartechContentXam.appex/SmartechContentXam">
+      <BCSymbolMapName>SmartechContentXam.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>SmartechContentXam.appex.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechContentXam/obj/iPhoneSimulator/Debug/mtouch-symbols.list</SymbolFile>
+      <DSymName>SmartechContentXam.appex.dSYM</DSymName>
+      <SourceProjectPath>/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechContentXam</SourceProjectPath>
     </_PostProcessingItem>
   </ItemGroup>
 </Project>

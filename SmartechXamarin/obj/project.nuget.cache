@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iEVFcjcC+4b4OqV3wacxM0uaQBuf2Kl5PypItHZMzv+k/LMvSIM6f+mKDC6APcOghiFaRUrsRpxCvQc4yAvIsg==",
+  "dgSpecHash": "jAIFx1aeOHYoOdHSyredVLpV1nyH12ekqMAYhgXAU2OyZguoY+0yiSMva0nJS0fPG9dAlz1I9Qc8GnhOSs0omA==",
   "success": true,
-  "projectFilePath": "/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechXamarin/SmartechXamarin.csproj",
+  "projectFilePath": "/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechXamarin/SmartechXamarin.csproj",
   "expectedPackageFiles": [
     "/Users/ramakrishnakasuba/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
     "/Users/ramakrishnakasuba/.nuget/packages/xamarin.essentials/1.8.1/xamarin.essentials.1.8.1.nupkg.sha512"

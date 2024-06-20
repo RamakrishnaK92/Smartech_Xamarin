@@ -32,6 +32,15 @@
           }
         }
       },
+      "SmartechContentXam/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SmartechContentXam.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SmartechContentXam.dll": {}
+        }
+      },
       "SmartechServiceXam/1.0.0": {
         "type": "project",
         "compile": {
@@ -71,6 +80,15 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "SmartechContentXam/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SmartechContentXam.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SmartechContentXam.dll": {}
         }
       },
       "SmartechServiceXam/1.0.0": {
@@ -114,6 +132,15 @@
           }
         }
       },
+      "SmartechContentXam/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SmartechContentXam.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SmartechContentXam.dll": {}
+        }
+      },
       "SmartechServiceXam/1.0.0": {
         "type": "project",
         "compile": {
@@ -153,6 +180,15 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "SmartechContentXam/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SmartechContentXam.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SmartechContentXam.dll": {}
         }
       },
       "SmartechServiceXam/1.0.0": {
@@ -256,6 +292,11 @@
         "xamarin.essentials.nuspec"
       ]
     },
+    "SmartechContentXam/1.0.0": {
+      "type": "project",
+      "path": "../SmartechContentXam/SmartechContentXam.csproj",
+      "msbuildProject": "../SmartechContentXam/SmartechContentXam.csproj"
+    },
     "SmartechServiceXam/1.0.0": {
       "type": "project",
       "path": "../SmartechServiceXam/SmartechServiceXam.csproj",
@@ -264,6 +305,7 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
+      "SmartechContentXam >= 1.0.0",
       "SmartechServiceXam >= 1.0.0",
       "Xamarin.Essentials >= 1.8.1"
     ]
@@ -274,11 +316,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechXamarin/SmartechXamarin.csproj",
+      "projectUniqueName": "/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechXamarin/SmartechXamarin.csproj",
       "projectName": "SmartechXamarin",
-      "projectPath": "/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechXamarin/SmartechXamarin.csproj",
+      "projectPath": "/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechXamarin/SmartechXamarin.csproj",
       "packagesPath": "/Users/ramakrishnakasuba/.nuget/packages/",
-      "outputPath": "/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechXamarin/obj/",
+      "outputPath": "/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechXamarin/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -293,8 +335,11 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechServiceXam/SmartechServiceXam.csproj": {
-              "projectPath": "/Users/ramakrishnakasuba/_GitLocal/Smartech_Xamarin/SmartechServiceXam/SmartechServiceXam.csproj"
+            "/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechContentXam/SmartechContentXam.csproj": {
+              "projectPath": "/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechContentXam/SmartechContentXam.csproj"
+            },
+            "/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechServiceXam/SmartechServiceXam.csproj": {
+              "projectPath": "/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechServiceXam/SmartechServiceXam.csproj"
             }
           }
         }

@@ -1,0 +1,1 @@
+@/Users/ramakrishnakasuba/Downloads/Xamarin-iOS-SDK-DemoApp-main/SmartechContentXam/obj/iPhone/Debug/device-builds/iphone14.8-17.2.1/response-file.rsp

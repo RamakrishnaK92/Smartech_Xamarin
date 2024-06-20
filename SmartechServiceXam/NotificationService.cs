@@ -30,6 +30,7 @@ namespace SmartechServiceXam
             Console.WriteLine($"NCLogger inside NSE-CONTENT: {contentHandler}");
             NetCoreNotificationService.SharedInstance().SetUpAppGroup("group.com.netcore.SmartechApp");
 			
+			
             NetCoreNotificationService.SharedInstance().DidReceiveNotificationRequest(request, contentHandler);
 
 
